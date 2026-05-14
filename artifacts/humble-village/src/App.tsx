@@ -6,6 +6,8 @@ import About from "./pages/About";
 import OurCause from "./pages/OurCause";
 import OurTeam from "./pages/OurTeam";
 import Give from "./pages/Give";
+import Stories from "./pages/Stories";
+import NaruCircle from "./pages/NaruCircle";
 
 function NotFound() {
   return (
@@ -35,7 +37,10 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/ourcause" element={<OurCause />} />
         <Route path="/our-team" element={<OurTeam />} />
+        <Route path="/stories" element={<Stories />} />
         <Route path="/give-1" element={<Give />} />
+        <Route path="/donate" element={<Give />} />
+        <Route path="/naru-circle" element={<NaruCircle />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

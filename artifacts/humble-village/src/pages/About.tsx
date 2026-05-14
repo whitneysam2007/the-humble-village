@@ -1,17 +1,12 @@
-import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 export default function About() {
-  const [email, setEmail] = useState('');
-
   return (
     <main>
-      {/* HERO / INTRO */}
-      <section style={{
-        paddingTop: '80px',
-        background: '#ECE4DA',
-      }}>
+      {/* HERO */}
+      <section style={{ paddingTop: '80px', background: '#ECE4DA' }}>
         <div style={{
           maxWidth: '760px',
           margin: '0 auto',
@@ -22,52 +17,35 @@ export default function About() {
             fontFamily: 'Figtree, sans-serif',
             fontSize: '11px',
             fontWeight: 700,
-            letterSpacing: '0.18em',
-            color: '#36302A',
-            opacity: 0.5,
-            marginBottom: '28px',
+            letterSpacing: '0.2em',
+            color: '#574C3F',
+            marginBottom: '24px',
             textTransform: 'uppercase',
           }}>
-            ABOUT US
+            About Us
           </p>
           <h1 style={{
             fontFamily: 'Libre Baskerville, serif',
             fontSize: 'clamp(26px, 3.5vw, 48px)',
             fontWeight: 400,
             color: '#36302A',
-            marginBottom: '36px',
-            lineHeight: 1.15,
+            marginBottom: '32px',
+            lineHeight: 1.2,
           }}>
-            The Humble Village: a Nonprofit Organization Empowering Women and Transforming Communities
+            The Humble Village: Empowering Mothers, Transforming Communities
           </h1>
-          <p style={{ fontSize: '17px', lineHeight: 1.8, color: '#36302A', opacity: 0.8, marginBottom: '20px' }}>
-            At The Humble Village, we believe that when you educate and empower families—starting with women—you bless all of humanity. We work hand-in-hand with Q'eqchi' Mayan families living in the highlands of Guatemala, where most survive on less than $1 a day.
+          <p style={{ fontSize: '17px', lineHeight: 1.85, color: '#36302A', opacity: 0.8, marginBottom: '20px' }}>
+            We are a Christian nonprofit working hand-in-hand with Q'eqchi' Mayan families in the highlands of Guatemala — where most survive on less than $1 a day and where child malnutrition reaches crisis levels.
           </p>
-          <p style={{ fontSize: '17px', lineHeight: 1.8, color: '#36302A', opacity: 0.8 }}>
-            Our mission is simple: equip women with the tools to lift their families out of generational poverty. We provide urgently needed nourishment, healthcare training and access, and education that opens the door to long-term stability and independence.
+          <p style={{ fontSize: '17px', lineHeight: 1.85, color: '#36302A', opacity: 0.8 }}>
+            For over two decades, we have believed that when you educate and empower families — starting with women — you bless all of humanity.
           </p>
         </div>
 
-        {/* 3-column photo grid */}
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(3, 1fr)',
-        }} className="about-photo-grid">
-          <img
-            src={`${BASE}/images/5c6da391-1394-4dce-a685-835062b5e382.JPG`}
-            alt="Community"
-            style={{ width: '100%', height: '480px', objectFit: 'cover', display: 'block' }}
-          />
-          <img
-            src={`${BASE}/images/IMG_5278.JPG`}
-            alt="Family"
-            style={{ width: '100%', height: '480px', objectFit: 'cover', display: 'block' }}
-          />
-          <img
-            src={`${BASE}/images/Naru_Team_Pic.jpeg`}
-            alt="Team"
-            style={{ width: '100%', height: '480px', objectFit: 'cover', display: 'block' }}
-          />
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)' }} className="about-photo-grid">
+          <img src={`${BASE}/images/5c6da391-1394-4dce-a685-835062b5e382.JPG`} alt="Community" style={{ width: '100%', height: '480px', objectFit: 'cover', display: 'block' }} />
+          <img src={`${BASE}/images/solly-kitchen-women.jpg`} alt="Women cooking at Solly kitchen" style={{ width: '100%', height: '480px', objectFit: 'cover', display: 'block' }} />
+          <img src={`${BASE}/images/Naru_Team_Pic.jpeg`} alt="Narú team" style={{ width: '100%', height: '480px', objectFit: 'cover', display: 'block' }} />
         </div>
         <style>{`
           @media (max-width: 768px) {
@@ -77,12 +55,188 @@ export default function About() {
         `}</style>
       </section>
 
+      {/* MISSION STATEMENT */}
+      <section style={{ background: '#36302A', padding: '100px 40px' }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
+          <p style={{
+            fontFamily: 'Figtree, sans-serif',
+            fontSize: '11px',
+            fontWeight: 700,
+            letterSpacing: '0.2em',
+            textTransform: 'uppercase',
+            color: '#574C3F',
+            marginBottom: '32px',
+          }}>
+            Our Mission
+          </p>
+          <h2 style={{
+            fontFamily: 'Libre Baskerville, serif',
+            fontSize: 'clamp(22px, 3.5vw, 38px)',
+            fontWeight: 400,
+            color: '#F6F3EC',
+            lineHeight: 1.4,
+          }}>
+            Our mission is to <em>empower mothers</em> and families in Alta Verapaz, Guatemala to <em>break the cycle of hunger and infant mortality</em> in the Narú "Can Do" way.
+          </h2>
+          <div style={{ width: '48px', height: '2px', background: '#574C3F', margin: '40px auto' }} />
+          <p style={{
+            fontFamily: 'Figtree, sans-serif',
+            fontSize: '17px',
+            lineHeight: 1.85,
+            color: '#F6F3EC',
+            opacity: 0.8,
+          }}>
+            We do this by providing nutrition, education, and life-saving tools that build lasting self-reliance.
+          </p>
+        </div>
+      </section>
+
+      {/* HOW WE HELP */}
+      <section style={{ background: '#ECE4DA', padding: '100px 40px' }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+          <p style={{
+            fontFamily: 'Figtree, sans-serif',
+            fontSize: '11px',
+            fontWeight: 700,
+            letterSpacing: '0.2em',
+            textTransform: 'uppercase',
+            color: '#574C3F',
+            marginBottom: '16px',
+            textAlign: 'center',
+          }}>
+            How We Help
+          </p>
+          <h2 style={{
+            fontFamily: 'Libre Baskerville, serif',
+            fontSize: 'clamp(26px, 3.5vw, 42px)',
+            fontWeight: 400,
+            color: '#36302A',
+            textAlign: 'center',
+            marginBottom: '72px',
+          }}>
+            A Three-Part Path to Self-Reliance
+          </h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '48px' }} className="howhelp-grid">
+            {[
+              {
+                step: '01',
+                title: 'Emergency Nutrition',
+                body: 'We begin by providing emergency nutrition for infants and children suffering from severe acute malnutrition — stabilizing lives and giving families a foundation to build on.',
+              },
+              {
+                step: '02',
+                title: 'Essential Skills',
+                body: 'We teach gardening, clean water practices, and family nutrition. Families learn to grow their own food, cook healthy meals, and care for their health — tools they keep forever.',
+              },
+              {
+                step: '03',
+                title: '18 Months to Self-Reliance',
+                body: 'We continue with 18 months of Narú education that empowers women to achieve lasting self-reliance. We walk with each family until they are truly ready to stand on their own.',
+              },
+            ].map((item, i) => (
+              <div key={i}>
+                <div style={{
+                  fontFamily: 'Libre Baskerville, serif',
+                  fontSize: '48px',
+                  fontWeight: 400,
+                  color: '#ECE4DA',
+                  WebkitTextStroke: '1px #C4B8AC',
+                  marginBottom: '20px',
+                  lineHeight: 1,
+                }}>
+                  {item.step}
+                </div>
+                <h3 style={{
+                  fontFamily: 'Libre Baskerville, serif',
+                  fontSize: '20px',
+                  fontWeight: 400,
+                  color: '#36302A',
+                  marginBottom: '16px',
+                  lineHeight: 1.3,
+                }}>
+                  {item.title}
+                </h3>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '15px', lineHeight: 1.75, color: '#574C3F' }}>
+                  {item.body}
+                </p>
+              </div>
+            ))}
+          </div>
+          <style>{`
+            @media (max-width: 768px) {
+              .howhelp-grid { grid-template-columns: 1fr !important; }
+            }
+          `}</style>
+        </div>
+      </section>
+
+      {/* WHAT SETS US APART */}
+      <section style={{ position: 'relative', overflow: 'hidden', padding: '120px 40px' }}>
+        <img
+          src={`${BASE}/images/field-walking.webp`}
+          alt="Families walking through the valley"
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
+        />
+        <div style={{ position: 'absolute', inset: 0, background: 'rgba(54,48,42,0.78)' }} />
+        <div style={{ position: 'relative', zIndex: 1, maxWidth: '700px', margin: '0 auto' }}>
+          <p style={{
+            fontFamily: 'Figtree, sans-serif',
+            fontSize: '11px',
+            fontWeight: 700,
+            letterSpacing: '0.2em',
+            textTransform: 'uppercase',
+            color: '#574C3F',
+            marginBottom: '28px',
+            textAlign: 'center',
+          }}>
+            What Sets Us Apart
+          </p>
+          <h2 style={{
+            fontFamily: 'Libre Baskerville, serif',
+            fontSize: 'clamp(26px, 3.5vw, 40px)',
+            fontWeight: 400,
+            color: '#F6F3EC',
+            textAlign: 'center',
+            marginBottom: '56px',
+          }}>
+            Five reasons donors trust us with their giving
+          </h2>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+            {[
+              'We operate in the epicenter of child malnutrition',
+              'Direct funding model: 100% of donations go to field programs',
+              'Two decades of sustained presence in Alta Verapaz',
+              'Grass-roots, indigenous leadership',
+              'Culturally sustainable and data-supported outcomes',
+            ].map((item, i) => (
+              <div key={i} style={{ display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
+                <div style={{
+                  fontFamily: 'Libre Baskerville, serif',
+                  fontSize: '18px',
+                  color: '#574C3F',
+                  lineHeight: 1,
+                  flexShrink: 0,
+                  marginTop: '2px',
+                }}>
+                  {i + 1}.
+                </div>
+                <p style={{
+                  fontFamily: 'Figtree, sans-serif',
+                  fontSize: '17px',
+                  color: '#F6F3EC',
+                  lineHeight: 1.6,
+                  opacity: 0.9,
+                }}>
+                  {item}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* STATS */}
-      <section style={{
-        padding: '80px 40px',
-        background: '#36302A',
-        textAlign: 'center',
-      }}>
+      <section style={{ padding: '80px 40px', background: '#36302A', textAlign: 'center' }}>
         <div style={{
           maxWidth: '900px',
           margin: '0 auto',
@@ -91,15 +245,15 @@ export default function About() {
           gap: '48px',
         }} className="about-stats-grid">
           {[
-            { number: '13,000', label: 'PROJECTS FUNDED' },
-            { number: '150,000+', label: 'MEDICAL VISITS' },
-            { number: '20,000+', label: 'CHILDREN HELPED' },
+            { number: '13,000', label: 'Projects Funded' },
+            { number: '150,000+', label: 'Medical Visits' },
+            { number: '20,000+', label: 'Children Helped' },
           ].map((stat, i) => (
             <div key={i}>
               <div style={{
                 fontFamily: 'Libre Baskerville, serif',
                 fontSize: 'clamp(36px, 5vw, 60px)',
-                fontWeight: 700,
+                fontWeight: 400,
                 color: '#F6F3EC',
                 lineHeight: 1,
                 marginBottom: '10px',
@@ -111,8 +265,9 @@ export default function About() {
                 fontSize: '12px',
                 fontWeight: 600,
                 letterSpacing: '0.12em',
+                textTransform: 'uppercase',
                 color: '#F6F3EC',
-                opacity: 0.65,
+                opacity: 0.5,
               }}>
                 {stat.label}
               </div>
@@ -129,7 +284,7 @@ export default function About() {
       {/* HOW WE WORK */}
       <section style={{ padding: '100px 40px', background: '#ECE4DA' }}>
         <div style={{
-          maxWidth: '1200px',
+          maxWidth: '1100px',
           margin: '0 auto',
           display: 'grid',
           gridTemplateColumns: '1fr 1fr',
@@ -144,6 +299,17 @@ export default function About() {
             />
           </div>
           <div>
+            <p style={{
+              fontFamily: 'Figtree, sans-serif',
+              fontSize: '11px',
+              fontWeight: 700,
+              letterSpacing: '0.2em',
+              textTransform: 'uppercase',
+              color: '#574C3F',
+              marginBottom: '20px',
+            }}>
+              Our Model
+            </p>
             <h2 style={{
               fontFamily: 'Libre Baskerville, serif',
               fontSize: 'clamp(26px, 3vw, 40px)',
@@ -154,20 +320,13 @@ export default function About() {
             }}>
               How We Work
             </h2>
-            <p style={{ fontSize: '17px', lineHeight: 1.8, color: '#36302A', opacity: 0.85, marginBottom: '20px' }}>
-              Our mission is simple: equip women with the tools to lift their families out of generational poverty. We provide urgently needed nourishment, healthcare, education, and economic training.
+            <p style={{ fontSize: '17px', lineHeight: 1.85, color: '#36302A', opacity: 0.85, marginBottom: '20px' }}>
+              Our work begins with saving lives and ends with families who no longer need us. Every program is designed with an exit in mind — not dependency, but dignity.
             </p>
-            <p style={{ fontSize: '17px', lineHeight: 1.8, color: '#36302A', opacity: 0.85, marginBottom: '28px' }}>
-              100% of funds donated go directly to these projects and local Guatemalan staff who are on the ground working day to day. The Humble Village board members are 100% volunteers.
+            <p style={{ fontSize: '17px', lineHeight: 1.85, color: '#36302A', opacity: 0.85, marginBottom: '28px' }}>
+              100% of funds donated go directly to field programs and the local Guatemalan staff who are on the ground every single day. Our board members are 100% volunteers.
             </p>
-            <a
-              href="https://www.zeffy.com/en-US/donation-form/donate-to-the-humble-village"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary"
-            >
-              CLICK TO DONATE
-            </a>
+            <Link to="/ourcause" className="btn-primary">See Our Cause</Link>
           </div>
         </div>
         <style>{`
@@ -177,121 +336,66 @@ export default function About() {
         `}</style>
       </section>
 
-      {/* PHOTO CTA SECTION */}
-      <section style={{
-        position: 'relative',
-        overflow: 'hidden',
-        minHeight: '480px',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        textAlign: 'center',
-      }}>
+      {/* PHOTO CTA */}
+      <section style={{ position: 'relative', overflow: 'hidden', minHeight: '480px', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
         <img
           src={`${BASE}/images/HV-photo.png`}
           alt="The Humble Village"
-          style={{
-            position: 'absolute',
-            inset: 0,
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-          }}
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
         />
-        <div style={{
-          position: 'absolute',
-          inset: 0,
-          background: 'rgba(54,48,42,0.55)',
-        }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'rgba(54,48,42,0.6)' }} />
         <div style={{ position: 'relative', zIndex: 1, padding: '60px 40px', color: '#F6F3EC' }}>
           <h2 style={{
             fontFamily: 'Libre Baskerville, serif',
-            fontSize: 'clamp(22px, 3vw, 36px)',
+            fontSize: 'clamp(22px, 3vw, 38px)',
             fontWeight: 400,
             marginBottom: '32px',
             lineHeight: 1.3,
             maxWidth: '600px',
           }}>
-            Ready to Help Us? Donate today and Give a Gift that will Change Generations of Lives.
+            Ready to change generations of lives?
           </h2>
-          <a
-            href="https://www.zeffy.com/en-US/donation-form/donate-to-the-humble-village"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              display: 'inline-block',
-              background: '#F6F3EC',
-              color: '#36302A',
-              padding: '16px 40px',
-              borderRadius: '6.4px',
-              fontFamily: 'Figtree, sans-serif',
-              fontSize: '13px',
-              fontWeight: 700,
-              letterSpacing: '0.1em',
-              textTransform: 'uppercase',
-              textDecoration: 'none',
-            }}
-          >
-            CLICK TO DONATE
-          </a>
-        </div>
-      </section>
-
-      {/* EMAIL SIGNUP */}
-      <section style={{
-        padding: '80px 40px',
-        background: '#36302A',
-        textAlign: 'center',
-      }}>
-        <div style={{ maxWidth: '500px', margin: '0 auto', color: '#F6F3EC' }}>
-          <h2 style={{
-            fontFamily: 'Libre Baskerville, serif',
-            fontSize: 'clamp(22px, 3vw, 30px)',
-            fontWeight: 400,
-            marginBottom: '12px',
-          }}>
-            Join us!
-          </h2>
-          <p style={{ fontSize: '16px', opacity: 0.8, marginBottom: '32px' }}>
-            Get our emails to see the impact of your donations and support!
-          </p>
-          <form onSubmit={e => e.preventDefault()} style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', justifyContent: 'center' }}>
-            <input
-              type="email"
-              value={email}
-              onChange={e => setEmail(e.target.value)}
-              placeholder="Your email address"
+          <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <a
+              href="https://www.zeffy.com/en-US/donation-form/donate-to-the-humble-village"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{
-                flex: '1 1 200px',
-                padding: '14px 20px',
-                borderRadius: '6.4px',
-                border: 'none',
-                fontFamily: 'Figtree, sans-serif',
-                fontSize: '15px',
+                display: 'inline-block',
                 background: '#F6F3EC',
                 color: '#36302A',
-                outline: 'none',
-              }}
-            />
-            <button
-              type="submit"
-              style={{
-                padding: '14px 24px',
-                borderRadius: '6.4px',
-                border: '1.5px solid #F6F3EC',
-                background: 'transparent',
-                color: '#F6F3EC',
+                padding: '16px 40px',
+                borderRadius: '6px',
                 fontFamily: 'Figtree, sans-serif',
                 fontSize: '13px',
-                fontWeight: 600,
-                letterSpacing: '0.08em',
+                fontWeight: 700,
+                letterSpacing: '0.1em',
                 textTransform: 'uppercase',
-                cursor: 'pointer',
+                textDecoration: 'none',
               }}
             >
-              SUBSCRIBE
-            </button>
-          </form>
+              Donate Now
+            </a>
+            <Link
+              to="/naru-circle"
+              style={{
+                display: 'inline-block',
+                background: 'transparent',
+                color: '#F6F3EC',
+                padding: '15px 36px',
+                borderRadius: '6px',
+                border: '1.5px solid rgba(246,243,236,0.6)',
+                fontFamily: 'Figtree, sans-serif',
+                fontSize: '13px',
+                fontWeight: 700,
+                letterSpacing: '0.1em',
+                textTransform: 'uppercase',
+                textDecoration: 'none',
+              }}
+            >
+              Narú Circle
+            </Link>
+          </div>
         </div>
       </section>
     </main>

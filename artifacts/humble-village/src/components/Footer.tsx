@@ -5,8 +5,7 @@ const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
 export default function Footer() {
   return (
     <footer style={{
-      background: '#ECE4DA',
-      borderTop: '1px solid rgba(54,48,42,0.15)',
+      background: '#36302A',
       padding: '60px 40px 40px',
     }}>
       <div style={{
@@ -18,26 +17,22 @@ export default function Footer() {
         gap: '36px',
         textAlign: 'center',
       }}>
-        {/* Footer Logo */}
         <Link to="/">
           <img
             src={`${BASE}/logo.webp`}
             alt="The Humble Village"
-            style={{ height: '80px', width: 'auto' }}
+            style={{ height: '80px', width: 'auto', opacity: 0.9 }}
           />
         </Link>
 
-        {/* Nav Links */}
-        <nav style={{
-          display: 'flex',
-          flexWrap: 'wrap',
-          justifyContent: 'center',
-          gap: '32px',
-        }}>
+        <nav style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '32px' }}>
           {[
-            { label: 'ABOUT US', href: '/about' },
+            { label: 'ABOUT', href: '/about' },
             { label: 'OUR CAUSE', href: '/ourcause' },
-            { label: 'TAKE ACTION', href: '/ourcause' },
+            { label: 'OUR TEAM', href: '/our-team' },
+            { label: 'STORIES', href: '/stories' },
+            { label: 'DONATE', href: '/give-1' },
+            { label: 'NARÚ CIRCLE', href: '/naru-circle' },
           ].map(link => (
             <Link
               key={link.label}
@@ -47,7 +42,7 @@ export default function Footer() {
                 fontSize: '12px',
                 fontWeight: 600,
                 letterSpacing: '0.1em',
-                color: '#36302A',
+                color: '#ECE4DA',
                 textDecoration: 'none',
                 opacity: 0.7,
                 transition: 'opacity 0.2s',
@@ -56,37 +51,22 @@ export default function Footer() {
               {link.label}
             </Link>
           ))}
-          <a
-            href="https://www.zeffy.com/en-US/donation-form/donate-to-the-humble-village"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              fontFamily: 'Figtree, sans-serif',
-              fontSize: '12px',
-              fontWeight: 600,
-              letterSpacing: '0.1em',
-              color: '#36302A',
-              textDecoration: 'none',
-              opacity: 0.7,
-            }}
-          >
-            GIVE
-          </a>
         </nav>
 
-        {/* Legal */}
+        <div style={{ width: '40px', height: '1px', background: 'rgba(236,228,218,0.3)' }} />
+
         <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
           <p style={{
             fontSize: '13px',
-            color: '#36302A',
-            opacity: 0.65,
+            color: '#ECE4DA',
+            opacity: 0.6,
             lineHeight: 1.6,
             maxWidth: '500px',
           }}>
-            The Humble Village is a 501(c)(3) nonprofit organization. 100% of public donations go directly to our Humble Village projects in Guatemala.
+            The Humble Village is a 501(c)(3) nonprofit organization. 100% of public donations go directly to our programs in Guatemala.
           </p>
-          <p style={{ fontSize: '12px', color: '#36302A', opacity: 0.5 }}>
-            © 2025 | The Humble Village EIN#: 99-5148890
+          <p style={{ fontSize: '12px', color: '#ECE4DA', opacity: 0.4 }}>
+            © 2025 The Humble Village · EIN: 99-5148890
           </p>
         </div>
       </div>
