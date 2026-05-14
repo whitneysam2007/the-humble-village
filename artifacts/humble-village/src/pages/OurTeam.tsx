@@ -21,7 +21,7 @@ export default function OurTeam() {
   return (
     <main>
       {/* INTRO */}
-      <section style={{ paddingTop: '80px', background: '#ECE4DA' }}>
+      <section style={{ paddingTop: '80px', background: '#F8F3EC' }}>
         <div style={{
           maxWidth: '700px',
           margin: '0 auto',
@@ -123,7 +123,7 @@ export default function OurTeam() {
       </section>
 
       {/* GUATEMALAN STAFF */}
-      <section style={{ padding: '100px 40px', background: '#ECE4DA' }}>
+      <section style={{ padding: '100px 40px', background: '#F8F3EC' }}>
         <div style={{
           maxWidth: '1100px',
           margin: '0 auto',
@@ -233,7 +233,7 @@ export default function OurTeam() {
       </section>
 
       {/* NARÚ CIRCLE CTA */}
-      <section style={{ background: '#ECE4DA', padding: '80px 40px', textAlign: 'center' }}>
+      <section style={{ background: '#F8F3EC', padding: '80px 40px', textAlign: 'center' }}>
         <div style={{ maxWidth: '600px', margin: '0 auto' }}>
           <h2 style={{
             fontFamily: 'Libre Baskerville, serif',

@@ -42,7 +42,7 @@ export default function Footer() {
                 fontSize: '12px',
                 fontWeight: 600,
                 letterSpacing: '0.1em',
-                color: '#ECE4DA',
+                color: '#F8F3EC',
                 textDecoration: 'none',
                 opacity: 0.7,
                 transition: 'opacity 0.2s',
@@ -69,10 +69,10 @@ export default function Footer() {
                 fontWeight: 600,
                 letterSpacing: '0.12em',
                 textTransform: 'uppercase',
-                color: '#ECE4DA',
+                color: '#F8F3EC',
                 opacity: 0.55,
                 textDecoration: 'none',
-                borderBottom: '1px solid rgba(236,228,218,0.3)',
+                borderBottom: '1px solid rgba(248,243,236,0.3)',
                 paddingBottom: '2px',
               }}
             >
@@ -81,19 +81,19 @@ export default function Footer() {
           ))}
         </div>
 
-        <div style={{ width: '40px', height: '1px', background: 'rgba(236,228,218,0.3)' }} />
+        <div style={{ width: '40px', height: '1px', background: 'rgba(248,243,236,0.3)' }} />
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
           <p style={{
             fontSize: '13px',
-            color: '#ECE4DA',
+            color: '#F8F3EC',
             opacity: 0.6,
             lineHeight: 1.6,
             maxWidth: '500px',
           }}>
             The Humble Village is a 501(c)(3) nonprofit organization. 100% of public donations go directly to our programs in Guatemala.
           </p>
-          <p style={{ fontSize: '12px', color: '#ECE4DA', opacity: 0.4 }}>
+          <p style={{ fontSize: '12px', color: '#F8F3EC', opacity: 0.4 }}>
             © 2025 The Humble Village · EIN: 99-5148890
           </p>
         </div>

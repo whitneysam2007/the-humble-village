@@ -71,7 +71,7 @@ export default function NaruCircle() {
       </section>
 
       {/* THE TRUTH */}
-      <section style={{ background: '#ECE4DA', padding: '100px 40px' }}>
+      <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }} className="naru-intro-grid">
             <div>
@@ -102,7 +102,7 @@ export default function NaruCircle() {
                 The Narú Circle is a small group of individuals, families, and organizations who ensure this work continues year after year.
               </p>
               <div style={{ width: '40px', height: '1px', background: '#574C3F', margin: '0 auto 24px' }} />
-              <p style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '18px', fontStyle: 'italic', color: '#ECE4DA', lineHeight: 1.5 }}>
+              <p style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '18px', fontStyle: 'italic', color: '#F8F3EC', lineHeight: 1.5 }}>
                 This is not just a donation.<br />This is a partnership.
               </p>
             </div>
@@ -134,7 +134,7 @@ export default function NaruCircle() {
                 gridTemplateColumns: '1fr auto',
                 gap: '24px',
                 padding: '24px 32px',
-                background: i % 2 === 0 ? 'rgba(236,228,218,0.07)' : 'rgba(236,228,218,0.04)',
+                background: i % 2 === 0 ? 'rgba(248,243,236,0.07)' : 'rgba(248,243,236,0.04)',
                 alignItems: 'center',
               }} className="prog-row">
                 <div>
@@ -142,7 +142,7 @@ export default function NaruCircle() {
                   <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '14px', color: '#F6F3EC', opacity: 0.6, lineHeight: 1.5 }}>{prog.desc}</p>
                 </div>
                 <div style={{ textAlign: 'right', flexShrink: 0 }}>
-                  <p style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '18px', color: '#ECE4DA', whiteSpace: 'nowrap' }}>{prog.cost}</p>
+                  <p style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '18px', color: '#F8F3EC', whiteSpace: 'nowrap' }}>{prog.cost}</p>
                   <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#F6F3EC', opacity: 0.4, letterSpacing: '0.05em' }}>per year</p>
                 </div>
               </div>
@@ -158,7 +158,7 @@ export default function NaruCircle() {
               <h4 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '18px', fontWeight: 700, color: '#F6F3EC' }}>
                 Total — Full Operation
               </h4>
-              <p style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '22px', color: '#ECE4DA', textAlign: 'right', whiteSpace: 'nowrap' }}>$320,931</p>
+              <p style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '22px', color: '#F8F3EC', textAlign: 'right', whiteSpace: 'nowrap' }}>$320,931</p>
             </div>
           </div>
           <style>{`
@@ -170,7 +170,7 @@ export default function NaruCircle() {
       </section>
 
       {/* IMPACT STATS */}
-      <section style={{ background: '#ECE4DA', padding: '80px 40px', textAlign: 'center' }}>
+      <section style={{ background: '#F8F3EC', padding: '80px 40px', textAlign: 'center' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '48px' }}>
             What $320,931 Sustains
@@ -219,7 +219,7 @@ export default function NaruCircle() {
       </section>
 
       {/* TWO OPTIONS */}
-      <section style={{ background: '#ECE4DA', padding: '100px 40px' }}>
+      <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '16px', textAlign: 'center' }}>
             Your Invitation
@@ -279,8 +279,8 @@ export default function NaruCircle() {
                 body: 'A sanctuary in Guatemala you can call home. Come stay and experience the impact firsthand. See the faces. Walk the gardens. Meet the families.',
               },
             ].map((benefit, i) => (
-              <div key={i} style={{ padding: '36px 28px', background: 'rgba(236,228,218,0.07)', borderRadius: '6px' }}>
-                <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '20px', fontWeight: 400, color: '#ECE4DA', marginBottom: '16px', lineHeight: 1.2 }}>{benefit.title}</h3>
+              <div key={i} style={{ padding: '36px 28px', background: 'rgba(248,243,236,0.07)', borderRadius: '6px' }}>
+                <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '20px', fontWeight: 400, color: '#F8F3EC', marginBottom: '16px', lineHeight: 1.2 }}>{benefit.title}</h3>
                 <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '15px', lineHeight: 1.8, color: '#F6F3EC', opacity: 0.75 }}>{benefit.body}</p>
               </div>
             ))}
@@ -297,7 +297,7 @@ export default function NaruCircle() {
       </section>
 
       {/* OTHER WAYS TO GIVE */}
-      <section style={{ background: '#ECE4DA', padding: '100px 40px' }}>
+      <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '16px', textAlign: 'center' }}>
             Beyond a Check
@@ -378,7 +378,7 @@ export default function NaruCircle() {
       </section>
 
       {/* CONTACT FORM */}
-      <section style={{ background: '#ECE4DA', padding: '100px 40px' }}>
+      <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
         <div style={{ maxWidth: '640px', margin: '0 auto' }}>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '16px', textAlign: 'center' }}>
             Get in Touch
@@ -484,7 +484,7 @@ export default function NaruCircle() {
             "Thank you for considering a role in this work."
           </p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Link to="/stories" style={{ display: 'inline-block', background: '#ECE4DA', color: '#36302A', padding: '14px 32px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none' }}>
+            <Link to="/stories" style={{ display: 'inline-block', background: '#F8F3EC', color: '#36302A', padding: '14px 32px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none' }}>
               Read Impact Stories
             </Link>
             <Link to="/about" style={{ display: 'inline-block', background: 'transparent', color: '#F6F3EC', padding: '13px 28px', borderRadius: '6px', border: '1.5px solid rgba(246,243,236,0.4)', fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none' }}>

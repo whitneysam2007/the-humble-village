@@ -48,7 +48,7 @@ export default function OurCause() {
             fontFamily: 'Libre Baskerville, serif',
             fontSize: 'clamp(24px, 3.5vw, 40px)',
             fontStyle: 'italic',
-            color: '#ECE4DA',
+            color: '#F8F3EC',
             lineHeight: 1.3,
           }}>
             Until now, they had no one.<br />Now, they have Narú.
@@ -57,7 +57,7 @@ export default function OurCause() {
       </section>
 
       {/* IMPACT STATS */}
-      <section style={{ background: '#ECE4DA', padding: '100px 40px' }}>
+      <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           <p style={{
             fontFamily: 'Figtree, sans-serif',
@@ -93,7 +93,7 @@ export default function OurCause() {
                   fontFamily: 'Libre Baskerville, serif',
                   fontSize: 'clamp(32px, 4vw, 52px)',
                   fontWeight: 400,
-                  color: '#ECE4DA',
+                  color: '#F8F3EC',
                   marginBottom: '12px',
                   lineHeight: 1,
                 }}>
@@ -103,7 +103,7 @@ export default function OurCause() {
                   fontFamily: 'Figtree, sans-serif',
                   fontSize: '13px',
                   lineHeight: 1.5,
-                  color: '#ECE4DA',
+                  color: '#F8F3EC',
                   opacity: 0.7,
                 }}>
                   {stat.label}
@@ -194,7 +194,7 @@ export default function OurCause() {
                     top: '16px',
                     left: '16px',
                     background: '#36302A',
-                    color: '#ECE4DA',
+                    color: '#F8F3EC',
                     fontFamily: 'Figtree, sans-serif',
                     fontSize: '11px',
                     fontWeight: 700,
@@ -221,7 +221,7 @@ export default function OurCause() {
       </section>
 
       {/* THREE LOCATIONS */}
-      <section style={{ background: '#ECE4DA', padding: '100px 40px' }}>
+      <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <p style={{
             fontFamily: 'Figtree, sans-serif',
@@ -355,7 +355,7 @@ export default function OurCause() {
               rel="noopener noreferrer"
               style={{
                 display: 'inline-block',
-                background: '#ECE4DA',
+                background: '#F8F3EC',
                 color: '#36302A',
                 padding: '16px 40px',
                 borderRadius: '6px',

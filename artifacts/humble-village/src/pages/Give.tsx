@@ -42,7 +42,7 @@ export default function Give() {
       </section>
 
       {/* IMPACT CONTEXT */}
-      <section style={{ background: '#ECE4DA', padding: '80px 40px' }}>
+      <section style={{ background: '#F8F3EC', padding: '80px 40px' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '40px', textAlign: 'center' }} className="give-stats-grid">
             {[
@@ -52,14 +52,14 @@ export default function Give() {
             ].map((item, i) => (
               <div key={i} style={{ padding: '36px 24px', background: '#36302A', borderRadius: '4px' }}>
                 <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'center', gap: '4px', marginBottom: '12px' }}>
-                  <span style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(32px, 4vw, 48px)', fontWeight: 400, color: '#ECE4DA', lineHeight: 1 }}>
+                  <span style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(32px, 4vw, 48px)', fontWeight: 400, color: '#F8F3EC', lineHeight: 1 }}>
                     {item.amount}
                   </span>
-                  <span style={{ fontFamily: 'Figtree, sans-serif', fontSize: '14px', color: '#ECE4DA', opacity: 0.6 }}>
+                  <span style={{ fontFamily: 'Figtree, sans-serif', fontSize: '14px', color: '#F8F3EC', opacity: 0.6 }}>
                     {item.label}
                   </span>
                 </div>
-                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '14px', color: '#ECE4DA', opacity: 0.7, lineHeight: 1.6 }}>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '14px', color: '#F8F3EC', opacity: 0.7, lineHeight: 1.6 }}>
                   {item.desc}
                 </p>
               </div>
@@ -74,7 +74,7 @@ export default function Give() {
       </section>
 
       {/* TWO PATHS */}
-      <section style={{ background: '#ECE4DA', padding: '0 40px 100px' }}>
+      <section style={{ background: '#F8F3EC', padding: '0 40px 100px' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <p style={{
             fontFamily: 'Figtree, sans-serif',
@@ -131,7 +131,7 @@ export default function Give() {
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.8, color: '#F6F3EC', opacity: 0.8, flex: 1 }}>
                 Give what you can, when you can. Monthly giving is especially powerful — it allows us to plan programs, hire staff, and sustain families through the full 18-month journey.
               </p>
-              <div style={{ background: 'rgba(236,228,218,0.07)', borderRadius: '6px', padding: '28px 24px' }}>
+              <div style={{ background: 'rgba(248,243,236,0.07)', borderRadius: '6px', padding: '28px 24px' }}>
                 <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '14px', color: '#F6F3EC', opacity: 0.75, marginBottom: '20px', lineHeight: 1.6 }}>
                   Click below to make a one-time or recurring donation through our secure platform.
                 </p>
@@ -141,7 +141,7 @@ export default function Give() {
                   rel="noopener noreferrer"
                   style={{
                     display: 'block',
-                    background: '#ECE4DA',
+                    background: '#F8F3EC',
                     color: '#36302A',
                     padding: '16px 24px',
                     borderRadius: '6px',
@@ -177,7 +177,7 @@ export default function Give() {
                 position: 'absolute',
                 top: '20px',
                 right: '20px',
-                background: 'rgba(236,228,218,0.15)',
+                background: 'rgba(248,243,236,0.15)',
                 borderRadius: '20px',
                 padding: '4px 14px',
                 fontFamily: 'Figtree, sans-serif',
@@ -185,7 +185,7 @@ export default function Give() {
                 fontWeight: 700,
                 letterSpacing: '0.15em',
                 textTransform: 'uppercase',
-                color: '#ECE4DA',
+                color: '#F8F3EC',
               }}>
                 High Impact
               </div>
@@ -195,7 +195,7 @@ export default function Give() {
                 fontWeight: 700,
                 letterSpacing: '0.2em',
                 textTransform: 'uppercase',
-                color: 'rgba(236,228,218,0.6)',
+                color: 'rgba(248,243,236,0.6)',
               }}>
                 Option 2
               </p>
@@ -219,7 +219,7 @@ export default function Give() {
                   'Commitment horizons: 5, 10, or forever',
                 ].map((item, i) => (
                   <div key={i} style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
-                    <span style={{ color: '#ECE4DA', opacity: 0.5, marginTop: '2px', flexShrink: 0 }}>→</span>
+                    <span style={{ color: '#F8F3EC', opacity: 0.5, marginTop: '2px', flexShrink: 0 }}>→</span>
                     <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '14px', color: '#F6F3EC', opacity: 0.8, lineHeight: 1.5 }}>{item}</p>
                   </div>
                 ))}

@@ -6,7 +6,7 @@ export default function About() {
   return (
     <main>
       {/* HERO */}
-      <section style={{ paddingTop: '80px', background: '#ECE4DA' }}>
+      <section style={{ paddingTop: '80px', background: '#F8F3EC' }}>
         <div style={{
           maxWidth: '760px',
           margin: '0 auto',
@@ -92,7 +92,7 @@ export default function About() {
       </section>
 
       {/* HOW WE HELP */}
-      <section style={{ background: '#ECE4DA', padding: '100px 40px' }}>
+      <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <p style={{
             fontFamily: 'Figtree, sans-serif',
@@ -139,7 +139,7 @@ export default function About() {
                   fontFamily: 'Libre Baskerville, serif',
                   fontSize: '48px',
                   fontWeight: 400,
-                  color: '#ECE4DA',
+                  color: '#F8F3EC',
                   WebkitTextStroke: '1px #C4B8AC',
                   marginBottom: '20px',
                   lineHeight: 1,
@@ -282,7 +282,7 @@ export default function About() {
       </section>
 
       {/* HOW WE WORK */}
-      <section style={{ padding: '100px 40px', background: '#ECE4DA' }}>
+      <section style={{ padding: '100px 40px', background: '#F8F3EC' }}>
         <div style={{
           maxWidth: '1100px',
           margin: '0 auto',
@@ -400,7 +400,7 @@ export default function About() {
       </section>
 
       {/* RESOURCES */}
-      <section style={{ background: '#ECE4DA', padding: '80px 40px' }}>
+      <section style={{ background: '#F8F3EC', padding: '80px 40px' }}>
         <div style={{ maxWidth: '760px', margin: '0 auto', textAlign: 'center' }}>
           <p style={{
             fontFamily: 'Figtree, sans-serif',
@@ -431,7 +431,7 @@ export default function About() {
               style={{
                 display: 'inline-block',
                 background: '#36302A',
-                color: '#ECE4DA',
+                color: '#F8F3EC',
                 padding: '15px 36px',
                 borderRadius: '6px',
                 fontFamily: 'Figtree, sans-serif',

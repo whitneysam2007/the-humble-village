@@ -119,7 +119,7 @@ export default function Stories() {
       </section>
 
       {/* ELENA — ANCHOR STORY */}
-      <section style={{ background: '#ECE4DA', padding: '100px 40px' }}>
+      <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '64px', alignItems: 'center' }} className="elena-story-grid">
             <div style={{ display: 'flex', gap: '16px' }}>
@@ -171,7 +171,7 @@ export default function Stories() {
       {stories.map((story, i) => (
         <section
           key={i}
-          style={{ background: i % 2 === 0 ? '#36302A' : '#ECE4DA', padding: '80px 40px' }}
+          style={{ background: i % 2 === 0 ? '#36302A' : '#F8F3EC', padding: '80px 40px' }}
         >
           <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
             <div style={{
@@ -236,7 +236,7 @@ export default function Stories() {
                     fontFamily: 'Libre Baskerville, serif',
                     fontSize: '18px',
                     fontStyle: 'italic',
-                    color: i % 2 === 0 ? '#ECE4DA' : '#36302A',
+                    color: i % 2 === 0 ? '#F8F3EC' : '#36302A',
                     lineHeight: 1.5,
                     marginTop: '12px',
                   }}>
@@ -291,7 +291,7 @@ export default function Stories() {
               rel="noopener noreferrer"
               style={{
                 display: 'inline-block',
-                background: '#ECE4DA',
+                background: '#F8F3EC',
                 color: '#36302A',
                 padding: '16px 40px',
                 borderRadius: '6px',

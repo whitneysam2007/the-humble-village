@@ -136,7 +136,7 @@ export default function Home() {
 
       {/* MALNUTRITION STAT */}
       <section style={{
-        background: '#ECE4DA',
+        background: '#F8F3EC',
         padding: '100px 40px',
         textAlign: 'center',
       }}>
@@ -244,7 +244,7 @@ export default function Home() {
                   alt="Jeremia and Gerson — Elena would not leave the corner"
                   style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', borderRadius: '4px' }}
                 />
-                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#ECE4DA', opacity: 0.7, marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#F8F3EC', opacity: 0.7, marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>
                   Twins Jeremia & Gerson with their Aunt and Grandmother. Elena, not pictured.
                 </p>
               </div>
@@ -263,7 +263,7 @@ export default function Home() {
                   alt="Elena with her boys today"
                   style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', borderRadius: '4px' }}
                 />
-                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#ECE4DA', opacity: 0.7, marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#F8F3EC', opacity: 0.7, marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>
                   7 years later, Elena with her boys today.
                 </p>
               </div>
@@ -304,14 +304,14 @@ export default function Home() {
                 fontFamily: 'Libre Baskerville, serif',
                 fontSize: '20px',
                 fontStyle: 'italic',
-                color: '#ECE4DA',
+                color: '#F8F3EC',
                 lineHeight: 1.5,
                 marginBottom: '40px',
               }}>
                 Healthy boys. A thriving home. And Elena — empowered, self-sufficient, and a leader in her community.
               </p>
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-                <Link to="/stories" className="btn-primary" style={{ background: '#ECE4DA', color: '#36302A' }}>
+                <Link to="/stories" className="btn-primary" style={{ background: '#F8F3EC', color: '#36302A' }}>
                   Read More Stories
                 </Link>
                 <a
@@ -347,7 +347,7 @@ export default function Home() {
       </section>
 
       {/* IMPACT STATS */}
-      <section style={{ background: '#ECE4DA', padding: '100px 40px' }}>
+      <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <p style={{
             fontFamily: 'Figtree, sans-serif',
@@ -455,7 +455,7 @@ export default function Home() {
             to="/naru-circle"
             style={{
               display: 'inline-block',
-              background: '#ECE4DA',
+              background: '#F8F3EC',
               color: '#36302A',
               padding: '18px 48px',
               borderRadius: '6px',
@@ -473,7 +473,7 @@ export default function Home() {
       </section>
 
       {/* INSTAGRAM GRID */}
-      <section style={{ background: '#ECE4DA', padding: '80px 40px' }}>
+      <section style={{ background: '#F8F3EC', padding: '80px 40px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{
             display: 'flex',
