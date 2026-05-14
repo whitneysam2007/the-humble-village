@@ -57,7 +57,7 @@ export default function Header() {
             <img
               src={`${BASE}/logo.webp`}
               alt="The Humble Village"
-              style={{ height: '52px', width: 'auto', display: 'block' }}
+              style={{ height: '68px', width: 'auto', display: 'block' }}
             />
           </Link>
 
@@ -77,9 +77,10 @@ export default function Header() {
                   fontWeight: 600,
                   letterSpacing: '0.1em',
                   color: '#36302A',
-                  textDecoration: 'none',
+                  textDecoration: location.pathname === link.href ? 'underline' : 'none',
+                  textUnderlineOffset: '4px',
                   transition: 'opacity 0.2s',
-                  opacity: location.pathname === link.href ? 0.5 : 1,
+                  opacity: 1,
                 }}
               >
                 {link.label}
@@ -99,15 +100,6 @@ export default function Header() {
               }}
             >
               SHOP
-            </a>
-            <a
-              href="https://www.zeffy.com/en-US/donation-form/donate-to-the-humble-village"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary"
-              style={{ fontSize: '11px', padding: '10px 22px' }}
-            >
-              GIVE
             </a>
           </nav>
 

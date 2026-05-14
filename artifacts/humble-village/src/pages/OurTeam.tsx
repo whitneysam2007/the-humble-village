@@ -22,49 +22,43 @@ export default function OurTeam() {
       <section style={{
         paddingTop: '80px',
         background: '#ECE4DA',
-        position: 'relative',
-        overflow: 'hidden',
       }}>
         <div style={{
-          maxWidth: '1200px',
+          maxWidth: '660px',
           margin: '0 auto',
-          padding: '80px 40px',
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gap: '80px',
-          alignItems: 'center',
-        }} className="team-hero-grid">
-          <div>
-            <h1 style={{
-              fontFamily: 'Libre Baskerville, serif',
-              fontSize: 'clamp(28px, 4vw, 48px)',
-              fontWeight: 400,
-              color: '#36302A',
-              marginBottom: '28px',
-              lineHeight: 1.15,
-            }}>
-              Our Work
-            </h1>
-            <p style={{ fontSize: '17px', lineHeight: 1.8, color: '#36302A', opacity: 0.85, marginBottom: '20px' }}>
-              Our Village Healthcare Outreach workers travel to remote areas with difficult-to-access communities with high rates of acute and fatal malnutrition. These dedicated workers are the lifeline for thousands of families.
-            </p>
-            <p style={{ fontSize: '17px', lineHeight: 1.8, color: '#36302A', opacity: 0.85 }}>
-              Our work takes us to the highest rates of malnutrition in children ages 0-5 in Central, South, &amp; North America. Many indigenous families in these mountain communities live on less than $1 per day.
-            </p>
-          </div>
-          <div>
-            <img
-              src={`${BASE}/images/Untitled_design.jpg`}
-              alt="Our Work"
-              style={{ width: '100%', height: '480px', objectFit: 'cover', borderRadius: '4px' }}
-            />
-          </div>
+          padding: '80px 40px 60px',
+          textAlign: 'center',
+        }}>
+          <h1 style={{
+            fontFamily: 'Libre Baskerville, serif',
+            fontSize: 'clamp(28px, 4vw, 44px)',
+            fontWeight: 400,
+            color: '#36302A',
+            marginBottom: '32px',
+            lineHeight: 1.15,
+          }}>
+            Our Work
+          </h1>
+          <p style={{ fontSize: '17px', lineHeight: 1.8, color: '#36302A', opacity: 0.8, marginBottom: '20px' }}>
+            Our work takes us to the highest rates of malnutrition in <a href="https://data.unicef.org/topic/nutrition/malnutrition/" target="_blank" rel="noopener noreferrer" style={{ color: '#36302A' }}>children</a> ages 0-5 in Central, South, &amp; North America. Many indigenous Mayans living in rural areas are marginalized, and receive little or no help from their government. Few speak Spanish and they have extremely limited access to justice and health services.
+          </p>
+          <p style={{ fontSize: '17px', lineHeight: 1.8, color: '#36302A', opacity: 0.8 }}>
+            Our Village Healthcare Outreach workers travel to remote areas with difficult-to-access communities with high rates of acute and fatal malnutrition. They work with families and teach them the skill sets they need to improve their family's nutrition and health, provide small business development trainings, and teach other vital lessons using methods that have been developed specifically for the indigenous Q'eqchi' people.
+          </p>
         </div>
-        <style>{`
-          @media (max-width: 768px) {
-            .team-hero-grid { grid-template-columns: 1fr !important; gap: 40px !important; padding: 60px 24px !important; }
-          }
-        `}</style>
+
+        {/* Map image centred */}
+        <div style={{
+          maxWidth: '500px',
+          margin: '0 auto',
+          padding: '0 40px 80px',
+        }}>
+          <img
+            src={`${BASE}/images/Untitled_design.jpg`}
+            alt="Where We Serve — Alta Verapaz, Guatemala"
+            style={{ width: '100%', display: 'block', borderRadius: '4px' }}
+          />
+        </div>
       </section>
 
       {/* LEADERSHIP TEAM */}

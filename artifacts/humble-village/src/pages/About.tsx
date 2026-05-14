@@ -13,60 +13,66 @@ export default function About() {
         background: '#ECE4DA',
       }}>
         <div style={{
-          maxWidth: '1200px',
+          maxWidth: '760px',
           margin: '0 auto',
-          padding: '80px 40px',
+          padding: '80px 40px 60px',
+          textAlign: 'center',
+        }}>
+          <p style={{
+            fontFamily: 'Figtree, sans-serif',
+            fontSize: '11px',
+            fontWeight: 700,
+            letterSpacing: '0.18em',
+            color: '#36302A',
+            opacity: 0.5,
+            marginBottom: '28px',
+            textTransform: 'uppercase',
+          }}>
+            ABOUT US
+          </p>
+          <h1 style={{
+            fontFamily: 'Libre Baskerville, serif',
+            fontSize: 'clamp(26px, 3.5vw, 48px)',
+            fontWeight: 400,
+            color: '#36302A',
+            marginBottom: '36px',
+            lineHeight: 1.15,
+          }}>
+            The Humble Village: a Nonprofit Organization Empowering Women and Transforming Communities
+          </h1>
+          <p style={{ fontSize: '17px', lineHeight: 1.8, color: '#36302A', opacity: 0.8, marginBottom: '20px' }}>
+            At The Humble Village, we believe that when you educate and empower families—starting with women—you bless all of humanity. We work hand-in-hand with Q'eqchi' Mayan families living in the highlands of Guatemala, where most survive on less than $1 a day.
+          </p>
+          <p style={{ fontSize: '17px', lineHeight: 1.8, color: '#36302A', opacity: 0.8 }}>
+            Our mission is simple: equip women with the tools to lift their families out of generational poverty. We provide urgently needed nourishment, healthcare training and access, and education that opens the door to long-term stability and independence.
+          </p>
+        </div>
+
+        {/* 3-column photo grid */}
+        <div style={{
           display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gap: '80px',
-          alignItems: 'center',
-        }} className="about-hero-grid">
-          <div>
-            <h1 style={{
-              fontFamily: 'Libre Baskerville, serif',
-              fontSize: 'clamp(28px, 3.5vw, 44px)',
-              fontWeight: 400,
-              color: '#36302A',
-              marginBottom: '28px',
-              lineHeight: 1.15,
-            }}>
-              The Humble Village: a Nonprofit Organization Empowering Women and Transforming Communities
-            </h1>
-            <p style={{ fontSize: '17px', lineHeight: 1.8, color: '#36302A', opacity: 0.85, marginBottom: '20px' }}>
-              At The Humble Village, we believe that when you educate and empower families—starting with women—you bless all of humanity. We work hand-in-hand with communities, providing what they need to create lasting change from within.
-            </p>
-            <h2 style={{
-              fontFamily: 'Libre Baskerville, serif',
-              fontSize: 'clamp(20px, 2.5vw, 28px)',
-              fontWeight: 400,
-              color: '#36302A',
-              marginBottom: '20px',
-              lineHeight: 1.2,
-            }}>
-              Together, We can Lift Families from Malnourishment and Poverty
-            </h2>
-            <p style={{ fontSize: '17px', lineHeight: 1.8, color: '#36302A', opacity: 0.85, marginBottom: '20px' }}>
-              Since 2009, we've been working towards ending malnourishment and high infant-mortality rates in these highlands of Guatemala. It's an ambitious goal, and with your help, we are making real progress every single day.
-            </p>
-            <p style={{ fontSize: '17px', lineHeight: 1.8, color: '#36302A', opacity: 0.85 }}>
-              We work tirelessly to support the Villages there with nutrition and health, and also with an increase of economic development so that they can create stable and self-reliant communities.
-            </p>
-          </div>
-          <div>
-            <img
-              src={`${BASE}/images/5c6da391-1394-4dce-a685-835062b5e382.JPG`}
-              alt="Humble Village Community"
-              style={{ width: '100%', height: '560px', objectFit: 'cover', borderRadius: '4px' }}
-            />
-          </div>
+          gridTemplateColumns: 'repeat(3, 1fr)',
+        }} className="about-photo-grid">
+          <img
+            src={`${BASE}/images/5c6da391-1394-4dce-a685-835062b5e382.JPG`}
+            alt="Community"
+            style={{ width: '100%', height: '480px', objectFit: 'cover', display: 'block' }}
+          />
+          <img
+            src={`${BASE}/images/IMG_5278.JPG`}
+            alt="Family"
+            style={{ width: '100%', height: '480px', objectFit: 'cover', display: 'block' }}
+          />
+          <img
+            src={`${BASE}/images/Naru_Team_Pic.jpeg`}
+            alt="Team"
+            style={{ width: '100%', height: '480px', objectFit: 'cover', display: 'block' }}
+          />
         </div>
         <style>{`
           @media (max-width: 768px) {
-            .about-hero-grid {
-              grid-template-columns: 1fr !important;
-              gap: 40px !important;
-              padding: 60px 24px !important;
-            }
+            .about-photo-grid { grid-template-columns: 1fr !important; }
+            .about-photo-grid img { height: 300px !important; }
           }
         `}</style>
       </section>

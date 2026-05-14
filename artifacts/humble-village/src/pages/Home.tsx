@@ -66,7 +66,7 @@ export default function Home() {
         position: 'relative',
         minHeight: '100vh',
         display: 'flex',
-        alignItems: 'center',
+        alignItems: 'flex-end',
         overflow: 'hidden',
         paddingTop: '80px',
         background: '#36302A',
@@ -91,30 +91,32 @@ export default function Home() {
         <div style={{
           position: 'relative',
           zIndex: 1,
+          width: '100%',
           maxWidth: '1200px',
           margin: '0 auto',
-          padding: '0 40px',
+          padding: '0 60px 80px',
           color: '#F6F3EC',
         }}>
           <h1 style={{
             fontFamily: 'Libre Baskerville, serif',
-            fontSize: 'clamp(36px, 6vw, 72px)',
+            fontSize: 'clamp(30px, 4.5vw, 58px)',
             fontWeight: 400,
             lineHeight: 1.1,
-            maxWidth: '680px',
-            marginBottom: '24px',
+            maxWidth: '560px',
+            marginBottom: '20px',
+            fontStyle: 'italic',
           }}>
             Empower a Mother. Transform a Village.
           </h1>
           <p style={{
-            fontSize: 'clamp(15px, 2vw, 18px)',
+            fontSize: 'clamp(14px, 1.5vw, 16px)',
             lineHeight: 1.7,
-            maxWidth: '520px',
+            maxWidth: '400px',
             opacity: 0.9,
-            marginBottom: '36px',
+            marginBottom: '32px',
             fontFamily: 'Figtree, sans-serif',
           }}>
-            Every dollar you give lifts Q'eqchi' Mayan families in Guatemala with nutrition, education, health and tools for self-reliance.
+            Every dollar you give lifts  Q'eqchi' Mayan families in Guatemala with nutrition, education, health and tools for self-reliance.
           </p>
           <a
             href="https://www.zeffy.com/en-US/donation-form/donate-to-the-humble-village"
@@ -124,12 +126,12 @@ export default function Home() {
               display: 'inline-block',
               background: '#F6F3EC',
               color: '#36302A',
-              padding: '16px 40px',
+              padding: '14px 36px',
               borderRadius: '6px',
               fontFamily: 'Figtree, sans-serif',
-              fontSize: '13px',
+              fontSize: '12px',
               fontWeight: 700,
-              letterSpacing: '0.1em',
+              letterSpacing: '0.12em',
               textTransform: 'uppercase',
               textDecoration: 'none',
             }}
