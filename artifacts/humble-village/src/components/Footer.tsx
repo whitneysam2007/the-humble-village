@@ -53,6 +53,34 @@ export default function Footer() {
           ))}
         </nav>
 
+        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '24px' }}>
+          {[
+            { label: '2025 Impact Report', href: 'https://drive.google.com/file/d/1Koku7iP_mieu7J6oSOg6T_nen348FcPC/view?usp=drive_link' },
+            { label: 'The Narú Circle Overview', href: 'https://drive.google.com/file/d/1s7aN-36JXkzL2B9cz8qDAYZ_PlzjLngN/view?usp=drive_link' },
+          ].map(doc => (
+            <a
+              key={doc.label}
+              href={doc.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                fontFamily: 'Figtree, sans-serif',
+                fontSize: '11px',
+                fontWeight: 600,
+                letterSpacing: '0.12em',
+                textTransform: 'uppercase',
+                color: '#ECE4DA',
+                opacity: 0.55,
+                textDecoration: 'none',
+                borderBottom: '1px solid rgba(236,228,218,0.3)',
+                paddingBottom: '2px',
+              }}
+            >
+              {doc.label} ↗
+            </a>
+          ))}
+        </div>
+
         <div style={{ width: '40px', height: '1px', background: 'rgba(236,228,218,0.3)' }} />
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>

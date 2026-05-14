@@ -398,6 +398,76 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      {/* RESOURCES */}
+      <section style={{ background: '#ECE4DA', padding: '80px 40px' }}>
+        <div style={{ maxWidth: '760px', margin: '0 auto', textAlign: 'center' }}>
+          <p style={{
+            fontFamily: 'Figtree, sans-serif',
+            fontSize: '11px',
+            fontWeight: 700,
+            letterSpacing: '0.2em',
+            textTransform: 'uppercase',
+            color: '#574C3F',
+            marginBottom: '20px',
+          }}>
+            Resources
+          </p>
+          <h2 style={{
+            fontFamily: 'Libre Baskerville, serif',
+            fontSize: 'clamp(22px, 3vw, 32px)',
+            fontWeight: 400,
+            color: '#36302A',
+            marginBottom: '40px',
+            lineHeight: 1.3,
+          }}>
+            Learn More About Our Work
+          </h2>
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '20px' }}>
+            <a
+              href="https://drive.google.com/file/d/1Koku7iP_mieu7J6oSOg6T_nen348FcPC/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-block',
+                background: '#36302A',
+                color: '#ECE4DA',
+                padding: '15px 36px',
+                borderRadius: '6px',
+                fontFamily: 'Figtree, sans-serif',
+                fontSize: '13px',
+                fontWeight: 700,
+                letterSpacing: '0.1em',
+                textTransform: 'uppercase',
+                textDecoration: 'none',
+              }}
+            >
+              2025 Impact Report ↗
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1s7aN-36JXkzL2B9cz8qDAYZ_PlzjLngN/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-block',
+                background: 'transparent',
+                color: '#36302A',
+                padding: '15px 36px',
+                borderRadius: '6px',
+                border: '1.5px solid rgba(54,48,42,0.4)',
+                fontFamily: 'Figtree, sans-serif',
+                fontSize: '13px',
+                fontWeight: 700,
+                letterSpacing: '0.1em',
+                textTransform: 'uppercase',
+                textDecoration: 'none',
+              }}
+            >
+              The Narú Circle Overview ↗
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
