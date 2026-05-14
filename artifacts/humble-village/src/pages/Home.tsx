@@ -191,7 +191,7 @@ export default function Home() {
           }}>
             With little to no government support, at-risk mothers have no access to healthcare, clean water, or food for their malnourished children.
           </p>
-          <Link to="/ourcause" className="btn-primary">Until now, they had no one.</Link>
+          <Link to="/ourcause" className="btn-primary">See the Full Picture</Link>
         </div>
       </section>
 
