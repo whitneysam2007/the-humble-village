@@ -349,20 +349,32 @@ export default function Home() {
       {/* IMPACT STATS */}
       <section style={{ background: '#ECE4DA', padding: '100px 40px' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+          <p style={{
+            fontFamily: 'Figtree, sans-serif',
+            fontSize: '11px',
+            fontWeight: 700,
+            letterSpacing: '0.2em',
+            textTransform: 'uppercase',
+            color: '#574C3F',
+            marginBottom: '16px',
+            textAlign: 'center',
+          }}>
+            2025 Impact
+          </p>
           <h2 style={{
             fontFamily: 'Libre Baskerville, serif',
             fontSize: 'clamp(26px, 3.5vw, 42px)',
             fontWeight: 400,
             color: '#36302A',
             textAlign: 'center',
-            marginBottom: '48px',
+            marginBottom: '64px',
           }}>
             The Humble Village Impact Last Year
           </h2>
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(5, 1fr)',
-            gap: '16px',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))',
+            gap: '48px',
           }} className="stats-grid">
             {[
               { number: '184', label: 'Communities Reached' },
@@ -376,44 +388,28 @@ export default function Home() {
               { number: '12,807', label: 'Visits to Narú Health & Training Centers' },
               { number: '354', label: 'Perinatal mothers supported' },
             ].map((stat, i) => (
-              <div key={i} style={{
-                background: '#574C3F',
-                borderRadius: '12px',
-                padding: '28px 20px',
-                textAlign: 'center',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
-                minHeight: '120px',
-              }}>
+              <div key={i} style={{ textAlign: 'center' }}>
                 <div style={{
-                  fontFamily: 'Figtree, sans-serif',
-                  fontSize: 'clamp(24px, 2.5vw, 32px)',
-                  fontWeight: 800,
-                  color: '#ECE4DA',
-                  marginBottom: '8px',
+                  fontFamily: 'Libre Baskerville, serif',
+                  fontSize: 'clamp(36px, 4.5vw, 52px)',
+                  fontWeight: 400,
+                  color: '#36302A',
+                  marginBottom: '10px',
                   lineHeight: 1,
                 }}>
                   {stat.number}
                 </div>
                 <div style={{
                   fontFamily: 'Figtree, sans-serif',
-                  fontSize: '13px',
-                  lineHeight: 1.45,
-                  color: '#ECE4DA',
-                  opacity: 0.85,
+                  fontSize: '14px',
+                  lineHeight: 1.5,
+                  color: '#574C3F',
                 }}>
                   {stat.label}
                 </div>
               </div>
             ))}
           </div>
-          <style>{`
-            @media (max-width: 768px) {
-              .stats-grid { grid-template-columns: repeat(2, 1fr) !important; }
-            }
-          `}</style>
         </div>
       </section>
 
