@@ -241,9 +241,12 @@ export default function Home() {
                 }}>BEFORE</div>
                 <img
                   src={`${BASE}/images/elena-before.jpg`}
-                  alt="Elena before"
+                  alt="Jeremia and Gerson — Elena would not leave the corner"
                   style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', borderRadius: '4px' }}
                 />
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#574C3F', opacity: 0.7, marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>
+                  Jeremia & Gerson — Elena would not leave the corner
+                </p>
               </div>
               <div style={{ flex: 1 }}>
                 <div style={{
@@ -257,9 +260,12 @@ export default function Home() {
                 }}>AFTER</div>
                 <img
                   src={`${BASE}/images/elena-after.jpg`}
-                  alt="Elena after"
+                  alt="Elena with her boys today"
                   style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', borderRadius: '4px' }}
                 />
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#574C3F', opacity: 0.7, marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>
+                  Elena with her boys today
+                </p>
               </div>
             </div>
 
@@ -272,7 +278,7 @@ export default function Home() {
                 opacity: 0.85,
                 marginBottom: '20px',
               }}>
-                When Elena first came to the Narú Medical Center, she was severely malnourished — her mother desperate, out of options, having walked hours to reach us.
+                When Lauren and her team visited this humble home, they found two severely malnourished babies with only days to live.
               </p>
               <p style={{
                 fontFamily: 'Figtree, sans-serif',
@@ -282,7 +288,7 @@ export default function Home() {
                 opacity: 0.85,
                 marginBottom: '20px',
               }}>
-                Elena enrolled in our nutritional recuperation program. Nurses visited her home monthly. Her mother learned to grow food, cook nutritious meals, and care for Elena's health. The Narú team walked with them — not for a week, but for eighteen months.
+                Elena, malnourished herself, was unable to produce milk. In desperation, she fed her babies corn water, but this only worsened their condition.
               </p>
               <p style={{
                 fontFamily: 'Figtree, sans-serif',
@@ -290,9 +296,19 @@ export default function Home() {
                 lineHeight: 1.85,
                 color: '#F6F3EC',
                 opacity: 0.85,
-                marginBottom: '32px',
+                marginBottom: '20px',
               }}>
-                On graduation day, Elena showed up in a Batman costume.
+                With expected burials approaching, Elena was hopeless and emotionally detached from her baby boys.
+              </p>
+              <p style={{
+                fontFamily: 'Figtree, sans-serif',
+                fontSize: '17px',
+                lineHeight: 1.85,
+                color: '#F6F3EC',
+                opacity: 0.85,
+                marginBottom: '20px',
+              }}>
+                The twins — Jeremia and Gerson — were admitted into the nutrition program that day. Gerson was diagnosed with a tongue tie, a correctable condition, and received life-saving care. Elena entered the Narú Training Center, gaining the tools, skills, and support to pull herself and her family out of poverty.
               </p>
               <p style={{
                 fontFamily: 'Libre Baskerville, serif',
@@ -302,7 +318,7 @@ export default function Home() {
                 lineHeight: 1.5,
                 marginBottom: '40px',
               }}>
-                "This is what your gift does."
+                Healthy boys. A thriving home. And Elena — empowered, self-sufficient, and a leader in her community.
               </p>
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
                 <Link to="/stories" className="btn-primary" style={{ background: '#ECE4DA', color: '#36302A' }}>

@@ -125,11 +125,17 @@ export default function Stories() {
             <div style={{ display: 'flex', gap: '16px' }}>
               <div style={{ flex: 1 }}>
                 <div style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em', color: '#574C3F', marginBottom: '8px', textAlign: 'center' }}>BEFORE</div>
-                <img src={`${BASE}/images/elena-before.jpg`} alt="Elena before" style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', borderRadius: '4px' }} />
+                <img src={`${BASE}/images/elena-before.jpg`} alt="Jeremia and Gerson — Elena would not leave the corner" style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', borderRadius: '4px' }} />
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#574C3F', opacity: 0.7, marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>
+                  Jeremia & Gerson — Elena would not leave the corner
+                </p>
               </div>
               <div style={{ flex: 1 }}>
                 <div style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em', color: '#574C3F', marginBottom: '8px', textAlign: 'center' }}>AFTER</div>
-                <img src={`${BASE}/images/elena-after.jpg`} alt="Elena after" style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', borderRadius: '4px' }} />
+                <img src={`${BASE}/images/elena-after.jpg`} alt="Elena with her boys today" style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', borderRadius: '4px' }} />
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#574C3F', opacity: 0.7, marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>
+                  Elena with her boys today
+                </p>
               </div>
             </div>
             <div>
@@ -140,16 +146,19 @@ export default function Stories() {
                 From Desperation to Dignity
               </h2>
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.85, color: '#574C3F', marginBottom: '18px' }}>
-                When Elena first came to the Narú Medical Center, she was severely malnourished — her mother desperate, out of options, having walked hours to reach us.
+                When Lauren and her team visited this humble home, they found two severely malnourished babies with only days to live.
               </p>
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.85, color: '#574C3F', marginBottom: '18px' }}>
-                Elena enrolled in our nutritional recuperation program. Narú nurses visited her home monthly. Her mother learned to grow food, cook nutritious meals, and care for Elena's health. They walked together — not for a week, but for eighteen months.
+                Elena, malnourished herself, was unable to produce milk. In desperation, she fed her babies corn water, but this only worsened their condition.
+              </p>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.85, color: '#574C3F', marginBottom: '18px' }}>
+                With expected burials approaching, Elena was hopeless and emotionally detached from her baby boys.
               </p>
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.85, color: '#574C3F', marginBottom: '28px' }}>
-                On graduation day, Elena showed up in a Batman costume.
+                The twins — Jeremia and Gerson — were admitted into the nutrition program that day. Gerson was diagnosed with a tongue tie, a correctable condition, and received life-saving care. Elena entered the Narú Training Center, gaining the tools, skills, and support to pull herself and her family out of poverty.
               </p>
               <p style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '20px', fontStyle: 'italic', color: '#36302A', lineHeight: 1.5 }}>
-                "This is what your gift does."
+                Healthy boys. A thriving home. And Elena — empowered, self-sufficient, and a leader in her community.
               </p>
             </div>
           </div>
