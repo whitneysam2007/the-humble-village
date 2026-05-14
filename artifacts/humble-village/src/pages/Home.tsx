@@ -403,14 +403,14 @@ export default function Home() {
             Watch our latest documentary film to see The Humble Village–Narú team in action.
           </p>
           <a
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            href="https://www.youtube.com/watch?v=bh0TpBF26uQ"
             target="_blank"
             rel="noopener noreferrer"
             style={{ display: 'block', position: 'relative' }}
           >
             <img
               src={`${BASE}/images/youtube_thumbnail.png`}
-              alt="Documentary Film"
+              alt="Documentary Film — The Humble Village"
               style={{ width: '100%', borderRadius: '4px', display: 'block' }}
             />
             <div style={{

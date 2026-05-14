@@ -1,4 +1,4 @@
-import { Link } from 'wouter';
+import { Link } from 'react-router-dom';
 
 const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
 
@@ -18,12 +18,12 @@ export default function Footer() {
         gap: '36px',
         textAlign: 'center',
       }}>
-        {/* Logo */}
-        <Link href="/">
+        {/* Footer Logo */}
+        <Link to="/">
           <img
-            src={`${BASE}/images/hv-naru-logos-04__281_29.png`}
+            src={`${BASE}/logo.webp`}
             alt="The Humble Village"
-            style={{ height: '100px', width: 'auto' }}
+            style={{ height: '80px', width: 'auto' }}
           />
         </Link>
 
@@ -41,7 +41,7 @@ export default function Footer() {
           ].map(link => (
             <Link
               key={link.label}
-              href={link.href}
+              to={link.href}
               style={{
                 fontFamily: 'Figtree, sans-serif',
                 fontSize: '12px',
@@ -49,7 +49,7 @@ export default function Footer() {
                 letterSpacing: '0.1em',
                 color: '#36302A',
                 textDecoration: 'none',
-                opacity: 0.75,
+                opacity: 0.7,
                 transition: 'opacity 0.2s',
               }}
             >
@@ -67,7 +67,7 @@ export default function Footer() {
               letterSpacing: '0.1em',
               color: '#36302A',
               textDecoration: 'none',
-              opacity: 0.75,
+              opacity: 0.7,
             }}
           >
             GIVE
@@ -83,7 +83,7 @@ export default function Footer() {
             lineHeight: 1.6,
             maxWidth: '500px',
           }}>
-            The Humble Village: is a 501(c)(3) nonprofit organization. 100% of public donations go directly to our Humble Village projects in Guatemala.
+            The Humble Village is a 501(c)(3) nonprofit organization. 100% of public donations go directly to our Humble Village projects in Guatemala.
           </p>
           <p style={{ fontSize: '12px', color: '#36302A', opacity: 0.5 }}>
             © 2025 | The Humble Village EIN#: 99-5148890
@@ -93,9 +93,7 @@ export default function Footer() {
 
       <style>{`
         @media (max-width: 768px) {
-          footer {
-            padding: 48px 24px 32px !important;
-          }
+          footer { padding: 48px 24px 32px !important; }
         }
       `}</style>
     </footer>

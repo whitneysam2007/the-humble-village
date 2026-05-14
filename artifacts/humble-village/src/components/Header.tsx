@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'wouter';
+import { Link, useLocation } from 'react-router-dom';
 
 const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [location] = useLocation();
+  const location = useLocation();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
@@ -16,7 +16,7 @@ export default function Header() {
 
   useEffect(() => {
     setMenuOpen(false);
-  }, [location]);
+  }, [location.pathname]);
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? 'hidden' : '';
@@ -38,7 +38,7 @@ export default function Header() {
         left: 0,
         right: 0,
         zIndex: 100,
-        background: scrolled ? '#ECE4DA' : '#ECE4DA',
+        background: '#ECE4DA',
         borderBottom: scrolled ? '1px solid rgba(54,48,42,0.12)' : '1px solid rgba(54,48,42,0.08)',
         transition: 'border-color 0.3s ease, box-shadow 0.3s ease',
         boxShadow: scrolled ? '0 2px 12px rgba(54,48,42,0.08)' : 'none',
@@ -53,9 +53,9 @@ export default function Header() {
           height: '80px',
         }}>
           {/* Logo */}
-          <Link href="/">
+          <Link to="/">
             <img
-              src={`${BASE}/images/hv-naru-logos-01.png`}
+              src={`${BASE}/logo.webp`}
               alt="The Humble Village"
               style={{ height: '52px', width: 'auto', display: 'block' }}
             />
@@ -70,7 +70,7 @@ export default function Header() {
             {navLinks.map(link => (
               <Link
                 key={link.href}
-                href={link.href}
+                to={link.href}
                 style={{
                   fontFamily: 'Figtree, sans-serif',
                   fontSize: '12px',
@@ -79,7 +79,7 @@ export default function Header() {
                   color: '#36302A',
                   textDecoration: 'none',
                   transition: 'opacity 0.2s',
-                  opacity: location === link.href ? 0.6 : 1,
+                  opacity: location.pathname === link.href ? 0.5 : 1,
                 }}
               >
                 {link.label}
@@ -177,7 +177,7 @@ export default function Header() {
         {navLinks.map(link => (
           <Link
             key={link.href}
-            href={link.href}
+            to={link.href}
             style={{
               fontFamily: 'Figtree, sans-serif',
               fontSize: '20px',

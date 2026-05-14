@@ -95,7 +95,7 @@ export default function Give() {
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
             <a
-              href="https://youtu.be/humble-village-doc"
+              href="https://www.youtube.com/watch?v=bh0TpBF26uQ"
               target="_blank"
               rel="noopener noreferrer"
               style={{ display: 'block', position: 'relative', borderRadius: '4px', overflow: 'hidden' }}

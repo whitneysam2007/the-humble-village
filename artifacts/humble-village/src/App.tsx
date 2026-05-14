@@ -1,4 +1,4 @@
-import { Switch, Route, Router as WouterRouter } from "wouter";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -26,28 +26,20 @@ function NotFound() {
   );
 }
 
-function AppRoutes() {
-  return (
-    <Switch>
-      <Route path="/"><Home /></Route>
-      <Route path="/about"><About /></Route>
-      <Route path="/ourcause"><OurCause /></Route>
-      <Route path="/our-team"><OurTeam /></Route>
-      <Route path="/give-1"><Give /></Route>
-      <Route><NotFound /></Route>
-    </Switch>
-  );
-}
-
-const base = import.meta.env.BASE_URL === "/" ? "" : import.meta.env.BASE_URL.replace(/\/$/, "");
-
 function App() {
   return (
-    <WouterRouter base={base}>
+    <BrowserRouter>
       <Header />
-      <AppRoutes />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/ourcause" element={<OurCause />} />
+        <Route path="/our-team" element={<OurTeam />} />
+        <Route path="/give-1" element={<Give />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
       <Footer />
-    </WouterRouter>
+    </BrowserRouter>
   );
 }
 
