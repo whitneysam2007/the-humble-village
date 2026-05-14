@@ -19,9 +19,9 @@ export default function Footer() {
       }}>
         <Link to="/">
           <img
-            src={`${BASE}/logo.webp`}
+            src={`${BASE}/images/thv-logo-circle.png`}
             alt="The Humble Village"
-            style={{ height: '80px', width: 'auto', opacity: 0.9 }}
+            style={{ height: '120px', width: 'auto', opacity: 0.95 }}
           />
         </Link>
 
