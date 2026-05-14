@@ -40,7 +40,6 @@ export default function Home() {
             lineHeight: 1.1,
             maxWidth: '560px',
             marginBottom: '20px',
-            fontStyle: 'italic',
           }}>
             Empower a Mother.<br />Transform a Village.
           </h1>
