@@ -349,63 +349,71 @@ export default function Home() {
       {/* IMPACT STATS */}
       <section style={{ background: '#ECE4DA', padding: '100px 40px' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-          <p style={{
-            fontFamily: 'Figtree, sans-serif',
-            fontSize: '11px',
-            fontWeight: 700,
-            letterSpacing: '0.2em',
-            textTransform: 'uppercase',
-            color: '#574C3F',
-            marginBottom: '16px',
-            textAlign: 'center',
-          }}>
-            2025 Impact
-          </p>
           <h2 style={{
             fontFamily: 'Libre Baskerville, serif',
             fontSize: 'clamp(26px, 3.5vw, 42px)',
             fontWeight: 400,
             color: '#36302A',
             textAlign: 'center',
-            marginBottom: '64px',
+            marginBottom: '48px',
           }}>
-            A Year of Nourishment, Hope, and Growth
+            The Humble Village Impact Last Year
           </h2>
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
-            gap: '48px',
-          }}>
+            gridTemplateColumns: 'repeat(5, 1fr)',
+            gap: '16px',
+          }} className="stats-grid">
             {[
-              { number: '274', label: 'Children reached a healthy weight' },
-              { number: '184', label: 'Communities benefited' },
-              { number: '346', label: 'At-risk pregnant women received prenatal care' },
-              { number: '12,807', label: 'Total visits to our sites' },
+              { number: '184', label: 'Communities Reached' },
+              { number: '758', label: 'Children received nutrition support' },
+              { number: '417', label: 'Children improved nutritional status' },
+              { number: '274', label: 'Children achieved healthy weight' },
               { number: '304', label: 'Kitchen gardens established' },
-              { number: '3,620', label: 'Family training attendances' },
+              { number: '3', label: 'Brick-and-mortar Narú Training Centers' },
+              { number: '3,620', label: 'Families attended education sessions' },
+              { number: '1,288', label: 'In-home training sessions delivered' },
+              { number: '12,807', label: 'Visits to Narú Health & Training Centers' },
+              { number: '354', label: 'Perinatal mothers supported' },
             ].map((stat, i) => (
-              <div key={i} style={{ textAlign: 'center' }}>
+              <div key={i} style={{
+                background: '#574C3F',
+                borderRadius: '12px',
+                padding: '28px 20px',
+                textAlign: 'center',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                minHeight: '120px',
+              }}>
                 <div style={{
-                  fontFamily: 'Libre Baskerville, serif',
-                  fontSize: 'clamp(36px, 4.5vw, 52px)',
-                  fontWeight: 400,
-                  color: '#36302A',
-                  marginBottom: '10px',
+                  fontFamily: 'Figtree, sans-serif',
+                  fontSize: 'clamp(24px, 2.5vw, 32px)',
+                  fontWeight: 800,
+                  color: '#ECE4DA',
+                  marginBottom: '8px',
                   lineHeight: 1,
                 }}>
                   {stat.number}
                 </div>
                 <div style={{
                   fontFamily: 'Figtree, sans-serif',
-                  fontSize: '14px',
-                  lineHeight: 1.5,
-                  color: '#574C3F',
+                  fontSize: '13px',
+                  lineHeight: 1.45,
+                  color: '#ECE4DA',
+                  opacity: 0.85,
                 }}>
                   {stat.label}
                 </div>
               </div>
             ))}
           </div>
+          <style>{`
+            @media (max-width: 768px) {
+              .stats-grid { grid-template-columns: repeat(2, 1fr) !important; }
+            }
+          `}</style>
         </div>
       </section>
 
