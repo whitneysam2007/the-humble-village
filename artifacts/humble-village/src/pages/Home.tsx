@@ -160,7 +160,7 @@ export default function Home() {
             lineHeight: 1.3,
             marginBottom: '28px',
           }}>
-            Guatemala has the <em>highest rates of child malnutrition</em> in all of Central, South, and North America.
+            Alta Verapaz, Guatemala has the <em>highest rates of child malnutrition</em> in all of Central, South, and North America.
           </h2>
           <p style={{
             fontFamily: 'Figtree, sans-serif',
@@ -177,11 +177,21 @@ export default function Home() {
             lineHeight: 1.8,
             color: '#36302A',
             opacity: 0.8,
+            marginBottom: '20px',
+          }}>
+            In the highlands of Alta Verapaz, most families survive on less than $1 a day. Living on a diet of almost exclusively corn tortillas produces potentially fatal protein malnutrition, blindness, stunting, and a myriad of illnesses.
+          </p>
+          <p style={{
+            fontFamily: 'Figtree, sans-serif',
+            fontSize: '17px',
+            lineHeight: 1.8,
+            color: '#36302A',
+            opacity: 0.8,
             marginBottom: '40px',
           }}>
-            In the highlands of Alta Verapaz, most families survive on less than $1 a day. Children face fatal protein malnutrition before their second birthday. Mothers have no access to healthcare, no clean water, no safety net.
+            With little to no government support, at-risk mothers have no access to healthcare, clean water, or food for their malnourished children.
           </p>
-          <Link to="/ourcause" className="btn-primary">See the Full Picture</Link>
+          <Link to="/ourcause" className="btn-primary">Until now, they had no one.</Link>
         </div>
       </section>
 
