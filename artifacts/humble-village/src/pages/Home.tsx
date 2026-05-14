@@ -110,37 +110,27 @@ export default function Home() {
             color: '#574C3F',
             marginBottom: '28px',
           }}>
-            Our Philosophy
+            The Narú Way
           </p>
-          <h2 style={{
-            fontFamily: 'Libre Baskerville, serif',
-            fontSize: 'clamp(26px, 4vw, 50px)',
-            fontWeight: 400,
-            color: '#F6F3EC',
-            lineHeight: 1.2,
-            marginBottom: '32px',
-            fontStyle: 'italic',
-          }}>
-            "Self-reliance is the goal.<br />Sustainability is the path."
-          </h2>
           <p style={{
             fontFamily: 'Figtree, sans-serif',
             fontSize: '17px',
             lineHeight: 1.85,
             color: '#F6F3EC',
-            opacity: 0.8,
+            opacity: 0.85,
             marginBottom: '20px',
           }}>
-            The Narú "Can Do" way is not charity. It is a model built on the belief that families in Alta Verapaz have the strength, intelligence, and will to transform their own lives — they simply need the right tools.
+            Narú is the way The Humble Village approaches its work. The word means "can do" in the Q'eqchi' language.
           </p>
           <p style={{
             fontFamily: 'Figtree, sans-serif',
             fontSize: '17px',
             lineHeight: 1.85,
             color: '#F6F3EC',
-            opacity: 0.8,
+            opacity: 0.85,
+            marginBottom: '20px',
           }}>
-            We begin with emergency nutrition to save lives. Then we teach, train, and walk alongside families for 18 months until they can grow their own food, care for their own health, and sustain their own futures.
+            Our goal is not simply to provide food, but to help mothers learn how to nourish their own children and build a future. Through guidance, education, and support, families learn what they <strong>CAN DO</strong>, despite their circumstances.
           </p>
         </div>
       </section>
