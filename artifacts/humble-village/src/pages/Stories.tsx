@@ -268,6 +268,107 @@ export default function Stories() {
         </section>
       ))}
 
+      {/* GARDEN TOWER STORY */}
+      <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: '1fr 1fr',
+            gap: '64px',
+            alignItems: 'center',
+          }} className="garden-tower-grid">
+            <div>
+              <img
+                src={`${BASE}/images/partner-usana-photo.jpg`}
+                alt="Mother and son with beets grown in their USANA Foundation garden tower"
+                style={{ width: '100%', borderRadius: '4px', display: 'block' }}
+              />
+              <p style={{
+                fontFamily: 'Figtree, sans-serif',
+                fontSize: '12px',
+                color: '#574C3F',
+                opacity: 0.7,
+                marginTop: '10px',
+                fontStyle: 'italic',
+                lineHeight: 1.5,
+                textAlign: 'center',
+              }}>
+                A mother and her son with beets harvested from their USANA Foundation garden tower. Alta Verapaz, Guatemala.
+              </p>
+            </div>
+            <div>
+              <p style={{
+                fontFamily: 'Figtree, sans-serif',
+                fontSize: '11px',
+                fontWeight: 700,
+                letterSpacing: '0.2em',
+                textTransform: 'uppercase',
+                color: '#574C3F',
+                marginBottom: '6px',
+              }}>
+                Impact Story
+              </p>
+              <p style={{
+                fontFamily: 'Figtree, sans-serif',
+                fontSize: '11px',
+                fontWeight: 600,
+                letterSpacing: '0.15em',
+                textTransform: 'uppercase',
+                color: '#574C3F',
+                opacity: 0.6,
+                marginBottom: '20px',
+              }}>
+                Made possible by USANA Foundation
+              </p>
+              <h2 style={{
+                fontFamily: 'Libre Baskerville, serif',
+                fontSize: 'clamp(22px, 2.5vw, 34px)',
+                fontWeight: 400,
+                color: '#36302A',
+                marginBottom: '28px',
+                lineHeight: 1.2,
+                fontStyle: 'italic',
+              }}>
+                A Garden Tower is Self-Reliance in Action
+              </h2>
+              {[
+                'A Garden Tower is a vertical garden that allows families to grow fresh food right outside their homes — no large plot of land required.',
+                'Each tower holds 120 plants and can produce 1,000 meals every year. Over its lifetime, a single tower yields up to 10,000 meals for the family it feeds.',
+                'In the highlands of Alta Verapaz, where land is scarce and malnutrition runs deep, that number is everything.',
+                'The crops are chosen deliberately. Leafy greens like spinach are rich in iron, vitamin A, and the nutrients children need to grow and recover. And because the seeds can be saved and replanted again and again, each tower becomes a permanent, self-sustaining food source — not a one-time gift.',
+                'Families receive hands-on training and ongoing support. Some grow enough to feed their children. Others grow enough to sell extra produce at the market.',
+              ].map((para, i) => (
+                <p key={i} style={{
+                  fontFamily: 'Figtree, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: 1.85,
+                  color: '#574C3F',
+                  opacity: 0.85,
+                  marginBottom: '16px',
+                }}>
+                  {para}
+                </p>
+              ))}
+              <p style={{
+                fontFamily: 'Libre Baskerville, serif',
+                fontSize: '20px',
+                fontStyle: 'italic',
+                color: '#36302A',
+                lineHeight: 1.5,
+                marginTop: '8px',
+              }}>
+                That is what self-reliance looks like the moment it begins.
+              </p>
+            </div>
+          </div>
+          <style>{`
+            @media (max-width: 768px) {
+              .garden-tower-grid { grid-template-columns: 1fr !important; }
+            }
+          `}</style>
+        </div>
+      </section>
+
       {/* CTA */}
       <section style={{ background: '#36302A', padding: '100px 40px', textAlign: 'center' }}>
         <div style={{ maxWidth: '600px', margin: '0 auto' }}>

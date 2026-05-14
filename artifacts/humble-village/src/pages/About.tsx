@@ -399,6 +399,121 @@ export default function About() {
         </div>
       </section>
 
+      {/* OUR PARTNERS */}
+      <section style={{ background: '#36302A', padding: '100px 40px' }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+          <p style={{
+            fontFamily: 'Figtree, sans-serif',
+            fontSize: '11px',
+            fontWeight: 700,
+            letterSpacing: '0.2em',
+            textTransform: 'uppercase',
+            color: '#574C3F',
+            marginBottom: '16px',
+            textAlign: 'center',
+          }}>
+            Our Partners
+          </p>
+          <h2 style={{
+            fontFamily: 'Libre Baskerville, serif',
+            fontSize: 'clamp(24px, 3vw, 38px)',
+            fontWeight: 400,
+            color: '#F8F3EC',
+            textAlign: 'center',
+            marginBottom: '64px',
+            lineHeight: 1.2,
+          }}>
+            Organizations Who Make This Work Possible
+          </h2>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(3, 1fr)',
+            gap: '32px',
+          }} className="partners-grid">
+            {[
+              {
+                logo: `${BASE}/images/logo-usana-foundation.png`,
+                logoAlt: 'USANA Foundation',
+                photo: `${BASE}/images/partner-usana-photo.jpg`,
+                photoAlt: 'Mother and son with beets from their USANA garden tower',
+                name: 'USANA Foundation',
+                description: 'USANA Foundation funds our garden tower program, bringing sustainable nutrition and hands-on agricultural training to Q\'eqchi\' families in the highlands. Their support is turning small plots of land into thriving, self-sustaining family gardens.',
+              },
+              {
+                logo: `${BASE}/images/logo-solly-baby.png`,
+                logoAlt: 'Solly Baby',
+                photo: `${BASE}/images/partner-solly-photo.jpg`,
+                photoAlt: 'Mothers at the Solly Ochoch with Solly Baby gifts',
+                name: 'Solly Baby',
+                description: 'Solly Baby donated infant clothing to the mothers of the Solly Ochoch — the highest, most remote community in the valley. These families have no access to outside resources beyond THV and Narú. For the babies born there, it was the first gift from beyond the ridge.',
+              },
+              {
+                logo: `${BASE}/images/logo-lds-church.png`,
+                logoAlt: 'The Church of Jesus Christ of Latter-day Saints',
+                photo: `${BASE}/images/partner-lds-photo.jpg`,
+                photoAlt: 'Narú team member distributing nutrition packages',
+                name: 'The Church of Jesus Christ of Latter-day Saints',
+                description: 'The Church sponsors the Narú Nutrition Program, providing incaparina and formula to severely malnourished infants and children ages 0–5. Their partnership means that the most fragile children in the valley have a fighting chance in their most critical years.',
+              },
+            ].map((partner, i) => (
+              <div key={i} style={{
+                background: '#F8F3EC',
+                borderRadius: '6px',
+                overflow: 'hidden',
+                display: 'flex',
+                flexDirection: 'column',
+              }}>
+                <div style={{
+                  padding: '28px 24px 20px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  minHeight: '80px',
+                  background: '#fff',
+                  borderBottom: '1px solid rgba(54,48,42,0.08)',
+                }}>
+                  <img
+                    src={partner.logo}
+                    alt={partner.logoAlt}
+                    style={{ maxHeight: '52px', maxWidth: '180px', objectFit: 'contain', display: 'block' }}
+                  />
+                </div>
+                <img
+                  src={partner.photo}
+                  alt={partner.photoAlt}
+                  style={{ width: '100%', height: '240px', objectFit: 'cover', display: 'block' }}
+                />
+                <div style={{ padding: '28px 24px 32px', flex: 1 }}>
+                  <h3 style={{
+                    fontFamily: 'Libre Baskerville, serif',
+                    fontSize: '17px',
+                    fontWeight: 400,
+                    color: '#36302A',
+                    marginBottom: '14px',
+                    lineHeight: 1.3,
+                  }}>
+                    {partner.name}
+                  </h3>
+                  <p style={{
+                    fontFamily: 'Figtree, sans-serif',
+                    fontSize: '14px',
+                    lineHeight: 1.8,
+                    color: '#574C3F',
+                  }}>
+                    {partner.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <style>{`
+            @media (max-width: 900px) {
+              .partners-grid { grid-template-columns: 1fr !important; max-width: 480px; margin: 0 auto; }
+            }
+          `}</style>
+        </div>
+      </section>
+
       {/* RESOURCES */}
       <section style={{ background: '#F8F3EC', padding: '80px 40px' }}>
         <div style={{ maxWidth: '760px', margin: '0 auto', textAlign: 'center' }}>
