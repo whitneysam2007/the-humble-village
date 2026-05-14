@@ -245,7 +245,7 @@ export default function Home() {
                   style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', borderRadius: '4px' }}
                 />
                 <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#574C3F', opacity: 0.7, marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>
-                  Jeremia & Gerson — Elena would not leave the corner
+                  Twins Jeremia & Gerson with their Aunt and Grandmother. Elena, not pictured.
                 </p>
               </div>
               <div style={{ flex: 1 }}>
@@ -264,7 +264,7 @@ export default function Home() {
                   style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', borderRadius: '4px' }}
                 />
                 <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#574C3F', opacity: 0.7, marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>
-                  Elena with her boys today
+                  7 years later, Elena with her boys today.
                 </p>
               </div>
             </div>
@@ -288,7 +288,7 @@ export default function Home() {
                 opacity: 0.85,
                 marginBottom: '20px',
               }}>
-                Elena, malnourished herself, was unable to produce milk. In desperation, she fed her babies corn water, but this only worsened their condition.
+                Elena, malnourished herself, could not produce milk. She fed her babies corn water — it only made things worse. With expected burials approaching, she had emotionally detached from her boys.
               </p>
               <p style={{
                 fontFamily: 'Figtree, sans-serif',
@@ -298,17 +298,7 @@ export default function Home() {
                 opacity: 0.85,
                 marginBottom: '20px',
               }}>
-                With expected burials approaching, Elena was hopeless and emotionally detached from her baby boys.
-              </p>
-              <p style={{
-                fontFamily: 'Figtree, sans-serif',
-                fontSize: '17px',
-                lineHeight: 1.85,
-                color: '#F6F3EC',
-                opacity: 0.85,
-                marginBottom: '20px',
-              }}>
-                The twins — Jeremia and Gerson — were admitted into the nutrition program that day. Gerson was diagnosed with a tongue tie, a correctable condition, and received life-saving care. Elena entered the Narú Training Center, gaining the tools, skills, and support to pull herself and her family out of poverty.
+                The twins were immediately admitted into the nutrition program. Gerson was diagnosed with a tongue tie, a correctable condition, and received life-saving care. Elena entered the self-reliance program at the Narú Training Center, gaining tools, skills, and support to pull herself and her family out of poverty.
               </p>
               <p style={{
                 fontFamily: 'Libre Baskerville, serif',
