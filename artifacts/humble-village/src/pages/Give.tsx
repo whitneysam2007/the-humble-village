@@ -409,9 +409,9 @@ export default function Give() {
                 }}>
                   We assemble two types of kits: midwife kits for the traditional birth attendants who deliver babies in the highlands, and newborn kits for the babies themselves. Collecting supplies is one of the most tangible things a supporter can do from home.
                 </p>
-                {/* TODO: Replace with Kits coordinator email */}
+                {/* TODO: Replace "#" with the real JustServe opportunity URL when ready */}
                 <a
-                  href="mailto:hello@the-humble-village.org"
+                  href="#"
                   style={{
                     display: 'block',
                     background: '#F8F3EC',
@@ -428,7 +428,7 @@ export default function Give() {
                     marginTop: 'auto',
                   }}
                 >
-                  Contact Us to Get Involved
+                  Find an Opportunity on JustServe
                 </a>
               </div>
             </div>
