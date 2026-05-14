@@ -1,0 +1,133 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "Figtree",
+      "role": "body"
+    },
+    {
+      "family": "Libre Baskerville",
+      "role": "heading"
+    },
+    {
+      "family": "Almarai",
+      "role": "unknown"
+    }
+  ],
+  "colors": {
+    "primary": "#ECE4DA",
+    "accent": "#36302A",
+    "background": "#ECE4DA",
+    "textPrimary": "#36302A",
+    "link": "#574C3F"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Figtree",
+      "heading": "Libre Baskerville"
+    },
+    "fontStacks": {
+      "heading": [
+        "Libre Baskerville"
+      ],
+      "body": [
+        "sans-serif"
+      ],
+      "paragraph": [
+        "Figtree"
+      ]
+    },
+    "fontSizes": {
+      "h1": "64px",
+      "h2": "44.8px",
+      "body": "22.4px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "0px"
+  },
+  "components": {
+    "buttonPrimary": {
+      "background": "#36302A",
+      "textColor": "#F6F3EC",
+      "borderRadius": "6.4px",
+      "borderRadiusCorners": {
+        "topLeft": "6.4px",
+        "topRight": "6.4px",
+        "bottomRight": "6.4px",
+        "bottomLeft": "6.4px"
+      },
+      "shadow": "none"
+    },
+    "buttonSecondary": {
+      "background": "transparent",
+      "textColor": "#36302A",
+      "borderColor": "#36302A",
+      "borderRadius": "6.4px",
+      "borderRadiusCorners": {
+        "topLeft": "6.4px",
+        "topRight": "6.4px",
+        "bottomRight": "6.4px",
+        "bottomLeft": "6.4px"
+      },
+      "shadow": "none"
+    }
+  },
+  "images": {
+    "logo": "File saved at: attached_assets/logo.webp",
+    "favicon": "File saved at: attached_assets/favicon.webp",
+    "ogImage": "http://static1.squarespace.com/static/67ffef89b6b8e717aebcf755/t/69eaeaba5479e90b4d80572f/1777003194152/hv-naru-logos-01.png?format=1500w",
+    "logoHref": "File saved at: attached_assets/logoHref.html",
+    "logoAlt": "The Humble Village"
+  },
+  "__llm_logo_reasoning": {
+    "selectedIndex": 1,
+    "reasoning": "Selected #1 because it is visible, located in the header, and matches the brand name 'The Humble Village'. It links to the homepage, making it the primary brand logo.",
+    "confidence": 0.95,
+    "source": "llm"
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": 0,
+      "text": "CLICK TO DONATE",
+      "reasoning": "Button #0 'CLICK TO DONATE' has a strong call-to-action text and a distinct background color (#36302A) that stands out as a primary action."
+    },
+    "secondary": {
+      "index": 3,
+      "text": "FIND US ON INSTAGRAM",
+      "reasoning": "Button #3 'FIND US ON INSTAGRAM' has a transparent background, making it suitable as a secondary action, distinct from the primary button's color."
+    },
+    "confidence": 0.9
+  },
+  "personality": {
+    "tone": "minimalist",
+    "energy": "low",
+    "targetAudience": "community-focused individuals"
+  },
+  "designSystem": {
+    "framework": "custom",
+    "componentLibrary": ""
+  },
+  "confidence": {
+    "buttons": 0.9,
+    "colors": 0.9,
+    "overall": 0.9
+  },
+  "__llm_metadata": {
+    "logoSelection": {
+      "llmCalled": true,
+      "llmSucceeded": true,
+      "finalSource": "llm",
+      "rawLogoSelection": {
+        "selectedLogoIndex": 1,
+        "selectedLogoReasoning": "Selected #1 because it is visible, located in the header, and matches the brand name 'The Humble Village'. It links to the homepage, making it the primary brand logo.",
+        "confidence": 0.95
+      }
+    },
+    "buttonClassification": {
+      "llmCalled": true,
+      "llmSucceeded": true
+    }
+  }
+}
