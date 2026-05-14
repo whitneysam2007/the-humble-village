@@ -161,13 +161,15 @@ export default function Header() {
       {/* Mobile Menu Overlay */}
       <div style={{
         position: 'fixed',
-        top: menuOpen ? '80px' : '-100vh',
+        top: '80px',
         left: 0,
         right: 0,
-        bottom: 0,
+        height: 'calc(100vh - 80px)',
         background: '#ECE4DA',
         zIndex: 99,
-        transition: 'top 0.35s ease',
+        transition: 'transform 0.35s ease, visibility 0.35s',
+        transform: menuOpen ? 'translateY(0)' : 'translateY(-120%)',
+        visibility: menuOpen ? 'visible' : 'hidden',
         display: 'flex',
         flexDirection: 'column',
         padding: '40px 32px',
