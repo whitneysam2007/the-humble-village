@@ -244,7 +244,7 @@ export default function Home() {
                   alt="Jeremia and Gerson — Elena would not leave the corner"
                   style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', borderRadius: '4px' }}
                 />
-                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#574C3F', opacity: 0.7, marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#ECE4DA', opacity: 0.7, marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>
                   Twins Jeremia & Gerson with their Aunt and Grandmother. Elena, not pictured.
                 </p>
               </div>
@@ -263,7 +263,7 @@ export default function Home() {
                   alt="Elena with her boys today"
                   style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', borderRadius: '4px' }}
                 />
-                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#574C3F', opacity: 0.7, marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#ECE4DA', opacity: 0.7, marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>
                   7 years later, Elena with her boys today.
                 </p>
               </div>
