@@ -42,8 +42,9 @@ const stories = [
   },
   {
     name: 'Angel',
-    slide: 'angel-after.jpg',
-    beforePhoto: 'angel-before.jpg',
+    slide: 'angel-after.png',
+    beforePhoto: 'angel-before-1.png',
+    beforePhoto2: 'angel-before-2.png',
     tag: 'Nutritional Recuperation',
     summary: 'Severely underweight → thriving at 4 years old',
     body: [
