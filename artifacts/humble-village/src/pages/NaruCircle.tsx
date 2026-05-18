@@ -477,6 +477,60 @@ export default function NaruCircle() {
         `}</style>
       </section>
 
+      {/* ENDOWMENT FUND */}
+      <section style={{ background: '#F8F3EC', padding: '60px 40px', textAlign: 'center' }}>
+        <div style={{ maxWidth: '640px', margin: '0 auto' }}>
+          <p style={{
+            fontFamily: 'Figtree, sans-serif',
+            fontSize: '11px',
+            fontWeight: 700,
+            letterSpacing: '0.2em',
+            textTransform: 'uppercase',
+            color: '#574C3F',
+            marginBottom: '16px',
+          }}>
+            Long-Term Sustainability
+          </p>
+          <h3 style={{
+            fontFamily: 'Libre Baskerville, serif',
+            fontSize: 'clamp(20px, 2.5vw, 28px)',
+            fontWeight: 400,
+            color: '#36302A',
+            marginBottom: '20px',
+            lineHeight: 1.3,
+          }}>
+            The Humble Village Endowment Fund
+          </h3>
+          <p style={{
+            fontFamily: 'Figtree, sans-serif',
+            fontSize: '16px',
+            color: '#574C3F',
+            lineHeight: 1.8,
+            marginBottom: '28px',
+          }}>
+            A gift to our Endowment Fund ensures that the work of The Humble Village continues for generations — independent of annual fundraising cycles. Our goal is a $3.5M endowment that permanently sustains our programs in Alta Verapaz.
+          </p>
+          <a
+            href="mailto:hello@the-humble-village.org?subject=Endowment%20Fund%20Inquiry"
+            style={{
+              display: 'inline-block',
+              background: '#36302A',
+              color: '#F8F3EC',
+              padding: '14px 36px',
+              borderRadius: '6px',
+              fontFamily: 'Figtree, sans-serif',
+              fontSize: '13px',
+              fontWeight: 700,
+              letterSpacing: '0.1em',
+              textTransform: 'uppercase',
+              textDecoration: 'none',
+            }}
+          >
+            Inquire About the Endowment Fund
+          </a>
+        </div>
+      </section>
+
       {/* FINAL CTA */}
       <section style={{ background: '#36302A', padding: '80px 40px', textAlign: 'center' }}>
         <div style={{ maxWidth: '500px', margin: '0 auto' }}>

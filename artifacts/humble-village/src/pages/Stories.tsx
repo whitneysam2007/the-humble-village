@@ -5,7 +5,8 @@ const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
 const stories = [
   {
     name: 'Oscar',
-    slide: 'story-oscar.png',
+    slide: 'oscar-after.jpg',
+    beforePhoto: 'oscar-before.jpg',
     tag: 'Nutritional Recuperation',
     summary: '14.08 lbs at 10 months → 26.4 lbs',
     body: [
@@ -17,6 +18,7 @@ const stories = [
   {
     name: 'Guadalupe & Dilan',
     slide: 'story-guadalupe-dilan.png',
+    beforePhoto: null,
     tag: 'In Progress',
     summary: '5.28 lbs at 1 month — enrolled February 2026',
     body: [
@@ -28,7 +30,8 @@ const stories = [
   },
   {
     name: 'Jhordan',
-    slide: 'story-jhordan.png',
+    slide: 'jhordan-after.jpg',
+    beforePhoto: 'jhordan-before.jpg',
     tag: 'Nutritional Recuperation',
     summary: '9.4 lbs at 17 months → 22.9 lbs',
     body: [
@@ -39,7 +42,8 @@ const stories = [
   },
   {
     name: 'Angel',
-    slide: 'story-angel.png',
+    slide: 'angel-after.jpg',
+    beforePhoto: 'angel-before.jpg',
     tag: 'Nutritional Recuperation',
     summary: 'Severely underweight → thriving at 4 years old',
     body: [
@@ -51,7 +55,8 @@ const stories = [
   },
   {
     name: 'Evelin',
-    slide: 'story-evelin.png',
+    slide: 'evelin-after.jpg',
+    beforePhoto: 'evelin-before.jpg',
     tag: 'Maternal & Infant Nutrition',
     summary: 'Severely malnourished at 2 months → happily growing',
     body: [
@@ -62,7 +67,8 @@ const stories = [
   },
   {
     name: 'Bertha',
-    slide: 'story-bertha.png',
+    slide: 'bertha-after.png',
+    beforePhoto: 'bertha-before.png',
     tag: 'Nutritional Recuperation',
     summary: '9.7 lbs at 8 months → healthy weight 11 months later',
     body: [
@@ -181,11 +187,32 @@ export default function Stories() {
               alignItems: 'center',
             }} className={`story-grid-${i}`}>
               <div style={{ order: i % 2 === 0 ? 0 : 1 }}>
-                <img
-                  src={`${BASE}/images/${story.slide}`}
-                  alt={story.name}
-                  style={{ width: '100%', borderRadius: '4px', display: 'block' }}
-                />
+                {story.beforePhoto ? (
+                  <div style={{ display: 'flex', gap: '12px' }}>
+                    <div style={{ flex: 1 }}>
+                      <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em', color: '#574C3F', marginBottom: '6px', textAlign: 'center', textTransform: 'uppercase' }}>Before</p>
+                      <img
+                        src={`${BASE}/images/${story.beforePhoto}`}
+                        alt={`${story.name} — before`}
+                        style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', objectPosition: 'top', borderRadius: '4px', display: 'block' }}
+                      />
+                    </div>
+                    <div style={{ flex: 1 }}>
+                      <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em', color: '#574C3F', marginBottom: '6px', textAlign: 'center', textTransform: 'uppercase' }}>After</p>
+                      <img
+                        src={`${BASE}/images/${story.slide}`}
+                        alt={`${story.name} — after`}
+                        style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', objectPosition: 'top', borderRadius: '4px', display: 'block' }}
+                      />
+                    </div>
+                  </div>
+                ) : (
+                  <img
+                    src={`${BASE}/images/${story.slide}`}
+                    alt={story.name}
+                    style={{ width: '100%', borderRadius: '4px', display: 'block' }}
+                  />
+                )}
               </div>
               <div style={{ order: i % 2 === 0 ? 1 : 0 }}>
                 <p style={{

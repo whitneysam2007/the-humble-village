@@ -41,33 +41,79 @@ export default function Give() {
         </div>
       </section>
 
-      {/* IMPACT CONTEXT */}
+      {/* WHAT YOUR CONTRIBUTION MAKES POSSIBLE */}
       <section style={{ background: '#F8F3EC', padding: '80px 40px' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '40px', textAlign: 'center' }} className="give-stats-grid">
+          <p style={{
+            fontFamily: 'Figtree, sans-serif',
+            fontSize: '11px',
+            fontWeight: 700,
+            letterSpacing: '0.2em',
+            textTransform: 'uppercase',
+            color: '#574C3F',
+            marginBottom: '16px',
+            textAlign: 'center',
+          }}>
+            What Your Contribution Makes Possible
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px', marginBottom: '32px' }} className="give-tiers-grid">
             {[
-              { amount: '$28', label: '/month', desc: 'feeds a malnourished child three meals a day' },
-              { amount: '$50', label: '/year', desc: 'provides a family with clean water access' },
-              { amount: '$250', label: '/year', desc: 'sponsors an entire family with comprehensive tools and training' },
+              { amount: '$6', desc: '1 month of supplements for a nursing mother' },
+              { amount: '$8', desc: '1 month of nutrition for a child' },
+              { amount: '$40', desc: '1 year of life skills & education training' },
+              { amount: '$48', desc: 'Chicken & rooster, feed and coop' },
+              { amount: '$50', desc: 'Infant formula for 1 month' },
+              { amount: '$75', desc: '1 family garden tower' },
+              { amount: '$1,000', desc: 'Seeds and materials for 50 gardens' },
+              { amount: '$5,000', desc: 'Chickens and roosters for 100 families' },
+              { amount: '$75,000', desc: 'Build the next Nar\u00fa Center' },
             ].map((item, i) => (
-              <div key={i} style={{ padding: '36px 24px', background: '#36302A', borderRadius: '4px' }}>
-                <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'center', gap: '4px', marginBottom: '12px' }}>
-                  <span style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(32px, 4vw, 48px)', fontWeight: 400, color: '#F8F3EC', lineHeight: 1 }}>
-                    {item.amount}
-                  </span>
-                  <span style={{ fontFamily: 'Figtree, sans-serif', fontSize: '14px', color: '#F8F3EC', opacity: 0.6 }}>
-                    {item.label}
-                  </span>
+              <div key={i} style={{
+                padding: '20px 16px',
+                background: i < 6 ? '#574C3F' : '#36302A',
+                borderRadius: '4px',
+                textAlign: 'center',
+              }}>
+                <div style={{
+                  fontFamily: 'Libre Baskerville, serif',
+                  fontSize: 'clamp(20px, 2.5vw, 28px)',
+                  fontWeight: 400,
+                  color: '#F8F3EC',
+                  lineHeight: 1,
+                  marginBottom: '8px',
+                }}>
+                  {item.amount}
                 </div>
-                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '14px', color: '#F8F3EC', opacity: 0.7, lineHeight: 1.6 }}>
+                <p style={{
+                  fontFamily: 'Figtree, sans-serif',
+                  fontSize: '12px',
+                  fontWeight: 700,
+                  letterSpacing: '0.08em',
+                  textTransform: 'uppercase',
+                  color: '#F8F3EC',
+                  opacity: 0.75,
+                  lineHeight: 1.5,
+                }}>
                   {item.desc}
                 </p>
               </div>
             ))}
           </div>
+          <p style={{
+            fontFamily: 'Figtree, sans-serif',
+            fontSize: '13px',
+            textAlign: 'center',
+            color: '#574C3F',
+            letterSpacing: '0.05em',
+            textTransform: 'uppercase',
+            fontWeight: 600,
+          }}>
+            Join us in making The Humble Village sustainable through a donation to our{' '}
+            <a href="mailto:hello@the-humble-village.org" style={{ color: '#36302A', textDecoration: 'underline' }}>Endowment Fund</a>
+          </p>
           <style>{`
             @media (max-width: 768px) {
-              .give-stats-grid { grid-template-columns: 1fr !important; }
+              .give-tiers-grid { grid-template-columns: repeat(2, 1fr) !important; }
             }
           `}</style>
         </div>
@@ -506,6 +552,24 @@ export default function Give() {
             }
           `}</style>
         </div>
+      </section>
+
+      {/* PARTNERSHIP LINE */}
+      <section style={{ background: '#F8F3EC', padding: '48px 40px', textAlign: 'center' }}>
+        <p style={{
+          fontFamily: 'Figtree, sans-serif',
+          fontSize: '16px',
+          color: '#574C3F',
+          lineHeight: 1.7,
+        }}>
+          Are you a business, family foundation, or influencer?{' '}
+          <a
+            href="mailto:hello@the-humble-village.org"
+            style={{ color: '#36302A', fontWeight: 700, textDecoration: 'underline' }}
+          >
+            We'd love to partner with you.
+          </a>
+        </p>
       </section>
 
       {/* PHOTO WITH STORIES LINK */}
