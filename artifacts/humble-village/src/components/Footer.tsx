@@ -17,13 +17,13 @@ export default function Footer() {
         gap: '36px',
         textAlign: 'center',
       }}>
-        <Link to="/">
+        <div>
           <img
             src={`${BASE}/images/thv-logo-circle.png`}
             alt="The Humble Village"
             style={{ height: '120px', width: 'auto', opacity: 0.95 }}
           />
-        </Link>
+        </div>
 
         <nav style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '32px' }}>
           {[

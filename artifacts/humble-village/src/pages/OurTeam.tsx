@@ -161,12 +161,27 @@ export default function OurTeam() {
             }}>
               Our Guatemalan Staff
             </h2>
-            <p style={{ fontSize: '17px', lineHeight: 1.85, color: '#36302A', opacity: 0.85, marginBottom: '20px' }}>
-              We currently employ ten dedicated local staff members who manage our programs on a daily basis, year round. Hailing from the communities we serve, these individuals bring irreplaceable knowledge, dedication, and cultural understanding to our work.
+            <p style={{ fontSize: '17px', lineHeight: 1.85, color: '#36302A', opacity: 0.85, marginBottom: '28px' }}>
+              Ten dedicated local staff members manage our programs on a daily basis, year-round. Hailing from the communities we serve, they bring irreplaceable knowledge, cultural understanding, and deep personal commitment to this work.
             </p>
-            <p style={{ fontSize: '17px', lineHeight: 1.85, color: '#36302A', opacity: 0.85 }}>
-              Their deep roots in the community and their firsthand understanding of the challenges facing Q'eqchi' Mayan families make them the true backbone of The Humble Village's mission.
-            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px 24px' }}>
+              {[
+                { name: 'Thelma Caal', role: 'Auxiliary Nurse' },
+                { name: 'Roberto Mendoza', role: 'Field Manager' },
+                { name: 'Rudy Caal', role: 'Agro Trainer' },
+                { name: 'Esteban Chaman', role: 'Professional Nurse' },
+                { name: 'Luis Xar', role: 'Admin Coordinator' },
+                { name: 'Edgar Coc', role: 'Auxiliary Nurse' },
+                { name: 'Brígida Coc', role: 'Professional Nurse' },
+                { name: 'Benjamin Chub', role: 'Food Production Trainer' },
+                { name: 'Abelino Caal', role: 'Food Production Supervisor' },
+              ].map((s, i) => (
+                <div key={i}>
+                  <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '14px', fontWeight: 700, color: '#36302A', marginBottom: '2px' }}>{s.name}</p>
+                  <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '12px', color: '#574C3F', letterSpacing: '0.08em', textTransform: 'uppercase', fontWeight: 600 }}>{s.role}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
         <style>{`

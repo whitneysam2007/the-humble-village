@@ -121,9 +121,13 @@ export default function OurCause() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '32px' }} className="cause-stats-grid">
             {[
               { number: '274', label: 'Children reached a healthy weight' },
-              { number: '346', label: 'At-risk pregnant women received care' },
+              { number: '346', label: 'At-risk pregnant women received prenatal care' },
               { number: '304', label: 'Kitchen gardens established' },
               { number: '184', label: 'Communities benefited' },
+              { number: '12,807', label: 'Total visits to our health and training centers' },
+              { number: '3,620', label: 'Training attendances by families' },
+              { number: '354', label: 'Midwives attended training sessions' },
+              { number: '1,288', label: 'Home visits to families' },
             ].map((stat, i) => (
               <div key={i} style={{ textAlign: 'center', padding: '32px 16px', background: '#36302A', borderRadius: '4px' }}>
                 <div style={{
@@ -149,11 +153,98 @@ export default function OurCause() {
             ))}
           </div>
           <style>{`
-            @media (max-width: 768px) {
+            @media (max-width: 900px) {
               .cause-stats-grid { grid-template-columns: repeat(2, 1fr) !important; }
             }
             @media (max-width: 480px) {
               .cause-stats-grid { grid-template-columns: 1fr !important; }
+            }
+          `}</style>
+        </div>
+      </section>
+
+      {/* HOW THE PROGRAM WORKS */}
+      <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+          <p style={{
+            fontFamily: 'Figtree, sans-serif',
+            fontSize: '11px',
+            fontWeight: 700,
+            letterSpacing: '0.2em',
+            textTransform: 'uppercase',
+            color: '#574C3F',
+            marginBottom: '16px',
+            textAlign: 'center',
+          }}>
+            The Narú Nutrition Program
+          </p>
+          <h2 style={{
+            fontFamily: 'Libre Baskerville, serif',
+            fontSize: 'clamp(24px, 3.5vw, 40px)',
+            fontWeight: 400,
+            color: '#36302A',
+            textAlign: 'center',
+            marginBottom: '48px',
+            lineHeight: 1.25,
+          }}>
+            How the Program Works
+          </h2>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px' }} className="program-how-grid">
+            {[
+              {
+                step: '01',
+                title: 'Enroll',
+                body: 'Children are assessed monthly by trained nurses using Guatemala\'s official Carné del Niño. Any child meeting WHO 2006 criteria for severe or moderate malnutrition is enrolled immediately — including infants under 6 months at the highest risk.',
+              },
+              {
+                step: '02',
+                title: 'Nourish',
+                body: 'Each month, a mother receives Incaparina — a nutritional supplement — along with age-appropriate feeding guidance. When a mother has insufficient milk but is still producing some, we provide Maternal Incaparina to support breastfeeding. Formula is reserved only for cases where there is no milk supply at all.',
+              },
+              {
+                step: '03',
+                title: 'Educate',
+                body: 'Alongside nutrition support, families receive 18 months of Narú education: gardening, clean water practices, family nutrition, and food production. The goal is not dependency — it is self-reliance. Mothers learn what they CAN DO.',
+              },
+              {
+                step: '04',
+                title: 'Graduate',
+                body: 'When a child reaches a healthy weight and the family has the tools to sustain it, they graduate. Over 274 children reached a healthy weight in 2025 alone. Each graduation is a family transformed — and a cycle of hunger interrupted.',
+              },
+            ].map((item, i) => (
+              <div key={i} style={{ display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
+                <div style={{
+                  fontFamily: 'Libre Baskerville, serif',
+                  fontSize: '36px',
+                  fontWeight: 400,
+                  color: '#574C3F',
+                  opacity: 0.4,
+                  lineHeight: 1,
+                  flexShrink: 0,
+                  width: '48px',
+                }}>
+                  {item.step}
+                </div>
+                <div>
+                  <h3 style={{
+                    fontFamily: 'Libre Baskerville, serif',
+                    fontSize: '20px',
+                    fontWeight: 400,
+                    color: '#36302A',
+                    marginBottom: '10px',
+                  }}>
+                    {item.title}
+                  </h3>
+                  <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '15px', lineHeight: 1.8, color: '#36302A', opacity: 0.8 }}>
+                    {item.body}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <style>{`
+            @media (max-width: 768px) {
+              .program-how-grid { grid-template-columns: 1fr !important; }
             }
           `}</style>
         </div>

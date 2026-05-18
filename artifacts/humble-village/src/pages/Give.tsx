@@ -340,7 +340,6 @@ export default function Give() {
                 }}>
                   We come to you — your living room, your congregation, your neighborhood. One evening. One presentation. The people in that room leave knowing what's happening in the valley and exactly how they can help. Village meetings raise awareness, collect donations, and organize kit drives.
                 </p>
-                {/* TODO: Replace with Village Meeting coordinator email */}
                 <a
                   href="mailto:hello@the-humble-village.org"
                   style={{
@@ -407,11 +406,10 @@ export default function Give() {
                   flex: 1,
                   margin: 0,
                 }}>
-                  We assemble two types of kits: midwife kits for the traditional birth attendants who deliver babies in the highlands, and newborn kits for the babies themselves. Collecting supplies is one of the most tangible things a supporter can do from home.
+                  We assemble two types of kits: midwife kits for the traditional birth attendants who deliver babies in the highlands, and newborn kits for the babies themselves. Collecting supplies is one of the most tangible things a supporter can do from home. Questions? Contact Amy at Amydkerr@gmail.com or (801) 735-7877.
                 </p>
-                {/* TODO: Replace "#" with the real JustServe opportunity URL when ready */}
                 <a
-                  href="#"
+                  href="https://www.justserve.org/TheHumbleVillage"
                   style={{
                     display: 'block',
                     background: '#F8F3EC',
@@ -476,11 +474,10 @@ export default function Give() {
                   flex: 1,
                   margin: 0,
                 }}>
-                  Twice a year, we take a small group of individuals and families to Alta Verapaz, Guatemala. You walk the ridge paths. You meet the mothers. You see the programs. There is nothing else quite like it.
+                  Twice a year — in March and November — we take a small group of individuals and families to Alta Verapaz, Guatemala. You walk the ridge paths. You meet the mothers. You see the programs. Cost: $500 donation + ~$500 in-country + flight. There is nothing else quite like it.
                 </p>
-                {/* TODO: Replace with Expedition coordinator email */}
                 <a
-                  href="mailto:hello@the-humble-village.org"
+                  href="mailto:Kirstenbham@gmail.com"
                   style={{
                     display: 'block',
                     background: '#F8F3EC',
