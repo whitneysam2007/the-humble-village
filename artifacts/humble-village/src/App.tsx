@@ -7,7 +7,8 @@ import OurCause from "./pages/OurCause";
 import OurTeam from "./pages/OurTeam";
 import Give from "./pages/Give";
 import Stories from "./pages/Stories";
-import NaruCircle from "./pages/NaruCircle";
+import NaruCircle from './pages/NaruCircle';
+import Contact from './pages/Contact';
 
 function NotFound() {
   return (
@@ -41,6 +42,7 @@ function App() {
         <Route path="/give-1" element={<Give />} />
         <Route path="/donate" element={<Give />} />
         <Route path="/naru-circle" element={<NaruCircle />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

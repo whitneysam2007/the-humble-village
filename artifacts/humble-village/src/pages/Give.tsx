@@ -387,7 +387,7 @@ export default function Give() {
                   We come to you — your living room, your congregation, your neighborhood. One evening. One presentation. The people in that room leave knowing what's happening in the valley and exactly how they can help. Village meetings raise awareness, collect donations, and organize kit drives.
                 </p>
                 <a
-                  href="mailto:hello@the-humble-village.org"
+                  href="/contact"
                   style={{
                     display: 'block',
                     background: '#F8F3EC',
@@ -562,7 +562,7 @@ export default function Give() {
                 </p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: 'auto' }}>
                   <a
-                    href="mailto:kirstenbham@gmail.com,amydkerr@gmail.com?subject=Expedition%20Inquiry"
+                    href="/contact"
                     style={{
                       display: 'block',
                       background: '#F8F3EC',
@@ -603,7 +603,7 @@ export default function Give() {
         }}>
           Are you a business, family foundation, or influencer?{' '}
           <a
-            href="mailto:hello@the-humble-village.org"
+            href="/contact"
             style={{ color: '#36302A', fontWeight: 700, textDecoration: 'underline' }}
           >
             We'd love to partner with you.

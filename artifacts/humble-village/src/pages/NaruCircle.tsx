@@ -511,7 +511,7 @@ export default function NaruCircle() {
             A gift to our Endowment Fund ensures that the work of The Humble Village continues for generations — independent of annual fundraising cycles. Our goal is a $3.5M endowment that permanently sustains our programs in Alta Verapaz.
           </p>
           <a
-            href="mailto:hello@the-humble-village.org?subject=Endowment%20Fund%20Inquiry"
+            href="/contact"
             style={{
               display: 'inline-block',
               background: '#36302A',

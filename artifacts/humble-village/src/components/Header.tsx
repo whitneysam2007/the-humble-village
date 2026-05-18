@@ -29,6 +29,7 @@ export default function Header() {
     { label: 'OUR TEAM', href: '/our-team' },
     { label: 'STORIES', href: '/stories' },
     { label: 'DONATE', href: '/give-1' },
+    { label: 'CONTACT', href: '/contact' },
   ];
 
   const isActive = (href: string) => location.pathname === href;
