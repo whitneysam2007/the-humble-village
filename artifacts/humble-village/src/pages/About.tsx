@@ -434,7 +434,7 @@ export default function About() {
               {
                 logo: `${BASE}/images/logo-usana-foundation.png`,
                 logoAlt: 'USANA Foundation',
-                photo: `${BASE}/images/partner-usana-photo.jpg`,
+                photo: `${BASE}/images/garden-tower-family.jpg`,
                 photoAlt: 'Mother and son with beets from their USANA garden tower',
                 name: 'USANA Foundation',
                 description: 'USANA Foundation funds our garden tower program, bringing sustainable nutrition and hands-on agricultural training to Q\'eqchi\' families in the highlands. Their support is turning small plots of land into thriving, self-sustaining family gardens.',
