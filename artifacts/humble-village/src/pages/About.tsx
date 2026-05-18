@@ -32,7 +32,7 @@ export default function About() {
             marginBottom: '32px',
             lineHeight: 1.2,
           }}>
-            The Humble Village: Empowering Mothers, Transforming Communities
+            A Nonprofit Organization Empowering Women and Transforming Communities
           </h1>
           <p style={{ fontSize: '17px', lineHeight: 1.85, color: '#36302A', opacity: 0.8, marginBottom: '20px' }}>
             We are a nonprofit working hand-in-hand with Q'eqchi' Mayan families in the highlands of Guatemala — where most survive on less than $1 a day and where child malnutrition reaches crisis levels.
