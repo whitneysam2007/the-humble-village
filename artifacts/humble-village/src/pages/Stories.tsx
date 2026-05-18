@@ -30,8 +30,9 @@ const stories = [
   },
   {
     name: 'Jhordan',
-    slide: 'jhordan-after.jpg',
-    beforePhoto: 'jhordan-before.jpg',
+    slide: 'jhordan-after.png',
+    beforePhoto: 'jhordan-before-1.png',
+    beforePhoto2: 'jhordan-before-2.png',
     tag: 'Nutritional Recuperation',
     summary: '9.4 lbs at 17 months → 22.9 lbs',
     body: [
