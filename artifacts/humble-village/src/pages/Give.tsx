@@ -56,43 +56,40 @@ export default function Give() {
           }}>
             What Your Contribution Makes Possible
           </p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px', marginBottom: '32px' }} className="give-tiers-grid">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '12px', marginBottom: '32px' }} className="give-tiers-grid">
             {[
+              { amount: '$1', desc: 'Nourishes a breastfeeding mother — allows her to produce breastmilk for her baby' },
               { amount: '$6', desc: '1 month of supplements for a nursing mother' },
               { amount: '$8', desc: '1 month of nutrition for a child' },
-              { amount: '$40', desc: '1 year of life skills & education training' },
               { amount: '$48', desc: 'Chicken & rooster, feed and coop' },
-              { amount: '$50', desc: 'Infant formula for 1 month' },
               { amount: '$75', desc: '1 family garden tower' },
-              { amount: '$1,000', desc: 'Seeds and materials for 50 gardens' },
-              { amount: '$5,000', desc: 'Chickens and roosters for 100 families' },
-              { amount: '$75,000', desc: 'Build the next Nar\u00fa Center' },
             ].map((item, i) => (
               <div key={i} style={{
-                padding: '20px 16px',
-                background: i < 6 ? '#574C3F' : '#36302A',
+                padding: '24px 14px',
+                background: '#574C3F',
                 borderRadius: '4px',
                 textAlign: 'center',
               }}>
                 <div style={{
                   fontFamily: 'Libre Baskerville, serif',
-                  fontSize: 'clamp(20px, 2.5vw, 28px)',
+                  fontSize: 'clamp(22px, 2.5vw, 32px)',
                   fontWeight: 400,
                   color: '#F8F3EC',
                   lineHeight: 1,
-                  marginBottom: '8px',
+                  marginBottom: '10px',
                 }}>
                   {item.amount}
                 </div>
                 <p style={{
                   fontFamily: 'Figtree, sans-serif',
-                  fontSize: '12px',
+                  fontSize: '11px',
                   fontWeight: 700,
                   letterSpacing: '0.08em',
                   textTransform: 'uppercase',
                   color: '#F8F3EC',
                   opacity: 0.75,
-                  lineHeight: 1.5,
+                  lineHeight: 1.55,
+                  margin: 0,
                 }}>
                   {item.desc}
                 </p>
@@ -113,6 +110,9 @@ export default function Give() {
           </p>
           <style>{`
             @media (max-width: 768px) {
+              .give-tiers-grid { grid-template-columns: repeat(3, 1fr) !important; }
+            }
+            @media (max-width: 480px) {
               .give-tiers-grid { grid-template-columns: repeat(2, 1fr) !important; }
             }
           `}</style>
