@@ -57,13 +57,13 @@ export default function Contact() {
       {/* HERO IMAGE */}
       <div style={{ position: 'relative', height: '420px', overflow: 'hidden' }}>
         <img
-          src={`${BASE}/images/contact-hero.webp`}
+          src={`${BASE}/images/contact-hero.jpg`}
           alt="A child laughing at the Narú Medical Center"
           style={{
             width: '100%',
             height: '100%',
             objectFit: 'cover',
-            objectPosition: 'center 20%',
+            objectPosition: 'center 30%',
             display: 'block',
           }}
         />
