@@ -167,10 +167,59 @@ export default function Home() {
             fontSize: '14px',
             color: '#574C3F',
             letterSpacing: '0.05em',
-            marginBottom: '40px',
+            marginBottom: '56px',
           }}>
             — UNICEF
           </p>
+
+          {/* CRISIS STATS */}
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(2, 1fr)',
+            gap: '16px',
+            marginBottom: '56px',
+            textAlign: 'left',
+          }} className="crisis-stats-grid">
+            {[
+              { pct: '100%', label: 'of infants in our programs have mothers who cannot produce enough breastmilk to feed them' },
+              { pct: '100%', label: 'of our families have one or more children who have suffered from or died from the effects of malnutrition' },
+              { pct: '100%', label: 'of these families live on approximately $1 a day, subsisting on 2–3 corn tortillas' },
+              { pct: '98%',  label: 'of mothers have no access to birth control and have large families they cannot support' },
+            ].map((item, i) => (
+              <div key={i} style={{
+                background: '#36302A',
+                borderRadius: '4px',
+                padding: '28px 24px',
+              }}>
+                <div style={{
+                  fontFamily: 'Libre Baskerville, serif',
+                  fontSize: 'clamp(28px, 3.5vw, 40px)',
+                  fontWeight: 400,
+                  color: '#F8F3EC',
+                  lineHeight: 1,
+                  marginBottom: '12px',
+                }}>
+                  {item.pct}
+                </div>
+                <p style={{
+                  fontFamily: 'Figtree, sans-serif',
+                  fontSize: '13px',
+                  lineHeight: 1.65,
+                  color: '#F8F3EC',
+                  opacity: 0.72,
+                  margin: 0,
+                }}>
+                  {item.label}
+                </p>
+              </div>
+            ))}
+          </div>
+          <style>{`
+            @media (max-width: 600px) {
+              .crisis-stats-grid { grid-template-columns: 1fr !important; }
+            }
+          `}</style>
+
           <p style={{
             fontFamily: 'Figtree, sans-serif',
             fontSize: '17px',
