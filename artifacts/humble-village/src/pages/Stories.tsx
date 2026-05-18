@@ -415,6 +415,30 @@ export default function Stories() {
         </div>
       </section>
 
+      {/* FILM */}
+      <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '16px', textAlign: 'center' }}>
+            Go Deeper
+          </p>
+          <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(24px, 3.5vw, 38px)', fontWeight: 400, color: '#36302A', marginBottom: '16px', textAlign: 'center' }}>
+            Watch the Film
+          </h2>
+          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', color: '#574C3F', opacity: 0.75, marginBottom: '48px', lineHeight: 1.7, textAlign: 'center', fontStyle: 'italic' }}>
+            These stories are just a glimpse. The full documentary shows the depth of this work.
+          </p>
+          <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '8px' }}>
+            <iframe
+              src="https://www.youtube.com/embed/bh0TpBF26uQ"
+              title="The Humble Village Documentary"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none' }}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section style={{ background: '#36302A', padding: '100px 40px', textAlign: 'center' }}>
         <div style={{ maxWidth: '600px', margin: '0 auto' }}>

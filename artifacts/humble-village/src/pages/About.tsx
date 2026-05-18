@@ -514,6 +514,30 @@ export default function About() {
         </div>
       </section>
 
+      {/* FILM */}
+      <section style={{ background: '#36302A', padding: '100px 40px' }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '16px', textAlign: 'center' }}>
+            Our Story
+          </p>
+          <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(24px, 3.5vw, 38px)', fontWeight: 400, color: '#F6F3EC', marginBottom: '16px', textAlign: 'center' }}>
+            Watch the Film
+          </h2>
+          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', color: '#F6F3EC', opacity: 0.6, marginBottom: '48px', lineHeight: 1.7, textAlign: 'center', fontStyle: 'italic' }}>
+            The best way to understand who we are and what we do is to see it for yourself.
+          </p>
+          <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '8px' }}>
+            <iframe
+              src="https://www.youtube.com/embed/bh0TpBF26uQ"
+              title="The Humble Village Documentary"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none' }}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* RESOURCES */}
       <section style={{ background: '#F8F3EC', padding: '80px 40px' }}>
         <div style={{ maxWidth: '760px', margin: '0 auto', textAlign: 'center' }}>
