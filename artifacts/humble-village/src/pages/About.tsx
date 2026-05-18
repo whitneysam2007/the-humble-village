@@ -35,7 +35,7 @@ export default function About() {
             The Humble Village: Empowering Mothers, Transforming Communities
           </h1>
           <p style={{ fontSize: '17px', lineHeight: 1.85, color: '#36302A', opacity: 0.8, marginBottom: '20px' }}>
-            We are a Christian nonprofit working hand-in-hand with Q'eqchi' Mayan families in the highlands of Guatemala — where most survive on less than $1 a day and where child malnutrition reaches crisis levels.
+            We are a nonprofit working hand-in-hand with Q'eqchi' Mayan families in the highlands of Guatemala — where most survive on less than $1 a day and where child malnutrition reaches crisis levels.
           </p>
           <p style={{ fontSize: '17px', lineHeight: 1.85, color: '#36302A', opacity: 0.8 }}>
             For over two decades, we have believed that when you educate and empower families — starting with women — you bless all of humanity.
