@@ -35,10 +35,10 @@ export default function About() {
             A Nonprofit Organization Empowering Women and Transforming Communities
           </h1>
           <p style={{ fontSize: '17px', lineHeight: 1.85, color: '#36302A', opacity: 0.8, marginBottom: '20px' }}>
-            We are a nonprofit working hand-in-hand with Q'eqchi' Mayan families in the highlands of Guatemala — where most survive on less than $1 a day and where child malnutrition reaches crisis levels.
+            At The Humble Village, we believe that when you educate and empower families—starting with women—you bless all of humanity. We work hand-in-hand with Q'eqchi' Mayan families living in the highlands of Guatemala, where most survive on less than $1 a day.
           </p>
           <p style={{ fontSize: '17px', lineHeight: 1.85, color: '#36302A', opacity: 0.8 }}>
-            For over two decades, we have believed that when you educate and empower families — starting with women — you bless all of humanity.
+            Our mission is simple: equip women with the tools to lift their families out of generational poverty. We provide urgently needed nourishment, healthcare training and access, and education that opens the door to long-term stability and independence.
           </p>
         </div>
 
@@ -55,38 +55,28 @@ export default function About() {
         `}</style>
       </section>
 
-      {/* MISSION STATEMENT */}
+      {/* TOGETHER SECTION */}
       <section style={{ background: '#36302A', padding: '100px 40px' }}>
         <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
-          <p style={{
-            fontFamily: 'Figtree, sans-serif',
-            fontSize: '11px',
-            fontWeight: 700,
-            letterSpacing: '0.2em',
-            textTransform: 'uppercase',
-            color: '#574C3F',
-            marginBottom: '32px',
-          }}>
-            Our Mission
-          </p>
           <h2 style={{
             fontFamily: 'Libre Baskerville, serif',
             fontSize: 'clamp(22px, 3.5vw, 38px)',
             fontWeight: 400,
             color: '#F6F3EC',
             lineHeight: 1.4,
+            marginBottom: '40px',
           }}>
-            Our mission is to <em>empower mothers</em> and families in Alta Verapaz, Guatemala to <em>break the cycle of hunger and infant mortality</em> in the Narú "Can Do" way.
+            Together, We Can Lift Families from Malnourishment and Poverty
           </h2>
-          <div style={{ width: '48px', height: '2px', background: '#574C3F', margin: '40px auto' }} />
-          <p style={{
-            fontFamily: 'Figtree, sans-serif',
-            fontSize: '17px',
-            lineHeight: 1.85,
-            color: '#F6F3EC',
-            opacity: 0.8,
-          }}>
-            We do this by providing nutrition, education, and life-saving tools that build lasting self-reliance.
+          <div style={{ width: '48px', height: '2px', background: '#574C3F', margin: '0 auto 40px' }} />
+          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '17px', lineHeight: 1.85, color: '#F6F3EC', opacity: 0.8, marginBottom: '24px' }}>
+            Since 2009, we've been working towards ending malnourishment and high infant-mortality rates in these highlands of Guatemala. It's an ambitious goal, and we see the progress every day thanks to the help of our local team on the ground in Guatemala and generous supporters like you.
+          </p>
+          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '17px', lineHeight: 1.85, color: '#F6F3EC', opacity: 0.8, marginBottom: '24px' }}>
+            We work tirelessly to support the Villages there with nutrition and health, and also with an increase of economic development so that they can create skills and sustainable entrepreneurship opportunities to sustain their families.
+          </p>
+          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '17px', lineHeight: 1.85, color: '#F6F3EC', opacity: 0.8 }}>
+            None of this would be possible without you! There is more work to be done, and we thank you for your continued donations, thoughts, prayers and care for this project.
           </p>
         </div>
       </section>
