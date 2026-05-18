@@ -134,13 +134,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* MALNUTRITION STAT */}
-      <section style={{
-        background: '#F8F3EC',
-        padding: '100px 40px',
-        textAlign: 'center',
-      }}>
-        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+      {/* THE CRISIS */}
+      <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <div style={{ textAlign: 'center', marginBottom: '56px' }}>
           <p style={{
             fontFamily: 'Figtree, sans-serif',
             fontSize: '11px',
@@ -158,7 +155,9 @@ export default function Home() {
             fontWeight: 400,
             color: '#36302A',
             lineHeight: 1.3,
-            marginBottom: '28px',
+            marginBottom: '16px',
+            maxWidth: '760px',
+            margin: '0 auto 16px',
           }}>
             Alta Verapaz, Guatemala has the <em>highest rates of child malnutrition</em> in all of Central, South, and North America.
           </h2>
@@ -167,81 +166,97 @@ export default function Home() {
             fontSize: '14px',
             color: '#574C3F',
             letterSpacing: '0.05em',
-            marginBottom: '56px',
+            marginTop: '16px',
           }}>
             — UNICEF
           </p>
+          </div>
 
-          {/* CRISIS STATS */}
+          {/* Two-column: stats left, photo right */}
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(2, 1fr)',
-            gap: '16px',
-            marginBottom: '56px',
-            textAlign: 'left',
-          }} className="crisis-stats-grid">
-            {[
-              { pct: '100%', label: 'of infants in our programs have mothers who cannot produce enough breastmilk to feed them' },
-              { pct: '100%', label: 'of our families have one or more children who have suffered from or died from the effects of malnutrition' },
-              { pct: '100%', label: 'of these families live on approximately $1 a day, subsisting on 2–3 corn tortillas' },
-              { pct: '98%',  label: 'of mothers have no access to birth control and have large families they cannot support' },
-            ].map((item, i) => (
-              <div key={i} style={{
-                background: '#36302A',
-                borderRadius: '4px',
-                padding: '28px 24px',
-              }}>
-                <div style={{
-                  fontFamily: 'Libre Baskerville, serif',
-                  fontSize: 'clamp(28px, 3.5vw, 40px)',
-                  fontWeight: 400,
-                  color: '#F8F3EC',
-                  lineHeight: 1,
-                  marginBottom: '12px',
-                }}>
-                  {item.pct}
-                </div>
-                <p style={{
-                  fontFamily: 'Figtree, sans-serif',
-                  fontSize: '13px',
-                  lineHeight: 1.65,
-                  color: '#F8F3EC',
-                  opacity: 0.72,
-                  margin: 0,
-                }}>
-                  {item.label}
-                </p>
+            gridTemplateColumns: '1fr 1fr',
+            gap: '56px',
+            alignItems: 'center',
+          }} className="crisis-layout">
+            {/* LEFT: stats + body + CTA */}
+            <div>
+              <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(2, 1fr)',
+                gap: '12px',
+                marginBottom: '36px',
+              }} className="crisis-stats-grid">
+                {[
+                  { pct: '100%', label: 'of infants in our programs have mothers who cannot produce enough breastmilk to feed them' },
+                  { pct: '100%', label: 'of our families have lost a child to the effects of malnutrition' },
+                  { pct: '100%', label: 'of these families live on approximately $1 a day, subsisting on 2–3 corn tortillas' },
+                  { pct: '98%',  label: 'of mothers have no access to birth control and have large families they cannot support' },
+                ].map((item, i) => (
+                  <div key={i} style={{
+                    background: '#574C3F',
+                    borderRadius: '4px',
+                    padding: '24px 20px',
+                  }}>
+                    <div style={{
+                      fontFamily: 'Libre Baskerville, serif',
+                      fontSize: 'clamp(26px, 3vw, 38px)',
+                      fontWeight: 400,
+                      color: '#F8F3EC',
+                      lineHeight: 1,
+                      marginBottom: '10px',
+                    }}>
+                      {item.pct}
+                    </div>
+                    <p style={{
+                      fontFamily: 'Figtree, sans-serif',
+                      fontSize: '12px',
+                      lineHeight: 1.6,
+                      color: '#F8F3EC',
+                      opacity: 0.85,
+                      margin: 0,
+                    }}>
+                      {item.label}
+                    </p>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-          <style>{`
-            @media (max-width: 600px) {
-              .crisis-stats-grid { grid-template-columns: 1fr !important; }
-            }
-          `}</style>
+              <p style={{
+                fontFamily: 'Figtree, sans-serif',
+                fontSize: '16px',
+                lineHeight: 1.8,
+                color: '#36302A',
+                opacity: 0.8,
+                marginBottom: '32px',
+              }}>
+                With little to no government support, at-risk mothers have no access to healthcare, clean water, or food for their malnourished children.
+              </p>
+              <Link to="/ourcause" className="btn-primary">See the Full Picture</Link>
+            </div>
 
-          <p style={{
-            fontFamily: 'Figtree, sans-serif',
-            fontSize: '17px',
-            lineHeight: 1.8,
-            color: '#36302A',
-            opacity: 0.8,
-            marginBottom: '20px',
-          }}>
-            In the highlands of Alta Verapaz, most families survive on less than $1 a day. Living on a diet of almost exclusively corn tortillas produces potentially fatal protein malnutrition, blindness, stunting, and a myriad of illnesses.
-          </p>
-          <p style={{
-            fontFamily: 'Figtree, sans-serif',
-            fontSize: '17px',
-            lineHeight: 1.8,
-            color: '#36302A',
-            opacity: 0.8,
-            marginBottom: '40px',
-          }}>
-            With little to no government support, at-risk mothers have no access to healthcare, clean water, or food for their malnourished children.
-          </p>
-          <Link to="/ourcause" className="btn-primary">See the Full Picture</Link>
+            {/* RIGHT: photo */}
+            <div>
+              <img
+                src={`${BASE}/images/crisis-mother.jpg`}
+                alt="A mother and her children in Alta Verapaz, Guatemala"
+                style={{
+                  width: '100%',
+                  height: '580px',
+                  objectFit: 'cover',
+                  objectPosition: 'center top',
+                  borderRadius: '4px',
+                  display: 'block',
+                }}
+              />
+            </div>
+          </div>
         </div>
+        <style>{`
+          @media (max-width: 768px) {
+            .crisis-layout { grid-template-columns: 1fr !important; }
+            .crisis-stats-grid { grid-template-columns: 1fr !important; }
+          }
+        `}</style>
       </section>
 
       {/* ELENA'S STORY */}
