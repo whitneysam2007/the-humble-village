@@ -197,24 +197,73 @@ export default function NaruCircle() {
 
       {/* BEFORE/AFTER GRID */}
       <section style={{ background: '#36302A', padding: '100px 40px' }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '16px', textAlign: 'center' }}>
             The Faces Behind the Numbers
           </p>
           <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(24px, 3.5vw, 40px)', fontWeight: 400, color: '#F6F3EC', textAlign: 'center', marginBottom: '16px' }}>
             Over 200 graduates.
           </h2>
-          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', color: '#F6F3EC', opacity: 0.6, textAlign: 'center', marginBottom: '48px', fontStyle: 'italic' }}>
+          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', color: '#F6F3EC', opacity: 0.6, textAlign: 'center', marginBottom: '56px', fontStyle: 'italic' }}>
             Each one a testament to what consistent care and community support can achieve.
           </p>
-          <img
-            src={`${BASE}/images/naru-circle-grid.png`}
-            alt="Before and after photos of children who graduated the nutrition program"
-            style={{ width: '100%', borderRadius: '6px', display: 'block' }}
-          />
-          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '13px', color: '#F6F3EC', opacity: 0.4, textAlign: 'center', marginTop: '16px', fontStyle: 'italic' }}>
-            Individual photos coming soon. Each child pictured has a name, a family, and a story.
-          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '24px' }} className="faces-grid">
+            {[
+              { name: 'Dylan',    before: 'faces-dylan-before.jpeg',    after: 'faces-dylan-after.png',    weight: '6.4 lbs at 2 months → 20.5 lbs' },
+              { name: 'Santos',   before: 'faces-santos-before.jpeg',   after: 'faces-santos-after.jpeg',   weight: '1.0 lbs at 18 months → 22.2 lbs' },
+              { name: 'Yasmin',   before: 'faces-yasmin-before.jpeg',   after: 'faces-yasmin-after.jpeg',   weight: '13.2 lbs at 21.5 months → 25.3 lbs' },
+              { name: 'Crisbell', before: 'faces-crisbell-before.jpeg', after: 'faces-crisbell-after.png',  weight: '5.5 lbs at 1 month → 16.9 lbs' },
+              { name: 'Pedro',    before: 'faces-pedro-before.jpeg',    after: 'faces-pedro-after.jpeg',    weight: '7.5 lbs at 2.5 months → 23.1 lbs' },
+              { name: 'Keila',    before: 'faces-keila-before.jpeg',    after: 'faces-keila-after.jpeg',    weight: '15.8 lbs at 23 months → 22.0 lbs' },
+              { name: 'Cuz',      before: 'faces-cuz-before.png',      after: 'faces-cuz-after.jpeg',      weight: '5.9 lbs at 2 weeks → 17.4 lbs' },
+              { name: 'Claudia',  before: 'faces-claudia-before.jpeg',  after: 'faces-claudia-after.jpeg',  weight: '7.9 lbs at 3 months → 20.0 lbs' },
+              { name: 'Katerin',  before: 'faces-katerin-before.jpeg',  after: 'faces-katerin-after.jpeg',  weight: '5.5 lbs at 11 days → 18.7 lbs' },
+              { name: 'Luis',     before: 'faces-luis-before.jpeg',     after: 'faces-luis-after.jpeg',     weight: '18.0 lbs at 22 months → 21.3 lbs' },
+              { name: 'Choc',     before: 'faces-choc-before.jpeg',     after: 'faces-choc-after.jpeg',     weight: '1.0 lbs at 2 months → 19.4 lbs' },
+              { name: 'Coc',      before: 'faces-coc-before.jpeg',      after: 'faces-coc-after.jpeg',      weight: '6.2 lbs at 8 days → 18.3 lbs' },
+            ].map((child, i) => (
+              <div key={i} style={{ background: 'rgba(248,243,236,0.05)', borderRadius: '6px', overflow: 'hidden' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
+                  <div style={{ position: 'relative' }}>
+                    <img
+                      src={`${BASE}/images/faces/${child.before}`}
+                      alt={`${child.name} before`}
+                      style={{ width: '100%', aspectRatio: '1/1', objectFit: 'cover', display: 'block' }}
+                    />
+                    <span style={{
+                      position: 'absolute', top: '6px', left: '6px',
+                      fontFamily: 'Figtree, sans-serif', fontSize: '9px', fontWeight: 700,
+                      letterSpacing: '0.12em', textTransform: 'uppercase',
+                      color: '#F6F3EC', background: 'rgba(54,48,42,0.75)',
+                      padding: '2px 6px', borderRadius: '2px'
+                    }}>Before</span>
+                  </div>
+                  <div style={{ position: 'relative' }}>
+                    <img
+                      src={`${BASE}/images/faces/${child.after}`}
+                      alt={`${child.name} after`}
+                      style={{ width: '100%', aspectRatio: '1/1', objectFit: 'cover', display: 'block' }}
+                    />
+                    <span style={{
+                      position: 'absolute', top: '6px', left: '6px',
+                      fontFamily: 'Figtree, sans-serif', fontSize: '9px', fontWeight: 700,
+                      letterSpacing: '0.12em', textTransform: 'uppercase',
+                      color: '#F6F3EC', background: 'rgba(54,48,42,0.75)',
+                      padding: '2px 6px', borderRadius: '2px'
+                    }}>After</span>
+                  </div>
+                </div>
+                <div style={{ padding: '12px 14px 14px' }}>
+                  <p style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '15px', fontWeight: 400, color: '#F6F3EC', marginBottom: '4px' }}>{child.name}</p>
+                  <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '12px', color: '#F6F3EC', opacity: 0.55, lineHeight: 1.4 }}>{child.weight}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <style>{`
+            @media (max-width: 900px) { .faces-grid { grid-template-columns: repeat(2, 1fr) !important; } }
+            @media (max-width: 500px) { .faces-grid { grid-template-columns: 1fr !important; } }
+          `}</style>
         </div>
       </section>
 
