@@ -452,28 +452,66 @@ export default function Give() {
                   flex: 1,
                   margin: 0,
                 }}>
-                  We assemble two types of kits: midwife kits for the traditional birth attendants who deliver babies in the highlands, and newborn kits for the babies themselves. Collecting supplies is one of the most tangible things a supporter can do from home. Questions? Contact Amy at Amydkerr@gmail.com or (801) 735-7877.
+                  Looking for a meaningful family project, a community service activity, or a hands-on way for your church group to get involved? Collecting kits is one of the most tangible things you can do from home. We assemble midwife kits for traditional birth attendants and newborn kits for the babies they deliver — and we bring every donated kit down on our bi-annual expeditions to Alta Verapaz.
                 </p>
-                <a
-                  href="https://www.justserve.org/TheHumbleVillage"
-                  style={{
-                    display: 'block',
-                    background: '#F8F3EC',
-                    color: '#36302A',
-                    padding: '14px 20px',
-                    borderRadius: '6px',
-                    fontFamily: 'Figtree, sans-serif',
-                    fontSize: '12px',
-                    fontWeight: 700,
-                    letterSpacing: '0.1em',
-                    textTransform: 'uppercase',
-                    textDecoration: 'none',
-                    textAlign: 'center',
-                    marginTop: 'auto',
-                  }}
-                >
-                  Find an Opportunity on JustServe
-                </a>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: 'auto' }}>
+                  <a
+                    href="https://www.justserve.org/TheHumbleVillage"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: 'block',
+                      background: '#F8F3EC',
+                      color: '#36302A',
+                      padding: '13px 20px',
+                      borderRadius: '6px',
+                      fontFamily: 'Figtree, sans-serif',
+                      fontSize: '12px',
+                      fontWeight: 700,
+                      letterSpacing: '0.1em',
+                      textTransform: 'uppercase',
+                      textDecoration: 'none',
+                      textAlign: 'center',
+                    }}
+                  >
+                    Find an Opportunity on JustServe
+                  </a>
+                  <a
+                    href="https://docs.google.com/spreadsheets/d/1sf9YdcwXmECM9f3uA4vzhOX0OZjn6kAXyTb_nDuOI5E/edit?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: 'block',
+                      background: 'transparent',
+                      color: '#F8F3EC',
+                      padding: '12px 20px',
+                      borderRadius: '6px',
+                      border: '1.5px solid rgba(248,243,236,0.35)',
+                      fontFamily: 'Figtree, sans-serif',
+                      fontSize: '12px',
+                      fontWeight: 700,
+                      letterSpacing: '0.1em',
+                      textTransform: 'uppercase',
+                      textDecoration: 'none',
+                      textAlign: 'center',
+                    }}
+                  >
+                    View Kit Collection Instructions
+                  </a>
+                  <a
+                    href="mailto:kirstenbham@gmail.com,amydkerr@gmail.com?subject=Kit%20Collection%20Inquiry"
+                    style={{
+                      fontFamily: 'Figtree, sans-serif',
+                      fontSize: '12px',
+                      color: '#574C3F',
+                      textAlign: 'center',
+                      textDecoration: 'underline',
+                      letterSpacing: '0.05em',
+                    }}
+                  >
+                    Questions? Email our team
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -520,28 +558,29 @@ export default function Give() {
                   flex: 1,
                   margin: 0,
                 }}>
-                  Twice a year — in March and November — we take a small group of individuals and families to Alta Verapaz, Guatemala. You walk the ridge paths. You meet the mothers. You see the programs. Cost: $500 donation + ~$500 in-country + flight. There is nothing else quite like it.
+                  Twice a year — in March and November — we take a small group to Alta Verapaz, Guatemala. Families are welcome. You walk the ridge paths. You meet the mothers. You see the programs firsthand. Cost: $500 donation + ~$500 in-country + flight. There is nothing else quite like it.
                 </p>
-                <a
-                  href="mailto:Kirstenbham@gmail.com"
-                  style={{
-                    display: 'block',
-                    background: '#F8F3EC',
-                    color: '#36302A',
-                    padding: '14px 20px',
-                    borderRadius: '6px',
-                    fontFamily: 'Figtree, sans-serif',
-                    fontSize: '12px',
-                    fontWeight: 700,
-                    letterSpacing: '0.1em',
-                    textTransform: 'uppercase',
-                    textDecoration: 'none',
-                    textAlign: 'center',
-                    marginTop: 'auto',
-                  }}
-                >
-                  Contact Us to Get Involved
-                </a>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: 'auto' }}>
+                  <a
+                    href="mailto:kirstenbham@gmail.com,amydkerr@gmail.com?subject=Expedition%20Inquiry"
+                    style={{
+                      display: 'block',
+                      background: '#F8F3EC',
+                      color: '#36302A',
+                      padding: '13px 20px',
+                      borderRadius: '6px',
+                      fontFamily: 'Figtree, sans-serif',
+                      fontSize: '12px',
+                      fontWeight: 700,
+                      letterSpacing: '0.1em',
+                      textTransform: 'uppercase',
+                      textDecoration: 'none',
+                      textAlign: 'center',
+                    }}
+                  >
+                    Contact Us to Get Involved
+                  </a>
+                </div>
               </div>
             </div>
 
