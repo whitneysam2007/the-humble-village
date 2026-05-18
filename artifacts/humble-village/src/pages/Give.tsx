@@ -614,9 +614,9 @@ export default function Give() {
       {/* PHOTO WITH STORIES LINK */}
       <section style={{ position: 'relative', overflow: 'hidden', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
         <img
-          src={`${BASE}/images/field-walking.webp`}
-          alt=""
-          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
+          src={`${BASE}/images/give-children-community.png`}
+          alt="Children at a community gathering in Alta Verapaz, Guatemala"
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 40%' }}
         />
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(54,48,42,0.7)' }} />
         <div style={{ position: 'relative', zIndex: 1, padding: '60px 40px', color: '#F6F3EC', maxWidth: '600px' }}>
