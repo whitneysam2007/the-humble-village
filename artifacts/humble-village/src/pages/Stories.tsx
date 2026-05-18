@@ -68,7 +68,8 @@ const stories = [
   {
     name: 'Bertha',
     slide: 'bertha-after.png',
-    beforePhoto: 'bertha-before.png',
+    beforePhoto: 'bertha-before-1.png',
+    beforePhoto2: 'bertha-before-2.png',
     tag: 'Nutritional Recuperation',
     summary: '9.7 lbs at 8 months → healthy weight 11 months later',
     body: [
@@ -187,7 +188,35 @@ export default function Stories() {
               alignItems: 'center',
             }} className={`story-grid-${i}`}>
               <div style={{ order: i % 2 === 0 ? 0 : 1 }}>
-                {story.beforePhoto ? (
+                {story.beforePhoto && (story as any).beforePhoto2 ? (
+                  // Three-photo layout: two befores + one after
+                  <div style={{ display: 'flex', gap: '10px' }}>
+                    <div style={{ flex: 1 }}>
+                      <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em', color: '#574C3F', marginBottom: '6px', textAlign: 'center', textTransform: 'uppercase' }}>Before</p>
+                      <img
+                        src={`${BASE}/images/${story.beforePhoto}`}
+                        alt={`${story.name} — before`}
+                        style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', objectPosition: 'top', borderRadius: '4px', display: 'block' }}
+                      />
+                    </div>
+                    <div style={{ flex: 1 }}>
+                      <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em', color: '#574C3F', marginBottom: '6px', textAlign: 'center', textTransform: 'uppercase' }}>Before</p>
+                      <img
+                        src={`${BASE}/images/${(story as any).beforePhoto2}`}
+                        alt={`${story.name} — before 2`}
+                        style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', objectPosition: 'top', borderRadius: '4px', display: 'block' }}
+                      />
+                    </div>
+                    <div style={{ flex: 1 }}>
+                      <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em', color: '#574C3F', marginBottom: '6px', textAlign: 'center', textTransform: 'uppercase' }}>After</p>
+                      <img
+                        src={`${BASE}/images/${story.slide}`}
+                        alt={`${story.name} — after`}
+                        style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', objectPosition: 'top', borderRadius: '4px', display: 'block' }}
+                      />
+                    </div>
+                  </div>
+                ) : story.beforePhoto ? (
                   <div style={{ display: 'flex', gap: '12px' }}>
                     <div style={{ flex: 1 }}>
                       <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em', color: '#574C3F', marginBottom: '6px', textAlign: 'center', textTransform: 'uppercase' }}>Before</p>
