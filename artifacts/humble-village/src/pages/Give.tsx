@@ -60,9 +60,9 @@ export default function Give() {
             {[
               { amount: '$1', desc: 'Nourishes a breastfeeding mother — allows her to produce breastmilk for her baby' },
               { amount: '$6', desc: '1 month of supplements for a nursing mother' },
-              { amount: '$8', desc: '1 month of nutrition for a child' },
-              { amount: '$48', desc: 'Chicken & rooster, feed and coop' },
-              { amount: '$75', desc: '1 family garden tower' },
+              { amount: '$40', desc: '1 year of life skills & education training' },
+              { amount: '$1,000', desc: 'Seeds and materials for 50 gardens' },
+              { amount: '$75,000', desc: 'Build the next Narú Center' },
             ].map((item, i) => (
               <div key={i} style={{
                 padding: '24px 14px',
