@@ -55,7 +55,7 @@ export default function Contact() {
   return (
     <main>
       {/* HERO IMAGE */}
-      <div style={{ position: 'relative', height: '700px', overflow: 'hidden' }}>
+      <div style={{ position: 'relative', height: '500px', overflow: 'hidden' }}>
         <img
           src={`${BASE}/images/contact-hero.jpg`}
           alt="A child laughing at the Narú Medical Center"
@@ -63,7 +63,7 @@ export default function Contact() {
             width: '100%',
             height: '100%',
             objectFit: 'cover',
-            objectPosition: 'center 25%',
+            objectPosition: 'center center',
             display: 'block',
           }}
         />
