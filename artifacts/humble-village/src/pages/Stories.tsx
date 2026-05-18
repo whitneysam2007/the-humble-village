@@ -19,6 +19,7 @@ const stories = [
     name: 'Guadalupe & Dilan',
     slide: 'guadalupe-with-dilan.jpg',
     beforePhoto: 'dilan-alone.jpg',
+    noLabels: true,
     tag: 'In Progress',
     summary: '5.28 lbs at 1 month — enrolled February 2026',
     body: [
@@ -31,8 +32,7 @@ const stories = [
   {
     name: 'Jhordan',
     slide: 'jhordan-after.png',
-    beforePhoto: 'jhordan-before-1.png',
-    beforePhoto2: 'jhordan-before-2.png',
+    beforePhoto: 'jhordan-before-2.png',
     tag: 'Nutritional Recuperation',
     summary: '9.4 lbs at 17 months → 22.9 lbs',
     body: [
@@ -45,7 +45,6 @@ const stories = [
     name: 'Angel',
     slide: 'angel-after.png',
     beforePhoto: 'angel-before-1.png',
-    beforePhoto2: 'angel-before-2.png',
     tag: 'Nutritional Recuperation',
     summary: 'Severely underweight → thriving at 4 years old',
     body: [
@@ -58,8 +57,7 @@ const stories = [
   {
     name: 'Evelin',
     slide: 'evelin-after.png',
-    beforePhoto: 'evelin-before-1.png',
-    beforePhoto2: 'evelin-before-2.png',
+    beforePhoto: 'evelin-before-2.png',
     tag: 'Maternal & Infant Nutrition',
     summary: 'Severely malnourished at 2 months → happily growing',
     body: [
@@ -71,8 +69,7 @@ const stories = [
   {
     name: 'Bertha',
     slide: 'bertha-after.png',
-    beforePhoto: 'bertha-before-1.png',
-    beforePhoto2: 'bertha-before-2.png',
+    beforePhoto: 'bertha-before-2.png',
     tag: 'Nutritional Recuperation',
     summary: '9.7 lbs at 8 months → healthy weight 11 months later',
     body: [
@@ -191,30 +188,20 @@ export default function Stories() {
               alignItems: 'center',
             }} className={`story-grid-${i}`}>
               <div style={{ order: i % 2 === 0 ? 0 : 1 }}>
-                {story.beforePhoto && (story as any).beforePhoto2 ? (
-                  // Three-photo layout: two befores + one after
-                  <div style={{ display: 'flex', gap: '10px' }}>
+                {story.beforePhoto && (story as any).noLabels ? (
+                  // Two-photo layout: no before/after labels (story gallery)
+                  <div style={{ display: 'flex', gap: '12px' }}>
                     <div style={{ flex: 1 }}>
-                      <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em', color: '#574C3F', marginBottom: '6px', textAlign: 'center', textTransform: 'uppercase' }}>Before</p>
                       <img
                         src={`${BASE}/images/${story.beforePhoto}`}
-                        alt={`${story.name} — before`}
+                        alt={`${story.name} — photo 1`}
                         style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', objectPosition: 'top', borderRadius: '4px', display: 'block' }}
                       />
                     </div>
                     <div style={{ flex: 1 }}>
-                      <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em', color: '#574C3F', marginBottom: '6px', textAlign: 'center', textTransform: 'uppercase' }}>Before</p>
-                      <img
-                        src={`${BASE}/images/${(story as any).beforePhoto2}`}
-                        alt={`${story.name} — before 2`}
-                        style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', objectPosition: 'top', borderRadius: '4px', display: 'block' }}
-                      />
-                    </div>
-                    <div style={{ flex: 1 }}>
-                      <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em', color: '#574C3F', marginBottom: '6px', textAlign: 'center', textTransform: 'uppercase' }}>After</p>
                       <img
                         src={`${BASE}/images/${story.slide}`}
-                        alt={`${story.name} — after`}
+                        alt={`${story.name} — photo 2`}
                         style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', objectPosition: 'top', borderRadius: '4px', display: 'block' }}
                       />
                     </div>
