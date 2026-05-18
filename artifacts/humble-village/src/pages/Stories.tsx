@@ -17,8 +17,8 @@ const stories = [
   },
   {
     name: 'Guadalupe & Dilan',
-    slide: 'story-guadalupe-dilan.png',
-    beforePhoto: null,
+    slide: 'guadalupe-with-dilan.jpg',
+    beforePhoto: 'dilan-alone.jpg',
     tag: 'In Progress',
     summary: '5.28 lbs at 1 month — enrolled February 2026',
     body: [
