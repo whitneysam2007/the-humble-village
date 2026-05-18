@@ -55,13 +55,13 @@ export default function Header() {
           justifyContent: 'space-between',
           height: '80px',
         }}>
-          <div>
+          <Link to="/" style={{ display: 'block', lineHeight: 0 }}>
             <img
               src={`${BASE}/logo.webp`}
               alt="The Humble Village"
               style={{ height: '68px', width: 'auto', display: 'block' }}
             />
-          </div>
+          </Link>
 
           <nav style={{ display: 'flex', alignItems: 'center', gap: '28px' }} className="desktop-nav">
             {navLinks.map(link => (
