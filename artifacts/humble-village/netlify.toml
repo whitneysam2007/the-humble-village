@@ -1,3 +1,8 @@
 [build]
-  command = "pnpm --filter @workspace/humble-village run build"
+  command = "pnpm run build"
   publish = "dist/public"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
