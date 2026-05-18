@@ -235,15 +235,16 @@ export default function Home() {
             </div>
 
             {/* RIGHT: photo */}
-            <div>
+            <div style={{ alignSelf: 'stretch', display: 'flex' }}>
               <img
                 src={`${BASE}/images/crisis-mother.jpg`}
                 alt="A mother and her children in Alta Verapaz, Guatemala"
                 style={{
                   width: '100%',
-                  height: '580px',
+                  height: '100%',
+                  minHeight: '400px',
                   objectFit: 'cover',
-                  objectPosition: 'center top',
+                  objectPosition: 'center 20%',
                   borderRadius: '4px',
                   display: 'block',
                 }}
