@@ -55,8 +55,9 @@ const stories = [
   },
   {
     name: 'Evelin',
-    slide: 'evelin-after.jpg',
-    beforePhoto: 'evelin-before.jpg',
+    slide: 'evelin-after.png',
+    beforePhoto: 'evelin-before-1.png',
+    beforePhoto2: 'evelin-before-2.png',
     tag: 'Maternal & Infant Nutrition',
     summary: 'Severely malnourished at 2 months → happily growing',
     body: [
