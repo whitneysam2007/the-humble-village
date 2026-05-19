@@ -167,7 +167,7 @@ export default function About() {
           alt="Families walking through the valley"
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
         />
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(54,48,42,0.78)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'rgba(54,48,42,0.60)' }} />
         <div style={{ position: 'relative', zIndex: 1, maxWidth: '700px', margin: '0 auto' }}>
           <p style={{
             fontFamily: 'Figtree, sans-serif',
@@ -175,7 +175,7 @@ export default function About() {
             fontWeight: 700,
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
-            color: '#574C3F',
+            color: '#F6F3EC',
             marginBottom: '28px',
             textAlign: 'center',
           }}>
@@ -203,7 +203,7 @@ export default function About() {
                 <div style={{
                   fontFamily: 'Libre Baskerville, serif',
                   fontSize: '18px',
-                  color: '#574C3F',
+                  color: '#F6F3EC',
                   lineHeight: 1,
                   flexShrink: 0,
                   marginTop: '2px',
