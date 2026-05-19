@@ -96,7 +96,7 @@ export default function NaruCircle() {
                 The Opportunity
               </p>
               <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(20px, 2.5vw, 28px)', fontWeight: 400, color: '#F6F3EC', marginBottom: '24px', lineHeight: 1.3 }}>
-                A Small Circle of Guardians
+                A Committed Circle of Guardians
               </h3>
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.8, color: '#F6F3EC', opacity: 0.8, marginBottom: '24px' }}>
                 The Narú Circle is a committed group of individuals, families, and organizations who ensure this work continues year after year.
