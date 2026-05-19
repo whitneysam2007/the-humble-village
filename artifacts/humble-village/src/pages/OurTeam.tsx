@@ -12,7 +12,7 @@ const teamMembers = [
   {
     name: 'Yvonne Sinclair',
     title: 'In-Country Director',
-    img: 'yvonne-solo.png',
+    img: 'yvonne-solo.webp',
     bio: 'Yvonne left a successful career in publishing and writing in the U.K. to visit Guatemala, where she quickly fell in love with the country and its people. She has been working with The Humble Village for over a decade, managing day-to-day operations and building deep relationships with the communities we serve. Her presence at the Narú Medical Center is the steady heartbeat that keeps the mission alive.',
   },
 ];
