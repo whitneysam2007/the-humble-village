@@ -516,7 +516,7 @@ export default function Home() {
             color: '#574C3F',
             marginBottom: '28px',
           }}>
-            For Those Called to Go Deeper
+            For those inspired to expand their engagement
           </p>
           <h2 style={{
             fontFamily: 'Libre Baskerville, serif',
