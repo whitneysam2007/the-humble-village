@@ -8,6 +8,8 @@ const teamMembers = [
     title: 'Founder & Director',
     img: 'lauren-baby.png',
     bio: 'Lauren holds a Master\'s in Public Health and a Bachelor\'s in Sociology and International Development from Brigham Young University. With over 18 years of experience working in international health and development in Central America and Southeast Asia, she founded The Humble Village in 2009 with a vision to provide comprehensive health and development solutions to some of the world\'s most vulnerable communities.',
+    podcastUrl: 'https://podcasters.spotify.com/pod/show/brainstem-tv7/episodes/Our-Personal-Mission-Statement---Leading-With-Purpose-e3bfni8',
+    podcastLabel: 'Our Personal Mission Statement: Leading With Purpose — The Bishop\'s Wife Podcast',
   },
   {
     name: 'Yvonne Sinclair',
