@@ -493,7 +493,7 @@ export default function Give() {
                       textAlign: 'center',
                     }}
                   >
-                    Find an Opportunity on JustServe
+                    JustServe Opportunity
                   </a>
                   <a
                     href="https://docs.google.com/spreadsheets/d/1sf9YdcwXmECM9f3uA4vzhOX0OZjn6kAXyTb_nDuOI5E/edit?usp=drive_link"
