@@ -536,7 +536,7 @@ export default function Home() {
             opacity: 0.85,
             marginBottom: '48px',
           }}>
-            The Narú Circle is a small group of individuals, families, and organizations who ensure this work continues year after year. Choose the program that speaks to you. Name it. Steward it.
+            The Narú Circle is a committed group of individuals, families, and organizations who ensure this work continues year after year. Choose the program that speaks to you. Name it. Steward it.
           </p>
           <Link
             to="/naru-circle"

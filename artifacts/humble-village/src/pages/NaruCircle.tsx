@@ -99,7 +99,7 @@ export default function NaruCircle() {
                 A Small Circle of Guardians
               </h3>
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.8, color: '#F6F3EC', opacity: 0.8, marginBottom: '24px' }}>
-                The Narú Circle is a small group of individuals, families, and organizations who ensure this work continues year after year.
+                The Narú Circle is a committed group of individuals, families, and organizations who ensure this work continues year after year.
               </p>
               <div style={{ width: '40px', height: '1px', background: '#574C3F', margin: '0 auto 24px' }} />
               <p style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '18px', fontStyle: 'italic', color: '#F8F3EC', lineHeight: 1.5 }}>
