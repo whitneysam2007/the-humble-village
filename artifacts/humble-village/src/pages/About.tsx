@@ -458,7 +458,7 @@ export default function About() {
             fontWeight: 700,
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
-            color: '#BFA07A',
+            color: '#574C3F',
             marginBottom: '20px',
           }}>
             Resources
