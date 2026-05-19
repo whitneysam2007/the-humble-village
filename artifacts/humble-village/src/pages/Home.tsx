@@ -560,7 +560,7 @@ export default function Home() {
       </section>
 
       {/* INSTAGRAM GRID */}
-      <section style={{ background: '#F8F3EC', padding: '80px 40px' }}>
+      <section style={{ background: '#36302A', padding: '80px 40px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{
             display: 'flex',
@@ -574,7 +574,7 @@ export default function Home() {
               fontFamily: 'Libre Baskerville, serif',
               fontSize: 'clamp(22px, 3vw, 36px)',
               fontWeight: 400,
-              color: '#36302A',
+              color: '#F6F3EC',
             }}>
               Follow Our Journey
             </h2>
@@ -586,7 +586,7 @@ export default function Home() {
                 fontFamily: 'Figtree, sans-serif',
                 fontSize: '13px',
                 fontWeight: 600,
-                color: '#36302A',
+                color: '#BFA07A',
                 textDecoration: 'underline',
                 letterSpacing: '0.05em',
               }}
