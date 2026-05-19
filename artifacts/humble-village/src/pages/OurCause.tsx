@@ -57,7 +57,7 @@ export default function OurCause() {
             The Forgotten Valley
           </h1>
           <p style={{ fontSize: '18px', lineHeight: 2, color: '#F8F3EC', opacity: 0.88, marginBottom: '32px' }}>
-            Once home to thriving, self-sustaining communities—now facing<br />
+            Once home to thriving, self-sustaining communities, now facing<br />
             relentless scarcity and instability.
           </p>
           <p style={{ fontSize: '18px', lineHeight: 2, color: '#F8F3EC', opacity: 0.88, marginBottom: '32px' }}>
@@ -247,12 +247,12 @@ export default function OurCause() {
               {
                 step: '01',
                 title: 'Enroll',
-                body: 'Children are assessed monthly by trained nurses using Guatemala\'s official Carné del Niño. Any child meeting WHO 2006 criteria for severe or moderate malnutrition is enrolled immediately — including infants under 6 months at the highest risk.',
+                body: 'Children are assessed monthly by trained nurses using Guatemala\'s official Carné del Niño. Any child meeting WHO 2006 criteria for severe or moderate malnutrition is enrolled immediately, including infants under 6 months at the highest risk.',
               },
               {
                 step: '02',
                 title: 'Nourish',
-                body: 'Each month, a mother receives Incaparina — a nutritional supplement — along with age-appropriate feeding guidance. When a mother has insufficient milk but is still producing some, we provide Maternal Incaparina to support breastfeeding. Formula is reserved only for cases where there is no milk supply at all.',
+                body: 'Each month, a mother receives Incaparina (a nutritional supplement) along with age-appropriate feeding guidance. When a mother has insufficient milk but is still producing some, we provide Maternal Incaparina to support breastfeeding. Formula is reserved only for cases where there is no milk supply at all.',
               },
               {
                 step: '03',
@@ -326,7 +326,7 @@ export default function OurCause() {
             textAlign: 'center',
             marginBottom: '24px',
           }}>
-            The Ochoch — A Sanctuary for Learning
+            The Ochoch: A Sanctuary for Learning
           </h2>
           <p style={{
             fontFamily: 'Figtree, sans-serif',
@@ -337,7 +337,7 @@ export default function OurCause() {
             maxWidth: '760px',
             margin: '0 auto 80px',
           }}>
-            "Ochoch" means "home" in Q'eqchi'. Each of our three centers is a sanctuary — a working model home where families come to see and do. Because most families have less than a second-grade education, learning happens by touching, tasting, and harvesting. Every Ochoch has a model garden, a teaching kitchen, and a medical clinic where nurses weigh babies, track development, and educate mothers. Families leave with seedlings, skills, and the confidence to sustain their own gardens at home.
+            "Ochoch" means "home" in Q'eqchi'. Each of our three centers is a sanctuary, a working model home where families come to see and do. Because most families have less than a second-grade education, learning happens by touching, tasting, and harvesting. Every Ochoch has a model garden, a teaching kitchen, and a medical clinic where nurses weigh babies, track development, and educate mothers. Families leave with seedlings, skills, and the confidence to sustain their own gardens at home.
           </p>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '80px' }}>

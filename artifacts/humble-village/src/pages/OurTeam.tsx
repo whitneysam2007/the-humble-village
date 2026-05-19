@@ -50,10 +50,10 @@ export default function OurTeam() {
             The People Behind the Mission
           </h1>
           <p style={{ fontSize: '17px', lineHeight: 1.85, color: '#36302A', opacity: 0.8, marginBottom: '20px' }}>
-            The Humble Village is led by two women who gave their lives to this work — and a team of ten dedicated local Guatemalan staff who are the true backbone of everything we do.
+            Our field team is made up of employees from Alta Verapaz who speak Q'eqchi', know the culture, and have earned the trust of the families they serve. They are nurses, educators, agriculturists, and community leaders. They are the reason this works.
           </p>
           <p style={{ fontSize: '17px', lineHeight: 1.85, color: '#36302A', opacity: 0.8 }}>
-            Because our board members are 100% volunteers, every dollar donated goes directly to the field — to the nurses, the gardens, and the families.
+            Our board members and U.S.-based supporters serve as volunteers. Because no overhead comes out of donations, every dollar goes directly to the field.
           </p>
         </div>
       </section>
