@@ -262,7 +262,7 @@ export default function NaruCircle() {
             Our Invitation
           </p>
           <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(26px, 3.5vw, 40px)', fontWeight: 400, color: '#36302A', textAlign: 'center', marginBottom: '64px' }}>
-            Three paths to partnership
+            Three Paths to Partnership
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '32px' }} className="options-grid">
             <div style={{ background: '#36302A', borderRadius: '8px', padding: '48px 36px' }}>
