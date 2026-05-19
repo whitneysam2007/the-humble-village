@@ -250,105 +250,7 @@ export default function OurCause() {
         </div>
       </section>
 
-      {/* THE OCHOCH MODEL */}
-      <section style={{ background: '#36302A', padding: '100px 40px' }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-          <p style={{
-            fontFamily: 'Figtree, sans-serif',
-            fontSize: '11px',
-            fontWeight: 700,
-            letterSpacing: '0.2em',
-            textTransform: 'uppercase',
-            color: '#574C3F',
-            marginBottom: '16px',
-            textAlign: 'center',
-          }}>
-            Our Model
-          </p>
-          <h2 style={{
-            fontFamily: 'Libre Baskerville, serif',
-            fontSize: 'clamp(26px, 3.5vw, 42px)',
-            fontWeight: 400,
-            color: '#F6F3EC',
-            textAlign: 'center',
-            marginBottom: '20px',
-          }}>
-            The Ochoch
-          </h2>
-          <p style={{
-            fontFamily: 'Figtree, sans-serif',
-            fontSize: '16px',
-            color: '#F6F3EC',
-            opacity: 0.7,
-            textAlign: 'center',
-            marginBottom: '72px',
-            fontStyle: 'italic',
-          }}>
-            "Ochoch" means "home" in Q'eqchi' — the indigenous language of the families we serve.
-          </p>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '48px' }} className="ochoch-grid">
-            {[
-              {
-                step: 'Grow',
-                img: 'e6939af0-9657-4e0f-8cb0-a0a67f9f44c4.JPG',
-                body: 'Every Ochoch has a model garden where families learn to grow over 22 varieties of fruits and vegetables. We use chemical-free practices rooted in ancient Maya traditions — from seed to table, families gain food sovereignty.',
-              },
-              {
-                step: 'Cook',
-                img: 'solly-kitchen-women.jpg',
-                body: 'The model kitchen is where nutrition becomes a daily practice. Women learn to transform what they grow into nourishing meals for their families. Cooking demonstrations, recipe guides, and ongoing support ensure the knowledge sticks.',
-              },
-              {
-                step: 'Track',
-                img: 'IMG_5484-1024x683.jpg',
-                body: 'Each child is monitored through regular clinic visits and home visits by Narú nurses. We track weight, development, and health — and intervene immediately when a child falls behind. No one slips through the cracks.',
-              },
-              {
-                step: 'Take Home',
-                img: 'IMG_5278.JPG',
-                body: 'When families graduate, they take home seedlings, tools, and the skills to sustain their own garden indefinitely. The Ochoch model is not a temporary program — it is a permanent transformation.',
-              },
-            ].map((item, i) => (
-              <div key={i} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                <div style={{ position: 'relative', overflow: 'hidden', borderRadius: '4px' }}>
-                  <img
-                    src={`${BASE}/images/${item.img}`}
-                    alt={item.step}
-                    style={{ width: '100%', height: '260px', objectFit: 'cover', display: 'block' }}
-                  />
-                  <div style={{
-                    position: 'absolute',
-                    top: '16px',
-                    left: '16px',
-                    background: '#36302A',
-                    color: '#F8F3EC',
-                    fontFamily: 'Figtree, sans-serif',
-                    fontSize: '11px',
-                    fontWeight: 700,
-                    letterSpacing: '0.15em',
-                    textTransform: 'uppercase',
-                    padding: '6px 14px',
-                    borderRadius: '3px',
-                  }}>
-                    {item.step}
-                  </div>
-                </div>
-                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '15px', lineHeight: 1.75, color: '#F6F3EC', opacity: 0.8 }}>
-                  {item.body}
-                </p>
-              </div>
-            ))}
-          </div>
-          <style>{`
-            @media (max-width: 768px) {
-              .ochoch-grid { grid-template-columns: 1fr !important; }
-            }
-          `}</style>
-        </div>
-      </section>
-
-      {/* THREE LOCATIONS */}
+      {/* THE OCHOCH — MERGED SECTION */}
       <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <p style={{
@@ -361,7 +263,7 @@ export default function OurCause() {
             marginBottom: '16px',
             textAlign: 'center',
           }}>
-            Where We Work
+            Our Sites
           </p>
           <h2 style={{
             fontFamily: 'Libre Baskerville, serif',
@@ -369,35 +271,49 @@ export default function OurCause() {
             fontWeight: 400,
             color: '#36302A',
             textAlign: 'center',
-            marginBottom: '72px',
+            marginBottom: '24px',
           }}>
-            Three Sites. 184 Communities.
+            The Ochoch — A Sanctuary for Learning
           </h2>
+          <p style={{
+            fontFamily: 'Figtree, sans-serif',
+            fontSize: '17px',
+            lineHeight: 1.85,
+            color: '#574C3F',
+            textAlign: 'center',
+            maxWidth: '760px',
+            margin: '0 auto 80px',
+          }}>
+            "Ochoch" means "home" in Q'eqchi'. Each of our three centers is a sanctuary — a working model home where families come to see and do. Because most families have less than a second-grade education, learning happens by touching, tasting, and harvesting. Every Ochoch has a model garden, a teaching kitchen, and a medical clinic where nurses weigh babies, track development, and educate mothers. Families leave with seedlings, skills, and the confidence to sustain their own gardens at home.
+          </p>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '64px' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '80px' }}>
             {[
               {
                 name: 'Narú Medical Center',
-                img: 'HV-photo.png',
+                tagline: 'A health and well-being resource for all',
+                img: 'ochoch-naru.webp',
                 communities: '93 communities',
                 annualCost: '$77,150 / year',
-                body: 'The heart of our operations. The Narú Medical Center provides clinical care, outreach clinics, midwifery support, and pregnancy care across 93 communities. Families travel for hours to receive life-saving care here. The Center also runs model gardens, nutrition programs, and community education.',
+                body: 'The heart of our operations. Training sessions take families from seed to table with cooking demonstrations and practical recipes. The Center provides clinical care, nutrition programs, and community education to surrounding communities. We partner with ADP on abuse prevention for teenagers and with CARE International to support young mothers with micro-business skills.',
                 flip: false,
               },
               {
                 name: 'Ochoch Charmak',
-                img: '5c6da391-1394-4dce-a685-835062b5e382.JPG',
+                tagline: 'Training in a tropical climate',
+                img: 'ochoch-charmak.webp',
                 communities: '25 communities',
                 annualCost: '$72,362 / year',
-                body: 'Set in a tropical climate, Ochoch Charmak serves 25 communities with education, clinical care, and food production training. A groundbreaking midwife pilot program launched here in 2025 in partnership with Ministry of Health nurses. A new clinic is under construction to serve the community year-round.',
+                body: '44 chicken pairs were provided to families, building sustainable protein sources for children. A groundbreaking pilot midwife program launched in partnership with Ministry of Health nurses for maternal and newborn care. After storm damage, a new roof was installed and the wood construction is being transformed into a full clinic to serve the community year-round.',
                 flip: true,
               },
               {
                 name: 'Ochoch Solly',
-                img: '9312a127-6296-49b2-9327-0c23facdc2e0.JPG',
+                tagline: 'Training in the cold lands',
+                img: 'ochoch-solly.png',
                 communities: '18 communities',
                 annualCost: '$75,038 / year',
-                body: 'Nestled in the cold highlands of Sepalau, Ochoch Solly serves 18 communities. In 2025, 12 neighboring families were connected to potable water — with 90 more served in partnership with Adicay. Our Youth Health Program launched here with 83 young adults receiving education on health and nutrition.',
+                body: 'Our Youth Program launched in January 2025 with Instituto Básico de Tzalamila, equipping 83 young adults with health and nutrition education. 12 neighboring families were connected to potable water in Sepalau, with 90 more served in partnership with Adicay. In a beautiful tradition, 36 elders from Sepalau joined the harvest at Ochoch Solly, building intergenerational community bonds.',
                 flip: false,
               },
             ].map((loc, i) => (
@@ -411,7 +327,7 @@ export default function OurCause() {
                   <img
                     src={`${BASE}/images/${loc.img}`}
                     alt={loc.name}
-                    style={{ width: '100%', height: '380px', objectFit: 'cover', borderRadius: '4px' }}
+                    style={{ width: '100%', height: '400px', objectFit: 'cover', borderRadius: '4px' }}
                   />
                 </div>
                 <div style={{ order: loc.flip ? 0 : 1 }}>
@@ -422,20 +338,30 @@ export default function OurCause() {
                     letterSpacing: '0.15em',
                     textTransform: 'uppercase',
                     color: '#574C3F',
-                    marginBottom: '12px',
+                    marginBottom: '8px',
                   }}>
                     {loc.communities}
                   </p>
                   <h3 style={{
                     fontFamily: 'Libre Baskerville, serif',
-                    fontSize: 'clamp(22px, 2.5vw, 32px)',
+                    fontSize: 'clamp(22px, 2.5vw, 34px)',
                     fontWeight: 400,
                     color: '#36302A',
-                    marginBottom: '20px',
+                    marginBottom: '8px',
                     lineHeight: 1.2,
                   }}>
                     {loc.name}
                   </h3>
+                  <p style={{
+                    fontFamily: 'Figtree, sans-serif',
+                    fontSize: '14px',
+                    fontStyle: 'italic',
+                    color: '#574C3F',
+                    marginBottom: '20px',
+                    opacity: 0.8,
+                  }}>
+                    {loc.tagline}
+                  </p>
                   <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.8, color: '#574C3F', marginBottom: '24px' }}>
                     {loc.body}
                   </p>
