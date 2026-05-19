@@ -106,7 +106,7 @@ export default function Home() {
             fontWeight: 700,
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
-            color: '#574C3F',
+            color: '#BFA07A',
             marginBottom: '28px',
           }}>
             The Narú Way
@@ -267,7 +267,7 @@ export default function Home() {
             fontWeight: 700,
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
-            color: '#574C3F',
+            color: '#BFA07A',
             marginBottom: '28px',
             textAlign: 'center',
           }}>
@@ -479,7 +479,7 @@ export default function Home() {
       {/* FILM */}
       <section style={{ background: '#36302A', padding: '100px 40px' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '16px', textAlign: 'center' }}>
+          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#BFA07A', marginBottom: '16px', textAlign: 'center' }}>
             Our Story
           </p>
           <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(24px, 3.5vw, 38px)', fontWeight: 400, color: '#F6F3EC', marginBottom: '16px', textAlign: 'center' }}>
@@ -513,7 +513,7 @@ export default function Home() {
             fontWeight: 700,
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
-            color: '#574C3F',
+            color: '#BFA07A',
             marginBottom: '28px',
           }}>
             For Those Called to Go Deeper
