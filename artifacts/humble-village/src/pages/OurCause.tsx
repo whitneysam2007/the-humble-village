@@ -93,6 +93,59 @@ export default function OurCause() {
         </div>
       </section>
 
+      {/* MAP + UNICEF STAT */}
+      <section style={{ background: '#F8F3EC', padding: '80px 40px' }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'center' }} className="map-stat-grid">
+          <div>
+            <img
+              src={`${BASE}/images/Untitled_design.jpg`}
+              alt="Where We Serve — Alta Verapaz, Guatemala"
+              style={{ width: '100%', display: 'block', borderRadius: '4px' }}
+            />
+          </div>
+          <div>
+            <p style={{
+              fontFamily: 'Figtree, sans-serif',
+              fontSize: '11px',
+              fontWeight: 700,
+              letterSpacing: '0.2em',
+              textTransform: 'uppercase',
+              color: '#574C3F',
+              marginBottom: '16px',
+            }}>
+              Where We Work
+            </p>
+            <h2 style={{
+              fontFamily: 'Libre Baskerville, serif',
+              fontSize: 'clamp(22px, 3vw, 36px)',
+              fontWeight: 400,
+              color: '#36302A',
+              marginBottom: '24px',
+              lineHeight: 1.2,
+            }}>
+              Alta Verapaz, Guatemala
+            </h2>
+            <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.85, color: '#574C3F', marginBottom: '24px' }}>
+              According to UNICEF, Alta Verapaz has the highest rates of malnutrition in children ages 0–5 in Central, South, and North America. Many indigenous Q'eqchi' Mayan families living here are marginalized, receiving little or no government support, with extremely limited access to healthcare and justice.
+            </p>
+            <p style={{
+              fontFamily: 'Figtree, sans-serif',
+              fontSize: '13px',
+              color: '#574C3F',
+              opacity: 0.6,
+              fontStyle: 'italic',
+            }}>
+              Source: UNICEF Guatemala
+            </p>
+          </div>
+        </div>
+        <style>{`
+          @media (max-width: 768px) {
+            .map-stat-grid { grid-template-columns: 1fr !important; }
+          }
+        `}</style>
+      </section>
+
       {/* IMPACT STATS */}
       <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>

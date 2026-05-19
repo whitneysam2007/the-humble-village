@@ -81,21 +81,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* HOW WE HELP */}
-      <section style={{ background: '#F8F3EC', padding: '80px 40px' }}>
-        <div style={{ maxWidth: '760px', margin: '0 auto', textAlign: 'center' }}>
-          <p style={{
-            fontFamily: 'Figtree, sans-serif',
-            fontSize: '17px',
-            lineHeight: 1.9,
-            color: '#574C3F',
-          }}>
-            We walk with every family from crisis to self-reliance: emergency nutrition first, then 18 months of education that teaches gardening, clean water, and food production. The goal is never dependency. It is dignity. To learn exactly how the program works — from enrollment to graduation — visit our{' '}
-            <a href="/ourcause" style={{ color: '#36302A', fontWeight: 600, textDecoration: 'underline' }}>Our Cause</a>{' '}page.
-          </p>
-        </div>
-      </section>
-
       {/* WHAT SETS US APART */}
       <section style={{ position: 'relative', overflow: 'hidden', padding: '120px 40px' }}>
         <img

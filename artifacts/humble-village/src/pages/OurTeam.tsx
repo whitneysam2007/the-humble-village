@@ -50,19 +50,11 @@ export default function OurTeam() {
             The People Behind the Mission
           </h1>
           <p style={{ fontSize: '17px', lineHeight: 1.85, color: '#36302A', opacity: 0.8, marginBottom: '20px' }}>
-            Our work takes us to the highest rates of child malnutrition in Central, South, and North America. Many indigenous Mayans in rural Alta Verapaz are marginalized, receiving little or no government support, with extremely limited access to healthcare and justice.
-          </p>
-          <p style={{ fontSize: '17px', lineHeight: 1.85, color: '#36302A', opacity: 0.8 }}>
             The Humble Village is led by two women who gave their lives to this work — and a team of ten dedicated local Guatemalan staff who are the true backbone of everything we do.
           </p>
-        </div>
-
-        <div style={{ maxWidth: '500px', margin: '0 auto', padding: '0 40px 80px' }}>
-          <img
-            src={`${BASE}/images/Untitled_design.jpg`}
-            alt="Where We Serve — Alta Verapaz, Guatemala"
-            style={{ width: '100%', display: 'block', borderRadius: '4px' }}
-          />
+          <p style={{ fontSize: '17px', lineHeight: 1.85, color: '#36302A', opacity: 0.8 }}>
+            Because our board members are 100% volunteers, every dollar donated goes directly to the field — to the nurses, the gardens, and the families.
+          </p>
         </div>
       </section>
 
