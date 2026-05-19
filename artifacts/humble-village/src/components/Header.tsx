@@ -114,7 +114,7 @@ export default function Header() {
                 whiteSpace: 'nowrap',
               }}
             >
-              NARÚ CIRCLE
+              THE NARÚ CIRCLE
             </Link>
           </nav>
 
@@ -227,7 +227,7 @@ export default function Header() {
               textDecoration: 'none',
             }}
           >
-            NARÚ CIRCLE
+            THE NARÚ CIRCLE
           </Link>
           <a
             href="https://www.zeffy.com/en-US/donation-form/donate-to-the-humble-village"
