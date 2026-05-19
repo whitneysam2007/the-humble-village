@@ -501,7 +501,7 @@ export default function Home() {
       </section>
 
       {/* NARÚ CIRCLE CTA */}
-      <section style={{ background: '#36302A', padding: '100px 40px' }}>
+      <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
         <div style={{
           maxWidth: '800px',
           margin: '0 auto',
@@ -513,7 +513,7 @@ export default function Home() {
             fontWeight: 700,
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
-            color: '#BFA07A',
+            color: '#574C3F',
             marginBottom: '28px',
           }}>
             For Those Called to Go Deeper
@@ -522,7 +522,7 @@ export default function Home() {
             fontFamily: 'Libre Baskerville, serif',
             fontSize: 'clamp(26px, 4vw, 46px)',
             fontWeight: 400,
-            color: '#F6F3EC',
+            color: '#36302A',
             lineHeight: 1.25,
             marginBottom: '28px',
           }}>
@@ -532,8 +532,8 @@ export default function Home() {
             fontFamily: 'Figtree, sans-serif',
             fontSize: '17px',
             lineHeight: 1.8,
-            color: '#F6F3EC',
-            opacity: 0.8,
+            color: '#574C3F',
+            opacity: 0.85,
             marginBottom: '48px',
           }}>
             The Narú Circle is a small group of individuals, families, and organizations who ensure this work continues year after year. Choose the program that speaks to you. Name it. Steward it.
@@ -542,8 +542,8 @@ export default function Home() {
             to="/naru-circle"
             style={{
               display: 'inline-block',
-              background: '#F8F3EC',
-              color: '#36302A',
+              background: '#36302A',
+              color: '#F8F3EC',
               padding: '18px 48px',
               borderRadius: '6px',
               fontFamily: 'Figtree, sans-serif',
