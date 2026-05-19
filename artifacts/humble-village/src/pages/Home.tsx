@@ -13,7 +13,7 @@ export default function Home() {
         position: 'relative',
         minHeight: '100vh',
         display: 'flex',
-        alignItems: 'flex-end',
+        alignItems: 'center',
         overflow: 'hidden',
         paddingTop: '80px',
         background: '#36302A',
@@ -21,9 +21,9 @@ export default function Home() {
         <img
           src={`${BASE}/images/hero-home.jpg`}
           alt="The Humble Village"
-          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 5%' }}
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: '60% 15%' }}
         />
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(54,48,42,0.38)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'rgba(54,48,42,0.12)' }} />
         <div style={{
           position: 'relative',
           zIndex: 1,
