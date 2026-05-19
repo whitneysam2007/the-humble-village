@@ -82,81 +82,17 @@ export default function About() {
       </section>
 
       {/* HOW WE HELP */}
-      <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+      <section style={{ background: '#F8F3EC', padding: '80px 40px' }}>
+        <div style={{ maxWidth: '760px', margin: '0 auto', textAlign: 'center' }}>
           <p style={{
             fontFamily: 'Figtree, sans-serif',
-            fontSize: '11px',
-            fontWeight: 700,
-            letterSpacing: '0.2em',
-            textTransform: 'uppercase',
+            fontSize: '17px',
+            lineHeight: 1.9,
             color: '#574C3F',
-            marginBottom: '16px',
-            textAlign: 'center',
           }}>
-            How We Help
+            We walk with every family from crisis to self-reliance: emergency nutrition first, then 18 months of education that teaches gardening, clean water, and food production. The goal is never dependency. It is dignity. To learn exactly how the program works — from enrollment to graduation — visit our{' '}
+            <a href="/ourcause" style={{ color: '#36302A', fontWeight: 600, textDecoration: 'underline' }}>Our Cause</a>{' '}page.
           </p>
-          <h2 style={{
-            fontFamily: 'Libre Baskerville, serif',
-            fontSize: 'clamp(26px, 3.5vw, 42px)',
-            fontWeight: 400,
-            color: '#36302A',
-            textAlign: 'center',
-            marginBottom: '72px',
-          }}>
-            A Three-Part Path to Self-Reliance
-          </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '48px' }} className="howhelp-grid">
-            {[
-              {
-                step: '01',
-                title: 'Emergency Nutrition',
-                body: 'We begin by providing emergency nutrition for infants and children suffering from severe acute malnutrition — stabilizing lives and giving families a foundation to build on.',
-              },
-              {
-                step: '02',
-                title: 'Essential Skills',
-                body: 'We teach gardening, clean water practices, and family nutrition. Families learn to grow their own food, cook healthy meals, and care for their health — tools they keep forever.',
-              },
-              {
-                step: '03',
-                title: '18 Months to Self-Reliance',
-                body: 'We continue with 18 months of Narú education that empowers women to achieve lasting self-reliance. We walk with each family until they are truly ready to stand on their own.',
-              },
-            ].map((item, i) => (
-              <div key={i}>
-                <div style={{
-                  fontFamily: 'Libre Baskerville, serif',
-                  fontSize: '48px',
-                  fontWeight: 400,
-                  color: '#F8F3EC',
-                  WebkitTextStroke: '1px #C4B8AC',
-                  marginBottom: '20px',
-                  lineHeight: 1,
-                }}>
-                  {item.step}
-                </div>
-                <h3 style={{
-                  fontFamily: 'Libre Baskerville, serif',
-                  fontSize: '20px',
-                  fontWeight: 400,
-                  color: '#36302A',
-                  marginBottom: '16px',
-                  lineHeight: 1.3,
-                }}>
-                  {item.title}
-                </h3>
-                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '15px', lineHeight: 1.75, color: '#574C3F' }}>
-                  {item.body}
-                </p>
-              </div>
-            ))}
-          </div>
-          <style>{`
-            @media (max-width: 768px) {
-              .howhelp-grid { grid-template-columns: 1fr !important; }
-            }
-          `}</style>
         </div>
       </section>
 
