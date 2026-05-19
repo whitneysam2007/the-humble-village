@@ -57,13 +57,13 @@ export default function Contact() {
       {/* HERO IMAGE */}
       <div style={{ position: 'relative', height: '500px', overflow: 'hidden' }}>
         <img
-          src={`${BASE}/images/group.png`}
-          alt="The Humble Village community group"
+          src={`${BASE}/images/contact-form.webp`}
+          alt="Mothers and babies at The Humble Village"
           style={{
             width: '100%',
             height: '100%',
             objectFit: 'cover',
-            objectPosition: 'center 40%',
+            objectPosition: 'center 30%',
             display: 'block',
           }}
         />
