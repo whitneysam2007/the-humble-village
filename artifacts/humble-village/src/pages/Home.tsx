@@ -237,7 +237,7 @@ export default function Home() {
             {/* RIGHT: photo */}
             <div style={{ overflow: 'hidden' }}>
               <img
-                src={`${BASE}/images/crisis-mother.jpg`}
+                src={`${BASE}/images/crisis-mother.webp`}
                 alt="A mother and her children in Alta Verapaz, Guatemala"
                 style={{
                   width: '100%',
