@@ -23,7 +23,7 @@ export default function OurTeam() {
       {/* INTRO */}
       <section style={{ paddingTop: '80px', background: '#F8F3EC' }}>
         <div style={{
-          maxWidth: '700px',
+          maxWidth: '780px',
           margin: '0 auto',
           padding: '80px 40px 60px',
           textAlign: 'center',
