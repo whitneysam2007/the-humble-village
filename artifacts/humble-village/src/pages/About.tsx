@@ -44,7 +44,7 @@ export default function About() {
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)' }} className="about-photo-grid">
           <img src={`${BASE}/images/about-mother-learning.jpg`} alt="Mother learning with baby" style={{ width: '100%', height: '480px', objectFit: 'cover', display: 'block' }} />
-          <img src={`${BASE}/images/about-cooking.webp`} alt="Women cooking at Solly kitchen" style={{ width: '100%', height: '480px', objectFit: 'cover', objectPosition: 'center 30%', display: 'block' }} />
+          <img src={`${BASE}/images/about-cooking.jpg`} alt="Women cooking at Solly kitchen" style={{ width: '100%', height: '480px', objectFit: 'cover', objectPosition: 'center 30%', display: 'block' }} />
           <img src={`${BASE}/images/women-gardening.jpg`} alt="Women tending garden" style={{ width: '100%', height: '480px', objectFit: 'cover', display: 'block' }} />
         </div>
         <style>{`
