@@ -161,7 +161,7 @@ export default function NaruCircle() {
       <section style={{ background: '#F8F3EC', padding: '80px 40px', textAlign: 'center' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '48px' }}>
-            What $320,931 Sustains
+            What Your Partnership Sustains
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '40px' }} className="circle-stats-grid">
             {[
