@@ -156,7 +156,7 @@ export default function Home() {
             color: '#36302A',
             lineHeight: 1.3,
             marginBottom: '16px',
-            maxWidth: '760px',
+            maxWidth: '900px',
             margin: '0 auto 16px',
           }}>
             Alta Verapaz, Guatemala has the <em>highest rates of child malnutrition</em> in all of Central, South, and North America.
