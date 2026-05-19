@@ -45,7 +45,7 @@ export default function About() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)' }} className="about-photo-grid">
           <img src={`${BASE}/images/5c6da391-1394-4dce-a685-835062b5e382.JPG`} alt="Community" style={{ width: '100%', height: '480px', objectFit: 'cover', display: 'block' }} />
           <img src={`${BASE}/images/solly-kitchen-women.jpg`} alt="Women cooking at Solly kitchen" style={{ width: '100%', height: '480px', objectFit: 'cover', display: 'block' }} />
-          <img src={`${BASE}/images/Naru_Team_Pic.jpeg`} alt="Narú team" style={{ width: '100%', height: '480px', objectFit: 'cover', display: 'block' }} />
+          <img src={`${BASE}/images/women-gardening.jpg`} alt="Women tending garden" style={{ width: '100%', height: '480px', objectFit: 'cover', display: 'block' }} />
         </div>
         <style>{`
           @media (max-width: 768px) {
