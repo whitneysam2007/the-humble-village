@@ -241,9 +241,9 @@ export default function Home() {
                 alt="A mother and her children in Alta Verapaz, Guatemala"
                 style={{
                   width: '100%',
-                  height: '504px',
+                  height: '605px',
                   objectFit: 'cover',
-                  objectPosition: 'center 20%',
+                  objectPosition: 'center 55%',
                   display: 'block',
                 }}
               />
