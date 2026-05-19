@@ -19,7 +19,7 @@ export default function Home() {
         background: '#36302A',
       }}>
         <img
-          src={`${BASE}/images/hero-home.webp`}
+          src={`${BASE}/images/hero-home.jpg`}
           alt="The Humble Village"
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%' }}
         />
