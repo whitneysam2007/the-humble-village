@@ -252,7 +252,7 @@ export default function About() {
         <img
           src={`${BASE}/images/about-cta.jpg`}
           alt="The Humble Village"
-          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%' }}
         />
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(36,28,20,0.25)' }} />
         <div style={{ position: 'relative', zIndex: 1, padding: '60px 40px', color: '#F6F3EC' }}>
