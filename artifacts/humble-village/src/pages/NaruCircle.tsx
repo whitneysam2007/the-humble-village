@@ -288,11 +288,13 @@ export default function NaruCircle() {
               <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(20px, 2.5vw, 26px)', fontWeight: 400, color: '#F6F3EC', marginBottom: '20px', lineHeight: 1.2 }}>
                 Endowment Fund
               </h3>
-              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.8, color: '#F6F3EC', opacity: 0.8, marginBottom: '24px', flex: 1 }}>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.8, color: '#F6F3EC', opacity: 0.8 }}>
                 A gift to our Endowment Fund ensures that the work of The Humble Village continues for generations, independent of annual fundraising cycles. Our goal is a $3.5M endowment that permanently sustains our programs in Alta Verapaz.
               </p>
-              <a href="/contact" style={{ display: 'inline-block', background: '#F8F3EC', color: '#36302A', padding: '12px 24px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '12px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none', textAlign: 'center' }}>Inquire About the Endowment</a>
             </div>
+          </div>
+          <div style={{ textAlign: 'center', marginTop: '48px' }}>
+            <a href="/contact" style={{ display: 'inline-block', background: '#36302A', color: '#F8F3EC', padding: '14px 40px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none' }}>Partner With Us</a>
           </div>
           <style>{`
             @media (max-width: 900px) {
