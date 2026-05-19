@@ -314,7 +314,7 @@ export default function About() {
               Our work begins with saving lives and ends with families who no longer need us. Every program is designed with an exit in mind — not dependency, but dignity.
             </p>
             <p style={{ fontSize: '17px', lineHeight: 1.85, color: '#36302A', opacity: 0.85, marginBottom: '28px' }}>
-              100% of funds donated go directly to field programs and the local Guatemalan staff who are on the ground every single day. Our board members are 100% volunteers.
+              100% of funds donated go directly to these projects and local Guatemalan staff who are on the ground working day to day. The Humble Village takes no overhead or administrative costs, thanks to a generous team who volunteers their time and resources to ensure the donations make the greatest impact possible.
             </p>
             <Link to="/ourcause" className="btn-primary">See Our Cause</Link>
           </div>
