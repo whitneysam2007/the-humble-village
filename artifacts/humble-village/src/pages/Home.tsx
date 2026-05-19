@@ -177,7 +177,7 @@ export default function Home() {
             display: 'grid',
             gridTemplateColumns: '1fr 1fr',
             gap: '56px',
-            alignItems: 'flex-start',
+            alignItems: 'center',
           }} className="crisis-layout">
             {/* LEFT: stats + body + CTA */}
             <div>
@@ -241,7 +241,7 @@ export default function Home() {
                 alt="A mother and her children in Alta Verapaz, Guatemala"
                 style={{
                   width: '100%',
-                  height: '420px',
+                  height: '504px',
                   objectFit: 'cover',
                   objectPosition: 'center 20%',
                   display: 'block',
