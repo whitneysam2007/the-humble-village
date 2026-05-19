@@ -274,11 +274,11 @@ export default function Give() {
                 The Narú Circle
               </h3>
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.8, color: '#F6F3EC', opacity: 0.85, flex: 1 }}>
-                This is not just a donation. This is a partnership. Narú Circle members sponsor a specific program — the Medical Center, an Ochoch, the nutrition fund — and adopt that piece of the work as their own.
+                This is not just a donation. This is a partnership. Narú Circle members sponsor a specific program: the Medical Center, an Ochoch, or the nutrition fund. They adopt that piece of the work as their own.
               </p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                 {[
-                  'Named legacy — your program, your name',
+                  'Named legacy: your program, your name',
                   'Direct connection to local team',
                   'A place to come back to in Guatemala',
                   'Commitment horizons: 5, 10, or forever',
@@ -565,7 +565,7 @@ export default function Give() {
                   flex: 1,
                   margin: 0,
                 }}>
-                  Twice a year — in March and November — we take a small group to Alta Verapaz, Guatemala. Families are welcome. You walk the ridge paths. You meet the mothers. You see the programs firsthand. Cost: $500 donation + ~$500 in-country + flight. There is nothing else quite like it.
+                  Twice a year, in March and November, we take a small group to Alta Verapaz, Guatemala. Families are welcome. You walk the ridge paths. You meet the mothers. You see the programs firsthand. Cost: $500 donation + ~$500 in-country + flight. There is nothing else quite like it.
                 </p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: 'auto' }}>
                   <a
