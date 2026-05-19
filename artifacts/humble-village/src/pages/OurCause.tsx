@@ -98,8 +98,8 @@ export default function OurCause() {
         <div style={{ maxWidth: '900px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'center' }} className="map-stat-grid">
           <div>
             <img
-              src={`${BASE}/images/Untitled_design.jpg`}
-              alt="Where We Serve — Alta Verapaz, Guatemala"
+              src={`${BASE}/images/unicef-map.png`}
+              alt="UNICEF Malnutrition World Map — Alta Verapaz, Guatemala"
               style={{ width: '100%', display: 'block', borderRadius: '4px' }}
             />
           </div>
