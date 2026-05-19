@@ -286,7 +286,7 @@ export default function NaruCircle() {
             <div style={{ background: '#36302A', borderRadius: '8px', padding: '48px 36px', display: 'flex', flexDirection: 'column' }}>
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#BFA07A', marginBottom: '16px' }}>Option 3</p>
               <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(20px, 2.5vw, 26px)', fontWeight: 400, color: '#F6F3EC', marginBottom: '20px', lineHeight: 1.2 }}>
-                The Endowment Fund
+                Endowment Fund
               </h3>
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.8, color: '#F6F3EC', opacity: 0.8, marginBottom: '24px', flex: 1 }}>
                 A gift to our Endowment Fund ensures that the work of The Humble Village continues for generations, independent of annual fundraising cycles. Our goal is a $3.5M endowment that permanently sustains our programs in Alta Verapaz.
