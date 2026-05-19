@@ -255,16 +255,16 @@ export default function NaruCircle() {
         </div>
       </section>
 
-      {/* TWO OPTIONS */}
+      {/* THREE OPTIONS */}
       <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
-        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '16px', textAlign: 'center' }}>
-            Your Invitation
+            Our Invitation
           </p>
           <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(26px, 3.5vw, 40px)', fontWeight: 400, color: '#36302A', textAlign: 'center', marginBottom: '64px' }}>
-            Two paths to partnership
+            Three paths to partnership
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px' }} className="options-grid">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '32px' }} className="options-grid">
             <div style={{ background: '#36302A', borderRadius: '8px', padding: '48px 36px' }}>
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#BFA07A', marginBottom: '16px' }}>Option 1</p>
               <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(20px, 2.5vw, 26px)', fontWeight: 400, color: '#F6F3EC', marginBottom: '20px', lineHeight: 1.2 }}>
@@ -283,9 +283,19 @@ export default function NaruCircle() {
                 Commit to giving a multiyear donation of any amount toward our general fund. Help grow our programs and fill in any gaps. Consistent support builds lasting independence.
               </p>
             </div>
+            <div style={{ background: '#36302A', borderRadius: '8px', padding: '48px 36px', display: 'flex', flexDirection: 'column' }}>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#BFA07A', marginBottom: '16px' }}>Option 3</p>
+              <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(20px, 2.5vw, 26px)', fontWeight: 400, color: '#F6F3EC', marginBottom: '20px', lineHeight: 1.2 }}>
+                The Endowment Fund
+              </h3>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.8, color: '#F6F3EC', opacity: 0.8, marginBottom: '24px', flex: 1 }}>
+                A gift to our Endowment Fund ensures that the work of The Humble Village continues for generations, independent of annual fundraising cycles. Our goal is a $3.5M endowment that permanently sustains our programs in Alta Verapaz.
+              </p>
+              <a href="/contact" style={{ display: 'inline-block', background: '#F8F3EC', color: '#36302A', padding: '12px 24px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '12px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none', textAlign: 'center' }}>Inquire About the Endowment</a>
+            </div>
           </div>
           <style>{`
-            @media (max-width: 768px) {
+            @media (max-width: 900px) {
               .options-grid { grid-template-columns: 1fr !important; }
             }
           `}</style>
@@ -514,59 +524,6 @@ export default function NaruCircle() {
         `}</style>
       </section>
 
-      {/* ENDOWMENT FUND */}
-      <section style={{ background: '#F8F3EC', padding: '60px 40px', textAlign: 'center' }}>
-        <div style={{ maxWidth: '640px', margin: '0 auto' }}>
-          <p style={{
-            fontFamily: 'Figtree, sans-serif',
-            fontSize: '11px',
-            fontWeight: 700,
-            letterSpacing: '0.2em',
-            textTransform: 'uppercase',
-            color: '#574C3F',
-            marginBottom: '16px',
-          }}>
-            Long-Term Sustainability
-          </p>
-          <h3 style={{
-            fontFamily: 'Libre Baskerville, serif',
-            fontSize: 'clamp(20px, 2.5vw, 28px)',
-            fontWeight: 400,
-            color: '#36302A',
-            marginBottom: '20px',
-            lineHeight: 1.3,
-          }}>
-            The Humble Village Endowment Fund
-          </h3>
-          <p style={{
-            fontFamily: 'Figtree, sans-serif',
-            fontSize: '16px',
-            color: '#574C3F',
-            lineHeight: 1.8,
-            marginBottom: '28px',
-          }}>
-            A gift to our Endowment Fund ensures that the work of The Humble Village continues for generations — independent of annual fundraising cycles. Our goal is a $3.5M endowment that permanently sustains our programs in Alta Verapaz.
-          </p>
-          <a
-            href="/contact"
-            style={{
-              display: 'inline-block',
-              background: '#36302A',
-              color: '#F8F3EC',
-              padding: '14px 36px',
-              borderRadius: '6px',
-              fontFamily: 'Figtree, sans-serif',
-              fontSize: '13px',
-              fontWeight: 700,
-              letterSpacing: '0.1em',
-              textTransform: 'uppercase',
-              textDecoration: 'none',
-            }}
-          >
-            Inquire About the Endowment Fund
-          </a>
-        </div>
-      </section>
 
       {/* FINAL CTA */}
       <section style={{ background: '#36302A', padding: '80px 40px', textAlign: 'center' }}>
