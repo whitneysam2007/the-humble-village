@@ -8,7 +8,7 @@ export default function About() {
       {/* HERO */}
       <section style={{ paddingTop: '80px', background: '#F8F3EC' }}>
         <div style={{
-          maxWidth: '760px',
+          maxWidth: '960px',
           margin: '0 auto',
           padding: '80px 40px 60px',
           textAlign: 'center',
