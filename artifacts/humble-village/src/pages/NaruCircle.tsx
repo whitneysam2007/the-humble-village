@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const programs = [
-  { name: 'Narú Medical Center', cost: '$77,150', desc: 'Clinical care, outreach clinics, midwifery & pregnancy support across 93 communities' },
+  { name: 'Narú Medical Centers', cost: '$77,150', desc: 'Clinical care, outreach clinics, midwifery & pregnancy support across 93 communities' },
   { name: 'Ochoch Charmak', cost: '$72,362', desc: 'Education, clinical care & food production training for 25 communities' },
   { name: 'Ochoch Solly', cost: '$75,038', desc: 'Education, clinical care & food production training for 18 communities' },
   { name: 'Child Nutritional Recuperation', cost: '$61,200', desc: 'Nutritional supplements for 850 children & infant formula for 206 infants' },
@@ -88,7 +88,7 @@ export default function NaruCircle() {
                 Hospitals don't "graduate" from funding. Schools don't "complete" their mission. Our clinics, our Ochoch centers, our nurses, our nutrition programs — all require ongoing support to serve the families who depend on them.
               </p>
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '17px', lineHeight: 1.85, color: '#574C3F' }}>
-                The Narú Circle exists to solve this problem — sustainably, personally, and with deep partnership.
+                The Narú Circle exists to solve this problem — sustainably, personally, and with meaningful partnership.
               </p>
             </div>
             <div style={{ background: '#36302A', borderRadius: '8px', padding: '48px 40px', textAlign: 'center' }}>
