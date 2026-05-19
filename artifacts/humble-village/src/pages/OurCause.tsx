@@ -95,9 +95,15 @@ export default function OurCause() {
 
       {/* MAP + UNICEF STAT */}
       <section style={{ background: '#F8F3EC', padding: '80px 40px' }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-          {/* Text header */}
-          <div style={{ textAlign: 'center', marginBottom: '48px' }}>
+        <div style={{ maxWidth: '1035px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1.15fr 1fr', gap: '60px', alignItems: 'center' }} className="map-stat-grid">
+          <div>
+            <img
+              src={`${BASE}/images/unicef-map.png`}
+              alt="UNICEF Malnutrition World Map — Alta Verapaz, Guatemala"
+              style={{ width: '100%', display: 'block', borderRadius: '4px' }}
+            />
+          </div>
+          <div>
             <p style={{
               fontFamily: 'Figtree, sans-serif',
               fontSize: '11px',
@@ -119,7 +125,7 @@ export default function OurCause() {
             }}>
               Alta Verapaz, Guatemala
             </h2>
-            <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.85, color: '#574C3F', maxWidth: '760px', margin: '0 auto 12px' }}>
+            <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.85, color: '#574C3F', marginBottom: '24px' }}>
               According to UNICEF, Alta Verapaz has the highest rates of malnutrition in children ages 0–5 in Central, South, and North America. Many indigenous Q'eqchi' Mayan families living here are marginalized, receiving little or no government support, with extremely limited access to healthcare and justice.
             </p>
             <p style={{
@@ -132,13 +138,12 @@ export default function OurCause() {
               Source: UNICEF Guatemala
             </p>
           </div>
-          {/* Full-width map */}
-          <img
-            src={`${BASE}/images/unicef-map.png`}
-            alt="UNICEF Malnutrition World Map — Alta Verapaz, Guatemala"
-            style={{ width: '100%', display: 'block', borderRadius: '4px' }}
-          />
         </div>
+        <style>{`
+          @media (max-width: 768px) {
+            .map-stat-grid { grid-template-columns: 1fr !important; }
+          }
+        `}</style>
       </section>
 
       {/* IMPACT STATS */}
