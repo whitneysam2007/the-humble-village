@@ -219,7 +219,7 @@ export default function Give() {
                     textAlign: 'center',
                   }}
                 >
-                  Donate via Zeffy
+                  Give via Zeffy
                 </a>
                 <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '12px', color: '#F6F3EC', opacity: 0.5, marginTop: '12px', lineHeight: 1.5 }}>
                   Zeffy may ask you to "Help Keep Zeffy Free" by adding a percentage. <strong>It is optional.</strong> The Humble Village will not be charged for your transaction.

@@ -474,7 +474,7 @@ export default function OurCause() {
                 textDecoration: 'none',
               }}
             >
-              Donate Now
+              Give Now
             </a>
             <Link
               to="/naru-circle"
