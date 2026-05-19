@@ -177,7 +177,7 @@ export default function Home() {
             display: 'grid',
             gridTemplateColumns: '1fr 1fr',
             gap: '56px',
-            alignItems: 'stretch',
+            alignItems: 'flex-start',
           }} className="crisis-layout">
             {/* LEFT: stats + body + CTA */}
             <div>
@@ -235,13 +235,13 @@ export default function Home() {
             </div>
 
             {/* RIGHT: photo */}
-            <div style={{ display: 'flex' }}>
+            <div style={{ overflow: 'hidden' }}>
               <img
                 src={`${BASE}/images/crisis-mother.jpg`}
                 alt="A mother and her children in Alta Verapaz, Guatemala"
                 style={{
                   width: '100%',
-                  height: '100%',
+                  height: '420px',
                   objectFit: 'cover',
                   objectPosition: 'center 20%',
                   display: 'block',
