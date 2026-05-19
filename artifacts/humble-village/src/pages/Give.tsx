@@ -517,19 +517,7 @@ export default function Give() {
                   >
                     View Kit Collection Instructions
                   </a>
-                  <a
-                    href="mailto:kirstenbham@gmail.com,amydkerr@gmail.com?subject=Kit%20Collection%20Inquiry"
-                    style={{
-                      fontFamily: 'Figtree, sans-serif',
-                      fontSize: '12px',
-                      color: '#574C3F',
-                      textAlign: 'center',
-                      textDecoration: 'underline',
-                      letterSpacing: '0.05em',
-                    }}
-                  >
-                    Questions? Email our team
-                  </a>
+
                 </div>
               </div>
             </div>
@@ -604,6 +592,24 @@ export default function Give() {
             </div>
 
           </div>
+
+          {/* QUESTIONS LINK BELOW CARDS */}
+          <div style={{ textAlign: 'center', marginTop: '32px' }}>
+            <a
+              href="/contact"
+              style={{
+                fontFamily: 'Figtree, sans-serif',
+                fontSize: '13px',
+                color: '#F8F3EC',
+                opacity: 0.65,
+                textDecoration: 'underline',
+                letterSpacing: '0.05em',
+              }}
+            >
+              Questions? Contact our team
+            </a>
+          </div>
+
           <style>{`
             @media (max-width: 768px) {
               .give-time-grid { grid-template-columns: 1fr !important; }
