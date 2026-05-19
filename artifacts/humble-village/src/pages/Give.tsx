@@ -8,11 +8,30 @@ export default function Give() {
       {/* HERO */}
       <section style={{
         paddingTop: '80px',
-        background: '#36302A',
+        position: 'relative',
         padding: '160px 40px 100px',
         textAlign: 'center',
+        overflow: 'hidden',
       }}>
-        <div style={{ maxWidth: '700px', margin: '0 auto' }}>
+        <img
+          src={`${BASE}/images/watermelon.webp`}
+          alt="A mother feeding her child watermelon"
+          style={{
+            position: 'absolute',
+            inset: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            objectPosition: 'center 30%',
+            display: 'block',
+          }}
+        />
+        <div style={{
+          position: 'absolute',
+          inset: 0,
+          background: 'linear-gradient(to bottom, rgba(36,30,24,0.72) 0%, rgba(36,30,24,0.82) 100%)',
+        }} />
+        <div style={{ maxWidth: '700px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
           <p style={{
             fontFamily: 'Figtree, sans-serif',
             fontSize: '11px',
