@@ -347,7 +347,7 @@ export default function NaruCircle() {
       <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '16px', textAlign: 'center' }}>
-            Beyond a Check
+            Smarter Giving
           </p>
           <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(24px, 3.5vw, 38px)', fontWeight: 400, color: '#36302A', textAlign: 'center', marginBottom: '16px' }}>
             Other Ways to Give
@@ -359,7 +359,7 @@ export default function NaruCircle() {
             {[
               {
                 title: 'Appreciated Stock',
-                body: 'Donating appreciated securities — stocks, bonds, or mutual funds — lets you avoid capital gains tax entirely while receiving a charitable deduction for the full fair market value. Your advisor can facilitate the transfer directly.',
+                body: 'Donating appreciated securities — stocks, bonds, or mutual funds — lets you avoid capital gains tax entirely while receiving a charitable deduction for the full fair market value. Your broker can facilitate the transfer directly.',
               },
               {
                 title: 'Give From Your IRA',
@@ -379,6 +379,9 @@ export default function NaruCircle() {
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '15px', color: '#574C3F', textAlign: 'center', marginTop: '48px', lineHeight: 1.7, fontStyle: 'italic' }}>
             We would be honored to work with you and your advisors to find the giving option that aligns with your goals.
           </p>
+          <div style={{ textAlign: 'center', marginTop: '48px' }}>
+            <a href="/contact" style={{ display: 'inline-block', background: '#36302A', color: '#F8F3EC', padding: '14px 36px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none' }}>Contact Us to Request Wiring Instructions</a>
+          </div>
           <style>{`
             @media (max-width: 768px) {
               .otherways-grid { grid-template-columns: 1fr !important; }
