@@ -204,9 +204,9 @@ export default function About() {
         }} className="how-we-work-grid">
           <div>
             <img
-              src={`${BASE}/images/IMG_5278.JPG`}
-              alt="How We Work"
-              style={{ width: '100%', height: '480px', objectFit: 'cover', borderRadius: '4px' }}
+              src={`${BASE}/images/how-we-work.webp`}
+              alt="A mother holding her baby in Alta Verapaz, Guatemala"
+              style={{ width: '100%', height: '480px', objectFit: 'cover', objectPosition: 'center 20%', borderRadius: '4px' }}
             />
           </div>
           <div>
