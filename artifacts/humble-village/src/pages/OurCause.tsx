@@ -343,11 +343,11 @@ export default function OurCause() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '80px' }}>
             {[
               {
-                name: 'Narú Medical Center',
+                name: 'Narú Medical Centers',
                 tagline: 'A health and well-being resource for all',
                 img: 'ochoch-naru.webp',
                 communities: '93 communities',
-                annualCost: '$77,150 / year',
+                annualCost: '$82,000 / year',
                 body: 'The heart of our operations. Training sessions take families from seed to table with cooking demonstrations and practical recipes. The Center provides clinical care, nutrition programs, and community education to surrounding communities. We partner with ADP on abuse prevention for teenagers and with CARE International to support young mothers with micro-business skills.',
                 flip: false,
               },
@@ -356,7 +356,7 @@ export default function OurCause() {
                 tagline: 'Training in a tropical climate',
                 img: 'ochoch-charmak.webp',
                 communities: '25 communities',
-                annualCost: '$72,362 / year',
+                annualCost: '$77,000 / year',
                 body: '44 chicken pairs were provided to families, building sustainable protein sources for children. A groundbreaking pilot midwife program launched in partnership with Ministry of Health nurses for maternal and newborn care. After storm damage, a new roof was installed and the wood construction is being transformed into a full clinic to serve the community year-round.',
                 flip: true,
               },
@@ -365,7 +365,7 @@ export default function OurCause() {
                 tagline: 'Training in the cold lands',
                 img: 'ochoch-solly.png',
                 communities: '18 communities',
-                annualCost: '$75,038 / year',
+                annualCost: '$80,000 / year',
                 body: 'Our Youth Program launched in January 2025 with Instituto Básico de Tzalamila, equipping 83 young adults with health and nutrition education. 12 neighboring families were connected to potable water in Sepalau, with 90 more served in partnership with Adicay. In a beautiful tradition, 36 elders from Sepalau joined the harvest at Ochoch Solly, building intergenerational community bonds.',
                 flip: false,
               },
@@ -453,7 +453,7 @@ export default function OurCause() {
             You can sustain this work.
           </h2>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '17px', opacity: 0.8, marginBottom: '40px', lineHeight: 1.7 }}>
-            $320,931 per year sustains the entire operation — all three sites, every program, every family.
+            $355,000 per year sustains the entire operation — all three sites, every program, every family.
           </p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a

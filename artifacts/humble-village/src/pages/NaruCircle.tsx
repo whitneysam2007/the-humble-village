@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const programs = [
-  { name: 'Narú Medical Centers', cost: '$77,150', desc: 'Clinical care, outreach clinics, midwifery & pregnancy support across 93 communities' },
-  { name: 'Ochoch Charmak', cost: '$72,362', desc: 'Education, clinical care & food production training for 25 communities' },
-  { name: 'Ochoch Solly', cost: '$75,038', desc: 'Education, clinical care & food production training for 18 communities' },
-  { name: 'Child Nutritional Recuperation', cost: '$61,200', desc: 'Nutritional supplements for 850 children & infant formula for 206 infants' },
-  { name: 'Maternal Nutrition Program', cost: '$23,181', desc: 'Supplements & care for 400 at-risk pregnant women' },
-  { name: 'Community Midwife Training', cost: '$8,000', desc: 'Training for 60 midwives & birth attendants' },
-  { name: 'Youth Health Education', cost: '$4,000', desc: 'Nutrition & pregnancy-prevention education for 200 students' },
+  { name: 'Narú Medical Centers', cost: '$82,000', desc: 'Clinical care, outreach clinics, midwifery & pregnancy support across 93 communities' },
+  { name: 'Ochoch Charmak', cost: '$77,000', desc: 'Education, clinical care & food production training for 25 communities' },
+  { name: 'Ochoch Solly', cost: '$80,000', desc: 'Education, clinical care & food production training for 18 communities' },
+  { name: 'Child Nutritional Recuperation', cost: '$66,000', desc: 'Nutritional supplements for 850 children & infant formula for 206 infants' },
+  { name: 'Maternal Nutrition Program', cost: '$28,000', desc: 'Supplements & care for 400 at-risk pregnant women' },
+  { name: 'Community Midwife Training', cost: '$13,000', desc: 'Training for 60 midwives & birth attendants' },
+  { name: 'Youth Health Education', cost: '$9,000', desc: 'Nutrition & pregnancy-prevention education for 200 students' },
 ];
 
 export default function NaruCircle() {
@@ -147,19 +147,7 @@ export default function NaruCircle() {
                 </div>
               </div>
             ))}
-            <div style={{
-              display: 'grid',
-              gridTemplateColumns: '1fr auto',
-              gap: '24px',
-              padding: '24px 32px',
-              background: '#574C3F',
-              alignItems: 'center',
-            }} className="prog-row">
-              <h4 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '18px', fontWeight: 700, color: '#F6F3EC' }}>
-                Total — Full Operation
-              </h4>
-              <p style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '22px', color: '#F8F3EC', textAlign: 'right', whiteSpace: 'nowrap' }}>$320,931</p>
-            </div>
+
           </div>
           <style>{`
             @media (max-width: 600px) {
