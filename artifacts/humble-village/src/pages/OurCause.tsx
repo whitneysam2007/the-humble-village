@@ -452,9 +452,7 @@ export default function OurCause() {
           }}>
             You can sustain this work.
           </h2>
-          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '17px', opacity: 0.8, marginBottom: '40px', lineHeight: 1.7 }}>
-            $355,000 per year sustains the entire operation — all three sites, every program, every family.
-          </p>
+
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a
               href="https://www.zeffy.com/en-US/donation-form/donate-to-the-humble-village"
