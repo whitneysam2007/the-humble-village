@@ -13,7 +13,9 @@ const teamMembers = [
     name: 'Yvonne Sinclair',
     title: 'In-Country Director',
     img: 'yvonne-solo.webp',
-    bio: 'Yvonne left a successful career in publishing and writing in the U.K. to visit Guatemala, where she quickly fell in love with the country and its people. She has been working with The Humble Village for over a decade, managing day-to-day operations and building deep relationships with the communities we serve. Her presence at the Narú Medical Center is the steady heartbeat that keeps the mission alive.',
+    bio: 'Yvonne came to Guatemala and never left. She began weighing babies and distributing nutritional supplements from the back of a borrowed truck, doing the quiet, essential work before there was an organization to do it through. When she connected with Lauren, they recognized what they could build together. That recognition became The Humble Village.\n\nMore than two decades later, Yvonne leads Narú, the on-the-ground partner organization in Alta Verapaz. Her work is practical, sustainable, and holistic: clean water, community health, maternal care, and education. Grounded, steady, and quietly unstoppable, she has given her life to the families she serves, one small step at a time.',
+    podcastUrl: 'https://youtu.be/RKH7ua9oYho',
+    podcastLabel: 'Nurturing Outside of the Box: A Life Dedicated to Service — Down the Well with Elle Rowley',
   },
 ];
 
@@ -99,9 +101,30 @@ export default function OurTeam() {
                   }}>
                     {member.title}
                   </p>
-                  <p style={{ fontSize: '15px', lineHeight: 1.8, color: '#F6F3EC', opacity: 0.75 }}>
-                    {member.bio}
-                  </p>
+                  {member.bio.split('\n\n').map((para, j) => (
+                    <p key={j} style={{ fontSize: '15px', lineHeight: 1.8, color: '#F6F3EC', opacity: 0.75, marginBottom: j < member.bio.split('\n\n').length - 1 ? '16px' : '0' }}>
+                      {para}
+                    </p>
+                  ))}
+                  {member.podcastUrl && (
+                    <a
+                      href={member.podcastUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        display: 'inline-block',
+                        marginTop: '20px',
+                        fontFamily: 'Figtree, sans-serif',
+                        fontSize: '13px',
+                        fontWeight: 600,
+                        color: '#BFA07A',
+                        textDecoration: 'none',
+                        letterSpacing: '0.02em',
+                      }}
+                    >
+                      🎧 {member.podcastLabel} ↗
+                    </a>
+                  )}
                 </div>
               </div>
             ))}
