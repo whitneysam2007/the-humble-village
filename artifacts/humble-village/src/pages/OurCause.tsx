@@ -17,7 +17,7 @@ export default function OurCause() {
         overflow: 'hidden',
       }}>
         <img
-          src={`${BASE}/images/forgotten-valley-hero.png`}
+          src={`${BASE}/images/forgotten-valley-hero.webp`}
           alt="Q'eqchi' Mayan community in Alta Verapaz, Guatemala"
           style={{
             position: 'absolute',
@@ -25,7 +25,7 @@ export default function OurCause() {
             width: '100%',
             height: '100%',
             objectFit: 'cover',
-            objectPosition: 'center 30%',
+            objectPosition: 'center 35%',
           }}
         />
         <div style={{
