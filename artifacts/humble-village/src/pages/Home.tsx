@@ -19,9 +19,9 @@ export default function Home() {
         background: '#36302A',
       }}>
         <img
-          src={`${BASE}/images/HV-main.png`}
+          src={`${BASE}/images/hero-home.webp`}
           alt="The Humble Village"
-          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }}
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%' }}
         />
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(54,48,42,0.38)' }} />
         <div style={{
