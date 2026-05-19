@@ -254,7 +254,7 @@ export default function About() {
           alt="The Humble Village"
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
         />
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(54,48,42,0.6)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'rgba(28,34,46,0.72)' }} />
         <div style={{ position: 'relative', zIndex: 1, padding: '60px 40px', color: '#F6F3EC' }}>
           <h2 style={{
             fontFamily: 'Libre Baskerville, serif',
