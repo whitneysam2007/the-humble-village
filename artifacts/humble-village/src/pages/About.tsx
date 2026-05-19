@@ -84,9 +84,9 @@ export default function About() {
       {/* WHAT SETS US APART */}
       <section style={{ position: 'relative', overflow: 'hidden', padding: '120px 40px' }}>
         <img
-          src={`${BASE}/images/field-walking.webp`}
-          alt="Families walking through the valley"
-          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
+          src={`${BASE}/images/what-sets-us-apart.webp`}
+          alt="Community gathering in Alta Verapaz, Guatemala"
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 40%' }}
         />
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(54,48,42,0.60)' }} />
         <div style={{ position: 'relative', zIndex: 1, maxWidth: '700px', margin: '0 auto' }}>
