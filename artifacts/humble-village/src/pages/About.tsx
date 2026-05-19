@@ -68,7 +68,7 @@ export default function About() {
           }}>
             Together, We Can Lift Families from Malnourishment and Poverty
           </h2>
-          <div style={{ width: '48px', height: '2px', background: '#574C3F', margin: '0 auto 40px' }} />
+          <div style={{ width: '48px', height: '2px', background: '#E8B48A', margin: '0 auto 40px' }} />
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '17px', lineHeight: 1.85, color: '#F6F3EC', opacity: 0.8, marginBottom: '24px' }}>
             Since 2009, we've been working towards ending malnourishment and high infant-mortality rates in these highlands of Guatemala. It's an ambitious goal, and we see the progress every day thanks to the help of our local team on the ground in Guatemala and generous supporters like you.
           </p>
@@ -319,7 +319,7 @@ export default function About() {
             fontWeight: 700,
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
-            color: '#574C3F',
+            color: '#E8B48A',
             marginBottom: '16px',
             textAlign: 'center',
           }}>
@@ -428,7 +428,7 @@ export default function About() {
       {/* FILM */}
       <section style={{ background: '#36302A', padding: '100px 40px' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '16px', textAlign: 'center' }}>
+          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#E8B48A', marginBottom: '16px', textAlign: 'center' }}>
             Our Story
           </p>
           <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(24px, 3.5vw, 38px)', fontWeight: 400, color: '#F6F3EC', marginBottom: '16px', textAlign: 'center' }}>
@@ -458,7 +458,7 @@ export default function About() {
             fontWeight: 700,
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
-            color: '#574C3F',
+            color: '#E8B48A',
             marginBottom: '20px',
           }}>
             Resources
