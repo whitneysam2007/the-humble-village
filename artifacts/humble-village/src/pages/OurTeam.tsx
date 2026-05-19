@@ -77,7 +77,7 @@ export default function OurTeam() {
                 <img
                   src={`${BASE}/images/${member.img}`}
                   alt={member.name}
-                  style={{ width: '100%', height: '420px', objectFit: 'cover', objectPosition: 'center 20%', borderRadius: '4px' }}
+                  style={{ width: '100%', height: '420px', objectFit: 'cover', objectPosition: 'center 20%', display: 'block' }}
                 />
                 <div>
                   <h3 style={{
