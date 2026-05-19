@@ -246,7 +246,7 @@ export default function Give() {
                 borderRadius: '20px',
                 padding: '4px 14px',
                 fontFamily: 'Figtree, sans-serif',
-                fontSize: '10px',
+                fontSize: '11px',
                 fontWeight: 700,
                 letterSpacing: '0.15em',
                 textTransform: 'uppercase',

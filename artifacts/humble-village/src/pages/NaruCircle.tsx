@@ -232,7 +232,7 @@ export default function NaruCircle() {
                     />
                     <span style={{
                       position: 'absolute', top: '6px', left: '6px',
-                      fontFamily: 'Figtree, sans-serif', fontSize: '9px', fontWeight: 700,
+                      fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700,
                       letterSpacing: '0.12em', textTransform: 'uppercase',
                       color: '#F6F3EC', background: 'rgba(54,48,42,0.75)',
                       padding: '2px 6px', borderRadius: '2px'
@@ -246,7 +246,7 @@ export default function NaruCircle() {
                     />
                     <span style={{
                       position: 'absolute', top: '6px', left: '6px',
-                      fontFamily: 'Figtree, sans-serif', fontSize: '9px', fontWeight: 700,
+                      fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700,
                       letterSpacing: '0.12em', textTransform: 'uppercase',
                       color: '#F6F3EC', background: 'rgba(54,48,42,0.75)',
                       padding: '2px 6px', borderRadius: '2px'

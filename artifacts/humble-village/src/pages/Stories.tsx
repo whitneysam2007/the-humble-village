@@ -131,14 +131,14 @@ export default function Stories() {
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '64px', alignItems: 'center' }} className="elena-story-grid">
             <div style={{ display: 'flex', gap: '16px' }}>
               <div style={{ flex: 1 }}>
-                <div style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em', color: '#574C3F', marginBottom: '8px', textAlign: 'center' }}>BEFORE</div>
+                <div style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: '#574C3F', marginBottom: '8px', textAlign: 'center' }}>BEFORE</div>
                 <img src={`${BASE}/images/elena-before.jpg`} alt="Jeremia and Gerson — Elena would not leave the corner" style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', borderRadius: '4px' }} />
                 <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#574C3F', opacity: 0.7, marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>
                   Twins Jeremia & Gerson with their Aunt and Grandmother. Elena, not pictured.
                 </p>
               </div>
               <div style={{ flex: 1 }}>
-                <div style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em', color: '#574C3F', marginBottom: '8px', textAlign: 'center' }}>AFTER</div>
+                <div style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: '#574C3F', marginBottom: '8px', textAlign: 'center' }}>AFTER</div>
                 <img src={`${BASE}/images/elena-after.jpg`} alt="Elena with her boys today" style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', borderRadius: '4px' }} />
                 <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#574C3F', opacity: 0.7, marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>
                   7 years later, Elena with her boys today.
@@ -209,7 +209,7 @@ export default function Stories() {
                 ) : story.beforePhoto ? (
                   <div style={{ display: 'flex', gap: '12px' }}>
                     <div style={{ flex: 1 }}>
-                      <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em', color: i % 2 === 0 ? '#BFA07A' : '#574C3F', marginBottom: '6px', textAlign: 'center', textTransform: 'uppercase' }}>Before</p>
+                      <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: i % 2 === 0 ? '#BFA07A' : '#574C3F', marginBottom: '6px', textAlign: 'center', textTransform: 'uppercase' }}>Before</p>
                       <img
                         src={`${BASE}/images/${story.beforePhoto}`}
                         alt={`${story.name} — before`}
@@ -217,7 +217,7 @@ export default function Stories() {
                       />
                     </div>
                     <div style={{ flex: 1 }}>
-                      <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em', color: i % 2 === 0 ? '#BFA07A' : '#574C3F', marginBottom: '6px', textAlign: 'center', textTransform: 'uppercase' }}>After</p>
+                      <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: i % 2 === 0 ? '#BFA07A' : '#574C3F', marginBottom: '6px', textAlign: 'center', textTransform: 'uppercase' }}>After</p>
                       <img
                         src={`${BASE}/images/${story.slide}`}
                         alt={`${story.name} — after`}

@@ -295,7 +295,7 @@ export default function Home() {
               <div style={{ flex: 1 }}>
                 <div style={{
                   fontFamily: 'Figtree, sans-serif',
-                  fontSize: '10px',
+                  fontSize: '11px',
                   fontWeight: 700,
                   letterSpacing: '0.18em',
                   color: '#574C3F',
@@ -314,7 +314,7 @@ export default function Home() {
               <div style={{ flex: 1 }}>
                 <div style={{
                   fontFamily: 'Figtree, sans-serif',
-                  fontSize: '10px',
+                  fontSize: '11px',
                   fontWeight: 700,
                   letterSpacing: '0.18em',
                   color: '#574C3F',
