@@ -152,7 +152,7 @@ export default function About() {
           maxWidth: '900px',
           margin: '0 auto',
           display: 'grid',
-          gridTemplateColumns: 'repeat(4, 1fr)',
+          gridTemplateColumns: 'repeat(2, 1fr)',
           gap: '48px',
         }} className="about-stats-grid">
           {[
@@ -426,8 +426,6 @@ export default function About() {
             ))}
           </div>
           <style>{`
-            @media (max-width: 1100px) {
-              .partners-grid { grid-template-columns: repeat(2, 1fr) !important; } }
             @media (max-width: 600px) {
               .partners-grid { grid-template-columns: 1fr !important; max-width: 480px; margin: 0 auto; }
             }
