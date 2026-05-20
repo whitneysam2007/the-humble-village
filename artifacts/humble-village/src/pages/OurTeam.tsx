@@ -98,7 +98,7 @@ export default function OurTeam() {
                     fontWeight: 700,
                     letterSpacing: '0.15em',
                     textTransform: 'uppercase',
-                    color: '#BFA07A',
+                    color: '#C8B59E',
                     marginBottom: '16px',
                   }}>
                     {member.title}
@@ -119,7 +119,7 @@ export default function OurTeam() {
                         fontFamily: 'Figtree, sans-serif',
                         fontSize: '13px',
                         fontWeight: 600,
-                        color: '#BFA07A',
+                        color: '#C8B59E',
                         textDecoration: 'none',
                         letterSpacing: '0.02em',
                       }}
@@ -225,7 +225,7 @@ export default function OurTeam() {
               fontWeight: 700,
               letterSpacing: '0.2em',
               textTransform: 'uppercase',
-              color: '#BFA07A',
+              color: '#C8B59E',
               marginBottom: '20px',
             }}>
               100% Volunteers

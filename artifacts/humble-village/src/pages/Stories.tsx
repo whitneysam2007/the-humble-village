@@ -92,7 +92,7 @@ export default function Stories() {
             fontWeight: 700,
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
-            color: '#BFA07A',
+            color: '#C8B59E',
             marginBottom: '28px',
           }}>
             Impact Stories
@@ -114,7 +114,7 @@ export default function Stories() {
             fontWeight: 700,
             letterSpacing: '0.25em',
             textTransform: 'uppercase',
-            color: '#BFA07A',
+            color: '#C8B59E',
             marginBottom: '36px',
           }}>
             A Few Stories of Thousands
@@ -209,7 +209,7 @@ export default function Stories() {
                 ) : story.beforePhoto ? (
                   <div style={{ display: 'flex', gap: '12px' }}>
                     <div style={{ flex: 1 }}>
-                      <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: i % 2 === 0 ? '#BFA07A' : '#574C3F', marginBottom: '6px', textAlign: 'center', textTransform: 'uppercase' }}>Before</p>
+                      <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: i % 2 === 0 ? '#C8B59E' : '#574C3F', marginBottom: '6px', textAlign: 'center', textTransform: 'uppercase' }}>Before</p>
                       <img
                         src={`${BASE}/images/${story.beforePhoto}`}
                         alt={`${story.name} — before`}
@@ -217,7 +217,7 @@ export default function Stories() {
                       />
                     </div>
                     <div style={{ flex: 1 }}>
-                      <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: i % 2 === 0 ? '#BFA07A' : '#574C3F', marginBottom: '6px', textAlign: 'center', textTransform: 'uppercase' }}>After</p>
+                      <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: i % 2 === 0 ? '#C8B59E' : '#574C3F', marginBottom: '6px', textAlign: 'center', textTransform: 'uppercase' }}>After</p>
                       <img
                         src={`${BASE}/images/${story.slide}`}
                         alt={`${story.name} — after`}
@@ -240,7 +240,7 @@ export default function Stories() {
                   fontWeight: 700,
                   letterSpacing: '0.2em',
                   textTransform: 'uppercase',
-                  color: i % 2 === 0 ? '#BFA07A' : '#574C3F',
+                  color: i % 2 === 0 ? '#C8B59E' : '#574C3F',
                   marginBottom: '12px',
                 }}>
                   {story.tag}
@@ -259,7 +259,7 @@ export default function Stories() {
                   fontFamily: 'Figtree, sans-serif',
                   fontSize: '13px',
                   fontWeight: 600,
-                  color: i % 2 === 0 ? '#BFA07A' : '#574C3F',
+                  color: i % 2 === 0 ? '#C8B59E' : '#574C3F',
                   marginBottom: '28px',
                   letterSpacing: '0.03em',
                 }}>
@@ -293,7 +293,7 @@ export default function Stories() {
                   <p style={{
                     fontFamily: 'Figtree, sans-serif',
                     fontSize: '13px',
-                    color: i % 2 === 0 ? '#BFA07A' : '#574C3F',
+                    color: i % 2 === 0 ? '#C8B59E' : '#574C3F',
                     marginTop: '24px',
                     fontStyle: 'italic',
                     borderTop: '1px solid rgba(87,76,63,0.3)',

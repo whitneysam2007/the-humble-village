@@ -40,7 +40,7 @@ export default function OurCause() {
             fontWeight: 700,
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
-            color: '#BFA07A',
+            color: '#C8B59E',
             marginBottom: '28px',
           }}>
             Our Cause

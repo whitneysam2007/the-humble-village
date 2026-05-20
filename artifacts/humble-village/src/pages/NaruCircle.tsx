@@ -36,7 +36,7 @@ export default function NaruCircle() {
             fontWeight: 700,
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
-            color: '#BFA07A',
+            color: '#C8B59E',
             marginBottom: '28px',
           }}>
             Meaningful Partnership
@@ -92,7 +92,7 @@ export default function NaruCircle() {
               </p>
             </div>
             <div style={{ background: '#36302A', borderRadius: '8px', padding: '48px 40px', textAlign: 'center' }}>
-              <p style={{               fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#BFA07A', marginBottom: '20px' }}>
+              <p style={{               fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#C8B59E', marginBottom: '20px' }}>
                 The Opportunity
               </p>
               <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(20px, 2.5vw, 28px)', fontWeight: 400, color: '#F6F3EC', marginBottom: '24px', lineHeight: 1.3 }}>
@@ -118,7 +118,7 @@ export default function NaruCircle() {
       {/* PROGRAM TABLE */}
       <section style={{ background: '#36302A', padding: '100px 40px' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#BFA07A', marginBottom: '16px', textAlign: 'center' }}>
+          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#C8B59E', marginBottom: '16px', textAlign: 'center' }}>
             Where You Could Step In
           </p>
           <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(24px, 3.5vw, 40px)', fontWeight: 400, color: '#F6F3EC', textAlign: 'center', marginBottom: '16px' }}>
@@ -186,7 +186,7 @@ export default function NaruCircle() {
       {/* BEFORE/AFTER GRID */}
       <section style={{ background: '#36302A', padding: '100px 40px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#BFA07A', marginBottom: '16px', textAlign: 'center' }}>
+          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#C8B59E', marginBottom: '16px', textAlign: 'center' }}>
             The Faces Behind the Numbers
           </p>
           <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(24px, 3.5vw, 40px)', fontWeight: 400, color: '#F6F3EC', textAlign: 'center', marginBottom: '16px' }}>
@@ -266,7 +266,7 @@ export default function NaruCircle() {
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '32px' }} className="options-grid">
             <div style={{ background: '#36302A', borderRadius: '8px', padding: '48px 36px' }}>
-              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#BFA07A', marginBottom: '16px' }}>Option 1</p>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#C8B59E', marginBottom: '16px' }}>Option 1</p>
               <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(20px, 2.5vw, 26px)', fontWeight: 400, color: '#F6F3EC', marginBottom: '20px', lineHeight: 1.2 }}>
                 Choose Your Piece
               </h3>
@@ -275,7 +275,7 @@ export default function NaruCircle() {
               </p>
             </div>
             <div style={{ background: '#36302A', borderRadius: '8px', padding: '48px 36px' }}>
-              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#BFA07A', marginBottom: '16px' }}>Option 2</p>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#C8B59E', marginBottom: '16px' }}>Option 2</p>
               <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(20px, 2.5vw, 26px)', fontWeight: 400, color: '#F6F3EC', marginBottom: '20px', lineHeight: 1.2 }}>
                 Multiyear Donation
               </h3>
@@ -284,7 +284,7 @@ export default function NaruCircle() {
               </p>
             </div>
             <div style={{ background: '#36302A', borderRadius: '8px', padding: '48px 36px', display: 'flex', flexDirection: 'column' }}>
-              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#BFA07A', marginBottom: '16px' }}>Option 3</p>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#C8B59E', marginBottom: '16px' }}>Option 3</p>
               <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(20px, 2.5vw, 26px)', fontWeight: 400, color: '#F6F3EC', marginBottom: '20px', lineHeight: 1.2 }}>
                 Endowment Fund
               </h3>
@@ -307,7 +307,7 @@ export default function NaruCircle() {
       {/* WHAT THIS MEANS FOR YOU */}
       <section style={{ background: '#36302A', padding: '100px 40px' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#BFA07A', marginBottom: '16px', textAlign: 'center' }}>
+          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#C8B59E', marginBottom: '16px', textAlign: 'center' }}>
             What This Means For You
           </p>
           <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(24px, 3.5vw, 40px)', fontWeight: 400, color: '#F6F3EC', textAlign: 'center', marginBottom: '64px' }}>
@@ -395,7 +395,7 @@ export default function NaruCircle() {
       {/* DOCUMENTARY */}
       <section style={{ background: '#36302A', padding: '100px 40px' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
-          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#BFA07A', marginBottom: '16px' }}>
+          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#C8B59E', marginBottom: '16px' }}>
             Learn More
           </p>
           <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(24px, 3.5vw, 38px)', fontWeight: 400, color: '#F6F3EC', marginBottom: '16px' }}>
