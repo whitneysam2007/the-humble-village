@@ -286,10 +286,10 @@ export default function NaruCircle() {
             <div style={{ background: '#36302A', borderRadius: '8px', padding: '48px 36px', display: 'flex', flexDirection: 'column' }}>
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#C8B59E', marginBottom: '16px' }}>Option 3</p>
               <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(20px, 2.5vw, 26px)', fontWeight: 400, color: '#F6F3EC', marginBottom: '20px', lineHeight: 1.2 }}>
-                Endowment Fund
+                The Heartbeat Endowment
               </h3>
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.8, color: '#F6F3EC', opacity: 0.8 }}>
-                A gift to our Endowment Fund ensures that the work of The Humble Village continues for generations, independent of annual fundraising cycles. Our goal is a $3.5M endowment that permanently sustains the people and programs in Alta Verapaz.
+                Every life we serve begins the same way: a heartbeat inside the womb, a mother waiting, a world of possibility. The Heartbeat Endowment ensures that world remains possible. It is the permanent foundation beneath everything we do, the steady pulse that keeps the mission alive long after any single gift is given.
               </p>
             </div>
           </div>

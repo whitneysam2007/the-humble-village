@@ -124,8 +124,8 @@ export default function Give() {
             textTransform: 'uppercase',
             fontWeight: 600,
           }}>
-            Join us in making The Humble Village sustainable through a donation to our{' '}
-            <a href="mailto:hello@the-humble-village.org" style={{ color: '#36302A', textDecoration: 'underline' }}>Endowment Fund</a>
+            Join us in making The Humble Village sustainable through a contribution to{' '}
+            <a href="mailto:hello@the-humble-village.org" style={{ color: '#36302A', textDecoration: 'underline' }}>The Heartbeat Endowment</a>
           </p>
           <style>{`
             @media (max-width: 768px) {
