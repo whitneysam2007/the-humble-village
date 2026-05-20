@@ -388,14 +388,14 @@ export default function About() {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  minHeight: '80px',
+                  minHeight: '140px',
                   background: '#fff',
                   borderBottom: '1px solid rgba(54,48,42,0.08)',
                 }}>
                   <img
                     src={partner.logo}
                     alt={partner.logoAlt}
-                    style={{ maxHeight: '52px', maxWidth: '180px', objectFit: 'contain', display: 'block' }}
+                    style={{ maxHeight: '100px', maxWidth: '260px', objectFit: 'contain', display: 'block' }}
                   />
                 </div>
                 <img
