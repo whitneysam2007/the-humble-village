@@ -51,7 +51,7 @@ export default function Home() {
             marginBottom: '36px',
             fontFamily: 'Figtree, sans-serif',
           }}>
-            Every dollar you give lifts Q'eqchi' Mayan families in Guatemala with nutrition, education, health, and tools for self-reliance.
+            Every dollar you give empowers Q'eqchi' Mayan families to develop self reliance through nutrition, healthcare, education, and community support.
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
             <a
@@ -119,7 +119,7 @@ export default function Home() {
             opacity: 0.85,
             marginBottom: '20px',
           }}>
-            Narú is the way The Humble Village approaches its work. The word means "can do" in the Q'eqchi' language.
+            Narú means "can do" in the Q'eqchi' language and describes our unique approach to this work.
           </p>
           <p style={{
             fontFamily: 'Figtree, sans-serif',
@@ -129,7 +129,7 @@ export default function Home() {
             opacity: 0.85,
             marginBottom: '20px',
           }}>
-            Our goal is not simply to provide food, but to help mothers learn how to nourish their own children and build a future. Through guidance, education, and support, families learn what they <strong>CAN DO</strong>, despite their circumstances.
+            Our goal is not simply to provide food: we offer urgent nutritional support and then teach mothers how to nourish their own children and build a sustainable future. With our help, families learn what they <strong>"can do"</strong> despite their challenging circumstances.
           </p>
         </div>
       </section>
