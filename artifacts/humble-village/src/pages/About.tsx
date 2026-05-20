@@ -435,7 +435,7 @@ export default function About() {
             Watch the Film
           </h2>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', color: '#F6F3EC', opacity: 0.6, marginBottom: '48px', lineHeight: 1.7, textAlign: 'center', fontStyle: 'italic' }}>
-            The best way to understand who we are and what we do is to see it for yourself.
+            Join us inside the communities we serve.
           </p>
           <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '8px' }}>
             <iframe

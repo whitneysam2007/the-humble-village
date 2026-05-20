@@ -425,7 +425,7 @@ export default function Stories() {
             Watch the Film
           </h2>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', color: '#574C3F', opacity: 0.75, marginBottom: '48px', lineHeight: 1.7, textAlign: 'center', fontStyle: 'italic' }}>
-            These stories are just a glimpse. The full documentary shows the depth of this work.
+            These stories are just a glimpse. Come see the rest.
           </p>
           <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '8px' }}>
             <iframe

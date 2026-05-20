@@ -402,7 +402,7 @@ export default function NaruCircle() {
             Watch the Full-Length Documentary
           </h2>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', color: '#F6F3EC', opacity: 0.6, marginBottom: '48px', lineHeight: 1.7 }}>
-            Go deep into the mission, the communities, and the people behind The Humble Village.
+            See the mission you'd be sustaining.
           </p>
           <div style={{
             position: 'relative',
