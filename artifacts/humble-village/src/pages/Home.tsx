@@ -536,7 +536,7 @@ export default function Home() {
             opacity: 0.85,
             marginBottom: '48px',
           }}>
-            The Narú Circle is a committed group of individuals, families, and organizations who ensure this work continues year after year. Choose the program that speaks to you. Name it. Steward it.
+            The Narú Circle is a committed group of individuals, families, and organizations who ensure this work continues year after year. Choose the program that speaks to you. Steward it. Your name will be on The Narú Circle Wall at the Narú Medical Center — a permanent record of the people who made this possible.
           </p>
           <Link
             to="/naru-circle"

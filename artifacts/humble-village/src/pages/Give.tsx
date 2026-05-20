@@ -278,7 +278,7 @@ export default function Give() {
               </p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                 {[
-                  'Named legacy: your program, your name',
+                  'Your name on The Narú Circle Wall at the Narú Medical Center',
                   'Direct connection to local team',
                   'A place to come back to in Guatemala',
                   'Commitment horizons: 5, 10, or forever',

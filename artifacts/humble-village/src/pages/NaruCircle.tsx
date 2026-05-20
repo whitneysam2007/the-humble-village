@@ -125,7 +125,7 @@ export default function NaruCircle() {
             Choose the part of the work that becomes yours.
           </h2>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', color: '#F6F3EC', opacity: 0.6, textAlign: 'center', marginBottom: '56px' }}>
-            Name it. Steward it. Ensure it runs, every year.
+            Steward it. Ensure it runs, every year. Major partners are recognized on The Narú Circle Wall at the Narú Medical Center.
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '2px', borderRadius: '6px', overflow: 'hidden' }}>
             {programs.map((prog, i) => (
@@ -271,7 +271,7 @@ export default function NaruCircle() {
                 Choose Your Piece
               </h3>
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.8, color: '#F6F3EC', opacity: 0.8 }}>
-                Sponsor a specific program and adopt the part of the work that speaks to you. Name it. Steward it. Ensure it runs, every year. Because of you, this life-saving work continues.
+                Sponsor a specific program and adopt the part of the work that speaks to you. Steward it. Ensure it runs, every year. Major partners are recognized on The Narú Circle Wall at the Narú Medical Center. Because of you, this life-saving work continues.
               </p>
             </div>
             <div style={{ background: '#36302A', borderRadius: '8px', padding: '48px 36px' }}>
@@ -316,8 +316,8 @@ export default function NaruCircle() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '32px' }} className="benefits-grid">
             {[
               {
-                title: 'Named Legacy',
-                body: 'Name your program or center. Your investment carries your name and your family\'s values forward — building a legacy in the communities you serve.',
+                title: 'Your Name on The Narú Circle Wall',
+                body: 'Steward your program or center. Your investment carries your family\'s values forward — and your name will be on The Narú Circle Wall at the Narú Medical Center, a permanent record in the communities you serve.',
               },
               {
                 title: 'Direct Connection',
