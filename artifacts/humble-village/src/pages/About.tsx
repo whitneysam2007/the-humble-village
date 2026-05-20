@@ -311,8 +311,8 @@ export default function About() {
       </section>
 
       {/* OUR PARTNERS */}
-      <section style={{ background: '#36302A', padding: '100px 40px' }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+      <section style={{ background: '#36302A', padding: '100px 60px' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
           <p style={{
             fontFamily: 'Figtree, sans-serif',
             fontSize: '11px',
@@ -401,7 +401,7 @@ export default function About() {
                 <img
                   src={partner.photo}
                   alt={partner.photoAlt}
-                  style={{ width: '100%', height: '240px', objectFit: 'cover', objectPosition: (partner as any).photoPosition || 'center', display: 'block' }}
+                  style={{ width: '100%', height: '360px', objectFit: 'cover', objectPosition: (partner as any).photoPosition || 'center', display: 'block' }}
                 />
                 <div style={{ padding: '28px 24px 32px', flex: 1 }}>
                   <h3 style={{
