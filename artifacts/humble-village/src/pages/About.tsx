@@ -372,6 +372,7 @@ export default function About() {
                 photo: `${BASE}/images/partner-sabin-photo.jpg`,
                 photoAlt: 'Gary Sabin holding a baby in Alta Verapaz, Guatemala',
                 name: 'Sabin Children\'s Foundation',
+                photoPosition: 'top',
                 description: 'For ten years, the Sabin Children\'s Foundation has been the quiet force behind some of our most significant work. Their generosity built the Narú Medical Centers — giving our nurses, midwives, and community health workers a permanent base from which to serve. Because of them, the work doesn\'t just happen. It has a home.',
               },
             ].map((partner, i) => (
@@ -400,7 +401,7 @@ export default function About() {
                 <img
                   src={partner.photo}
                   alt={partner.photoAlt}
-                  style={{ width: '100%', height: '240px', objectFit: 'cover', display: 'block' }}
+                  style={{ width: '100%', height: '240px', objectFit: 'cover', objectPosition: (partner as any).photoPosition || 'center', display: 'block' }}
                 />
                 <div style={{ padding: '28px 24px 32px', flex: 1 }}>
                   <h3 style={{
