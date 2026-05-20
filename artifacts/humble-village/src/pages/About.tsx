@@ -338,7 +338,7 @@ export default function About() {
           </h2>
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
+            gridTemplateColumns: 'repeat(2, 1fr)',
             gap: '32px',
           }} className="partners-grid">
             {[
