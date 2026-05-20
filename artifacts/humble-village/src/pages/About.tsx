@@ -152,7 +152,7 @@ export default function About() {
           maxWidth: '900px',
           margin: '0 auto',
           display: 'grid',
-          gridTemplateColumns: 'repeat(3, 1fr)',
+          gridTemplateColumns: 'repeat(4, 1fr)',
           gap: '48px',
         }} className="about-stats-grid">
           {[
@@ -334,7 +334,7 @@ export default function About() {
             marginBottom: '64px',
             lineHeight: 1.2,
           }}>
-            Organizations Who Make This Work Possible
+            Organizations That Help Make This Work Possible
           </h2>
           <div style={{
             display: 'grid',
@@ -365,6 +365,14 @@ export default function About() {
                 photoAlt: 'Narú team member distributing nutrition packages',
                 name: 'The Church of Jesus Christ of Latter-day Saints',
                 description: 'The Church sponsors the Narú Nutrition Program, providing incaparina and formula to severely malnourished infants and children ages 0–5. Their partnership means that the most fragile children in the valley have a fighting chance in their most critical years.',
+              },
+              {
+                logo: `${BASE}/images/logo-sabin-foundation.png`,
+                logoAlt: 'Sabin Children\'s Foundation',
+                photo: `${BASE}/images/partner-sabin-photo.jpg`,
+                photoAlt: 'Gary Sabin holding a baby in Alta Verapaz, Guatemala',
+                name: 'Sabin Children\'s Foundation',
+                description: 'For ten years, the Sabin Children\'s Foundation has been the quiet force behind some of our most significant work. Their generosity built the Narú Medical Centers — giving our nurses, midwives, and community health workers a permanent base from which to serve. Because of them, the work doesn\'t just happen. It has a home.',
               },
             ].map((partner, i) => (
               <div key={i} style={{
@@ -418,7 +426,9 @@ export default function About() {
             ))}
           </div>
           <style>{`
-            @media (max-width: 900px) {
+            @media (max-width: 1100px) {
+              .partners-grid { grid-template-columns: repeat(2, 1fr) !important; } }
+            @media (max-width: 600px) {
               .partners-grid { grid-template-columns: 1fr !important; max-width: 480px; margin: 0 auto; }
             }
           `}</style>
