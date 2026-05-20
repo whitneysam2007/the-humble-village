@@ -193,7 +193,7 @@ export default function NaruCircle() {
             Over 200 graduates.
           </h2>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', color: '#F6F3EC', opacity: 0.6, textAlign: 'center', marginBottom: '56px', fontStyle: 'italic' }}>
-            Each one a testament to what consistent care and community support can achieve.
+            Each one a living testament to what consistent care and community support can achieve.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '24px' }} className="faces-grid">
             {[
