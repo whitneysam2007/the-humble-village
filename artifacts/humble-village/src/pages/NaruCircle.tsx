@@ -369,7 +369,7 @@ export default function NaruCircle() {
               },
               {
                 title: 'Leave a Legacy',
-                body: 'A bequest through your will or living trust ensures that future generations of families have the opportunity to thrive. Designate a specific amount, a percentage, or an asset. Your plans remain flexible — and your legacy does not.',
+                body: 'A bequest through your will, living trust, or naming The Humble Village as a beneficiary of your IRA ensures that future generations of families have the opportunity to thrive. Designate a specific amount, a percentage, or an asset. Your plans remain flexible — and your legacy does not.',
               },
             ].map((item, i) => (
               <div key={i}>
