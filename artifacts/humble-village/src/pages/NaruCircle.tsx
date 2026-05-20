@@ -280,7 +280,7 @@ export default function NaruCircle() {
                 Multiyear Donation
               </h3>
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.8, color: '#F6F3EC', opacity: 0.8 }}>
-                Commit to giving a multiyear donation of any amount toward our general fund. Help grow our programs and fill in any gaps. Consistent support builds lasting independence.
+                Commit to giving a multiyear donation of any amount toward our general fund. Help grow our programs and fill in any gaps. Consistent support builds lasting sustainability.
               </p>
             </div>
             <div style={{ background: '#36302A', borderRadius: '8px', padding: '48px 36px', display: 'flex', flexDirection: 'column' }}>
@@ -433,13 +433,13 @@ export default function NaruCircle() {
       <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
         <div style={{ maxWidth: '640px', margin: '0 auto' }}>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '16px', textAlign: 'center' }}>
-            Get in Touch
+            Philanthropic Partnership
           </p>
           <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(24px, 3.5vw, 38px)', fontWeight: 400, color: '#36302A', marginBottom: '16px', textAlign: 'center' }}>
-            Ready to explore a partnership?
+            Eager to explore philanthropic partnership options
           </h2>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', color: '#574C3F', textAlign: 'center', marginBottom: '48px', lineHeight: 1.7 }}>
-            We would be honored to speak with you and find the right path forward together.
+            We would love to connect with you and find the right path forward together.
           </p>
 
           <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
@@ -472,16 +472,19 @@ export default function NaruCircle() {
 
             <div>
               <label style={{ fontFamily: 'Figtree, sans-serif', fontSize: '12px', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#36302A', display: 'block', marginBottom: '8px' }}>
-                Program of Interest (optional)
+                Area of Interest (optional)
               </label>
               <select
                 value={form.program}
                 onChange={e => setForm({ ...form, program: e.target.value })}
                 style={{ width: '100%', padding: '14px 16px', borderRadius: '6px', border: '1.5px solid rgba(54,48,42,0.2)', background: '#F6F3EC', fontFamily: 'Figtree, sans-serif', fontSize: '15px', color: '#36302A', outline: 'none', appearance: 'none' }}
               >
-                <option value="">Select a program...</option>
-                {programs.map((p, i) => <option key={i} value={p.name}>{p.name} — {p.cost}/yr</option>)}
-                <option value="General Fund">General Fund / Multiyear Donation</option>
+                <option value="">Select an option...</option>
+                <option value="Adopt an Ochoch">Adopt an Ochoch</option>
+                <option value="Multiyear Donation">Multiyear Donation</option>
+                <option value="The Heartbeat Endowment">The Heartbeat Endowment</option>
+                <option value="General Fund">General Fund</option>
+                <option value="Questions About Giving">Questions About Giving</option>
               </select>
             </div>
 
