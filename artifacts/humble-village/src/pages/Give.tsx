@@ -670,7 +670,7 @@ export default function Give() {
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(54,48,42,0.7)' }} />
         <div style={{ position: 'relative', zIndex: 1, padding: '60px 40px', color: '#F6F3EC', maxWidth: '600px' }}>
           <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(22px, 3vw, 36px)', fontWeight: 400, marginBottom: '20px', lineHeight: 1.3, fontStyle: 'italic' }}>
-            See where your gift goes.
+            Meet the families your gift serves.
           </h2>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', opacity: 0.8, marginBottom: '32px', lineHeight: 1.7 }}>
             Read the stories of children and families whose lives have been transformed.
