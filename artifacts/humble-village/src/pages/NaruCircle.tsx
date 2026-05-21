@@ -6,9 +6,9 @@ const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
 const programs = [
   { name: 'Narú Medical Centers', cost: '$82,000', desc: 'Clinical care, outreach clinics, midwifery & pregnancy support across 93 communities' },
   { name: 'Ochoch Charmak', cost: '$77,000', desc: 'Education, clinical care & food production training for 25 communities' },
-  { name: 'Ochoch Solly', cost: '$80,000', desc: 'Education, clinical care & food production training for 18 communities' },
-  { name: 'Child Nutritional Recuperation', cost: '$66,000', desc: 'Nutritional supplements for 850 children & infant formula for 206 infants' },
-  { name: 'Maternal Nutrition Program', cost: '$28,000', desc: 'Supplements & care for 400 at-risk pregnant women' },
+  { name: 'Ochoch Solly', cost: '$80,000', desc: 'Education, clinical care & food production training for 18 remote communities' },
+  { name: 'Child Nutritional Recuperation', cost: '$66,000', desc: 'Nutritional support for 850 children & formula for 206 infants' },
+  { name: 'Maternal Nutrition Program', cost: '$28,000', desc: 'Nutritional support and medical care for 400 at-risk pregnant women' },
   { name: 'Community Midwife Training', cost: '$13,000', desc: 'Training for 60 midwives & birth attendants' },
   { name: 'Youth Health Education', cost: '$9,000', desc: 'Nutrition & pregnancy-prevention education for 200 students' },
 ];
@@ -64,9 +64,6 @@ export default function NaruCircle() {
           }}>
             Sustaining the Heartbeat of The Humble Village
           </p>
-          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '18px', lineHeight: 1.85, color: '#F6F3EC', opacity: 0.8 }}>
-            "Self-reliance is the goal. Sustainability is the path."
-          </p>
         </div>
       </section>
 
@@ -85,10 +82,10 @@ export default function NaruCircle() {
                 We help families become self-reliant — but the system that makes that possible must continue to run every year.
               </p>
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '17px', lineHeight: 1.85, color: '#574C3F', marginBottom: '20px' }}>
-                Hospitals don't "graduate" from funding. Schools don't "complete" their mission. Our clinics, our Ochoch centers, our nurses, our nutrition programs — all require ongoing support to serve the families who depend on them.
+                Hospitals don't "graduate" from funding. Schools don't "complete" their mission. Our clinics, our Ochoch training centers, our nurses, our nutrition programs — all require ongoing support to serve the families who depend on them.
               </p>
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '17px', lineHeight: 1.85, color: '#574C3F' }}>
-                The Narú Circle exists to solve this problem — sustainably, personally, and with meaningful partnership.
+                The Narú Circle exists to solve this problem through a personal, meaningful partnership.
               </p>
             </div>
             <div style={{ background: '#36302A', borderRadius: '8px', padding: '48px 40px', textAlign: 'center' }}>
