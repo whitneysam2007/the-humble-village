@@ -162,7 +162,7 @@ export default function Stories() {
                 The twins were immediately admitted into the nutrition program. Gerson was diagnosed with a tongue tie, a correctable condition, and received life-saving care. Elena entered the self-reliance program at the Narú Training Center, gaining tools, skills, and support to pull herself and her family out of poverty.
               </p>
               <p style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '20px', fontStyle: 'italic', color: '#36302A', lineHeight: 1.5 }}>
-                Healthy boys. A thriving home. And Elena — empowered, self-sufficient, and a leader in her community.
+                Healthy boys. A thriving home. And Elena—empowered and self-sufficient—is now a leader in her community.
               </p>
             </div>
           </div>

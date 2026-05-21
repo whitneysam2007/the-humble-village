@@ -371,7 +371,7 @@ export default function Home() {
                 lineHeight: 1.5,
                 marginBottom: '40px',
               }}>
-                Healthy boys. A thriving home. And Elena — empowered, self-sufficient, and a leader in her community.
+                Healthy boys. A thriving home. And Elena—empowered and self-sufficient—is now a leader in her community.
               </p>
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
                 <Link to="/stories" className="btn-primary" style={{ background: '#F8F3EC', color: '#36302A' }}>
@@ -516,7 +516,7 @@ export default function Home() {
             color: '#574C3F',
             marginBottom: '28px',
           }}>
-            For those inspired to expand their engagement
+            Do more with your donation. Join The Narú Circle and transform generations.
           </p>
           <h2 style={{
             fontFamily: 'Libre Baskerville, serif',
@@ -534,9 +534,29 @@ export default function Home() {
             lineHeight: 1.8,
             color: '#574C3F',
             opacity: 0.85,
+            marginBottom: '28px',
+          }}>
+            One-time donations do wonders for our work, but committing to an annual donation ensures a perpetual security for our families.
+          </p>
+          <p style={{
+            fontFamily: 'Figtree, sans-serif',
+            fontSize: '17px',
+            lineHeight: 1.8,
+            color: '#574C3F',
+            opacity: 0.85,
+            marginBottom: '28px',
+          }}>
+            As part of The Narú Circle, you become a “program steward.” Your vital and ongoing donation guarantees a self-reliant future for generations to come. Check out programs you can choose to fund here.
+          </p>
+          <p style={{
+            fontFamily: 'Figtree, sans-serif',
+            fontSize: '17px',
+            lineHeight: 1.8,
+            color: '#574C3F',
+            opacity: 0.85,
             marginBottom: '48px',
           }}>
-            The Narú Circle is a committed group of individuals, families, and organizations who ensure this work continues year after year. Choose the program that speaks to you. Steward it. Your name will be on The Narú Circle Wall at the Narú Medical Center — a permanent record of the people who made this possible.
+            As a token of our appreciation, your name will be added to The Narú Circle Wall in our main medical center—a permanent reminder of our gratitude for your support and a message to all who visit that, thanks to you, their future is no longer uncertain, their future is secure.
           </p>
           <Link
             to="/naru-circle"
