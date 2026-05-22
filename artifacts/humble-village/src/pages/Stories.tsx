@@ -156,7 +156,7 @@ export default function Stories() {
                 When Lauren and her team visited this humble home, they found two severely malnourished babies with only days to live.
               </p>
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.85, color: '#574C3F', marginBottom: '18px' }}>
-                Elena, malnourished herself, could not produce milk. She fed her babies corn water — it only made things worse. With expected burials approaching, she had emotionally detached from her boys.
+                Elena, malnourished herself, could not produce milk. She fed her babies corn water — it only made things worse. With expected burials approaching, she emotionally detached from her boys.
               </p>
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.85, color: '#574C3F', marginBottom: '28px' }}>
                 The twins were immediately admitted into the nutrition program. Gerson was diagnosed with a tongue tie, a correctable condition, and received life-saving care. Elena entered the self-reliance program at the Narú Training Center, gaining tools, skills, and support to pull herself and her family out of poverty.
@@ -286,7 +286,7 @@ export default function Stories() {
                     lineHeight: 1.5,
                     marginTop: '12px',
                   }}>
-                    "{story.quote}"
+                    {story.quote}
                   </p>
                 )}
                 {story.note && (
@@ -326,7 +326,7 @@ export default function Stories() {
             <div>
               <img
                 src={`${BASE}/images/partner-usana-photo.jpg`}
-                alt="Mother and son with beets grown in their USANA Foundation garden tower"
+                alt="Mother and son with radishes grown in their USANA Foundation garden tower"
                 style={{ width: '100%', borderRadius: '4px', display: 'block' }}
               />
               <p style={{
@@ -339,7 +339,7 @@ export default function Stories() {
                 lineHeight: 1.5,
                 textAlign: 'center',
               }}>
-                A mother and her son with beets harvested from their USANA Foundation garden tower. Alta Verapaz, Guatemala.
+                A mother and her son with radishes harvested from their USANA Foundation garden tower. Alta Verapaz, Guatemala.
               </p>
             </div>
             <div>
@@ -403,7 +403,7 @@ export default function Stories() {
                 lineHeight: 1.5,
                 marginTop: '8px',
               }}>
-                That is what self-reliance looks like the moment it begins.
+                
               </p>
             </div>
           </div>
@@ -419,7 +419,7 @@ export default function Stories() {
       <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '16px', textAlign: 'center' }}>
-            Go Deeper
+            Learn More
           </p>
           <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(24px, 3.5vw, 38px)', fontWeight: 400, color: '#36302A', marginBottom: '16px', textAlign: 'center' }}>
             Watch the Film
@@ -453,7 +453,7 @@ export default function Stories() {
             Every story begins with a gift.
           </h2>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '17px', color: '#F6F3EC', opacity: 0.75, marginBottom: '40px', lineHeight: 1.7 }}>
-            Over 274 children reached a healthy weight in 2025. Your gift writes the next story.
+            Over 274 children overcame severe malnutrition in 2025. Your gift writes the next story.
           </p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a

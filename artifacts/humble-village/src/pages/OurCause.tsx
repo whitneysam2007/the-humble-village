@@ -178,7 +178,7 @@ export default function OurCause() {
               { number: '304', label: 'Kitchen gardens established' },
               { number: '184', label: 'Communities benefited' },
               { number: '12,807', label: 'Total visits to our health and training centers' },
-              { number: '3,620', label: 'Training attendances by families' },
+              { number: '3,620', label: 'Trainings attended by families' },
               { number: '354', label: 'Midwives attended training sessions' },
               { number: '1,288', label: 'Home visits to families' },
             ].map((stat, i) => (
@@ -257,7 +257,7 @@ export default function OurCause() {
               {
                 step: '03',
                 title: 'Educate',
-                body: 'Alongside nutrition support, families receive 18 months of Narú education: gardening, clean water practices, family nutrition, and food production. The goal is not dependency — it is self-reliance. Mothers learn what they CAN DO.',
+                body: 'Alongside nutrition support, families receive 18 months of Narú education: gardening, clean-water practices, and family nutrition. The goal is not dependency — it is self-reliance. Mothers learn what they CAN DO.',
               },
               {
                 step: '04',
@@ -345,10 +345,10 @@ export default function OurCause() {
               {
                 name: 'Narú Medical Centers',
                 tagline: 'A health and well-being resource for all',
-                img: 'ochoch-naru.webp',
+                img: 'ochoch-naru-new.jpg',
                 communities: '93 communities',
                 annualCost: '$82,000 / year',
-                body: 'The heart of our operations. Training sessions take families from seed to table with cooking demonstrations and practical recipes. The Center provides clinical care, nutrition programs, and community education to surrounding communities. We partner with ADP on abuse prevention for teenagers and with CARE International to support young mothers with micro-business skills.',
+                body: 'We provide training sessions to families on home hygiene and healthcare, food production and cooking demonstrations, as well as offering clinical care to expectant mothers. Here our nurses monitor monthly progress of malnourished babies on the nutrition program. We partner with ADP on abuse prevention for teenagers and with CARE International to support young mothers with micro-business skills.',
                 flip: false,
               },
               {
@@ -357,16 +357,16 @@ export default function OurCause() {
                 img: 'ochoch-charmak.webp',
                 communities: '25 communities',
                 annualCost: '$77,000 / year',
-                body: '44 chicken pairs were provided to families, building sustainable protein sources for children. A groundbreaking pilot midwife program launched in partnership with Ministry of Health nurses for maternal and newborn care. After storm damage, a new roof was installed and the wood construction is being transformed into a full clinic to serve the community year-round.',
+                body: 'Here at this training location, families find a sanctuary to learn and receive support. Especially prominent is the unique agricultural site where crops and farming practices are tested to provide the best methods for families to engage in food production at home. 44 chicken pairs were provided to families, building sustainable protein sources for children. A groundbreaking pilot midwife program launched in partnership with Ministry of Health nurses for maternal and newborn care. After storm damage, a new roof was installed and the wood construction is being transformed into a full clinic to serve the community year-round.',
                 flip: true,
               },
               {
                 name: 'Ochoch Solly',
                 tagline: 'Training in the cold lands',
-                img: 'ochoch-solly.png',
+                img: 'ochoch-solly-new.jpg',
                 communities: '18 communities',
                 annualCost: '$80,000 / year',
-                body: 'Our Youth Program launched in January 2025 with Instituto Básico de Tzalamila, equipping 83 young adults with health and nutrition education. 12 neighboring families were connected to potable water in Sepalau, with 90 more served in partnership with Adicay. In a beautiful tradition, 36 elders from Sepalau joined the harvest at Ochoch Solly, building intergenerational community bonds.',
+                body: 'This remote training center in the mountaintop village of Sepalau, hours from our health clinic in the town of Senahu, serves as a critical site for the surrounding communities. Families and village leaders come together at Solly, working together to lift their community. Narú\'s programs and projects are creating a lasting impact. 83 young adults received health and nutrition education. 102 neighboring families were connected to potable water in Sepalau. In a beautiful tradition, 36 elders from Sepalau joined the harvest at Ochoch Solly, building intergenerational community bonds.',
                 flip: false,
               },
             ].map((loc, i) => (

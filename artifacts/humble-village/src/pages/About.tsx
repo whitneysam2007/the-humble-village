@@ -348,7 +348,7 @@ export default function About() {
                 photo: `${BASE}/images/garden-tower-family.jpg`,
                 photoAlt: "A Q'eqchi' family with their USANA garden tower",
                 name: 'USANA Foundation',
-                description: 'USANA Foundation funds our garden tower program, bringing sustainable nutrition and hands-on agricultural training to Q\'eqchi\' families in the highlands. Their support is turning small plots of land into thriving, self-sustaining family gardens.',
+                description: 'USANA Foundation funds our garden tower program, bringing sustainable nutrition and hands-on agricultural training to Q\'eqchi\' Maya families. Their support is turning small plots of land into thriving, self-sustaining family gardens.',
               },
               {
                 logo: `${BASE}/images/logo-solly-baby.png`,
@@ -364,7 +364,7 @@ export default function About() {
                 photo: `${BASE}/images/partner-lds-photo.jpg`,
                 photoAlt: 'Narú team member distributing nutrition packages',
                 name: 'The Church of Jesus Christ of Latter-day Saints',
-                description: 'The Church sponsors the Narú Nutrition Program, providing incaparina and formula to severely malnourished infants and children ages 0–5. Their partnership means that the most fragile children in the valley have a fighting chance in their most critical years.',
+                description: 'The Church sponsors the Narú Nutrition Program, providing Incaparina and formula to severely malnourished infants and children ages 0–5. Their partnership means that the most fragile children have a fighting chance in their most critical years.',
               },
               {
                 logo: `${BASE}/images/logo-sabin-foundation.png`,

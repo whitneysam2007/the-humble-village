@@ -78,9 +78,10 @@ export default function Contact() {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          justifyContent: 'center',
+          justifyContent: 'flex-end',
           textAlign: 'center',
-          padding: '0 40px',
+          padding: '0 40px 60px',
+
         }}>
           <p style={{
             fontFamily: 'Figtree, sans-serif',
@@ -142,7 +143,7 @@ export default function Contact() {
                 marginBottom: '48px',
                 textAlign: 'center',
               }}>
-                Whether you want to volunteer, donate, host a village meeting, or simply learn more — we're here. Fill out the form below and we'll get back to you.
+                Whether you want to volunteer, donate, share an idea with The Humble Village, or simply learn more, please fill out the form below and we will contact you soon.
               </p>
 
               <form

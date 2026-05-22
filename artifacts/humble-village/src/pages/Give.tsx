@@ -55,7 +55,7 @@ export default function Give() {
             Your Gift Changes Generations
           </h1>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '18px', lineHeight: 1.85, color: '#F6F3EC', opacity: 0.8 }}>
-            100% of every donation goes directly to field programs and the local Guatemalan staff who are on the ground every day. Our board is 100% volunteer. Every dollar you give reaches a family.
+            100% of every donation goes directly to field programs and the local Guatemalan staff who are on the ground every day. Our board is 100% volunteer. Every dollar you give reaches a family in need.
           </p>
         </div>
       </section>
@@ -81,7 +81,7 @@ export default function Give() {
               { amount: '$8', desc: '1 month of nutrition for a child' },
               { amount: '$40', desc: 'Health education for a year' },
               { amount: '$1,000', desc: 'Seeds and materials for 50 gardens' },
-              { amount: '$75,000', desc: 'Build the next Narú Center' },
+              { amount: '$75,000', desc: 'Build the next Narú Center' },
             ].map((item, i) => (
               <div key={i} style={{
                 padding: '24px 14px',
@@ -281,7 +281,7 @@ export default function Give() {
                   'Your name on The Narú Circle Wall at the Narú Medical Center',
                   'Direct connection to local team',
                   'A place to come back to in Guatemala',
-                  'Commitment horizons: 5, 10, or forever',
+                  'Commitment horizons: 5 years, 10 years, or forever',
                 ].map((item, i) => (
                   <div key={i} style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
                     <span style={{ color: '#F8F3EC', opacity: 0.5, marginTop: '2px', flexShrink: 0 }}>→</span>

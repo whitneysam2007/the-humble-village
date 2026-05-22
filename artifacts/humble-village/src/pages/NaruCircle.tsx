@@ -187,15 +187,15 @@ export default function NaruCircle() {
             The Faces Behind the Numbers
           </p>
           <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(24px, 3.5vw, 40px)', fontWeight: 400, color: '#F6F3EC', textAlign: 'center', marginBottom: '16px' }}>
-            Over 200 graduates.
+            Over 200 Graduates
           </h2>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', color: '#F6F3EC', opacity: 0.6, textAlign: 'center', marginBottom: '56px', fontStyle: 'italic' }}>
-            Each one a living testament to what consistent care and community support can achieve.
+            Each one a living testament to what early intervention and watchful care can achieve.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '24px' }} className="faces-grid">
             {[
               { name: 'Dylan',    before: 'faces-dylan-before.jpeg',    after: 'faces-dylan-after.png',    weight: '6.4 lbs at 2 months → 20.5 lbs' },
-              { name: 'Santos',   before: 'faces-santos-before.jpeg',   after: 'faces-santos-after.jpeg',   weight: '1.0 lbs at 18 months → 22.2 lbs' },
+              { name: 'Santos',   before: 'faces-santos-before.jpeg',   after: 'faces-santos-after.jpeg',   weight: '15.0 lbs at 18 months → 22.2 lbs' },
               { name: 'Yasmin',   before: 'faces-yasmin-before.jpeg',   after: 'faces-yasmin-after.jpeg',   weight: '13.2 lbs at 21.5 months → 25.3 lbs' },
               { name: 'Crisbell', before: 'faces-crisbell-before.jpeg', after: 'faces-crisbell-after.png',  weight: '5.5 lbs at 1 month → 16.9 lbs' },
               { name: 'Pedro',    before: 'faces-pedro-before.jpeg',    after: 'faces-pedro-after.jpeg',    weight: '7.5 lbs at 2.5 months → 23.1 lbs' },
@@ -204,7 +204,7 @@ export default function NaruCircle() {
               { name: 'Claudia',  before: 'faces-claudia-before.jpeg',  after: 'faces-claudia-after.jpeg',  weight: '7.9 lbs at 3 months → 20.0 lbs' },
               { name: 'Katerin',  before: 'faces-katerin-before.jpeg',  after: 'faces-katerin-after.jpeg',  weight: '5.5 lbs at 11 days → 18.7 lbs' },
               { name: 'Luis',     before: 'faces-luis-before.jpeg',     after: 'faces-luis-after.jpeg',     weight: '18.0 lbs at 22 months → 21.3 lbs' },
-              { name: 'Choc',     before: 'faces-choc-before.jpeg',     after: 'faces-choc-after.jpeg',     weight: '1.0 lbs at 2 months → 19.4 lbs' },
+              { name: 'Choc',     before: 'faces-choc-before.jpeg',     after: 'faces-choc-after.jpeg',     weight: '7.0 lbs at 2 months → 19.4 lbs' },
               { name: 'Coc',      before: 'faces-coc-before.jpeg',      after: 'faces-coc-after.jpeg',      weight: '6.2 lbs at 8 days → 18.3 lbs' },
             ].map((child, i) => (
               <div key={i} style={{ background: 'rgba(248,243,236,0.05)', borderRadius: '6px', overflow: 'hidden' }}>
