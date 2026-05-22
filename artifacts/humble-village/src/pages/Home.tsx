@@ -21,7 +21,7 @@ export default function Home() {
         <img
           src={`${BASE}/images/hero-home.jpg`}
           alt="The Humble Village"
-          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: '70% 15%' }}
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: '65% 25%' }}
         />
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(54,48,42,0.32)' }} />
         <div style={{
@@ -46,12 +46,12 @@ export default function Home() {
           <p style={{
             fontSize: 'clamp(14px, 1.5vw, 17px)',
             lineHeight: 1.7,
-            maxWidth: '420px',
+            maxWidth: '540px',
             opacity: 0.9,
             marginBottom: '36px',
             fontFamily: 'Figtree, sans-serif',
           }}>
-            Every dollar you give empowers Q'eqchi' Mayan families to develop self reliance through nutrition, healthcare, education, and community support.
+            Every dollar you give empowers Q'eqchi' Mayan families to overcome extreme poverty, chronic malnutrition, and generational hopelessness through nutrition, healthcare, education, and community support.
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
             <a
@@ -91,7 +91,7 @@ export default function Home() {
                 textDecoration: 'none',
               }}
             >
-              The Narú Circle
+              Partner With Us
             </Link>
           </div>
         </div>

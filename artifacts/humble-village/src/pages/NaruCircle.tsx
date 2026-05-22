@@ -28,8 +28,23 @@ export default function NaruCircle() {
   return (
     <main>
       {/* HERO */}
-      <section style={{ background: '#36302A', padding: '160px 40px 100px', textAlign: 'center' }}>
-        <div style={{ maxWidth: '760px', margin: '0 auto' }}>
+      <section style={{
+        position: 'relative',
+        minHeight: '70vh',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        overflow: 'hidden',
+        paddingTop: '80px',
+        background: '#36302A',
+      }}>
+        <img
+          src={`${BASE}/images/naru-circle-hero.webp`}
+          alt="Want to partner with us? Join the Narú Circle"
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%' }}
+        />
+        <div style={{ position: 'absolute', inset: 0, background: 'rgba(54,48,42,0.55)' }} />
+        <div style={{ position: 'relative', zIndex: 1, textAlign: 'center', padding: '60px 40px', maxWidth: '760px' }}>
           <p style={{
             fontFamily: 'Figtree, sans-serif',
             fontSize: '11px',
@@ -37,17 +52,17 @@ export default function NaruCircle() {
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
             color: '#C8B59E',
-            marginBottom: '28px',
+            marginBottom: '24px',
           }}>
-            Meaningful Partnership
+            WANT TO PARTNER WITH US?
           </p>
           <h1 style={{
             fontFamily: 'Libre Baskerville, serif',
-            fontSize: 'clamp(30px, 4.5vw, 58px)',
+            fontSize: 'clamp(28px, 4vw, 54px)',
             fontWeight: 400,
             color: '#F6F3EC',
-            marginBottom: '28px',
-            lineHeight: 1.15,
+            marginBottom: '20px',
+            lineHeight: 1.2,
             fontStyle: 'italic',
           }}>
             The Narú Circle
@@ -58,8 +73,7 @@ export default function NaruCircle() {
             fontWeight: 400,
             letterSpacing: '0.05em',
             color: '#F6F3EC',
-            opacity: 0.6,
-            marginBottom: '36px',
+            opacity: 0.75,
             fontStyle: 'italic',
           }}>
             Sustaining the Heartbeat of The Humble Village

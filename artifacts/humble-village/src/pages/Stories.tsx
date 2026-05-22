@@ -323,24 +323,45 @@ export default function Stories() {
             gap: '64px',
             alignItems: 'center',
           }} className="garden-tower-grid">
-            <div>
-              <img
-                src={`${BASE}/images/partner-usana-photo.jpg`}
-                alt="Mother and son with radishes grown in their USANA Foundation garden tower"
-                style={{ width: '100%', borderRadius: '4px', display: 'block' }}
-              />
-              <p style={{
-                fontFamily: 'Figtree, sans-serif',
-                fontSize: '12px',
-                color: '#574C3F',
-                opacity: 0.7,
-                marginTop: '10px',
-                fontStyle: 'italic',
-                lineHeight: 1.5,
-                textAlign: 'center',
-              }}>
-                A mother and her son with radishes harvested from their USANA Foundation garden tower. Alta Verapaz, Guatemala.
-              </p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+              <div>
+                <img
+                  src={`${BASE}/images/partner-usana-photo.jpg`}
+                  alt="Mother and son with radishes grown in their USANA Foundation garden tower"
+                  style={{ width: '100%', borderRadius: '4px', display: 'block', maxHeight: '340px', objectFit: 'cover', objectPosition: 'center top' }}
+                />
+                <p style={{
+                  fontFamily: 'Figtree, sans-serif',
+                  fontSize: '12px',
+                  color: '#574C3F',
+                  opacity: 0.7,
+                  marginTop: '10px',
+                  fontStyle: 'italic',
+                  lineHeight: 1.5,
+                  textAlign: 'center',
+                }}>
+                  Mother harvesting radishes from her USANA Foundation garden tower
+                </p>
+              </div>
+              <div>
+                <img
+                  src={`${BASE}/images/garden-tower-fruiting.webp`}
+                  alt="A Q'eqchi' Maya mother and son with their thriving USANA Foundation garden tower"
+                  style={{ width: '100%', borderRadius: '4px', display: 'block', maxHeight: '340px', objectFit: 'cover', objectPosition: 'center 20%' }}
+                />
+                <p style={{
+                  fontFamily: 'Figtree, sans-serif',
+                  fontSize: '12px',
+                  color: '#574C3F',
+                  opacity: 0.7,
+                  marginTop: '10px',
+                  fontStyle: 'italic',
+                  lineHeight: 1.5,
+                  textAlign: 'center',
+                }}>
+                  A mother and her son with their abundant garden tower
+                </p>
+              </div>
             </div>
             <div>
               <p style={{
