@@ -45,7 +45,7 @@ export default function About() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)' }} className="about-photo-grid">
           <img src={`${BASE}/images/about-mother-learning.jpg`} alt="Mother learning with baby" style={{ width: '100%', height: '480px', objectFit: 'cover', display: 'block' }} />
           <img src={`${BASE}/images/about-cooking.jpg`} alt="Women cooking at Solly kitchen" style={{ width: '100%', height: '480px', objectFit: 'cover', objectPosition: 'center 30%', display: 'block' }} />
-          <img src={`${BASE}/images/women-gardening.jpg`} alt="Women tending garden" style={{ width: '100%', height: '480px', objectFit: 'cover', display: 'block' }} />
+          <img src={`${BASE}/images/about-twins.jpg`} alt="Mother holding twin babies at Narú Medical Center" style={{ width: '100%', height: '480px', objectFit: 'cover', objectPosition: 'center 20%', display: 'block' }} />
         </div>
         <style>{`
           @media (max-width: 768px) {
@@ -149,11 +149,11 @@ export default function About() {
       {/* STATS */}
       <section style={{ padding: '80px 40px', background: '#36302A', textAlign: 'center' }}>
         <div style={{
-          maxWidth: '900px',
+          maxWidth: '1200px',
           margin: '0 auto',
           display: 'grid',
-          gridTemplateColumns: 'repeat(2, 1fr)',
-          gap: '48px',
+          gridTemplateColumns: 'repeat(3, 1fr)',
+          gap: '80px',
         }} className="about-stats-grid">
           {[
             { number: '13,000', label: 'Projects Funded' },
