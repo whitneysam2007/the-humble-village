@@ -19,11 +19,11 @@ export default function Home() {
         background: '#36302A',
       }}>
         <img
-          src={`${BASE}/images/hero-home.jpg`}
+          src={`${BASE}/images/hero-home-new.jpg`}
           alt="The Humble Village"
-          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: '80% 25%' }}
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }}
         />
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(54,48,42,0.32)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'rgba(54,48,42,0.15)' }} />
         <div style={{
           position: 'relative',
           zIndex: 1,
