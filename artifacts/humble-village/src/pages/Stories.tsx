@@ -84,8 +84,14 @@ export default function Stories() {
   return (
     <main>
       {/* HERO */}
-      <section style={{ background: '#36302A', padding: '160px 40px 100px', textAlign: 'center' }}>
-        <div style={{ maxWidth: '700px', margin: '0 auto' }}>
+      <section style={{ position: 'relative', overflow: 'hidden', textAlign: 'center' }}>
+        <img
+          src={`${BASE}/images/home-interior.webp`}
+          alt="A Q'eqchi' Maya mother and child in their home"
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 40%' }}
+        />
+        <div style={{ position: 'absolute', inset: 0, background: 'rgba(20,14,8,0.72)' }} />
+        <div style={{ position: 'relative', zIndex: 1, maxWidth: '700px', margin: '0 auto', padding: '160px 40px 100px' }}>
           <p style={{
             fontFamily: 'Figtree, sans-serif',
             fontSize: '11px',

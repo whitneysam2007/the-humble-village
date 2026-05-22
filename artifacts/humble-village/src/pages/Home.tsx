@@ -21,7 +21,7 @@ export default function Home() {
         <img
           src={`${BASE}/images/hero-home.jpg`}
           alt="The Humble Village"
-          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: '65% 25%' }}
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: '80% 25%' }}
         />
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(54,48,42,0.32)' }} />
         <div style={{
