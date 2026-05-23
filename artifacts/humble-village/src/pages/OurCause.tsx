@@ -9,7 +9,7 @@ export default function OurCause() {
       <section style={{
         position: 'relative',
         paddingTop: '80px',
-        minHeight: '110vh',
+        minHeight: '100vh',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -33,7 +33,7 @@ export default function OurCause() {
           inset: 0,
           background: 'linear-gradient(to bottom, rgba(36,30,24,0.72) 0%, rgba(36,30,24,0.82) 100%)',
         }} />
-        <div style={{ position: 'relative', zIndex: 1, maxWidth: '900px', margin: '0 auto', padding: '160px 40px 120px' }}>
+        <div style={{ position: 'relative', zIndex: 1, maxWidth: '1100px', margin: '0 auto', padding: '160px 40px 120px' }}>
           <p style={{
             fontFamily: 'Figtree, sans-serif',
             fontSize: '11px',
