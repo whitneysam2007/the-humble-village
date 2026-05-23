@@ -15,7 +15,7 @@ export default function Home() {
         display: 'flex',
         alignItems: 'center',
         overflow: 'hidden',
-        paddingTop: '80px',
+        paddingTop: '140px',
         background: '#36302A',
       }}>
         <img
@@ -46,7 +46,7 @@ export default function Home() {
           <p style={{
             fontSize: 'clamp(14px, 1.5vw, 17px)',
             lineHeight: 1.7,
-            maxWidth: '540px',
+            maxWidth: '440px',
             opacity: 0.9,
             marginBottom: '36px',
             fontFamily: 'Figtree, sans-serif',
