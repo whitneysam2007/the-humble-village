@@ -491,7 +491,7 @@ export default function OurCause() {
                 textDecoration: 'none',
               }}
             >
-              Narú Circle
+              Partner With Us
             </Link>
           </div>
         </div>
