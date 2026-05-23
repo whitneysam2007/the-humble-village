@@ -33,7 +33,7 @@ export default function OurCause() {
           inset: 0,
           background: 'linear-gradient(to bottom, rgba(36,30,24,0.72) 0%, rgba(36,30,24,0.82) 100%)',
         }} />
-        <div style={{ position: 'relative', zIndex: 1, maxWidth: '1100px', margin: '0 auto', padding: '160px 40px 120px' }}>
+        <div style={{ position: 'relative', zIndex: 1, maxWidth: '650px', margin: '0 auto', padding: '160px 40px 120px' }}>
           <p style={{
             fontFamily: 'Figtree, sans-serif',
             fontSize: '11px',
@@ -56,30 +56,24 @@ export default function OurCause() {
           }}>
             The Forgotten Valley
           </h1>
-          <p style={{ fontSize: '18px', lineHeight: 2, color: '#F8F3EC', opacity: 0.88, marginBottom: '32px' }}>
-            Once home to thriving, self-sustaining communities, now facing<br />
-            relentless scarcity and instability.
+          <p style={{ fontSize: '18px', lineHeight: 1.7, color: '#F8F3EC', opacity: 0.88, marginBottom: '32px' }}>
+            Once home to thriving, self-sustaining communities, now facing relentless scarcity and instability.
           </p>
-          <p style={{ fontSize: '18px', lineHeight: 2, color: '#F8F3EC', opacity: 0.88, marginBottom: '32px' }}>
-            These resilient villages are shaped by<br />
-            forces beyond their control:
+          <p style={{ fontSize: '18px', lineHeight: 1.7, color: '#F8F3EC', opacity: 0.88, marginBottom: '32px' }}>
+            These resilient villages are shaped by forces beyond their control:
           </p>
           <p style={{
             fontFamily: 'Libre Baskerville, serif',
             fontSize: 'clamp(17px, 2vw, 22px)',
             fontStyle: 'italic',
             color: '#F8F3EC',
-            lineHeight: 2,
+            lineHeight: 1.7,
             marginBottom: '32px',
           }}>
-            36 years of civil war and mass genocide,<br />
-            economic collapse in the 2000s,<br />
-            and ongoing marginalization.
+            36 years of civil war and mass genocide, economic collapse in the 2000s, and ongoing marginalization.
           </p>
-          <p style={{ fontSize: '18px', lineHeight: 2, color: '#F8F3EC', opacity: 0.88, marginBottom: '56px' }}>
-            Isolated from resources and opportunity,<br />
-            these indigenous communities have been left<br />
-            desolate, unseen, and forgotten.
+          <p style={{ fontSize: '18px', lineHeight: 1.7, color: '#F8F3EC', opacity: 0.88, marginBottom: '56px' }}>
+            Isolated from resources and opportunity, these indigenous communities have been left desolate, unseen, and forgotten.
           </p>
           <p style={{
             fontFamily: 'Libre Baskerville, serif',
