@@ -7,7 +7,7 @@ const teamMembers = [
     name: 'Lauren Foulger',
     title: 'Founder & Director',
     img: 'lauren-baby.png',
-    bio: 'Lauren holds a Master\'s in Public Health and a Bachelor\'s in Sociology and International Development from Brigham Young University. With over 18 years of experience working in international health and development in Central America and Southeast Asia, she founded The Humble Village in 2009 with a vision to provide comprehensive health and development solutions to some of the world\'s most vulnerable communities.',
+    bio: 'Lauren holds a Master\'s in Public Health and a Bachelor\'s in Sociology and International Development from Brigham Young University. With over 18 years of experience, she has worked in international health and development in Central America and Southeast Asia. In 2009, Lauren founded The Humble Village with a vision to provide comprehensive health and development solutions to some of the world\'s most vulnerable communities.',
     podcastUrl: 'https://podcasters.spotify.com/pod/show/brainstem-tv7/episodes/Our-Personal-Mission-Statement---Leading-With-Purpose-e3bfni8',
     podcastLabel: 'Our Personal Mission Statement: Leading With Purpose — The Bishop\'s Wife Podcast',
   },
@@ -15,7 +15,7 @@ const teamMembers = [
     name: 'Yvonne Sinclair',
     title: 'In-Country Director',
     img: 'yvonne-solo.webp',
-    bio: 'Yvonne came to Guatemala and never left. She began weighing babies and distributing nutritional supplements from the back of a borrowed truck, doing the quiet, essential work before there was an organization to do it through. When she connected with Lauren, they recognized what they could build together. That recognition became The Humble Village.\n\nMore than two decades later, Yvonne leads Narú, the on-the-ground partner organization in Alta Verapaz. Her work is practical, sustainable, and holistic: clean water, community health, maternal care, and education. She has given her life to the families she serves, one child at a time.',
+    bio: 'Yvonne came to Guatemala and never left. She began weighing babies and distributing nutritional supplements from the back of a borrowed truck, doing the quiet, essential work before there was an organization to do it through. When Yvonne connected with Lauren, they realized the impact potential if they unified their efforts. That recognition became The Humble Village.\n\nMore than two decades later, Yvonne leads Narú, the on-the-ground partner organization in Alta Verapaz. Her work is practical, sustainable, and holistic: clean water, community health, maternal care, and education. She has given her life to the families she serves, one child at a time.',
     podcastUrl: 'https://youtu.be/RKH7ua9oYho',
     podcastLabel: 'Nurturing Outside of the Box: A Life Dedicated to Service — Down the Well with Elle Rowley',
   },
@@ -151,9 +151,9 @@ export default function OurTeam() {
         }} className="guatemalan-grid">
           <div>
             <img
-              src={`${BASE}/images/Naru_Team_Pic.jpeg`}
+              src={`${BASE}/images/guatemalan-staff-full.jpg`}
               alt="Our Guatemalan Staff"
-              style={{ width: '100%', height: '440px', objectFit: 'cover', borderRadius: '4px' }}
+              style={{ width: '100%', height: 'auto', objectFit: 'contain', borderRadius: '4px' }}
             />
           </div>
           <div>

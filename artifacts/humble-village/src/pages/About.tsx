@@ -32,13 +32,13 @@ export default function About() {
             marginBottom: '32px',
             lineHeight: 1.2,
           }}>
-            A Nonprofit Organization Empowering Women and Transforming Communities
+            A Volunteer Nonprofit Organization: Empowering Women and Transforming Communities
           </h1>
           <p style={{ fontSize: '17px', lineHeight: 1.85, color: '#36302A', opacity: 0.8, marginBottom: '20px' }}>
-            At The Humble Village, we believe that when you educate and empower families—starting with women—you bless all of humanity. We work hand-in-hand with Q'eqchi' Mayan families living in the highlands of Guatemala, where most survive on less than $1 a day.
+            At The Humble Village, we have a saying: if you give a man a fish, he will eat for a day; if you teach a man to fish, he will eat for life; if you teach a woman to fish, she will feed her entire family and community forever. We work hand-in-hand with Q'eqchi' Mayan families living in the highlands of Guatemala, where most survive on less than $1 a day.
           </p>
           <p style={{ fontSize: '17px', lineHeight: 1.85, color: '#36302A', opacity: 0.8 }}>
-            Our mission is simple: equip women with the tools to lift their families out of generational poverty. We provide urgently needed nourishment, healthcare training and access, and education that opens the door to long-term stability and independence.
+            Our mission is to empower mothers and families in Alta Verapaz, Guatemala to break the cycle of hunger and infant mortality. We do this by providing nutrition, education, and life-saving tools that build lasting self-reliance.
           </p>
         </div>
 
@@ -66,17 +66,14 @@ export default function About() {
             lineHeight: 1.4,
             marginBottom: '40px',
           }}>
-            Together, We Can Lift Families from Malnourishment and Poverty
+            It's a Village-to-Village Relationship
           </h2>
           <div style={{ width: '48px', height: '2px', background: '#C8B59E', margin: '0 auto 40px' }} />
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '17px', lineHeight: 1.85, color: '#F6F3EC', opacity: 0.8, marginBottom: '24px' }}>
-            Since 2009, we've been working towards ending malnourishment and high infant-mortality rates in these highlands of Guatemala. It's an ambitious goal, and we see the progress every day thanks to the help of our local team on the ground in Guatemala and generous supporters like you.
-          </p>
-          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '17px', lineHeight: 1.85, color: '#F6F3EC', opacity: 0.8, marginBottom: '24px' }}>
-            We work tirelessly to support the Villages there with nutrition and health, and also with an increase of economic development so that they can create skills and sustainable entrepreneurship opportunities to sustain their families.
+            Since 2009, we've been working tirelessly towards ending malnutrition and high maternal and infant mortality rates in the highlands of Guatemala. It's an ambitious goal. Yet, we see the progress every day thanks to our Guatemala team and generous supporters like you.
           </p>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '17px', lineHeight: 1.85, color: '#F6F3EC', opacity: 0.8 }}>
-            None of this would be possible without you! There is more work to be done, and we thank you for your continued donations, thoughts, prayers and care for this project.
+            None of this would be possible without you! There is more work to be done. Thank you for your continued donations, concern, and prayers for The Humble Village programs and families.
           </p>
         </div>
       </section>
@@ -147,7 +144,7 @@ export default function About() {
       </section>
 
       {/* STATS */}
-      <section style={{ padding: '80px 40px', background: '#36302A', textAlign: 'center' }}>
+      <section style={{ padding: '80px 40px', background: '#F8F3EC', textAlign: 'center' }}>
         <div style={{
           maxWidth: '1200px',
           margin: '0 auto',
@@ -165,7 +162,7 @@ export default function About() {
                 fontFamily: 'Libre Baskerville, serif',
                 fontSize: 'clamp(36px, 5vw, 60px)',
                 fontWeight: 400,
-                color: '#F6F3EC',
+                color: '#36302A',
                 lineHeight: 1,
                 marginBottom: '10px',
               }}>
@@ -177,7 +174,7 @@ export default function About() {
                 fontWeight: 600,
                 letterSpacing: '0.12em',
                 textTransform: 'uppercase',
-                color: '#F6F3EC',
+                color: '#36302A',
                 opacity: 0.5,
               }}>
                 {stat.label}
@@ -188,58 +185,6 @@ export default function About() {
         <style>{`
           @media (max-width: 600px) {
             .about-stats-grid { grid-template-columns: 1fr !important; gap: 36px !important; }
-          }
-        `}</style>
-      </section>
-
-      {/* HOW WE WORK */}
-      <section style={{ padding: '100px 40px', background: '#F8F3EC' }}>
-        <div style={{
-          maxWidth: '1100px',
-          margin: '0 auto',
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gap: '80px',
-          alignItems: 'center',
-        }} className="how-we-work-grid">
-          <div>
-            <img
-              src={`${BASE}/images/how-we-work.jpg`}
-              alt="A mother holding her baby in Alta Verapaz, Guatemala"
-              style={{ width: '100%', height: '480px', objectFit: 'cover', objectPosition: 'center 30%', borderRadius: '4px' }}
-            />
-          </div>
-          <div>
-            <p style={{
-              fontFamily: 'Figtree, sans-serif',
-              fontSize: '11px',
-              fontWeight: 700,
-              letterSpacing: '0.2em',
-              textTransform: 'uppercase',
-              color: '#574C3F',
-              marginBottom: '20px',
-            }}>
-              Our Model
-            </p>
-            <h2 style={{
-              fontFamily: 'Libre Baskerville, serif',
-              fontSize: 'clamp(26px, 3vw, 40px)',
-              fontWeight: 400,
-              color: '#36302A',
-              marginBottom: '28px',
-              lineHeight: 1.2,
-            }}>
-              How We Work
-            </h2>
-            <p style={{ fontSize: '17px', lineHeight: 1.85, color: '#36302A', opacity: 0.85, marginBottom: '28px' }}>
-              100% of funds donated go directly to these projects and local Guatemalan staff who are on the ground working day to day. The Humble Village takes no overhead or administrative costs, thanks to a generous team who volunteers their time and resources to ensure the donations make the greatest impact possible.
-            </p>
-            <Link to="/ourcause" className="btn-primary">See Our Cause</Link>
-          </div>
-        </div>
-        <style>{`
-          @media (max-width: 768px) {
-            .how-we-work-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
           }
         `}</style>
       </section>
@@ -345,7 +290,7 @@ export default function About() {
                 photo: `${BASE}/images/R6B_8036.webp`,
                 photoAlt: "A Q'eqchi' Maya family with their USANA garden tower",
                 name: 'USANA Foundation',
-                description: 'USANA Foundation funds our garden tower program, bringing sustainable nutrition and hands-on agricultural training to Q\'eqchi\' Maya families. Their support is turning small plots of land into thriving, self-sustaining family gardens.',
+                description: 'USANA Foundation funds our garden tower program, bringing sustainable nutrition and hands-on agricultural training to Q\'eqchi\' Maya families. Their support is turning small plots of land into thriving, self-sustaining family gardens — with the potential to sell excess crops, creating entrepreneurial opportunities and a path toward greater economic independence.',
               },
               {
                 logo: `${BASE}/images/logo-solly-baby.png`,
@@ -432,15 +377,15 @@ export default function About() {
       </section>
 
       {/* FILM */}
-      <section style={{ background: '#36302A', padding: '100px 40px' }}>
+      <section style={{ background: '#FFFFFF', padding: '100px 40px' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#C8B59E', marginBottom: '16px', textAlign: 'center' }}>
+          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '16px', textAlign: 'center' }}>
             Our Story
           </p>
-          <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(24px, 3.5vw, 38px)', fontWeight: 400, color: '#F6F3EC', marginBottom: '16px', textAlign: 'center' }}>
+          <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(24px, 3.5vw, 38px)', fontWeight: 400, color: '#36302A', marginBottom: '16px', textAlign: 'center' }}>
             Watch the Film
           </h2>
-          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', color: '#F6F3EC', opacity: 0.6, marginBottom: '48px', lineHeight: 1.7, textAlign: 'center', fontStyle: 'italic' }}>
+          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', color: '#574C3F', opacity: 0.8, marginBottom: '48px', lineHeight: 1.7, textAlign: 'center', fontStyle: 'italic' }}>
             Join us inside the communities we serve.
           </p>
           <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '8px' }}>

@@ -10,9 +10,9 @@ const stories = [
     tag: 'Nutritional Recuperation',
     summary: '14.08 lbs at 10 months → 26.4 lbs',
     body: [
-      'When Oscar entered our recuperation program in 2024, he was severely underweight at only 14.08 lbs at 10 months, suffering from fever and intestinal problems that affected his growth.',
-      'His mother, Julia, is a single mother of three who works hard to make ends meet by selling tortillas in her neighborhood. Already facing daily challenges, caring for a sick child added another heavy burden.',
-      'Oscar just retired from the program weighing 26.4 lbs and looking healthier and happier than ever. We hope that seeing him grow strong will mean one less worry for Julia.',
+      'When 10-month-old Oscar entered our recuperation program in 2024, he was severely underweight at only 14.08 lbs and suffering from fever and intestinal problems that affected his growth.',
+      'His mother, Julia, is a single mother of three who works hard to make ends meet by selling tortillas in her neighborhood. Already faced with heavy daily challenges, caring for a starving, sick child added tremendous burdens.',
+      'Recently, Oscar graduated from our program weighing 26.4 lbs and looking healthier and happier than ever. We hope that seeing him grow strong will mean one less worry for Julia.',
     ],
   },
   {
@@ -27,7 +27,7 @@ const stories = [
       'When asked how she had heard of Narú, Guadalupe said: "Everyone knows that if you have a baby that is not gaining weight, Narú is the only place that can help you."',
       'Dilan was severely malnourished — 5.28 lbs at one month old. He was enrolled in the program that day. We look forward to sharing his graduation photo.',
     ],
-    note: 'These stories are about the mother every bit as much as the baby.',
+
   },
   {
     name: 'Jhordan',
@@ -295,7 +295,7 @@ export default function Stories() {
                     {story.quote}
                   </p>
                 )}
-                {story.note && (
+                {false && (
                   <p style={{
                     fontFamily: 'Figtree, sans-serif',
                     fontSize: '13px',
@@ -321,7 +321,7 @@ export default function Stories() {
       ))}
 
       {/* GARDEN TOWER STORY */}
-      <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
+      <section style={{ background: '#36302A', padding: '100px 40px' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <div style={{
             display: 'grid',
@@ -376,7 +376,7 @@ export default function Stories() {
                 fontWeight: 700,
                 letterSpacing: '0.2em',
                 textTransform: 'uppercase',
-                color: '#574C3F',
+                color: '#C8B59E',
                 marginBottom: '6px',
               }}>
                 Impact Story
@@ -387,8 +387,8 @@ export default function Stories() {
                 fontWeight: 600,
                 letterSpacing: '0.15em',
                 textTransform: 'uppercase',
-                color: '#574C3F',
-                opacity: 0.6,
+                color: '#C8B59E',
+                opacity: 0.7,
                 marginBottom: '20px',
               }}>
                 Made possible by USANA Foundation
@@ -397,7 +397,7 @@ export default function Stories() {
                 fontFamily: 'Libre Baskerville, serif',
                 fontSize: 'clamp(22px, 2.5vw, 34px)',
                 fontWeight: 400,
-                color: '#36302A',
+                color: '#F8F3EC',
                 marginBottom: '28px',
                 lineHeight: 1.2,
                 fontStyle: 'italic',
@@ -415,8 +415,8 @@ export default function Stories() {
                   fontFamily: 'Figtree, sans-serif',
                   fontSize: '16px',
                   lineHeight: 1.85,
-                  color: '#574C3F',
-                  opacity: 0.85,
+                  color: '#F8F3EC',
+                  opacity: 0.8,
                   marginBottom: '16px',
                 }}>
                   {para}
@@ -443,7 +443,7 @@ export default function Stories() {
       </section>
 
       {/* FILM */}
-      <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
+      <section style={{ background: '#FFFFFF', padding: '100px 40px' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '16px', textAlign: 'center' }}>
             Learn More
@@ -467,7 +467,7 @@ export default function Stories() {
       </section>
 
       {/* CTA */}
-      <section style={{ background: '#36302A', padding: '100px 40px', textAlign: 'center' }}>
+      <section style={{ background: '#574C3F', padding: '100px 40px', textAlign: 'center' }}>
         <div style={{ maxWidth: '600px', margin: '0 auto' }}>
           <h2 style={{
             fontFamily: 'Libre Baskerville, serif',

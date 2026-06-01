@@ -23,7 +23,7 @@ export default function Home() {
           alt="The Humble Village"
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: '65% top' }}
         />
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(54,48,42,0.15)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, rgba(54,48,42,0.55) 0%, rgba(54,48,42,0.20) 55%, rgba(54,48,42,0.05) 100%)' }} />
         <div style={{
           position: 'relative',
           zIndex: 1,
@@ -51,7 +51,7 @@ export default function Home() {
             marginBottom: '36px',
             fontFamily: 'Figtree, sans-serif',
           }}>
-            Every dollar you give empowers Q'eqchi' Mayan families to overcome extreme poverty, chronic malnutrition, and generational hopelessness through nutrition, healthcare, education, and community support.
+            Every dollar you give empowers Q'eqchi' Mayan families to overcome extreme poverty, chronic malnutrition, and generational hopelessness through essential nutrition, healthcare, education, and community support.
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
             <a
@@ -119,7 +119,7 @@ export default function Home() {
             opacity: 0.85,
             marginBottom: '20px',
           }}>
-            Narú means "can do" in the Q'eqchi' language and describes our unique approach to this work.
+            Narú means "can do" in the Q'eqchi' language. It describes our unique approach to this work.
           </p>
           <p style={{
             fontFamily: 'Figtree, sans-serif',
@@ -129,7 +129,17 @@ export default function Home() {
             opacity: 0.85,
             marginBottom: '20px',
           }}>
-            Our goal is not simply to provide food: we offer urgent nutritional support and then teach mothers how to nourish their own children and build a sustainable future. With our help, families learn what they <strong>"can do"</strong> despite their challenging circumstances.
+            Our goal is not to simply provide food: we offer urgent nutritional support and then teach mothers how to nourish their own children and build a sustainable future.
+          </p>
+          <p style={{
+            fontFamily: 'Figtree, sans-serif',
+            fontSize: '17px',
+            lineHeight: 1.85,
+            color: '#F6F3EC',
+            opacity: 0.85,
+            marginBottom: '20px',
+          }}>
+            With our help, families learn what they <strong>"can do"</strong> despite their challenging circumstances.
           </p>
         </div>
       </section>
@@ -229,7 +239,7 @@ export default function Home() {
                 opacity: 0.8,
                 marginBottom: '32px',
               }}>
-                With little to no government support, at-risk mothers have no access to healthcare, clean water, or food for their malnourished children.
+                With little to no government support, at-risk mothers do not have access to healthcare, clean water, or food for their malnourished children.
               </p>
               <Link to="/ourcause" className="btn-primary">See the Full Picture</Link>
             </div>
@@ -259,15 +269,15 @@ export default function Home() {
       </section>
 
       {/* FILM */}
-      <section style={{ background: '#36302A', padding: '100px 40px' }}>
+      <section style={{ background: '#FFFFFF', padding: '100px 40px' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#C8B59E', marginBottom: '16px', textAlign: 'center' }}>
+          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '16px', textAlign: 'center' }}>
             Our Story
           </p>
-          <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(24px, 3.5vw, 38px)', fontWeight: 400, color: '#F6F3EC', marginBottom: '16px', textAlign: 'center' }}>
+          <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(24px, 3.5vw, 38px)', fontWeight: 400, color: '#36302A', marginBottom: '16px', textAlign: 'center' }}>
             Watch the Film
           </h2>
-          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', color: '#F6F3EC', opacity: 0.6, marginBottom: '48px', lineHeight: 1.7, textAlign: 'center', fontStyle: 'italic' }}>
+          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', color: '#574C3F', opacity: 0.8, marginBottom: '48px', lineHeight: 1.7, textAlign: 'center', fontStyle: 'italic' }}>
             See our mission in action. Join us for the journey.
           </p>
           <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '8px' }}>
@@ -311,44 +321,44 @@ export default function Home() {
 
           <div style={{
             display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gap: '64px',
-            alignItems: 'center',
+            gridTemplateColumns: '40% 60%',
+            gap: '48px',
+            alignItems: 'stretch',
           }} className="elena-grid">
-            <div style={{ display: 'flex', gap: '16px' }}>
-              <div style={{ flex: 1 }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+              <div>
                 <div style={{
                   fontFamily: 'Figtree, sans-serif',
                   fontSize: '11px',
                   fontWeight: 700,
                   letterSpacing: '0.18em',
-                  color: '#574C3F',
+                  color: '#C8B59E',
                   marginBottom: '8px',
                   textAlign: 'center',
                 }}>BEFORE</div>
                 <img
                   src={`${BASE}/images/elena-before.jpg`}
                   alt="Jeremia and Gerson — Elena would not leave the corner"
-                  style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', borderRadius: '4px' }}
+                  style={{ width: '100%', aspectRatio: '4/3', objectFit: 'cover', borderRadius: '4px' }}
                 />
                 <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#F8F3EC', opacity: 0.7, marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>
                   Twins Jeremia & Gerson with their Aunt and Grandmother. Elena, not pictured.
                 </p>
               </div>
-              <div style={{ flex: 1 }}>
+              <div>
                 <div style={{
                   fontFamily: 'Figtree, sans-serif',
                   fontSize: '11px',
                   fontWeight: 700,
                   letterSpacing: '0.18em',
-                  color: '#574C3F',
+                  color: '#C8B59E',
                   marginBottom: '8px',
                   textAlign: 'center',
                 }}>AFTER</div>
                 <img
                   src={`${BASE}/images/elena-after.jpg`}
                   alt="Elena with her boys today"
-                  style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', borderRadius: '4px' }}
+                  style={{ width: '100%', aspectRatio: '4/3', objectFit: 'cover', borderRadius: '4px' }}
                 />
                 <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#F8F3EC', opacity: 0.7, marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>
                   7 years later, Elena with her boys today.
@@ -356,7 +366,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div>
+            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
               <p style={{
                 fontFamily: 'Figtree, sans-serif',
                 fontSize: '17px',
@@ -375,7 +385,7 @@ export default function Home() {
                 opacity: 0.85,
                 marginBottom: '20px',
               }}>
-                Elena, malnourished herself, could not produce milk. She fed her babies corn water — it only made things worse. With expected burials approaching, she had emotionally detached from her boys.
+                Elena, malnourished herself, could not produce milk. She fed her babies corn water — it only made things worse. With expected burials approaching, she emotionally detached from her boys and resigned herself to hiding in the corner of the room, too ashamed to emerge.
               </p>
               <p style={{
                 fontFamily: 'Figtree, sans-serif',
@@ -385,7 +395,7 @@ export default function Home() {
                 opacity: 0.85,
                 marginBottom: '20px',
               }}>
-                The twins were immediately admitted into the nutrition program. Gerson was diagnosed with a tongue tie, a correctable condition, and received life-saving care. Elena entered the self-reliance program at the Narú Training Center, gaining tools, skills, and support to pull herself and her family out of poverty.
+                The twins were immediately admitted into our nutrition program. Gerson was diagnosed with a tongue tie, a correctable condition, and received life-saving care. Elena entered the self-reliance program at the Narú Training Center, gaining tools, skills, and support to pull herself and her family out of poverty.
               </p>
               <p style={{
                 fontFamily: 'Libre Baskerville, serif',
@@ -395,7 +405,7 @@ export default function Home() {
                 lineHeight: 1.5,
                 marginBottom: '40px',
               }}>
-                Healthy boys. A thriving home. And Elena—empowered and self-sufficient—is now a leader in her community.
+                Healthy boys. A thriving home. And Elena—empowered and independent—is now a leader in her community.
               </p>
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
                 <Link to="/stories" className="btn-primary" style={{ background: '#F8F3EC', color: '#36302A' }}>
@@ -465,14 +475,14 @@ export default function Home() {
           }} className="stats-grid">
             {[
               { number: '184', label: 'Communities Reached' },
-              { number: '758', label: 'Children received nutrition support' },
-              { number: '417', label: 'Children improved nutritional status' },
+              { number: '758', label: 'Children received\nnutrition support' },
+              { number: '417', label: 'Children with improved\nnutritional status' },
               { number: '274', label: 'Children achieved healthy weight' },
               { number: '304', label: 'Kitchen gardens established' },
-              { number: '3', label: 'Brick-and-mortar Narú Training Centers' },
-              { number: '3,620', label: 'Families attended education sessions' },
-              { number: '1,288', label: 'In-home training sessions delivered' },
-              { number: '12,807', label: 'Visits to Narú Health & Training Centers' },
+              { number: '3', label: 'Brick-and-mortar\nNarú Training Centers' },
+              { number: '3,620', label: 'Families attended\neducation sessions' },
+              { number: '1,288', label: 'In-home training sessions\ndelivered' },
+              { number: '12,807', label: 'Visits to Narú\nHealth & Training Centers' },
               { number: '354', label: 'Perinatal mothers supported' },
             ].map((stat, i) => (
               <div key={i} style={{ textAlign: 'center' }}>
@@ -491,6 +501,7 @@ export default function Home() {
                   fontSize: '14px',
                   lineHeight: 1.5,
                   color: '#574C3F',
+                  whiteSpace: 'pre-line',
                 }}>
                   {stat.label}
                 </div>
@@ -501,7 +512,7 @@ export default function Home() {
       </section>
 
       {/* NARÚ CIRCLE CTA */}
-      <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
+      <section style={{ background: '#36302A', padding: '100px 40px' }}>
         <div style={{
           maxWidth: '800px',
           margin: '0 auto',
@@ -513,69 +524,80 @@ export default function Home() {
             fontWeight: 700,
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
-            color: '#574C3F',
+            color: '#C8B59E',
             marginBottom: '28px',
           }}>
-            Do more with your donation. Join The Narú Circle and transform generations.
+            Do More With Your Donation
           </p>
           <h2 style={{
             fontFamily: 'Libre Baskerville, serif',
             fontSize: 'clamp(26px, 4vw, 46px)',
             fontWeight: 400,
-            color: '#36302A',
+            color: '#F6F3EC',
             lineHeight: 1.25,
             marginBottom: '28px',
           }}>
-            This is not just a donation.<br />This is a partnership.
+            Join the Narú Circle and Transform Generations
           </h2>
           <p style={{
             fontFamily: 'Figtree, sans-serif',
             fontSize: '17px',
             lineHeight: 1.8,
-            color: '#574C3F',
+            color: '#F6F3EC',
             opacity: 0.85,
             marginBottom: '28px',
           }}>
-            One-time donations do wonders for our work, but committing to an annual donation ensures a perpetual security for our families.
+            One-time donations do wonders for our life-saving work, but committing to an annual donation ensures perpetual security for our families.
           </p>
           <p style={{
             fontFamily: 'Figtree, sans-serif',
             fontSize: '17px',
             lineHeight: 1.8,
-            color: '#574C3F',
-            opacity: 0.85,
-            marginBottom: '28px',
-          }}>
-            As part of The Narú Circle, you become a “program steward.” Your vital and ongoing donation guarantees a self-reliant future for generations to come. Check out programs you can choose to fund here.
-          </p>
-          <p style={{
-            fontFamily: 'Figtree, sans-serif',
-            fontSize: '17px',
-            lineHeight: 1.8,
-            color: '#574C3F',
+            color: '#F6F3EC',
             opacity: 0.85,
             marginBottom: '48px',
           }}>
-            As a token of our appreciation, your name will be added to The Narú Circle Wall in our main medical center—a permanent reminder of our gratitude for your support and a message to all who visit that, thanks to you, their future is no longer uncertain, their future is secure.
+            As part of the Narú Circle, you become a Humble Village partner and program steward. Your annual donation ensures vital nutrition security and self-reliant futures for generations to come.
           </p>
-          <Link
-            to="/naru-circle"
-            style={{
-              display: 'inline-block',
-              background: '#36302A',
-              color: '#F8F3EC',
-              padding: '18px 48px',
-              borderRadius: '6px',
-              fontFamily: 'Figtree, sans-serif',
-              fontSize: '13px',
-              fontWeight: 700,
-              letterSpacing: '0.12em',
-              textTransform: 'uppercase',
-              textDecoration: 'none',
-            }}
-          >
-            Explore the Narú Circle
-          </Link>
+          <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <Link
+              to="/naru-circle"
+              style={{
+                display: 'inline-block',
+                background: '#F6F3EC',
+                color: '#36302A',
+                padding: '18px 48px',
+                borderRadius: '6px',
+                fontFamily: 'Figtree, sans-serif',
+                fontSize: '13px',
+                fontWeight: 700,
+                letterSpacing: '0.12em',
+                textTransform: 'uppercase',
+                textDecoration: 'none',
+              }}
+            >
+              Explore the Narú Circle
+            </Link>
+            <Link
+              to="/naru-circle#programs"
+              style={{
+                display: 'inline-block',
+                background: 'transparent',
+                color: '#F6F3EC',
+                padding: '18px 48px',
+                borderRadius: '6px',
+                border: '1.5px solid rgba(246,243,236,0.5)',
+                fontFamily: 'Figtree, sans-serif',
+                fontSize: '13px',
+                fontWeight: 700,
+                letterSpacing: '0.12em',
+                textTransform: 'uppercase',
+                textDecoration: 'none',
+              }}
+            >
+              Programs to Sponsor
+            </Link>
+          </div>
         </div>
       </section>
 

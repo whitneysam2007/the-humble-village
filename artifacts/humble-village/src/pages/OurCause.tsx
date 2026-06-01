@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-
 const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 export default function OurCause() {
@@ -70,7 +69,7 @@ export default function OurCause() {
             lineHeight: 1.7,
             marginBottom: '32px',
           }}>
-            36 years of civil war and mass genocide, economic collapse in the 2000s, and ongoing marginalization.
+            36 years of civil war, mass genocide, and ongoing marginalization.
           </p>
           <p style={{ fontSize: '18px', lineHeight: 1.7, color: '#F8F3EC', opacity: 0.88, marginBottom: '56px' }}>
             Isolated from resources and opportunity, these indigenous communities have been left desolate, unseen, and forgotten.
@@ -87,14 +86,21 @@ export default function OurCause() {
         </div>
       </section>
 
-      {/* MAP + UNICEF STAT */}
-      <section style={{ background: '#F8F3EC', padding: '80px 40px' }}>
-        <div style={{ maxWidth: '1035px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1.15fr 1fr', gap: '60px', alignItems: 'center' }} className="map-stat-grid">
+      {/* HOW WE WORK */}
+      <section style={{ padding: '100px 40px', background: '#F8F3EC' }}>
+        <div style={{
+          maxWidth: '1100px',
+          margin: '0 auto',
+          display: 'grid',
+          gridTemplateColumns: '1fr 1fr',
+          gap: '80px',
+          alignItems: 'center',
+        }} className="how-we-work-grid">
           <div>
             <img
-              src={`${BASE}/images/unicef-map.png`}
-              alt="UNICEF Malnutrition World Map — Alta Verapaz, Guatemala"
-              style={{ width: '100%', display: 'block', borderRadius: '4px' }}
+              src={`${BASE}/images/how-we-work.jpg`}
+              alt="A mother holding her baby in Alta Verapaz, Guatemala"
+              style={{ width: '100%', height: '480px', objectFit: 'cover', objectPosition: 'center 30%', borderRadius: '4px' }}
             />
           </div>
           <div>
@@ -105,44 +111,36 @@ export default function OurCause() {
               letterSpacing: '0.2em',
               textTransform: 'uppercase',
               color: '#574C3F',
-              marginBottom: '16px',
+              marginBottom: '20px',
             }}>
-              Where We Work
+              Our Model
             </p>
             <h2 style={{
               fontFamily: 'Libre Baskerville, serif',
-              fontSize: 'clamp(22px, 3vw, 36px)',
+              fontSize: 'clamp(26px, 3vw, 40px)',
               fontWeight: 400,
               color: '#36302A',
-              marginBottom: '24px',
+              marginBottom: '28px',
               lineHeight: 1.2,
             }}>
-              Alta Verapaz, Guatemala
+              How We Work
             </h2>
-            <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.85, color: '#574C3F', marginBottom: '24px' }}>
-              According to UNICEF, Alta Verapaz has the highest rates of malnutrition in children ages 0–5 in Central, South, and North America. Many indigenous Q'eqchi' Mayan families living here are marginalized, receiving little or no government support, with extremely limited access to healthcare and justice.
-            </p>
-            <p style={{
-              fontFamily: 'Figtree, sans-serif',
-              fontSize: '13px',
-              color: '#574C3F',
-              opacity: 0.6,
-              fontStyle: 'italic',
-            }}>
-              Source: UNICEF Guatemala
+            <p style={{ fontSize: '17px', lineHeight: 1.85, color: '#36302A', opacity: 0.85, marginBottom: '28px' }}>
+              100% of funds donated go directly to these projects and local Guatemalan staff who are on the ground working day to day. The Humble Village takes no overhead or administrative costs, thanks to a generous team who volunteers their time and resources to ensure the donations make the greatest impact possible.
             </p>
           </div>
         </div>
         <style>{`
           @media (max-width: 768px) {
-            .map-stat-grid { grid-template-columns: 1fr !important; }
+            .how-we-work-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
           }
         `}</style>
       </section>
 
-      {/* IMPACT STATS */}
+      {/* IMPACT STATS — REMOVED */}
+      {false &&
       <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
-        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <p style={{
             fontFamily: 'Figtree, sans-serif',
             fontSize: '11px',
@@ -153,88 +151,74 @@ export default function OurCause() {
             marginBottom: '16px',
             textAlign: 'center',
           }}>
-            2025 Results
+            2025 Impact
           </p>
           <h2 style={{
             fontFamily: 'Libre Baskerville, serif',
-            fontSize: 'clamp(24px, 3.5vw, 40px)',
+            fontSize: 'clamp(26px, 3.5vw, 42px)',
             fontWeight: 400,
             color: '#36302A',
             textAlign: 'center',
-            marginBottom: '72px',
+            marginBottom: '64px',
           }}>
-            What one year of Narú "Can Do" looks like
+            The Humble Village Impact Last Year
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '32px' }} className="cause-stats-grid">
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))',
+            gap: '48px',
+          }} className="stats-grid">
             {[
-              { number: '274', label: 'Children reached a healthy weight' },
-              { number: '346', label: 'At-risk pregnant women received prenatal care' },
+              { number: '184', label: 'Communities Reached' },
+              { number: '758', label: 'Children received\nnutrition support' },
+              { number: '417', label: 'Children with improved\nnutritional status' },
+              { number: '274', label: 'Children achieved healthy weight' },
               { number: '304', label: 'Kitchen gardens established' },
-              { number: '184', label: 'Communities benefited' },
-              { number: '12,807', label: 'Total visits to our health and training centers' },
-              { number: '3,620', label: 'Trainings attended by families' },
-              { number: '354', label: 'Midwives attended training sessions' },
-              { number: '1,288', label: 'Home visits to families' },
+              { number: '3', label: 'Brick-and-mortar\nNarú Training Centers' },
+              { number: '3,620', label: 'Families attended\neducation sessions' },
+              { number: '1,288', label: 'In-home training sessions\ndelivered' },
+              { number: '12,807', label: 'Visits to Narú\nHealth & Training Centers' },
+              { number: '354', label: 'Perinatal mothers supported' },
             ].map((stat, i) => (
-              <div key={i} style={{ textAlign: 'center', padding: '32px 16px', background: '#36302A', borderRadius: '4px' }}>
+              <div key={i} style={{ textAlign: 'center' }}>
                 <div style={{
                   fontFamily: 'Libre Baskerville, serif',
-                  fontSize: 'clamp(32px, 4vw, 52px)',
+                  fontSize: 'clamp(36px, 4.5vw, 52px)',
                   fontWeight: 400,
-                  color: '#F8F3EC',
-                  marginBottom: '12px',
+                  color: '#36302A',
+                  marginBottom: '10px',
                   lineHeight: 1,
                 }}>
                   {stat.number}
                 </div>
                 <div style={{
                   fontFamily: 'Figtree, sans-serif',
-                  fontSize: '13px',
+                  fontSize: '14px',
                   lineHeight: 1.5,
-                  color: '#F8F3EC',
-                  opacity: 0.7,
+                  color: '#574C3F',
+                  whiteSpace: 'pre-line',
                 }}>
                   {stat.label}
                 </div>
               </div>
             ))}
           </div>
-          <style>{`
-            @media (max-width: 900px) {
-              .cause-stats-grid { grid-template-columns: repeat(2, 1fr) !important; }
-            }
-            @media (max-width: 480px) {
-              .cause-stats-grid { grid-template-columns: 1fr !important; }
-            }
-          `}</style>
         </div>
-      </section>
+      </section>}
 
       {/* HOW THE PROGRAM WORKS */}
-      <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
+      <section style={{ background: '#36302A', padding: '100px 40px' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-          <p style={{
-            fontFamily: 'Figtree, sans-serif',
-            fontSize: '11px',
-            fontWeight: 700,
-            letterSpacing: '0.2em',
-            textTransform: 'uppercase',
-            color: '#574C3F',
-            marginBottom: '16px',
-            textAlign: 'center',
-          }}>
-            The Narú Nutrition Program
-          </p>
           <h2 style={{
             fontFamily: 'Libre Baskerville, serif',
             fontSize: 'clamp(24px, 3.5vw, 40px)',
             fontWeight: 400,
-            color: '#36302A',
+            color: '#F8F3EC',
             textAlign: 'center',
             marginBottom: '48px',
             lineHeight: 1.25,
           }}>
-            How the Program Works
+            The Narú Nutrition Program
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px' }} className="program-how-grid">
             {[
@@ -264,8 +248,8 @@ export default function OurCause() {
                   fontFamily: 'Libre Baskerville, serif',
                   fontSize: '36px',
                   fontWeight: 400,
-                  color: '#574C3F',
-                  opacity: 0.4,
+                  color: '#C8B59E',
+                  opacity: 0.5,
                   lineHeight: 1,
                   flexShrink: 0,
                   width: '48px',
@@ -277,12 +261,12 @@ export default function OurCause() {
                     fontFamily: 'Libre Baskerville, serif',
                     fontSize: '20px',
                     fontWeight: 400,
-                    color: '#36302A',
+                    color: '#F8F3EC',
                     marginBottom: '10px',
                   }}>
                     {item.title}
                   </h3>
-                  <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '15px', lineHeight: 1.8, color: '#36302A', opacity: 0.8 }}>
+                  <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '15px', lineHeight: 1.8, color: '#F8F3EC', opacity: 0.75 }}>
                     {item.body}
                   </p>
                 </div>
@@ -342,7 +326,7 @@ export default function OurCause() {
                 img: 'ochoch-naru-new.jpg',
                 communities: '93 communities',
                 annualCost: '$82,000 / year',
-                body: 'We provide training sessions to families on home hygiene and healthcare, food production and cooking demonstrations, as well as offering clinical care to expectant mothers. Here our nurses monitor monthly progress of malnourished babies on the nutrition program. We partner with ADP on abuse prevention for teenagers and with CARE International to support young mothers with micro-business skills.',
+                body: 'We provide training sessions to families on home hygiene and healthcare, food production and cooking demonstrations, as well as offering clinical care to expectant mothers. Here our nurses monitor monthly progress of malnourished babies on the nutrition program. We partner with Asociación de Amigos del Desarrollo y la Paz (ADP) on abuse prevention for teenagers and with the Cooperative for Assistance and Relief Everywhere (CARE International) to support young mothers with micro-business skills.',
                 flip: false,
               },
               {
@@ -351,7 +335,7 @@ export default function OurCause() {
                 img: 'ochoch-charmak.webp',
                 communities: '25 communities',
                 annualCost: '$77,000 / year',
-                body: 'Here at this training location, families find a sanctuary to learn and receive support. Especially prominent is the unique agricultural site where crops and farming practices are tested to provide the best methods for families to engage in food production at home. 44 chicken pairs were provided to families, building sustainable protein sources for children. A groundbreaking pilot midwife program launched in partnership with Ministry of Health nurses for maternal and newborn care. After storm damage, a new roof was installed and the wood construction is being transformed into a full clinic to serve the community year-round.',
+                body: 'Here at this training location, families find a sanctuary to learn and receive support. Especially prominent is the unique agricultural site where crops and farming practices are tested to provide the best food production methods for families to engage in at home. In 2025, 44 chicken pairs were provided to families, building sustainable protein sources for children. A groundbreaking pilot midwife program launched in partnership with Ministry of Health nurses for maternal and newborn care.',
                 flip: true,
               },
               {
@@ -360,7 +344,7 @@ export default function OurCause() {
                 img: 'ochoch-solly-new.jpg',
                 communities: '18 communities',
                 annualCost: '$80,000 / year',
-                body: 'This remote training center in the mountaintop village of Sepalau, hours from our health clinic in the town of Senahu, serves as a critical site for the surrounding communities. Families and village leaders come together at Solly, working together to lift their community. Narú\'s programs and projects are creating a lasting impact. 83 young adults received health and nutrition education. 102 neighboring families were connected to potable water in Sepalau. In a beautiful tradition, 36 elders from Sepalau joined the harvest at Ochoch Solly, building intergenerational community bonds.',
+                body: 'This remote training center in the mountaintop village of Sepalau, hours from our health clinic in the town of Senahu, serves as a critical site for the surrounding communities. Village leaders come together at Solly, working to lift their community. 83 young adults received health and nutrition education. 102 neighboring families were connected to potable water in Sepalau. In a beautiful tradition, 36 elders from Sepalau joined the harvest at Ochoch Solly, building intergenerational community bonds.',
                 flip: false,
               },
             ].map((loc, i) => (
@@ -431,98 +415,6 @@ export default function OurCause() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* GIVE YOUR TIME */}
-      <section style={{ background: '#36302A', padding: '100px 40px' }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-          <p style={{
-            fontFamily: 'Figtree, sans-serif',
-            fontSize: '11px',
-            fontWeight: 700,
-            letterSpacing: '0.2em',
-            textTransform: 'uppercase',
-            color: '#C8B59E',
-            marginBottom: '16px',
-            textAlign: 'center',
-          }}>
-            Give Your Time
-          </p>
-          <h2 style={{
-            fontFamily: 'Libre Baskerville, serif',
-            fontSize: 'clamp(26px, 3.5vw, 42px)',
-            fontWeight: 400,
-            color: '#F8F3EC',
-            textAlign: 'center',
-            marginBottom: '20px',
-            lineHeight: 1.25,
-            fontStyle: 'italic',
-          }}>
-            There Are More Ways to Give Than Money
-          </h2>
-          <p style={{
-            fontFamily: 'Figtree, sans-serif',
-            fontSize: '17px',
-            color: '#F8F3EC',
-            opacity: 0.7,
-            textAlign: 'center',
-            maxWidth: '620px',
-            margin: '0 auto 64px',
-            lineHeight: 1.8,
-          }}>
-            Some of the most powerful things our supporters do happen far from a donation form. Here are three ways to get involved with your time.
-          </p>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '28px' }} className="programs-time-grid">
-
-            {/* CARD 1 — HOST A VILLAGE MEETING */}
-            <div style={{ background: '#2C2721', borderRadius: '8px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
-              <img src={`${BASE}/images/involve-village-meeting.jpg`} alt="A Village Meeting presentation in a home" style={{ width: '100%', height: '220px', objectFit: 'cover', display: 'block' }} />
-              <div style={{ padding: '32px 28px', display: 'flex', flexDirection: 'column', gap: '16px', flex: 1 }}>
-                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#C8B59E' }}>Host a Village Meeting</p>
-                <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '22px', fontWeight: 400, color: '#F8F3EC', lineHeight: 1.3, margin: 0 }}>Open Your Home</h3>
-                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '15px', color: '#F8F3EC', opacity: 0.75, lineHeight: 1.75, flex: 1, margin: 0 }}>We come to you — your living room, your congregation, your neighborhood. One evening. One presentation. The people in that room leave knowing what's happening in the valley and exactly how they can help. Village meetings raise awareness, collect donations, and organize kit drives.</p>
-                <a href="/contact" style={{ display: 'block', background: '#F8F3EC', color: '#36302A', padding: '14px 20px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '12px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none', textAlign: 'center', marginTop: 'auto' }}>Contact Us to Get Involved</a>
-              </div>
-            </div>
-
-            {/* CARD 2 — COLLECT KITS */}
-            <div style={{ background: '#2C2721', borderRadius: '8px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
-              <img src={`${BASE}/images/involve-collect-kits.jpg`} alt="Midwives receiving kits in Alta Verapaz" style={{ width: '100%', height: '220px', objectFit: 'cover', display: 'block' }} />
-              <div style={{ padding: '32px 28px', display: 'flex', flexDirection: 'column', gap: '16px', flex: 1 }}>
-                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#C8B59E' }}>Collect Kits</p>
-                <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '22px', fontWeight: 400, color: '#F8F3EC', lineHeight: 1.3, margin: 0 }}>Build a Kit from Home</h3>
-                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '15px', color: '#F8F3EC', opacity: 0.75, lineHeight: 1.75, flex: 1, margin: 0 }}>Looking for a meaningful family project, a community service activity, or a hands-on way for your church group to get involved? Collecting kits is one of the most tangible things you can do from home. We assemble midwife kits for traditional birth attendants and newborn kits for the babies they deliver — and we bring every donated kit down on our bi-annual expeditions to Alta Verapaz.</p>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: 'auto' }}>
-                  <a href="https://www.justserve.org/TheHumbleVillage" target="_blank" rel="noopener noreferrer" style={{ display: 'block', background: '#F8F3EC', color: '#36302A', padding: '13px 20px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '12px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none', textAlign: 'center' }}>JustServe Opportunity</a>
-                  <a href="https://docs.google.com/spreadsheets/d/1sf9YdcwXmECM9f3uA4vzhOX0OZjn6kAXyTb_nDuOI5E/edit?usp=drive_link" target="_blank" rel="noopener noreferrer" style={{ display: 'block', background: 'transparent', color: '#F8F3EC', padding: '12px 20px', borderRadius: '6px', border: '1.5px solid rgba(248,243,236,0.35)', fontFamily: 'Figtree, sans-serif', fontSize: '12px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none', textAlign: 'center' }}>View Kit Collection Instructions</a>
-                </div>
-              </div>
-            </div>
-
-            {/* CARD 3 — VILLAGE TO VILLAGE EXPEDITION */}
-            <div style={{ background: '#2C2721', borderRadius: '8px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
-              <img src={`${BASE}/images/involve-expedition.jpg`} alt="Expedition group with families in Alta Verapaz" style={{ width: '100%', height: '220px', objectFit: 'cover', display: 'block' }} />
-              <div style={{ padding: '32px 28px', display: 'flex', flexDirection: 'column', gap: '16px', flex: 1 }}>
-                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#C8B59E' }}>Village to Village Expedition</p>
-                <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '22px', fontWeight: 400, color: '#F8F3EC', lineHeight: 1.3, margin: 0 }}>Come to Guatemala</h3>
-                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '15px', color: '#F8F3EC', opacity: 0.75, lineHeight: 1.75, flex: 1, margin: 0 }}>Twice a year, in March and November, we take a small group to Alta Verapaz, Guatemala. Families are welcome. You walk the ridge paths. You meet the mothers. You see the programs firsthand. Cost: $500 donation + ~$500 in-country + flight. There is nothing else quite like it.</p>
-                <a href="/contact" style={{ display: 'block', background: '#F8F3EC', color: '#36302A', padding: '13px 20px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '12px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none', textAlign: 'center' }}>Contact Us to Get Involved</a>
-              </div>
-            </div>
-
-          </div>
-
-          <div style={{ textAlign: 'center', marginTop: '32px' }}>
-            <a href="/contact" style={{ fontFamily: 'Figtree, sans-serif', fontSize: '13px', color: '#F8F3EC', opacity: 0.65, textDecoration: 'underline', letterSpacing: '0.05em' }}>Questions? Contact our team</a>
-          </div>
-
-          <style>{`
-            @media (max-width: 768px) {
-              .programs-time-grid { grid-template-columns: 1fr !important; }
-            }
-          `}</style>
         </div>
       </section>
 

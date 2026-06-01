@@ -127,7 +127,7 @@ export default function NaruCircle() {
       </section>
 
       {/* PROGRAM TABLE */}
-      <section style={{ background: '#36302A', padding: '100px 40px' }}>
+      <section id="programs" style={{ background: '#36302A', padding: '100px 40px' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
 
           <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(24px, 3.5vw, 40px)', fontWeight: 400, color: '#F6F3EC', textAlign: 'center', marginBottom: '16px' }}>

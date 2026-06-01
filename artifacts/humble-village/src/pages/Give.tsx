@@ -214,9 +214,9 @@ export default function Give() {
             {/* RIGHT — photo */}
             <div style={{ borderRadius: '8px', overflow: 'hidden', height: '100%', minHeight: '400px' }}>
               <img
-                src={`${BASE}/images/give-baby-wrapped.webp`}
-                alt="A newborn baby wrapped in a sling on its mother's back in Alta Verapaz, Guatemala"
-                style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', display: 'block', minHeight: '400px' }}
+                src={`${BASE}/images/give-zeffy-photo.webp`}
+                alt="A Q'eqchi' mother holding a basket of greens with her newborn twins"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', display: 'block', minHeight: '400px' }}
               />
             </div>
           </div>
