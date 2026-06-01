@@ -110,7 +110,7 @@ export default function About() {
             textAlign: 'center',
             marginBottom: '56px',
           }}>
-            Five reasons donors trust us with their giving
+            Five Reasons Donors Trust Us
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
             {[
@@ -231,9 +231,6 @@ export default function About() {
             }}>
               How We Work
             </h2>
-            <p style={{ fontSize: '17px', lineHeight: 1.85, color: '#36302A', opacity: 0.85, marginBottom: '20px' }}>
-              Our work begins with saving lives and ends with families who no longer need us. Every program is designed with an exit in mind — not dependency, but dignity.
-            </p>
             <p style={{ fontSize: '17px', lineHeight: 1.85, color: '#36302A', opacity: 0.85, marginBottom: '28px' }}>
               100% of funds donated go directly to these projects and local Guatemalan staff who are on the ground working day to day. The Humble Village takes no overhead or administrative costs, thanks to a generous team who volunteers their time and resources to ensure the donations make the greatest impact possible.
             </p>

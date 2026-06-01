@@ -81,7 +81,7 @@ export default function Give() {
               { amount: '$8', desc: '1 month of nutrition for a child' },
               { amount: '$40', desc: 'Health education for a year' },
               { amount: '$1,000', desc: 'Seeds and materials for 50 gardens' },
-              { amount: '$75,000', desc: 'Build the next Narú Center' },
+              { amount: '$75,000', desc: 'Build the next Narú Center' },
             ].map((item, i) => (
               <div key={i} style={{
                 padding: '24px 14px',
@@ -138,7 +138,7 @@ export default function Give() {
         </div>
       </section>
 
-      {/* TWO PATHS */}
+      {/* MONTHLY OR ONE-TIME GIFT — left text / right photo */}
       <section style={{ background: '#F8F3EC', padding: '0 40px 100px' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <p style={{
@@ -151,7 +151,7 @@ export default function Give() {
             marginBottom: '16px',
             textAlign: 'center',
           }}>
-            Two Ways to Give
+            Give Now
           </p>
           <h2 style={{
             fontFamily: 'Libre Baskerville, serif',
@@ -161,11 +161,11 @@ export default function Give() {
             textAlign: 'center',
             marginBottom: '64px',
           }}>
-            Choose the role that's right for you
+            Monthly or One-Time Gift
           </h2>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px' }} className="give-paths-grid">
-            {/* PATH A */}
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px', alignItems: 'center' }} className="give-gift-grid">
+            {/* LEFT — description */}
             <div style={{
               background: '#36302A',
               borderRadius: '8px',
@@ -174,25 +174,6 @@ export default function Give() {
               flexDirection: 'column',
               gap: '20px',
             }}>
-              <p style={{
-                fontFamily: 'Figtree, sans-serif',
-                fontSize: '11px',
-                fontWeight: 700,
-                letterSpacing: '0.2em',
-                textTransform: 'uppercase',
-                color: '#574C3F',
-              }}>
-                Option 1
-              </p>
-              <h3 style={{
-                fontFamily: 'Libre Baskerville, serif',
-                fontSize: 'clamp(22px, 2.5vw, 30px)',
-                fontWeight: 400,
-                color: '#F6F3EC',
-                lineHeight: 1.2,
-              }}>
-                Monthly or One-Time Gift
-              </h3>
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.8, color: '#F6F3EC', opacity: 0.8, flex: 1 }}>
                 Give what you can, when you can. Monthly giving is especially powerful — it allows us to plan programs, hire staff, and sustain families through the full 18-month journey.
               </p>
@@ -227,92 +208,19 @@ export default function Give() {
               </div>
             </div>
 
-            {/* PATH B */}
-            <div style={{
-              background: '#574C3F',
-              borderRadius: '8px',
-              padding: '48px 40px',
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '20px',
-              position: 'relative',
-              overflow: 'hidden',
-            }}>
-              <div style={{
-                position: 'absolute',
-                top: '20px',
-                right: '20px',
-                background: 'rgba(248,243,236,0.15)',
-                borderRadius: '20px',
-                padding: '4px 14px',
-                fontFamily: 'Figtree, sans-serif',
-                fontSize: '11px',
-                fontWeight: 700,
-                letterSpacing: '0.15em',
-                textTransform: 'uppercase',
-                color: '#F8F3EC',
-              }}>
-                High Impact
-              </div>
-              <p style={{
-                fontFamily: 'Figtree, sans-serif',
-                fontSize: '11px',
-                fontWeight: 700,
-                letterSpacing: '0.2em',
-                textTransform: 'uppercase',
-                color: 'rgba(248,243,236,0.6)',
-              }}>
-                Option 2
-              </p>
-              <h3 style={{
-                fontFamily: 'Libre Baskerville, serif',
-                fontSize: 'clamp(22px, 2.5vw, 30px)',
-                fontWeight: 400,
-                color: '#F6F3EC',
-                lineHeight: 1.2,
-              }}>
-                The Narú Circle
-              </h3>
-              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.8, color: '#F6F3EC', opacity: 0.85, flex: 1 }}>
-                This is not just a donation. This is a partnership. Narú Circle members sponsor a specific program: the Medical Center, an Ochoch, or the nutrition fund. They adopt that piece of the work as their own.
-              </p>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                {[
-                  'Your name on The Narú Circle Wall at the Narú Medical Center',
-                  'Direct connection to local team',
-                  'A place to come back to in Guatemala',
-                  'Commitment horizons: 5 years, 10 years, or forever',
-                ].map((item, i) => (
-                  <div key={i} style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
-                    <span style={{ color: '#F8F3EC', opacity: 0.5, marginTop: '2px', flexShrink: 0 }}>→</span>
-                    <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '14px', color: '#F6F3EC', opacity: 0.8, lineHeight: 1.5 }}>{item}</p>
-                  </div>
-                ))}
-              </div>
-              <Link
-                to="/naru-circle"
-                style={{
-                  display: 'block',
-                  background: '#F6F3EC',
-                  color: '#36302A',
-                  padding: '16px 24px',
-                  borderRadius: '6px',
-                  fontFamily: 'Figtree, sans-serif',
-                  fontSize: '13px',
-                  fontWeight: 700,
-                  letterSpacing: '0.1em',
-                  textTransform: 'uppercase',
-                  textDecoration: 'none',
-                  textAlign: 'center',
-                }}
-              >
-                Explore the Narú Circle
-              </Link>
+            {/* RIGHT — photo */}
+            <div style={{ borderRadius: '8px', overflow: 'hidden', height: '100%', minHeight: '400px' }}>
+              <img
+                src={`${BASE}/images/give-baby-wrapped.webp`}
+                alt="A newborn baby wrapped in a sling on its mother's back in Alta Verapaz, Guatemala"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', display: 'block', minHeight: '400px' }}
+              />
             </div>
           </div>
+
           <style>{`
             @media (max-width: 768px) {
-              .give-paths-grid { grid-template-columns: 1fr !important; }
+              .give-gift-grid { grid-template-columns: 1fr !important; }
             }
           `}</style>
         </div>
@@ -327,7 +235,7 @@ export default function Give() {
             fontWeight: 700,
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
-            color: '#574C3F',
+            color: '#C8B59E',
             marginBottom: '16px',
             textAlign: 'center',
           }}>
@@ -380,7 +288,7 @@ export default function Give() {
                   fontWeight: 700,
                   letterSpacing: '0.2em',
                   textTransform: 'uppercase',
-                  color: '#574C3F',
+                  color: '#C8B59E',
                 }}>
                   Host a Village Meeting
                 </p>
@@ -448,7 +356,7 @@ export default function Give() {
                   fontWeight: 700,
                   letterSpacing: '0.2em',
                   textTransform: 'uppercase',
-                  color: '#574C3F',
+                  color: '#C8B59E',
                 }}>
                   Collect Kits
                 </p>
@@ -517,7 +425,6 @@ export default function Give() {
                   >
                     View Kit Collection Instructions
                   </a>
-
                 </div>
               </div>
             </div>
@@ -542,7 +449,7 @@ export default function Give() {
                   fontWeight: 700,
                   letterSpacing: '0.2em',
                   textTransform: 'uppercase',
-                  color: '#574C3F',
+                  color: '#C8B59E',
                 }}>
                   Village to Village Expedition
                 </p>
@@ -640,14 +547,11 @@ export default function Give() {
       <section style={{ background: '#36302A', padding: '100px 40px' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#C8B59E', marginBottom: '16px', textAlign: 'center' }}>
-            Before You Give
+            See exactly where your gift goes
           </p>
-          <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(24px, 3.5vw, 38px)', fontWeight: 400, color: '#F6F3EC', marginBottom: '16px', textAlign: 'center' }}>
+          <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(24px, 3.5vw, 38px)', fontWeight: 400, color: '#F6F3EC', marginBottom: '48px', textAlign: 'center' }}>
             Watch the Film
           </h2>
-          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', color: '#F6F3EC', opacity: 0.6, marginBottom: '48px', lineHeight: 1.7, textAlign: 'center', fontStyle: 'italic' }}>
-            See exactly where your gift goes.
-          </p>
           <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '8px' }}>
             <iframe
               src="https://www.youtube.com/embed/bh0TpBF26uQ"

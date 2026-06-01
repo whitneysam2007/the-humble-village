@@ -54,7 +54,7 @@ export default function NaruCircle() {
             color: '#C8B59E',
             marginBottom: '24px',
           }}>
-            WANT TO PARTNER WITH US?
+            PARTNER WITH US
           </p>
           <h1 style={{
             fontFamily: 'Libre Baskerville, serif',
@@ -129,9 +129,7 @@ export default function NaruCircle() {
       {/* PROGRAM TABLE */}
       <section style={{ background: '#36302A', padding: '100px 40px' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#C8B59E', marginBottom: '16px', textAlign: 'center' }}>
-            Where You Could Step In
-          </p>
+
           <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(24px, 3.5vw, 40px)', fontWeight: 400, color: '#F6F3EC', textAlign: 'center', marginBottom: '16px' }}>
             Choose the part of the work that becomes yours.
           </h2>
@@ -198,13 +196,13 @@ export default function NaruCircle() {
       <section style={{ background: '#36302A', padding: '100px 40px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#C8B59E', marginBottom: '16px', textAlign: 'center' }}>
-            The Faces Behind the Numbers
+            Little Ones Blessed
           </p>
           <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(24px, 3.5vw, 40px)', fontWeight: 400, color: '#F6F3EC', textAlign: 'center', marginBottom: '16px' }}>
-            Over 200 Graduates
+            More than 200 infants saved in 2025
           </h2>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', color: '#F6F3EC', opacity: 0.6, textAlign: 'center', marginBottom: '56px', fontStyle: 'italic' }}>
-            Each one a living testament to what early intervention and watchful care can achieve.
+            Each one a living example of what early intervention and watchful care can achieve.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '24px' }} className="faces-grid">
             {[
@@ -305,7 +303,7 @@ export default function NaruCircle() {
             </div>
           </div>
           <div style={{ textAlign: 'center', marginTop: '48px' }}>
-            <a href="/contact" style={{ display: 'inline-block', background: '#36302A', color: '#F8F3EC', padding: '14px 40px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none' }}>Partner With Us</a>
+            <a href="/naru-circle#join" style={{ display: 'inline-block', background: '#36302A', color: '#F8F3EC', padding: '14px 40px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none' }}>Contact us to learn more</a>
           </div>
           <style>{`
             @media (max-width: 900px) {

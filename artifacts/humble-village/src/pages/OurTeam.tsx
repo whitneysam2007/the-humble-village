@@ -15,7 +15,7 @@ const teamMembers = [
     name: 'Yvonne Sinclair',
     title: 'In-Country Director',
     img: 'yvonne-solo.webp',
-    bio: 'Yvonne came to Guatemala and never left. She began weighing babies and distributing nutritional supplements from the back of a borrowed truck, doing the quiet, essential work before there was an organization to do it through. When she connected with Lauren, they recognized what they could build together. That recognition became The Humble Village.\n\nMore than two decades later, Yvonne leads Narú, the on-the-ground partner organization in Alta Verapaz. Her work is practical, sustainable, and holistic: clean water, community health, maternal care, and education. Grounded, steady, and quietly unstoppable, she has given her life to the families she serves, one small step at a time.',
+    bio: 'Yvonne came to Guatemala and never left. She began weighing babies and distributing nutritional supplements from the back of a borrowed truck, doing the quiet, essential work before there was an organization to do it through. When she connected with Lauren, they recognized what they could build together. That recognition became The Humble Village.\n\nMore than two decades later, Yvonne leads Narú, the on-the-ground partner organization in Alta Verapaz. Her work is practical, sustainable, and holistic: clean water, community health, maternal care, and education. She has given her life to the families she serves, one child at a time.',
     podcastUrl: 'https://youtu.be/RKH7ua9oYho',
     podcastLabel: 'Nurturing Outside of the Box: A Life Dedicated to Service — Down the Well with Elle Rowley',
   },
@@ -241,7 +241,7 @@ export default function OurTeam() {
               Our Board of Volunteers
             </h2>
             <p style={{ fontSize: '17px', lineHeight: 1.85, color: '#F6F3EC', opacity: 0.8, marginBottom: '20px' }}>
-              Our dedicated Board of Volunteers in the United States plays a vital role in supporting the mission. Made up of professionals from healthcare, finance, education, and nonprofit management, the board provides strategic oversight and fundraising support.
+              Our dedicated board of volunteers in the United States plays a vital role in supporting the mission of The Humble Village.
             </p>
             <p style={{ fontSize: '17px', lineHeight: 1.85, color: '#F6F3EC', opacity: 0.8 }}>
               Because all board members serve as volunteers, 100% of public donations go directly to programs serving families in Guatemala.
@@ -275,11 +275,8 @@ export default function OurTeam() {
             marginBottom: '20px',
             lineHeight: 1.3,
           }}>
-            Want to partner with our team directly?
+            Partner With Our Team
           </h2>
-          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', color: '#574C3F', marginBottom: '32px', lineHeight: 1.7 }}>
-            Narú Circle members get a direct line to our local team and regular updates on the program they sponsor.
-          </p>
           <Link to="/naru-circle" className="btn-primary">Learn About the Narú Circle</Link>
         </div>
       </section>

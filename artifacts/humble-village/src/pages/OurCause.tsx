@@ -43,7 +43,7 @@ export default function OurCause() {
             color: '#C8B59E',
             marginBottom: '28px',
           }}>
-            Our Cause
+            Our Programs
           </p>
           <h1 style={{
             fontFamily: 'Libre Baskerville, serif',
@@ -431,6 +431,98 @@ export default function OurCause() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* GIVE YOUR TIME */}
+      <section style={{ background: '#36302A', padding: '100px 40px' }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+          <p style={{
+            fontFamily: 'Figtree, sans-serif',
+            fontSize: '11px',
+            fontWeight: 700,
+            letterSpacing: '0.2em',
+            textTransform: 'uppercase',
+            color: '#C8B59E',
+            marginBottom: '16px',
+            textAlign: 'center',
+          }}>
+            Give Your Time
+          </p>
+          <h2 style={{
+            fontFamily: 'Libre Baskerville, serif',
+            fontSize: 'clamp(26px, 3.5vw, 42px)',
+            fontWeight: 400,
+            color: '#F8F3EC',
+            textAlign: 'center',
+            marginBottom: '20px',
+            lineHeight: 1.25,
+            fontStyle: 'italic',
+          }}>
+            There Are More Ways to Give Than Money
+          </h2>
+          <p style={{
+            fontFamily: 'Figtree, sans-serif',
+            fontSize: '17px',
+            color: '#F8F3EC',
+            opacity: 0.7,
+            textAlign: 'center',
+            maxWidth: '620px',
+            margin: '0 auto 64px',
+            lineHeight: 1.8,
+          }}>
+            Some of the most powerful things our supporters do happen far from a donation form. Here are three ways to get involved with your time.
+          </p>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '28px' }} className="programs-time-grid">
+
+            {/* CARD 1 — HOST A VILLAGE MEETING */}
+            <div style={{ background: '#2C2721', borderRadius: '8px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
+              <img src={`${BASE}/images/involve-village-meeting.jpg`} alt="A Village Meeting presentation in a home" style={{ width: '100%', height: '220px', objectFit: 'cover', display: 'block' }} />
+              <div style={{ padding: '32px 28px', display: 'flex', flexDirection: 'column', gap: '16px', flex: 1 }}>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#C8B59E' }}>Host a Village Meeting</p>
+                <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '22px', fontWeight: 400, color: '#F8F3EC', lineHeight: 1.3, margin: 0 }}>Open Your Home</h3>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '15px', color: '#F8F3EC', opacity: 0.75, lineHeight: 1.75, flex: 1, margin: 0 }}>We come to you — your living room, your congregation, your neighborhood. One evening. One presentation. The people in that room leave knowing what's happening in the valley and exactly how they can help. Village meetings raise awareness, collect donations, and organize kit drives.</p>
+                <a href="/contact" style={{ display: 'block', background: '#F8F3EC', color: '#36302A', padding: '14px 20px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '12px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none', textAlign: 'center', marginTop: 'auto' }}>Contact Us to Get Involved</a>
+              </div>
+            </div>
+
+            {/* CARD 2 — COLLECT KITS */}
+            <div style={{ background: '#2C2721', borderRadius: '8px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
+              <img src={`${BASE}/images/involve-collect-kits.jpg`} alt="Midwives receiving kits in Alta Verapaz" style={{ width: '100%', height: '220px', objectFit: 'cover', display: 'block' }} />
+              <div style={{ padding: '32px 28px', display: 'flex', flexDirection: 'column', gap: '16px', flex: 1 }}>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#C8B59E' }}>Collect Kits</p>
+                <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '22px', fontWeight: 400, color: '#F8F3EC', lineHeight: 1.3, margin: 0 }}>Build a Kit from Home</h3>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '15px', color: '#F8F3EC', opacity: 0.75, lineHeight: 1.75, flex: 1, margin: 0 }}>Looking for a meaningful family project, a community service activity, or a hands-on way for your church group to get involved? Collecting kits is one of the most tangible things you can do from home. We assemble midwife kits for traditional birth attendants and newborn kits for the babies they deliver — and we bring every donated kit down on our bi-annual expeditions to Alta Verapaz.</p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: 'auto' }}>
+                  <a href="https://www.justserve.org/TheHumbleVillage" target="_blank" rel="noopener noreferrer" style={{ display: 'block', background: '#F8F3EC', color: '#36302A', padding: '13px 20px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '12px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none', textAlign: 'center' }}>JustServe Opportunity</a>
+                  <a href="https://docs.google.com/spreadsheets/d/1sf9YdcwXmECM9f3uA4vzhOX0OZjn6kAXyTb_nDuOI5E/edit?usp=drive_link" target="_blank" rel="noopener noreferrer" style={{ display: 'block', background: 'transparent', color: '#F8F3EC', padding: '12px 20px', borderRadius: '6px', border: '1.5px solid rgba(248,243,236,0.35)', fontFamily: 'Figtree, sans-serif', fontSize: '12px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none', textAlign: 'center' }}>View Kit Collection Instructions</a>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 3 — VILLAGE TO VILLAGE EXPEDITION */}
+            <div style={{ background: '#2C2721', borderRadius: '8px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
+              <img src={`${BASE}/images/involve-expedition.jpg`} alt="Expedition group with families in Alta Verapaz" style={{ width: '100%', height: '220px', objectFit: 'cover', display: 'block' }} />
+              <div style={{ padding: '32px 28px', display: 'flex', flexDirection: 'column', gap: '16px', flex: 1 }}>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#C8B59E' }}>Village to Village Expedition</p>
+                <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '22px', fontWeight: 400, color: '#F8F3EC', lineHeight: 1.3, margin: 0 }}>Come to Guatemala</h3>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '15px', color: '#F8F3EC', opacity: 0.75, lineHeight: 1.75, flex: 1, margin: 0 }}>Twice a year, in March and November, we take a small group to Alta Verapaz, Guatemala. Families are welcome. You walk the ridge paths. You meet the mothers. You see the programs firsthand. Cost: $500 donation + ~$500 in-country + flight. There is nothing else quite like it.</p>
+                <a href="/contact" style={{ display: 'block', background: '#F8F3EC', color: '#36302A', padding: '13px 20px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '12px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none', textAlign: 'center' }}>Contact Us to Get Involved</a>
+              </div>
+            </div>
+
+          </div>
+
+          <div style={{ textAlign: 'center', marginTop: '32px' }}>
+            <a href="/contact" style={{ fontFamily: 'Figtree, sans-serif', fontSize: '13px', color: '#F8F3EC', opacity: 0.65, textDecoration: 'underline', letterSpacing: '0.05em' }}>Questions? Contact our team</a>
+          </div>
+
+          <style>{`
+            @media (max-width: 768px) {
+              .programs-time-grid { grid-template-columns: 1fr !important; }
+            }
+          `}</style>
         </div>
       </section>
 
