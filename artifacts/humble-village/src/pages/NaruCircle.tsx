@@ -167,7 +167,7 @@ export default function NaruCircle() {
       </section>
 
       {/* IMPACT STATS */}
-      <section style={{ background: '#F8F3EC', padding: '80px 40px', textAlign: 'center' }}>
+      <section style={{ background: '#F8F3EC', padding: '120px 40px', textAlign: 'center' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '48px' }}>
             What $355,000 Sustains
@@ -207,17 +207,17 @@ export default function NaruCircle() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '24px' }} className="faces-grid">
             {[
               { name: 'Dylan',    before: 'faces-dylan-before.jpeg',    after: 'faces-dylan-after.png',    weight: '6.4 lbs at 2 months → 20.5 lbs' },
-              { name: 'Santos',   before: 'faces-santos-before.jpeg',   after: 'faces-santos-after.jpeg',   weight: '15.0 lbs at 18 months → 22.2 lbs' },
+              { name: 'Santos',   before: 'faces-santos-before.jpeg',   after: 'faces-santos-after.jpeg',   weight: '15.0 lbs at 18 months → 22.2 lbs', afterPos: 'center top' },
               { name: 'Yasmin',   before: 'faces-yasmin-before.jpeg',   after: 'faces-yasmin-after.jpeg',   weight: '13.2 lbs at 21.5 months → 25.3 lbs' },
-              { name: 'Crisbell', before: 'faces-crisbell-before.jpeg', after: 'faces-crisbell-after.png',  weight: '5.5 lbs at 1 month → 16.9 lbs' },
-              { name: 'Pedro',    before: 'faces-pedro-before.jpeg',    after: 'faces-pedro-after.jpeg',    weight: '7.5 lbs at 2.5 months → 23.1 lbs' },
+              { name: 'Crisbell', before: 'faces-crisbell-before.jpeg', after: 'faces-crisbell-after.png',  weight: '5.5 lbs at 1 month → 16.9 lbs', beforePos: 'center top' },
+              { name: 'Pedro',    before: 'faces-pedro-before.jpeg',    after: 'faces-pedro-after.jpeg',    weight: '7.5 lbs at 2.5 months → 23.1 lbs', afterPos: 'center top' },
               { name: 'Keila',    before: 'faces-keila-before.jpeg',    after: 'faces-keila-after.jpeg',    weight: '15.8 lbs at 23 months → 22.0 lbs' },
               { name: 'Cuz',      before: 'faces-cuz-before.png',      after: 'faces-cuz-after.jpeg',      weight: '5.9 lbs at 2 weeks → 17.4 lbs' },
               { name: 'Claudia',  before: 'faces-claudia-before.jpeg',  after: 'faces-claudia-after.jpeg',  weight: '7.9 lbs at 3 months → 20.0 lbs' },
-              { name: 'Katerin',  before: 'faces-katerin-before.jpeg',  after: 'faces-katerin-after.jpeg',  weight: '5.5 lbs at 11 days → 18.7 lbs' },
-              { name: 'Luis',     before: 'faces-luis-before.jpeg',     after: 'faces-luis-after.jpeg',     weight: '18.0 lbs at 22 months → 21.3 lbs' },
+              { name: 'Katerin',  before: 'faces-katerin-before.jpeg',  after: 'faces-katerin-after.jpeg',  weight: '5.5 lbs at 11 days → 18.7 lbs', afterPos: 'center top' },
+              { name: 'Luis',     before: 'faces-luis-before.jpeg',     after: 'faces-luis-after.jpeg',     weight: '18.0 lbs at 22 months → 21.3 lbs', afterPos: 'center top' },
               { name: 'Choc',     before: 'faces-choc-before.jpeg',     after: 'faces-choc-after.jpeg',     weight: '7.0 lbs at 2 months → 19.4 lbs' },
-              { name: 'Coc',      before: 'faces-coc-before.jpeg',      after: 'faces-coc-after.jpeg',      weight: '6.2 lbs at 8 days → 18.3 lbs' },
+              { name: 'Coc',      before: 'faces-coc-before.jpeg',      after: 'faces-coc-after.jpeg',      weight: '6.2 lbs at 8 days → 18.3 lbs', afterPos: 'center top' },
             ].map((child, i) => (
               <div key={i} style={{ background: 'rgba(248,243,236,0.05)', borderRadius: '6px', overflow: 'hidden' }}>
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
@@ -225,7 +225,7 @@ export default function NaruCircle() {
                     <img
                       src={`${BASE}/images/faces/${child.before}`}
                       alt={`${child.name} before`}
-                      style={{ width: '100%', aspectRatio: '1/1', objectFit: 'cover', display: 'block' }}
+                      style={{ width: '100%', aspectRatio: '1/1', objectFit: 'cover', objectPosition: (child as any).beforePos || 'center center', display: 'block' }}
                     />
                     <span style={{
                       position: 'absolute', top: '6px', left: '6px',
@@ -239,7 +239,7 @@ export default function NaruCircle() {
                     <img
                       src={`${BASE}/images/faces/${child.after}`}
                       alt={`${child.name} after`}
-                      style={{ width: '100%', aspectRatio: '1/1', objectFit: 'cover', display: 'block' }}
+                      style={{ width: '100%', aspectRatio: '1/1', objectFit: 'cover', objectPosition: (child as any).afterPos || 'center center', display: 'block' }}
                     />
                     <span style={{
                       position: 'absolute', top: '6px', left: '6px',
@@ -315,43 +315,54 @@ export default function NaruCircle() {
 
       {/* WHAT THIS MEANS FOR YOU */}
       <section style={{ background: '#36302A', padding: '100px 40px' }}>
-        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#C8B59E', marginBottom: '16px', textAlign: 'center' }}>
-            What This Means For You
-          </p>
-          <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(24px, 3.5vw, 40px)', fontWeight: 400, color: '#F6F3EC', textAlign: 'center', marginBottom: '64px' }}>
-            Partnership, not just philanthropy
-          </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '32px' }} className="benefits-grid">
-            {[
-              {
-                title: 'Your Name on The Narú Circle Wall',
-                body: 'Steward your program or center. Your investment carries your family\'s values forward — and your name will be on The Narú Circle Wall at the Narú Medical Center, a permanent record in the communities you serve.',
-              },
-              {
-                title: 'Direct Connection',
-                body: 'Partner directly with our team. You\'ll have a personal line to the local Narú team and receive regular updates on the program or center you sponsor.',
-              },
-              {
-                title: 'A Place to Come Back To',
-                body: 'A sanctuary in Guatemala you can call home. Come stay and experience the impact firsthand. See the faces. Walk the gardens. Meet the families.',
-              },
-            ].map((benefit, i) => (
-              <div key={i} style={{ padding: '36px 28px', background: 'rgba(248,243,236,0.07)', borderRadius: '6px' }}>
-                <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '20px', fontWeight: 400, color: '#F8F3EC', marginBottom: '16px', lineHeight: 1.2 }}>{benefit.title}</h3>
-                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '15px', lineHeight: 1.8, color: '#F6F3EC', opacity: 0.75 }}>{benefit.body}</p>
-              </div>
-            ))}
+        <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: '45% 55%', gap: '60px', alignItems: 'center' }} className="benefits-layout">
+          {/* Photo column */}
+          <div style={{ borderRadius: '8px', overflow: 'hidden' }}>
+            <img
+              src={`${BASE}/images/naru-circle-partnership.webp`}
+              alt="A child held by their mother in traditional Guatemalan dress"
+              style={{ width: '100%', display: 'block', objectFit: 'cover' }}
+            />
           </div>
-          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '14px', color: '#F6F3EC', opacity: 0.5, textAlign: 'center', marginTop: '40px', letterSpacing: '0.05em' }}>
-            Commitment Horizons: 5 Years · 10 Years · Forever
-          </p>
-          <style>{`
-            @media (max-width: 768px) {
-              .benefits-grid { grid-template-columns: 1fr !important; }
-            }
-          `}</style>
+          {/* Text column */}
+          <div>
+            <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#C8B59E', marginBottom: '16px' }}>
+              What This Means For You
+            </p>
+            <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(24px, 3.5vw, 40px)', fontWeight: 400, color: '#F6F3EC', marginBottom: '48px', lineHeight: 1.25 }}>
+              Partnership, not just philanthropy
+            </h2>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '36px' }}>
+              {[
+                {
+                  title: 'Your Name on The Narú Circle Wall',
+                  body: 'Steward your program or center. Your investment carries your family\'s values forward — and your name will be on The Narú Circle Wall at the Narú Medical Center, a permanent record in the communities you serve.',
+                },
+                {
+                  title: 'Direct Connection',
+                  body: 'As a Narú Circle partner, you become part of The Humble Village family. You\'ll receive exclusive stories, videos, and impact reports that bring you inside the work so that you can see, feel, and share the difference your commitment is making.',
+                },
+                {
+                  title: 'A Place to Come Back To',
+                  body: 'A sanctuary in Guatemala you can call home. Come stay and experience the impact firsthand. Meet the families. Walk the gardens. Roll up your sleeves and get to work.',
+                },
+              ].map((benefit, i) => (
+                <div key={i}>
+                  <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '20px', fontWeight: 400, color: '#F8F3EC', marginBottom: '10px', lineHeight: 1.2 }}>{benefit.title}</h3>
+                  <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '15px', lineHeight: 1.8, color: '#F6F3EC', opacity: 0.75 }}>{benefit.body}</p>
+                </div>
+              ))}
+            </div>
+            <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '13px', color: '#F6F3EC', opacity: 0.45, marginTop: '36px', letterSpacing: '0.05em' }}>
+              Commitment Horizons: 5 Years · 10 Years · Forever
+            </p>
+          </div>
         </div>
+        <style>{`
+          @media (max-width: 768px) {
+            .benefits-layout { grid-template-columns: 1fr !important; }
+          }
+        `}</style>
       </section>
 
       {/* OTHER WAYS TO GIVE */}
@@ -391,7 +402,16 @@ export default function NaruCircle() {
             We would be honored to work with you and your advisors to find the giving option that aligns with your goals.
           </p>
           <div style={{ textAlign: 'center', marginTop: '48px' }}>
-            <a href="/contact" style={{ display: 'inline-block', background: '#36302A', color: '#F8F3EC', padding: '14px 36px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none' }}>Contact Us to Request Wiring Instructions</a>
+            <a
+              href="/documents/thv-giving-instructions.pdf"
+              download
+              style={{ display: 'inline-block', background: '#36302A', color: '#F8F3EC', padding: '14px 36px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none' }}
+            >
+              Download Instructions
+            </a>
+            <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '13px', color: '#574C3F', marginTop: '12px', lineHeight: 1.6 }}>
+              Step-by-step guide to giving via stocks, bonds, mutual funds, QCD, and more.
+            </p>
           </div>
           <style>{`
             @media (max-width: 768px) {
