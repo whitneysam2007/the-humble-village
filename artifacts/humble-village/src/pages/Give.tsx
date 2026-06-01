@@ -1,8 +1,11 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 export default function Give() {
+  const [email, setEmail] = useState('');
+
   return (
     <main>
       {/* HERO */}
@@ -597,6 +600,70 @@ export default function Give() {
           >
             Read Impact Stories
           </Link>
+        </div>
+      </section>
+      {/* EMAIL SIGNUP */}
+      <section style={{ background: '#574C3F', padding: '80px 40px', color: '#F6F3EC', textAlign: 'center' }}>
+        <div style={{ maxWidth: '600px', margin: '0 auto' }}>
+          <h2 style={{
+            fontFamily: 'Libre Baskerville, serif',
+            fontSize: 'clamp(24px, 3.5vw, 40px)',
+            fontWeight: 400,
+            marginBottom: '16px',
+            lineHeight: 1.2,
+          }}>
+            Stay Connected
+          </h2>
+          <p style={{
+            fontFamily: 'Figtree, sans-serif',
+            fontSize: '16px',
+            opacity: 0.85,
+            marginBottom: '36px',
+            lineHeight: 1.7,
+          }}>
+            Stories, updates, and ways to make a difference — straight to your inbox.
+          </p>
+          <form
+            onSubmit={e => { e.preventDefault(); }}
+            style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}
+          >
+            <input
+              type="email"
+              value={email}
+              onChange={e => setEmail(e.target.value)}
+              placeholder="Your email address"
+              required
+              style={{
+                padding: '14px 20px',
+                borderRadius: '6px',
+                border: 'none',
+                fontFamily: 'Figtree, sans-serif',
+                fontSize: '15px',
+                width: '280px',
+                outline: 'none',
+                background: '#F6F3EC',
+                color: '#36302A',
+              }}
+            />
+            <button
+              type="submit"
+              style={{
+                padding: '14px 32px',
+                borderRadius: '6px',
+                border: 'none',
+                background: '#36302A',
+                color: '#F6F3EC',
+                fontFamily: 'Figtree, sans-serif',
+                fontSize: '13px',
+                fontWeight: 700,
+                letterSpacing: '0.08em',
+                textTransform: 'uppercase',
+                cursor: 'pointer',
+              }}
+            >
+              Subscribe
+            </button>
+          </form>
         </div>
       </section>
     </main>
