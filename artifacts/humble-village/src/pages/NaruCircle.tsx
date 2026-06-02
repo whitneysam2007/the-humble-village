@@ -431,7 +431,7 @@ export default function NaruCircle() {
             Watch the Full-Length Documentary
           </h2>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', color: '#F6F3EC', opacity: 0.6, marginBottom: '48px', lineHeight: 1.7 }}>
-            See the mission you'd be sustaining.
+            See the mission you'll be sustaining.
           </p>
           <div style={{
             position: 'relative',
