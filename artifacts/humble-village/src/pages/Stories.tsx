@@ -339,8 +339,8 @@ export default function Stories() {
                 <p style={{
                   fontFamily: 'Figtree, sans-serif',
                   fontSize: '12px',
-                  color: '#574C3F',
-                  opacity: 0.7,
+                  color: '#C8B59E',
+                  opacity: 0.9,
                   marginTop: '10px',
                   fontStyle: 'italic',
                   lineHeight: 1.5,
@@ -358,8 +358,8 @@ export default function Stories() {
                 <p style={{
                   fontFamily: 'Figtree, sans-serif',
                   fontSize: '12px',
-                  color: '#574C3F',
-                  opacity: 0.7,
+                  color: '#C8B59E',
+                  opacity: 0.9,
                   marginTop: '10px',
                   fontStyle: 'italic',
                   lineHeight: 1.5,
