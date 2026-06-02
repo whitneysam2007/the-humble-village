@@ -10,9 +10,9 @@ const stories = [
     tag: 'Nutritional Recuperation',
     summary: '14.08 lbs at 10 months → 26.4 lbs',
     body: [
-      'When 10-month-old Oscar entered our recuperation program in 2024, he was severely underweight at only 14.08 lbs and suffering from fever and intestinal problems that affected his growth.',
+      'When 10-month-old Oscar entered our recuperation program, he was severely underweight at only 14.08 lbs and suffering from fever and intestinal problems that affected his growth.',
       'His mother, Julia, is a single mother of three who works hard to make ends meet by selling tortillas in her neighborhood. Already faced with heavy daily challenges, caring for a starving, sick child added tremendous burdens.',
-      'Recently, Oscar graduated from our program weighing 26.4 lbs and looking healthier and happier than ever. We hope that seeing him grow strong will mean one less worry for Julia.',
+      'Oscar graduated from our program weighing 26.4 lbs and looking healthier and happier than ever. We hope that seeing him grow strong will mean one less worry for Julia.',
     ],
   },
   {
@@ -162,13 +162,13 @@ export default function Stories() {
                 When Lauren and her team visited this humble home, they found two severely malnourished babies with only days to live.
               </p>
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.85, color: '#574C3F', marginBottom: '18px' }}>
-                Elena, malnourished herself, could not produce milk. She fed her babies corn water — it only made things worse. With expected burials approaching, she emotionally detached from her boys.
+                Elena, malnourished herself, could not produce milk. She fed her babies corn water — it only made things worse. With expected burials approaching, she emotionally detached from her boys and resigned herself to hiding in the corner of the room, too ashamed to emerge.
               </p>
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.85, color: '#574C3F', marginBottom: '28px' }}>
-                The twins were immediately admitted into the nutrition program. Gerson was diagnosed with a tongue tie, a correctable condition, and received life-saving care. Elena entered the self-reliance program at the Narú Training Center, gaining tools, skills, and support to pull herself and her family out of poverty.
+                The twins were immediately admitted into our nutrition program. Gerson was diagnosed with a tongue tie, a correctable condition, and received life-saving care. Elena entered the self-reliance program at the Narú Training Center, gaining tools, skills, and support to pull herself and her family out of poverty.
               </p>
               <p style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '20px', fontStyle: 'italic', color: '#36302A', lineHeight: 1.5 }}>
-                Healthy boys. A thriving home. And Elena—empowered and self-sufficient—is now a leader in her community.
+                Healthy boys. A thriving home. And Elena—empowered and independent—is now a leader in her community.
               </p>
             </div>
           </div>
