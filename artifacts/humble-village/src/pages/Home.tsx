@@ -626,7 +626,7 @@ export default function Home() {
             {/* Facebook column */}
             <div>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', marginBottom: '16px' }}>
-                {['image-asset.jpeg', '2b445cec-4487-4cc4-a4fd-e909f5034bf8.JPG'].map((photo, i) => (
+                {['social-kids-playing.webp', 'social-kids-fence.webp'].map((photo, i) => (
                   <a key={i} href="https://www.facebook.com/NaruGuatemala/" target="_blank" rel="noopener noreferrer"
                     style={{ display: 'block', aspectRatio: '1', overflow: 'hidden', borderRadius: '4px' }}>
                     <img src={`${BASE}/images/${photo}`} alt="The Humble Village on Facebook"
@@ -649,7 +649,7 @@ export default function Home() {
             {/* Instagram column */}
             <div>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', marginBottom: '16px' }}>
-                {['004de813-d98a-4270-b750-0dd54f5f4890.JPG', '9312a127-6296-49b2-9327-0c23facdc2e0.JPG'].map((photo, i) => (
+                {['social-baby-huipil.webp', 'social-man-baby.jpg'].map((photo, i) => (
                   <a key={i} href="https://www.instagram.com/thehumblevillageproject/" target="_blank" rel="noopener noreferrer"
                     style={{ display: 'block', aspectRatio: '1', overflow: 'hidden', borderRadius: '4px' }}>
                     <img src={`${BASE}/images/${photo}`} alt="The Humble Village on Instagram"
