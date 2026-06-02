@@ -200,11 +200,11 @@ export default function About() {
         <div style={{ position: 'relative', zIndex: 1, padding: '0 40px 48px', color: '#F6F3EC' }}>
           <h2 style={{
             fontFamily: 'Libre Baskerville, serif',
-            fontSize: 'clamp(22px, 3vw, 38px)',
+            fontSize: 'clamp(18px, 2.2vw, 28px)',
             fontWeight: 400,
-            marginBottom: '32px',
-            lineHeight: 1.3,
-            maxWidth: '600px',
+            marginBottom: '24px',
+            lineHeight: 1.2,
+            whiteSpace: 'nowrap' as const,
           }}>
             Ready to change generations of lives?
           </h2>
