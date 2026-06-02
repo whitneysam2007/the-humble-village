@@ -319,101 +319,58 @@ export default function OurCause() {
           </p>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '80px' }}>
-            {[
-              {
-                name: 'Narú Medical Centers',
-                tagline: 'A health and well-being resource for all',
-                img: 'ochoch-naru-new.jpg',
-                communities: '93 communities',
-                annualCost: '$82,000 / year',
-                body: 'We provide training sessions to families on home hygiene and healthcare, food production and cooking demonstrations, as well as offering clinical care to expectant mothers. Here our nurses monitor monthly progress of malnourished babies on the nutrition program. We partner with Asociación de Amigos del Desarrollo y la Paz (ADP) on abuse prevention for teenagers and with the Cooperative for Assistance and Relief Everywhere (CARE International) to support young mothers with micro-business skills.',
-                flip: false,
-              },
-              {
-                name: 'Ochoch Charmak',
-                tagline: 'Training in a tropical climate',
-                img: 'ochoch-charmak.webp',
-                communities: '25 communities',
-                annualCost: '$77,000 / year',
-                body: 'Here at this training location, families find a sanctuary to learn and receive support. Especially prominent is the unique agricultural site where crops and farming practices are tested to provide the best food production methods for families to engage in at home. In 2025, 44 chicken pairs were provided to families, building sustainable protein sources for children. A groundbreaking pilot midwife program launched in partnership with Ministry of Health nurses for maternal and newborn care.',
-                flip: true,
-              },
-              {
-                name: 'Ochoch Solly',
-                tagline: 'Training in the cold lands',
-                img: 'ochoch-solly-new.jpg',
-                communities: '18 communities',
-                annualCost: '$80,000 / year',
-                body: 'This remote training center in the mountaintop village of Sepalau, hours from our health clinic in the town of Senahu, serves as a critical site for the surrounding communities. Village leaders come together at Solly, working to lift their community. 83 young adults received health and nutrition education. 102 neighboring families were connected to potable water in Sepalau. In a beautiful tradition, 36 elders from Sepalau joined the harvest at Ochoch Solly, building intergenerational community bonds.',
-                flip: false,
-              },
-            ].map((loc, i) => (
-              <div key={i} style={{
-                display: 'grid',
-                gridTemplateColumns: '1fr 1fr',
-                gap: '60px',
-                alignItems: 'center',
-              }} className={`location-grid-${i}`}>
-                <div style={{ order: loc.flip ? 1 : 0 }}>
-                  <img
-                    src={`${BASE}/images/${loc.img}`}
-                    alt={loc.name}
-                    style={{ width: '100%', height: '400px', objectFit: 'cover', borderRadius: '4px' }}
-                  />
-                </div>
-                <div style={{ order: loc.flip ? 0 : 1 }}>
-                  <p style={{
-                    fontFamily: 'Figtree, sans-serif',
-                    fontSize: '11px',
-                    fontWeight: 700,
-                    letterSpacing: '0.15em',
-                    textTransform: 'uppercase',
-                    color: '#574C3F',
-                    marginBottom: '8px',
-                  }}>
-                    {loc.communities}
-                  </p>
-                  <h3 style={{
-                    fontFamily: 'Libre Baskerville, serif',
-                    fontSize: 'clamp(22px, 2.5vw, 34px)',
-                    fontWeight: 400,
-                    color: '#36302A',
-                    marginBottom: '8px',
-                    lineHeight: 1.2,
-                  }}>
-                    {loc.name}
-                  </h3>
-                  <p style={{
-                    fontFamily: 'Figtree, sans-serif',
-                    fontSize: '14px',
-                    fontStyle: 'italic',
-                    color: '#574C3F',
-                    marginBottom: '20px',
-                    opacity: 0.8,
-                  }}>
-                    {loc.tagline}
-                  </p>
-                  <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.8, color: '#574C3F', marginBottom: '24px' }}>
-                    {loc.body}
-                  </p>
-                  <p style={{
-                    fontFamily: 'Figtree, sans-serif',
-                    fontSize: '13px',
-                    fontWeight: 700,
-                    color: '#36302A',
-                    letterSpacing: '0.05em',
-                  }}>
-                    {loc.annualCost} sustains this site
-                  </p>
-                </div>
-                <style>{`
-                  @media (max-width: 768px) {
-                    .location-grid-${i} { grid-template-columns: 1fr !important; }
-                    .location-grid-${i} > div { order: unset !important; }
-                  }
-                `}</style>
+
+            {/* NARÚ MEDICAL CENTERS */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'center' }} className="location-grid-0">
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
+                <img src={`${BASE}/images/naru-measuring.jpg`} alt="Nurse measuring baby at Narú Medical Center" style={{ width: '100%', height: '210px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '4px' }} />
+                <img src={`${BASE}/images/naru-weighing.jpg`} alt="Baby being weighed at Narú Medical Center" style={{ width: '100%', height: '210px', objectFit: 'cover', borderRadius: '4px' }} />
+                <img src={`${BASE}/images/naru-cooking.jpg`} alt="Cooking class at Narú Medical Center" style={{ width: '100%', height: '210px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '4px', gridColumn: '1 / 3' }} />
               </div>
-            ))}
+              <div>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '8px' }}>93 communities</p>
+                <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(22px, 2.5vw, 34px)', fontWeight: 400, color: '#36302A', marginBottom: '8px', lineHeight: 1.2 }}>Narú Medical Centers</h3>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '14px', fontStyle: 'italic', color: '#574C3F', marginBottom: '20px', opacity: 0.8 }}>A health and well-being resource for all</p>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.8, color: '#574C3F', marginBottom: '24px' }}>Located in the heart of Senahu—a town reached by a winding, six-hour mountain drive—our center serves as a critical hub for mothers traveling up to three hours to reach us. It offers both clinical care and education, staffed by nurses, outreach workers, and medical educators. Mothers bring their children for monthly weigh-ins and nutrition tracking, receiving Incaparina and empowering education. The center also features a small garden providing plant starts for families to grow at home, and partners with ADP for teen abuse prevention and CARE International for micro-business skills for young mothers. We call it Narú Medical Centers because we hope to build more.</p>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 700, color: '#36302A', letterSpacing: '0.05em' }}>$82,000 / year sustains this site</p>
+              </div>
+              <style>{`@media (max-width: 768px) { .location-grid-0 { grid-template-columns: 1fr !important; } }`}</style>
+            </div>
+
+            {/* OCHOCH CHARMAK */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'center' }} className="location-grid-1">
+              <div style={{ order: 0 }}>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '8px' }}>25 communities</p>
+                <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(22px, 2.5vw, 34px)', fontWeight: 400, color: '#36302A', marginBottom: '8px', lineHeight: 1.2 }}>Ochoch Charmak</h3>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '14px', fontStyle: 'italic', color: '#574C3F', marginBottom: '20px', opacity: 0.8 }}>Training in a tropical climate</p>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.8, color: '#574C3F', marginBottom: '24px' }}>Set in a warm, tropical climate, Ochoch Charmak is a vibrant community gathering place. It features expansive gardens and a fish pond where families learn to harvest and cook in beautiful teaching kitchens. Ochoch Charmak serves as a central hub for elected village midwives, who receive ongoing training and support from our nurses. The site also runs an ongoing chicken program, where families complete a care course to take home chickens—providing critical protein, eggs, and income for pregnant mothers and young children.</p>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 700, color: '#36302A', letterSpacing: '0.05em' }}>$77,000 / year sustains this site</p>
+              </div>
+              <div style={{ order: 1, display: 'grid', gridTemplateColumns: '1fr 1fr', gridTemplateRows: 'auto auto', gap: '8px' }}>
+                <img src={`${BASE}/images/charmak-midwives.jpg`} alt="Midwife training at Charmak" style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '4px', gridColumn: '1 / 2' }} />
+                <img src={`${BASE}/images/charmak-garden.jpg`} alt="Garden harvesting at Charmak" style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '4px', gridColumn: '2 / 3' }} />
+                <img src={`${BASE}/images/charmak-cooking.webp`} alt="Cooking class at Charmak" style={{ width: '100%', height: '200px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '4px', gridColumn: '1 / 3' }} />
+              </div>
+              <style>{`@media (max-width: 768px) { .location-grid-1 { grid-template-columns: 1fr !important; } .location-grid-1 > div { order: unset !important; } }`}</style>
+            </div>
+
+            {/* OCHOCH SOLLY */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'center' }} className="location-grid-2">
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
+                <img src={`${BASE}/images/solly-chickens.webp`} alt="Chicken program at Ochoch Solly" style={{ width: '100%', height: '200px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '4px' }} />
+                <img src={`${BASE}/images/ochoch-solly-beans.jpg`} alt="Red beans discovered at Ochoch Solly" style={{ width: '100%', height: '200px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '4px' }} />
+                <img src={`${BASE}/images/ochoch-solly-garden.png`} alt="Garden at Ochoch Solly" style={{ width: '100%', height: '200px', objectFit: 'cover', objectPosition: 'center', borderRadius: '4px', gridColumn: '1 / 3' }} />
+              </div>
+              <div>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '8px' }}>18 communities</p>
+                <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(22px, 2.5vw, 34px)', fontWeight: 400, color: '#36302A', marginBottom: '8px', lineHeight: 1.2 }}>Ochoch Solly</h3>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '14px', fontStyle: 'italic', color: '#574C3F', marginBottom: '20px', opacity: 0.8 }}>Training in the cold lands</p>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.8, color: '#574C3F', marginBottom: '24px' }}>Built by Solly Baby in the most remote and vulnerable region we serve, Ochoch Solly reaches families cut off from medical care by extreme weather, ice, and impassable roads. It features a clinic, gardens, and dedicated outreach workers. In these “cold lands” where normal crops struggle, our agriculture team discovered a resilient red bean previously unknown to the community. Today, that bean grows abundantly, providing vital nutrition and even serving as a local currency traded for goods and services.</p>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 700, color: '#36302A', letterSpacing: '0.05em' }}>$80,000 / year sustains this site</p>
+              </div>
+              <style>{`@media (max-width: 768px) { .location-grid-2 { grid-template-columns: 1fr !important; } }`}</style>
+            </div>
+
           </div>
         </div>
       </section>
