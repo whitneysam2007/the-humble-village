@@ -465,7 +465,7 @@ export default function NaruCircle() {
             Philanthropic Partnership
           </p>
           <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(24px, 3.5vw, 38px)', fontWeight: 400, color: '#36302A', marginBottom: '16px', textAlign: 'center' }}>
-            Eager to explore philanthropic partnership options
+            Eager to explore philanthropic partnership options?
           </h2>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', color: '#574C3F', textAlign: 'center', marginBottom: '48px', lineHeight: 1.7 }}>
             We would love to connect with you and find the right path forward together.
