@@ -549,9 +549,6 @@ export default function NaruCircle() {
             >
               Send Message
             </button>
-            <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '13px', color: '#574C3F', opacity: 0.7, textAlign: 'center', lineHeight: 1.5 }}>
-              This will open your email client with your message pre-filled, addressed to hello@the-humble-village.org
-            </p>
           </form>
         </div>
         <style>{`
