@@ -563,8 +563,17 @@ export default function NaruCircle() {
 
 
       {/* FINAL CTA */}
-      <section style={{ background: '#36302A', padding: '80px 40px', textAlign: 'center' }}>
-        <div style={{ maxWidth: '500px', margin: '0 auto' }}>
+      <section style={{
+        position: 'relative',
+        padding: '80px 40px',
+        textAlign: 'center',
+        backgroundImage: `url(${BASE}/images/naru-circle-girls-event.webp)`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center 40%',
+        overflow: 'hidden',
+      }}>
+        <div style={{ position: 'absolute', inset: 0, background: 'rgba(54,48,42,0.72)' }} />
+        <div style={{ maxWidth: '500px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
           <p style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(18px, 2.5vw, 26px)', fontStyle: 'italic', color: '#F6F3EC', lineHeight: 1.5, marginBottom: '32px' }}>
             "Thank you for considering a role in this work."
           </p>
