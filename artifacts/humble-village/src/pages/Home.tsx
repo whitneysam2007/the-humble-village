@@ -199,7 +199,7 @@ export default function Home() {
               }} className="crisis-stats-grid">
                 {[
                   { pct: '100%', label: 'of infants in our programs have mothers who cannot produce enough breastmilk to feed them' },
-                  { pct: '100%', label: 'of families in our program have at least one child suffering from malnutrition. Some have buried one.' },
+                  { pct: '100%', label: 'of families in our program have at least one child suffering from malnutrition. Some have already lost a child to malnutrition.' },
                   { pct: '100%', label: 'of these families live on approximately $1 a day, subsisting on 2–3 corn tortillas' },
                   { pct: '98%',  label: 'of mothers have no access to birth control and have large families they cannot support' },
                 ].map((item, i) => (
