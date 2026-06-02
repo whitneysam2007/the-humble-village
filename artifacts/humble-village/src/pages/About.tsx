@@ -287,6 +287,7 @@ export default function About() {
               {
                 logo: `${BASE}/images/logo-usana-foundation.png`,
                 logoAlt: 'USANA Foundation',
+                logoHref: 'https://usanafoundation.org',
                 photo: `${BASE}/images/R6B_8036.webp`,
                 photoAlt: "A Q'eqchi' Maya family with their USANA garden tower",
                 name: 'USANA Foundation',
@@ -295,6 +296,7 @@ export default function About() {
               {
                 logo: `${BASE}/images/logo-solly-baby.png`,
                 logoAlt: 'Solly Baby',
+                logoHref: 'https://www.sollybaby.com',
                 photo: `${BASE}/images/partner-solly-photo.jpg`,
                 photoAlt: 'Mothers at the Solly Ochoch with Solly Baby gifts',
                 name: 'Solly Baby',
@@ -311,6 +313,7 @@ export default function About() {
               {
                 logo: `${BASE}/images/logo-sabin-foundation.png`,
                 logoAlt: 'Sabin Children\'s Foundation',
+                logoHref: 'https://sabinchildrensfoundation.org',
                 photo: `${BASE}/images/partner-sabin-photo.jpg`,
                 photoAlt: 'Gary Sabin holding a baby in Alta Verapaz, Guatemala',
                 name: 'Sabin Children\'s Foundation',
@@ -334,11 +337,21 @@ export default function About() {
                   background: '#fff',
                   borderBottom: '1px solid rgba(54,48,42,0.08)',
                 }}>
-                  <img
-                    src={partner.logo}
-                    alt={partner.logoAlt}
-                    style={{ maxHeight: '100px', maxWidth: '260px', objectFit: 'contain', display: 'block' }}
-                  />
+                  {(partner as any).logoHref ? (
+                    <a href={(partner as any).logoHref} target="_blank" rel="noopener noreferrer" style={{ display: 'block' }}>
+                      <img
+                        src={partner.logo}
+                        alt={partner.logoAlt}
+                        style={{ maxHeight: '115px', maxWidth: '299px', objectFit: 'contain', display: 'block' }}
+                      />
+                    </a>
+                  ) : (
+                    <img
+                      src={partner.logo}
+                      alt={partner.logoAlt}
+                      style={{ maxHeight: '115px', maxWidth: '299px', objectFit: 'contain', display: 'block' }}
+                    />
+                  )}
                 </div>
                 <img
                   src={partner.photo}
