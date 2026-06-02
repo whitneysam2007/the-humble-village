@@ -225,7 +225,7 @@ export default function OurCause() {
               {
                 step: '01',
                 title: 'Enroll',
-                body: 'Children are assessed monthly by trained nurses using Guatemala\'s official Carné del Niño. Any child meeting WHO 2006 criteria for severe or moderate malnutrition is enrolled immediately, including infants under 6 months at the highest risk.',
+                body: 'Children are assessed monthly by trained nurses using Guatemala\'s official Carné del Niño. Any child meeting World Health Organization 2006 criteria for severe or moderate malnutrition is enrolled immediately, including infants under 6 months at the highest risk.',
               },
               {
                 step: '02',

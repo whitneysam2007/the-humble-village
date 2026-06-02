@@ -602,7 +602,7 @@ export default function Home() {
       </section>
 
       {/* INSTAGRAM GRID */}
-      <section style={{ background: '#36302A', padding: '80px 40px' }}>
+      <section style={{ background: '#FFFFFF', padding: '80px 40px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{
             display: 'flex',
@@ -616,44 +616,61 @@ export default function Home() {
               fontFamily: 'Libre Baskerville, serif',
               fontSize: 'clamp(22px, 3vw, 36px)',
               fontWeight: 400,
-              color: '#F6F3EC',
+              color: '#36302A',
             }}>
               Follow Our Journey
             </h2>
-            <a
-              href="https://www.instagram.com/thehumblevillage/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                fontFamily: 'Figtree, sans-serif',
-                fontSize: '13px',
-                fontWeight: 600,
-                color: '#C8B59E',
-                textDecoration: 'underline',
-                letterSpacing: '0.05em',
-              }}
-            >
-              @thehumblevillage
-            </a>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '12px' }}>
-            {['image-asset.jpeg','2b445cec-4487-4cc4-a4fd-e909f5034bf8.JPG','004de813-d98a-4270-b750-0dd54f5f4890.JPG','9312a127-6296-49b2-9327-0c23facdc2e0.JPG'].map((photo, i) => (
-              <a
-                key={i}
-                href="https://www.instagram.com/thehumblevillage/"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ display: 'block', aspectRatio: '1', overflow: 'hidden', borderRadius: '4px' }}
-              >
-                <img
-                  src={`${BASE}/images/${photo}`}
-                  alt="The Humble Village on Instagram"
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.4s ease' }}
-                  onMouseOver={e => (e.currentTarget.style.transform = 'scale(1.04)')}
-                  onMouseOut={e => (e.currentTarget.style.transform = 'scale(1)')}
-                />
+          {/* Two-column social grid */}
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px' }}>
+            {/* Facebook column */}
+            <div>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', marginBottom: '16px' }}>
+                {['image-asset.jpeg', '2b445cec-4487-4cc4-a4fd-e909f5034bf8.JPG'].map((photo, i) => (
+                  <a key={i} href="https://www.facebook.com/NaruGuatemala/" target="_blank" rel="noopener noreferrer"
+                    style={{ display: 'block', aspectRatio: '1', overflow: 'hidden', borderRadius: '4px' }}>
+                    <img src={`${BASE}/images/${photo}`} alt="The Humble Village on Facebook"
+                      style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.4s ease' }}
+                      onMouseOver={e => (e.currentTarget.style.transform = 'scale(1.04)')}
+                      onMouseOut={e => (e.currentTarget.style.transform = 'scale(1)')} />
+                  </a>
+                ))}
+              </div>
+              <a href="https://www.facebook.com/NaruGuatemala/" target="_blank" rel="noopener noreferrer"
+                style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none', color: '#36302A',
+                  fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 600, letterSpacing: '0.04em',
+                  border: '1px solid #C8B59E', borderRadius: '4px', padding: '10px 18px', width: '100%', boxSizing: 'border-box' as const, justifyContent: 'center' }}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                </svg>
+                <span>Facebook &nbsp;·&nbsp; @NaruGuatemala</span>
               </a>
-            ))}
+            </div>
+            {/* Instagram column */}
+            <div>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', marginBottom: '16px' }}>
+                {['004de813-d98a-4270-b750-0dd54f5f4890.JPG', '9312a127-6296-49b2-9327-0c23facdc2e0.JPG'].map((photo, i) => (
+                  <a key={i} href="https://www.instagram.com/thehumblevillageproject/" target="_blank" rel="noopener noreferrer"
+                    style={{ display: 'block', aspectRatio: '1', overflow: 'hidden', borderRadius: '4px' }}>
+                    <img src={`${BASE}/images/${photo}`} alt="The Humble Village on Instagram"
+                      style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.4s ease' }}
+                      onMouseOver={e => (e.currentTarget.style.transform = 'scale(1.04)')}
+                      onMouseOut={e => (e.currentTarget.style.transform = 'scale(1)')} />
+                  </a>
+                ))}
+              </div>
+              <a href="https://www.instagram.com/thehumblevillageproject/" target="_blank" rel="noopener noreferrer"
+                style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none', color: '#36302A',
+                  fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 600, letterSpacing: '0.04em',
+                  border: '1px solid #C8B59E', borderRadius: '4px', padding: '10px 18px', width: '100%', boxSizing: 'border-box' as const, justifyContent: 'center' }}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+                <span>Instagram &nbsp;·&nbsp; @thehumblevillageproject</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>

@@ -317,11 +317,11 @@ export default function NaruCircle() {
       <section style={{ background: '#36302A', padding: '100px 40px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: '45% 55%', gap: '60px', alignItems: 'center' }} className="benefits-layout">
           {/* Photo column */}
-          <div style={{ borderRadius: '8px', overflow: 'hidden' }}>
+          <div style={{ borderRadius: '8px', overflow: 'hidden', height: '600px' }}>
             <img
-              src={`${BASE}/images/naru-circle-partnership.webp`}
-              alt="A child held by their mother in traditional Guatemalan dress"
-              style={{ width: '100%', display: 'block', objectFit: 'cover' }}
+              src={`${BASE}/images/naru-circle-laughing-baby.webp`}
+              alt="A laughing child at The Humble Village"
+              style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover', objectPosition: 'center top' }}
             />
           </div>
           {/* Text column */}

@@ -240,11 +240,8 @@ export default function OurTeam() {
             }}>
               Our Board of Volunteers
             </h2>
-            <p style={{ fontSize: '17px', lineHeight: 1.85, color: '#F6F3EC', opacity: 0.8, marginBottom: '20px' }}>
-              Our dedicated board of volunteers in the United States plays a vital role in supporting the mission of The Humble Village.
-            </p>
             <p style={{ fontSize: '17px', lineHeight: 1.85, color: '#F6F3EC', opacity: 0.8 }}>
-              Because all board members serve as volunteers, 100% of public donations go directly to programs serving families in Guatemala.
+              Our board is made up entirely of volunteer mothers who are passionate about supporting other mothers in Guatemala. Because all board members serve as volunteers, 100% of public donations go directly to programs serving families in Guatemala.
             </p>
           </div>
           <div>
