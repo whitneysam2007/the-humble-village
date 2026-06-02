@@ -55,7 +55,7 @@ export default function GiveNowBanner() {
           opacity: 0.65,
           lineHeight: 1.6,
         }}>
-          100% of public donations go directly to our Humble Village projects.
+          100% of donations go directly to our Humble Village projects.
         </p>
       </div>
     </section>

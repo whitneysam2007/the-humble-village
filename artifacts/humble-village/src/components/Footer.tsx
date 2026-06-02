@@ -51,7 +51,7 @@ export default function Footer() {
             letterSpacing: '0.02em',
             margin: 0,
           }}>
-            100% of public donations go directly to our Humble Village projects.
+            100% of donations go directly to our Humble Village projects.
           </p>
         </div>
 
@@ -131,7 +131,7 @@ export default function Footer() {
             lineHeight: 1.6,
             maxWidth: '500px',
           }}>
-            The Humble Village is a 501(c)(3) nonprofit organization. 100% of public donations go directly to our programs in Guatemala.
+            The Humble Village is a 501(c)(3) nonprofit organization. 100% of donations go directly to our programs in Guatemala.
           </p>
           <p style={{ fontSize: '12px', color: '#F8F3EC', opacity: 0.4 }}>
             © 2025 The Humble Village · EIN: 99-5148890
