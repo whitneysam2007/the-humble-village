@@ -214,7 +214,7 @@ export default function Contact() {
                     borderRadius: '5px',
                     cursor: submitting ? 'wait' : 'pointer',
                     opacity: submitting ? 0.7 : 1,
-                    alignSelf: 'flex-start',
+                    alignSelf: 'center',
                     transition: 'opacity 0.2s',
                   }}
                 >
