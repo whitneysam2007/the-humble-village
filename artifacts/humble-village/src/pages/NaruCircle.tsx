@@ -265,7 +265,7 @@ export default function NaruCircle() {
       </section>
 
       {/* THREE OPTIONS */}
-      <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
+      <section id="heartbeat-endowment" style={{ background: '#F8F3EC', padding: '100px 40px' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '16px', textAlign: 'center' }}>
             Our Invitation
