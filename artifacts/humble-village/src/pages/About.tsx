@@ -190,21 +190,21 @@ export default function About() {
       </section>
 
       {/* PHOTO CTA */}
-      <section style={{ position: 'relative', overflow: 'hidden', minHeight: '480px', display: 'flex', alignItems: 'flex-end', justifyContent: 'center', textAlign: 'center' }}>
+      <section style={{ position: 'relative', overflow: 'hidden', minHeight: '480px', display: 'flex', alignItems: 'flex-start', justifyContent: 'center', textAlign: 'center' }}>
         <img
           src={`${BASE}/images/about-cta.jpg`}
           alt="The Humble Village"
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%' }}
         />
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(36,28,20,0.25)' }} />
-        <div style={{ position: 'relative', zIndex: 1, padding: '0 40px 48px', color: '#F6F3EC' }}>
+        <div style={{ position: 'relative', zIndex: 1, padding: '48px 40px 0', color: '#F6F3EC' }}>
           <h2 style={{
             fontFamily: 'Libre Baskerville, serif',
-            fontSize: 'clamp(18px, 2.2vw, 28px)',
+            fontSize: 'clamp(22px, 3vw, 38px)',
             fontWeight: 400,
-            marginBottom: '24px',
-            lineHeight: 1.2,
-            whiteSpace: 'nowrap' as const,
+            marginBottom: '32px',
+            lineHeight: 1.3,
+            maxWidth: '600px',
           }}>
             Ready to change generations of lives?
           </h2>
