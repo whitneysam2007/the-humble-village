@@ -109,16 +109,16 @@ export default function Footer() {
               <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
             </svg>
           </a>
-          <a
-            href="mailto:hello@the-humble-village.org"
-            aria-label="Email us"
+          <Link
+            to="/contact"
+            aria-label="Contact us"
             style={{ color: '#C8B59E', opacity: 0.8, transition: 'opacity 0.2s', lineHeight: 0 }}
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
               <rect x="2" y="4" width="20" height="16" rx="2"/>
               <polyline points="2,4 12,13 22,4"/>
             </svg>
-          </a>
+          </Link>
         </div>
 
         <div style={{ width: '40px', height: '1px', background: 'rgba(248,243,236,0.3)' }} />
