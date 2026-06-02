@@ -315,7 +315,7 @@ export default function NaruCircle() {
 
       {/* WHAT THIS MEANS FOR YOU */}
       <section style={{ background: '#36302A', padding: '100px 40px' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: '45% 55%', gap: '60px', alignItems: 'center' }} className="benefits-layout">
+        <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'grid', gridTemplateColumns: '45% 55%', gap: '60px', alignItems: 'center' }} className="benefits-layout">
           {/* Photo column */}
           <div style={{ borderRadius: '8px', overflow: 'hidden', height: '600px' }}>
             <img
