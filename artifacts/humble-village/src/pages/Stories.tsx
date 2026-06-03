@@ -30,6 +30,22 @@ const stories = [
 
   },
   {
+    name: 'Lesvia',
+    slide: 'lesvia-after.jpg',
+    beforePhoto: 'lesvia-before.png',
+    tag: 'Nutritional Recuperation',
+    summary: 'Severely malnourished as an infant → thriving at 10 years old',
+    beforeCaption: 'Lesvia\'s Narú admission Carnet — enrolled as a young child',
+    afterCaption: 'Lesvia (on the left) at 10 years old, with her mother and sister',
+    elenaStyle: true,
+    noLabels: true,
+    body: [
+      'The day a Humble Village team arrived in a remote jungle community to construct a USANA Garden Tower, the whole neighborhood came out to watch. Kids flooded the clearing. A volunteer organized a pickup baseball game. Another pulled out a Polaroid camera and began photographing the families gathered around, handing each portrait directly to its subjects. For many, it was the first time they had ever seen themselves in a photograph.',
+      'Roberto Mendoza, Narú\'s Field Manager, quietly pointed to a girl standing nearby — about ten years old, watching the commotion with her mother and baby sister. He mentioned she had been on the Narú Nutrition Program when she was very small. Upon returning to the Medical Center, he found her original Carnet — her admission card into the program, with her photo taken at the time of enrollment.',
+      'In Guatemala, if a malnourished child can survive to age five — when school begins and one daily meal is guaranteed — their chances change dramatically. Narú\'s job is to get them there. Lesvia made it.',
+    ],
+  },
+  {
     name: 'Jhordan',
     slide: 'jhordan-after.png',
     beforePhoto: 'jhordan-before-2.png',
@@ -139,14 +155,14 @@ export default function Stories() {
               <div style={{ flex: 1 }}>
                 <div style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: '#574C3F', marginBottom: '8px', textAlign: 'center' }}>BEFORE</div>
                 <img src={`${BASE}/images/elena-before.jpg`} alt="Jeremia and Gerson — Elena would not leave the corner" style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', borderRadius: '4px' }} />
-                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#574C3F', opacity: 0.7, marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#36302A', marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>
                   Twins Jeremia & Gerson with their Aunt and Grandmother. Elena, not pictured.
                 </p>
               </div>
               <div style={{ flex: 1 }}>
                 <div style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: '#574C3F', marginBottom: '8px', textAlign: 'center' }}>AFTER</div>
                 <img src={`${BASE}/images/elena-after.jpg`} alt="Elena with her boys today" style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', borderRadius: '4px' }} />
-                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#574C3F', opacity: 0.7, marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#36302A', marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>
                   7 years later, Elena with her boys today.
                 </p>
               </div>
@@ -189,12 +205,34 @@ export default function Stories() {
           <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
             <div style={{
               display: 'grid',
-              gridTemplateColumns: i % 2 === 0 ? '1fr 1fr' : '1fr 1fr',
+              gridTemplateColumns: '1fr 1fr',
               gap: '60px',
               alignItems: 'center',
             }} className={`story-grid-${i}`}>
               <div style={{ order: i % 2 === 0 ? 0 : 1 }}>
-                {story.beforePhoto && (story as any).noLabels ? (
+                {story.beforePhoto && (story as any).elenaStyle ? (
+                  // Elena-style: side-by-side with BEFORE/AFTER labels above, caramel italic captions below
+                  <div style={{ display: 'flex', gap: '16px' }}>
+                    <div style={{ flex: 1 }}>
+                      <div style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: '#C8B59E', marginBottom: '8px', textAlign: 'center' }}>BEFORE</div>
+                      <img
+                        src={`${BASE}/images/${story.beforePhoto}`}
+                        alt={`${story.name} — before`}
+                        style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', objectPosition: 'top', borderRadius: '4px', display: 'block' }}
+                      />
+                      <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#C8B59E', marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>{(story as any).beforeCaption}</p>
+                    </div>
+                    <div style={{ flex: 1 }}>
+                      <div style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: '#C8B59E', marginBottom: '8px', textAlign: 'center' }}>AFTER</div>
+                      <img
+                        src={`${BASE}/images/${story.slide}`}
+                        alt={`${story.name} — after`}
+                        style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', objectPosition: 'top', borderRadius: '4px', display: 'block' }}
+                      />
+                      <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#C8B59E', marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>{(story as any).afterCaption}</p>
+                    </div>
+                  </div>
+                ) : story.beforePhoto && (story as any).noLabels ? (
                   // Two-photo layout: no before/after labels (story gallery)
                   <div style={{ display: 'flex', gap: '12px' }}>
                     <div style={{ flex: 1 }}>
@@ -220,7 +258,7 @@ export default function Stories() {
                         alt={`${story.name} — before`}
                         style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', objectPosition: 'top', borderRadius: '4px', display: 'block' }}
                       />
-                      <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: i % 2 === 0 ? '#C8B59E' : '#574C3F', marginTop: '6px', textAlign: 'center', textTransform: 'uppercase' }}>Before</p>
+                      <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: '#36302A', marginTop: '6px', textAlign: 'center', textTransform: (story as any).beforeCaption ? 'none' : 'uppercase' }}>{(story as any).beforeCaption || 'Before'}</p>
                     </div>
                     <div style={{ flex: 1 }}>
                       <img
@@ -228,7 +266,7 @@ export default function Stories() {
                         alt={`${story.name} — after`}
                         style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', objectPosition: 'top', borderRadius: '4px', display: 'block' }}
                       />
-                      <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: i % 2 === 0 ? '#C8B59E' : '#574C3F', marginTop: '6px', textAlign: 'center', textTransform: 'uppercase' }}>After</p>
+                      <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: '#36302A', marginTop: '6px', textAlign: 'center', textTransform: (story as any).afterCaption ? 'none' : 'uppercase' }}>{(story as any).afterCaption || 'After'}</p>
                     </div>
                   </div>
                 ) : (
@@ -261,6 +299,7 @@ export default function Stories() {
                 }}>
                   {story.name}
                 </h2>
+                {!(story as any).elenaStyle && (
                 <p style={{
                   fontFamily: 'Figtree, sans-serif',
                   fontSize: '13px',
@@ -271,6 +310,7 @@ export default function Stories() {
                 }}>
                   {story.summary}
                 </p>
+                )}
                 {story.body.map((para, j) => (
                   <p key={j} style={{
                     fontFamily: 'Figtree, sans-serif',
