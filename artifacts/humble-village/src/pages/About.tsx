@@ -311,7 +311,7 @@ export default function About() {
                 photoAlt: 'Gary Sabin holding a baby in Alta Verapaz, Guatemala',
                 name: 'Sabin Children\'s Foundation',
                 photoPosition: 'top',
-                description: 'For ten years, the Sabin Children\'s Foundation has been the quiet force behind some of our most significant work. Their generosity built the Narú Medical Centers — giving our nurses, midwives, and community health workers a permanent base from which to serve. Because of them, the work doesn\'t just happen. It has a home.',
+                description: 'For ten years, the Sabin Children\'s Foundation has been the quiet force behind some of our most significant work. Their generosity built the Narú Medical Center — giving our nurses, midwives, and community health workers a permanent base from which to serve.',
               },
             ].map((partner, i) => (
               <div key={i} style={{
