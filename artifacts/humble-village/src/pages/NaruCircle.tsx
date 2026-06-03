@@ -202,7 +202,7 @@ export default function NaruCircle() {
             More than 200 infants saved in 2025
           </h2>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', color: '#F6F3EC', opacity: 0.6, textAlign: 'center', marginBottom: '56px', fontStyle: 'italic' }}>
-            Each one a living example of what early intervention and watchful care can achieve.
+            Each one a living example of what early intervention and watchful care can achieve
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '24px' }} className="faces-grid">
             {[
