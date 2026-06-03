@@ -11,19 +11,25 @@ export default function Home() {
       {/* HERO */}
       <section style={{
         position: 'relative',
-        minHeight: '100vh',
+        minHeight: '80vh',
         display: 'flex',
-        alignItems: 'center',
+        alignItems: 'flex-end',
         overflow: 'hidden',
-        paddingTop: '140px',
         background: '#36302A',
       }}>
+        {/* Full-width background photo */}
         <img
-          src={`${BASE}/images/hero-home-new.jpg`}
+          src={`${BASE}/images/hv-main-bg.png`}
           alt="The Humble Village"
-          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: '65% top' }}
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }}
         />
-        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, rgba(54,48,42,0.55) 0%, rgba(54,48,42,0.20) 55%, rgba(54,48,42,0.05) 100%)' }} />
+        {/* Overlay graphic — left-side text/art image from main site */}
+        <img
+          src={`${BASE}/images/hv-main-overlay.png`}
+          alt=""
+          aria-hidden="true"
+          style={{ position: 'absolute', left: 0, bottom: 0, height: '100%', width: 'auto', objectFit: 'contain', objectPosition: 'bottom left', pointerEvents: 'none' }}
+        />
         <div style={{
           position: 'relative',
           zIndex: 1,
