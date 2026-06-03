@@ -102,7 +102,7 @@ export default function Stories() {
       {/* HERO */}
       <section style={{ position: 'relative', overflow: 'hidden', textAlign: 'center' }}>
         <img
-          src={`${BASE}/images/home-interior.webp`}
+          src={`${BASE}/images/home-interior-2.webp`}
           alt="A Q'eqchi' Maya mother and child in their home"
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center center' }}
         />
