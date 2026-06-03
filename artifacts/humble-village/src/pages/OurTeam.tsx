@@ -262,21 +262,8 @@ export default function OurTeam() {
       </section>
 
       {/* NARÚ CIRCLE CTA */}
-      <section style={{
-        position: 'relative',
-        padding: '100px 40px',
-        textAlign: 'center',
-        backgroundImage: 'url(/images/team-children-group.webp)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center 15%',
-        overflow: 'hidden',
-        display: 'flex',
-        alignItems: 'flex-end',
-        minHeight: '420px',
-      }}>
-        {/* dark overlay */}
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(30,24,18,0.52)' }} />
-        <div style={{ position: 'relative', zIndex: 1, maxWidth: '600px', margin: '0 auto', paddingBottom: '20px', width: '100%' }}>
+      <section style={{ background: '#7A6352', padding: '80px 40px', textAlign: 'center' }}>
+        <div style={{ maxWidth: '600px', margin: '0 auto' }}>
           <h2 style={{
             fontFamily: 'Libre Baskerville, serif',
             fontSize: 'clamp(22px, 3vw, 34px)',
