@@ -40,7 +40,7 @@ const stories = [
     elenaStyle: true,
     noLabels: true,
     body: [
-      'The day a Humble Village team arrived in a remote jungle community to construct a USANA Garden Tower, the whole neighborhood came out to watch. Kids flooded the clearing. A volunteer organized a pickup baseball game. Another pulled out a Polaroid camera and began photographing the families gathered around, handing each portrait directly to its subjects. For many, it was the first time they had ever seen themselves in a photograph.',
+      'The day our Village-to-Village expedition group arrived in a remote jungle community to construct a USANA Garden Tower, the whole neighborhood came out to watch. Kids flooded the clearing. A volunteer organized a pickup baseball game. Another pulled out a Polaroid camera and began photographing the families gathered around, handing each portrait directly to its subjects. For many, it was the first time they had ever seen themselves in a photograph.',
       'Roberto Mendoza, Narú\'s Field Manager, quietly pointed to a girl standing nearby — about ten years old, watching the commotion with her mother and baby sister. He mentioned she had been on the Narú Nutrition Program when she was very small. Upon returning to the Medical Center, he found her original Carnet — her admission card into the program, with her photo taken at the time of enrollment.',
       'In Guatemala, if a malnourished child can survive to age five — when school begins and one daily meal is guaranteed — their chances change dramatically. Narú\'s job is to get them there. Lesvia made it.',
     ],
