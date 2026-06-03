@@ -183,15 +183,16 @@ export default function OurTeam() {
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px 24px' }}>
               {[
-                { name: 'Thelma Caal', role: 'Auxiliary Nurse' },
                 { name: 'Roberto Mendoza', role: 'Field Manager' },
-                { name: 'Rudy Caal', role: 'Agro Trainer' },
-                { name: 'Esteban Chaman', role: 'Professional Nurse' },
-                { name: 'Luis Xar', role: 'Admin Coordinator' },
-                { name: 'Edgar Coc', role: 'Auxiliary Nurse' },
-                { name: 'Brígida Coc', role: 'Professional Nurse' },
-                { name: 'Benjamin Chub', role: 'Food Production Trainer' },
                 { name: 'Abelino Caal', role: 'Food Production Supervisor' },
+                { name: 'Esteban Chaman', role: 'Professional Nurse' },
+                { name: 'Benjamin Chub', role: 'Food Production Trainer' },
+                { name: 'Edgar Coc', role: 'Auxiliary Nurse' },
+                { name: 'Rudy Caal', role: 'Food Production Trainer' },
+                { name: 'Thelma Caal', role: 'Auxiliary Nurse' },
+                { name: 'Luis Xar', role: 'Admin Coordinator' },
+                { name: 'Wendy Chub', role: 'Auxiliary Nurse' },
+                { name: 'Nieve Pizzatti C.', role: 'Communications Coordinator' },
               ].map((s, i) => (
                 <div key={i}>
                   <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '14px', fontWeight: 700, color: '#36302A', marginBottom: '2px' }}>{s.name}</p>
