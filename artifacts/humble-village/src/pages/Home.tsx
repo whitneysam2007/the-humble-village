@@ -649,11 +649,11 @@ export default function Home() {
             {/* Instagram column */}
             <div>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', marginBottom: '16px' }}>
-                {['social-baby-huipil.webp', 'social-man-baby.jpg'].map((photo, i) => (
+                {[{ file: 'social-baby-huipil.webp', pos: 'center top' }, { file: 'social-man-baby.jpg', pos: 'center center' }].map((photo, i) => (
                   <a key={i} href="https://www.instagram.com/thehumblevillageproject/" target="_blank" rel="noopener noreferrer"
                     style={{ display: 'block', aspectRatio: '1', overflow: 'hidden', borderRadius: '4px' }}>
-                    <img src={`${BASE}/images/${photo}`} alt="The Humble Village on Instagram"
-                      style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.4s ease' }}
+                    <img src={`${BASE}/images/${photo.file}`} alt="The Humble Village on Instagram"
+                      style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: photo.pos, transition: 'transform 0.4s ease' }}
                       onMouseOver={e => (e.currentTarget.style.transform = 'scale(1.04)')}
                       onMouseOut={e => (e.currentTarget.style.transform = 'scale(1)')} />
                   </a>
