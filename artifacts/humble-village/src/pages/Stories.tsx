@@ -106,7 +106,7 @@ export default function Stories() {
           alt="A Q'eqchi' Maya mother and child in their home"
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center center' }}
         />
-        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, rgba(20,14,8,0.82) 0%, rgba(20,14,8,0.79) 40%, rgba(20,14,8,0.52) 70%, rgba(20,14,8,0.25) 100%)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, rgba(20,14,8,0.82) 0%, rgba(20,14,8,0.79) 40%, rgba(20,14,8,0.52) 70%, rgba(20,14,8,0.08) 100%)' }} />
         <div style={{ position: 'relative', zIndex: 1, maxWidth: '700px', margin: '0 auto', padding: '160px 40px 100px' }}>
           <p style={{
             fontFamily: 'Figtree, sans-serif',
