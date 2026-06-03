@@ -179,7 +179,7 @@ export default function OurTeam() {
               Our Guatemalan Staff
             </h2>
             <p style={{ fontSize: '17px', lineHeight: 1.85, color: '#36302A', opacity: 0.85, marginBottom: '28px' }}>
-              Ten dedicated local staff members manage our programs on a daily basis, year-round. Hailing from the communities we serve, they bring irreplaceable knowledge, cultural understanding, and deep personal commitment to this work.
+              Dedicated local staff members manage our programs on a daily basis, year-round. Hailing from the communities we serve, they bring irreplaceable knowledge, cultural understanding, and deep personal commitment to this work.
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px 24px' }}>
               {[
