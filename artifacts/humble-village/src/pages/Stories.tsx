@@ -142,7 +142,7 @@ export default function Stories() {
             A Few Stories of Thousands
           </p>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '18px', lineHeight: 1.85, color: '#F6F3EC', opacity: 0.8 }}>
-            Over 274 children reached a healthy weight in 2025 alone.<br /><br />Every number is a name. Every name is a story. Here are a few of them.
+            Over 274 children reached a healthy weight in 2025 alone.<br />Every number is a name. Every name is a story. Here are a few of them.
           </p>
         </div>
       </section>
