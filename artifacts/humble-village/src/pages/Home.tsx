@@ -21,7 +21,7 @@ export default function Home() {
         <img
           src={`${BASE}/images/hv-main-bg.png`}
           alt="The Humble Village"
-          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: '65% top' }}
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: '65% 20%' }}
         />
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, rgba(54,48,42,0.55) 0%, rgba(54,48,42,0.20) 55%, rgba(54,48,42,0.05) 100%)' }} />
         <div style={{
