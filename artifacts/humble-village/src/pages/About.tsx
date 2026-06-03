@@ -333,7 +333,7 @@ export default function About() {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  minHeight: '140px',
+                  height: '160px',
                   background: '#fff',
                   borderBottom: '1px solid rgba(54,48,42,0.08)',
                 }}>
