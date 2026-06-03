@@ -209,7 +209,7 @@ export default function NaruCircle() {
               { name: 'Dylan',    before: 'faces-dylan-before.jpeg',    after: 'faces-dylan-after.png',    weight: '6.4 lbs at 2 months → 20.5 lbs' },
               { name: 'Santos',   before: 'faces-santos-before.jpeg',   after: 'faces-santos-after.jpeg',   weight: '15.0 lbs at 18 months → 22.2 lbs', afterPos: 'center top' },
               { name: 'Yasmin',   before: 'faces-yasmin-before.jpeg',   after: 'faces-yasmin-after.jpeg',   weight: '13.2 lbs at 21.5 months → 25.3 lbs' },
-              { name: 'Crisbell', before: 'faces-crisbell-before.jpeg', after: 'faces-crisbell-after.png',  weight: '5.5 lbs at 1 month → 16.9 lbs', beforePos: 'center top' },
+              { name: 'Crisbell', before: 'faces-crisbell-before.jpeg', after: 'faces-crisbell-after.png',  weight: '5.5 lbs at 1 month → 16.9 lbs', beforePos: 'left top' },
               { name: 'Pedro',    before: 'faces-pedro-before.jpeg',    after: 'faces-pedro-after.jpeg',    weight: '7.5 lbs at 2.5 months → 23.1 lbs', afterPos: 'center top' },
               { name: 'Keila',    before: 'faces-keila-before.jpeg',    after: 'faces-keila-after.jpeg',    weight: '15.8 lbs at 23 months → 22.0 lbs' },
               { name: 'Cuz',      before: 'faces-cuz-before.png',      after: 'faces-cuz-after.jpeg',      weight: '5.9 lbs at 2 weeks → 17.4 lbs' },
