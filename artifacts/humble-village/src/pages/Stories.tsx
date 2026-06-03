@@ -35,7 +35,7 @@ const stories = [
     beforePhoto: 'lesvia-before.png',
     tag: 'Nutritional Recuperation',
     summary: 'Severely malnourished as an infant → thriving at 10 years old',
-    beforeCaption: 'Lesvia\'s Narú admission Carnet — enrolled as a young child',
+    beforeCaption: 'Lesvia\'s Narú Carnet admission photo — enrolled as a young child',
     afterCaption: 'Lesvia (on the left) at 10 years old, with her mother and sister',
     elenaStyle: true,
     noLabels: true,
