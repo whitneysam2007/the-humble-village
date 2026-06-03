@@ -321,7 +321,7 @@ export default function OurCause() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '80px' }}>
 
             {/* NARÚ MEDICAL CENTERS */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'start' }} className="location-grid-0">
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'center' }} className="location-grid-0">
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
                 <img src={`${BASE}/images/naru-measuring.jpg`} alt="Nurse measuring baby at Narú Medical Center" style={{ width: '100%', height: '210px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '4px' }} />
                 <img src={`${BASE}/images/naru-education-class.jpg`} alt="Education class at Narú Medical Center" style={{ width: '100%', height: '210px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '4px' }} />
