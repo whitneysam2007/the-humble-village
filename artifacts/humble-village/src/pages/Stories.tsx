@@ -104,7 +104,7 @@ export default function Stories() {
         <img
           src={`${BASE}/images/home-interior.webp`}
           alt="A Q'eqchi' Maya mother and child in their home"
-          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: '70% 40%' }}
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'right 40%' }}
         />
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(20,14,8,0.72)' }} />
         <div style={{ position: 'relative', zIndex: 1, maxWidth: '700px', margin: '0 auto', padding: '160px 40px 100px' }}>
