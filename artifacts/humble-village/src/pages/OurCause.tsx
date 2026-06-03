@@ -357,7 +357,7 @@ export default function OurCause() {
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
                 <img src={`${BASE}/images/solly-chickens.webp`} alt="Chicken program at Ochoch Solly" style={{ width: '100%', height: '200px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '4px' }} />
                 <img src={`${BASE}/images/ochoch-solly-beans.jpg`} alt="Red beans discovered at Ochoch Solly" style={{ width: '100%', height: '200px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '4px' }} />
-                <img src={`${BASE}/images/ochoch-solly-garden.png`} alt="Garden at Ochoch Solly" style={{ width: '100%', height: '200px', objectFit: 'cover', objectPosition: 'center', borderRadius: '4px', gridColumn: '1 / 3' }} />
+                <img src={`${BASE}/images/solly-garden-overview.jpg`} alt="Garden overview at Ochoch Solly" style={{ width: '100%', height: '200px', objectFit: 'cover', objectPosition: 'center', borderRadius: '4px', gridColumn: '1 / 3' }} />
               </div>
               <div>
                 <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(22px, 2.5vw, 34px)', fontWeight: 400, color: '#36302A', marginBottom: '8px', lineHeight: 1.2 }}>Ochoch Solly</h3>
