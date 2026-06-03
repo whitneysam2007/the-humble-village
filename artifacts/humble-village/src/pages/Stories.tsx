@@ -215,20 +215,20 @@ export default function Stories() {
                 ) : story.beforePhoto ? (
                   <div style={{ display: 'flex', gap: '12px' }}>
                     <div style={{ flex: 1 }}>
-                      <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: i % 2 === 0 ? '#C8B59E' : '#574C3F', marginBottom: '6px', textAlign: 'center', textTransform: 'uppercase' }}>Before</p>
                       <img
                         src={`${BASE}/images/${story.beforePhoto}`}
                         alt={`${story.name} — before`}
                         style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', objectPosition: 'top', borderRadius: '4px', display: 'block' }}
                       />
+                      <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: i % 2 === 0 ? '#C8B59E' : '#574C3F', marginTop: '6px', textAlign: 'center', textTransform: 'uppercase' }}>Before</p>
                     </div>
                     <div style={{ flex: 1 }}>
-                      <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: i % 2 === 0 ? '#C8B59E' : '#574C3F', marginBottom: '6px', textAlign: 'center', textTransform: 'uppercase' }}>After</p>
                       <img
                         src={`${BASE}/images/${story.slide}`}
                         alt={`${story.name} — after`}
                         style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', objectPosition: 'top', borderRadius: '4px', display: 'block' }}
                       />
+                      <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: i % 2 === 0 ? '#C8B59E' : '#574C3F', marginTop: '6px', textAlign: 'center', textTransform: 'uppercase' }}>After</p>
                     </div>
                   </div>
                 ) : (

@@ -221,33 +221,21 @@ export default function NaruCircle() {
             ].map((child, i) => (
               <div key={i} style={{ background: 'rgba(248,243,236,0.05)', borderRadius: '6px', overflow: 'hidden' }}>
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
-                  <div style={{ position: 'relative' }}>
+                  <div>
                     <img
                       src={`${BASE}/images/faces/${child.before}`}
                       alt={`${child.name} before`}
                       style={{ width: '100%', aspectRatio: '1/1', objectFit: 'cover', objectPosition: (child as any).beforePos || 'center center', display: 'block' }}
                     />
-                    <span style={{
-                      position: 'absolute', top: '6px', left: '6px',
-                      fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700,
-                      letterSpacing: '0.12em', textTransform: 'uppercase',
-                      color: '#F6F3EC', background: 'rgba(54,48,42,0.75)',
-                      padding: '2px 6px', borderRadius: '2px'
-                    }}>Before</span>
+                    <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#F6F3EC', opacity: 0.6, textAlign: 'center', marginTop: '5px' }}>Before</p>
                   </div>
-                  <div style={{ position: 'relative' }}>
+                  <div>
                     <img
                       src={`${BASE}/images/faces/${child.after}`}
                       alt={`${child.name} after`}
                       style={{ width: '100%', aspectRatio: '1/1', objectFit: 'cover', objectPosition: (child as any).afterPos || 'center center', display: 'block' }}
                     />
-                    <span style={{
-                      position: 'absolute', top: '6px', left: '6px',
-                      fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700,
-                      letterSpacing: '0.12em', textTransform: 'uppercase',
-                      color: '#F6F3EC', background: 'rgba(54,48,42,0.75)',
-                      padding: '2px 6px', borderRadius: '2px'
-                    }}>After</span>
+                    <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#F6F3EC', opacity: 0.6, textAlign: 'center', marginTop: '5px' }}>After</p>
                   </div>
                 </div>
                 <div style={{ padding: '12px 14px 14px' }}>
