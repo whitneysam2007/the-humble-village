@@ -359,6 +359,7 @@ export default function About() {
                     color: '#36302A',
                     marginBottom: '14px',
                     lineHeight: 1.3,
+                    textAlign: 'center' as const,
                   }}>
                     {partner.name}
                   </h3>
