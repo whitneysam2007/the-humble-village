@@ -300,7 +300,7 @@ export default function About() {
                 photo: `${BASE}/images/partner-solly-photo.jpg`,
                 photoAlt: 'Mothers at the Solly Ochoch with Solly Baby gifts',
                 name: 'Solly Baby',
-                description: 'Solly Baby donated infant clothing to the mothers of the Solly Ochoch — the highest, most remote community in the valley. These families have no access to outside resources beyond THV and Narú. For the babies born there, it was the first gift from beyond the ridge.',
+                description: 'Solly Baby built our beloved Solly Ochoch — the highest, most remote community in the valley. These families have no access to outside resources beyond the Narú team. Every year they send our Village-to-Village Expedition groups with silky soft baby clothes and blankets for the little ones born there.',
               },
 
               {
