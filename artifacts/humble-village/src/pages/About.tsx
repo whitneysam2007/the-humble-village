@@ -280,7 +280,7 @@ export default function About() {
           </h2>
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(2, 1fr)',
+            gridTemplateColumns: 'repeat(3, 1fr)',
             gap: '32px',
           }} className="partners-grid">
             {[
@@ -302,14 +302,7 @@ export default function About() {
                 name: 'Solly Baby',
                 description: 'Solly Baby donated infant clothing to the mothers of the Solly Ochoch — the highest, most remote community in the valley. These families have no access to outside resources beyond THV and Narú. For the babies born there, it was the first gift from beyond the ridge.',
               },
-              {
-                logo: `${BASE}/images/logo-lds-church.png`,
-                logoAlt: 'The Church of Jesus Christ of Latter-day Saints',
-                photo: `${BASE}/images/partner-lds-photo.jpg`,
-                photoAlt: 'Narú team member distributing nutrition packages',
-                name: 'The Church of Jesus Christ of Latter-day Saints',
-                description: 'The Church sponsors the Narú Nutrition Program, providing Incaparina and formula to severely malnourished infants and children ages 0–5. Their partnership means that the most fragile children have a fighting chance in their most critical years.',
-              },
+
               {
                 logo: `${BASE}/images/logo-sabin-foundation.png`,
                 logoAlt: 'Sabin Children\'s Foundation',
