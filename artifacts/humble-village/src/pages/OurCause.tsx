@@ -321,11 +321,13 @@ export default function OurCause() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '80px' }}>
 
             {/* NARÚ MEDICAL CENTERS */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'center' }} className="location-grid-0">
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'start' }} className="location-grid-0">
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
-                <img src={`${BASE}/images/naru-measuring.jpg`} alt="Nurse measuring baby at Narú Medical Center" style={{ width: '100%', height: '210px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '4px' }} />
-                <img src={`${BASE}/images/naru-weighing.jpg`} alt="Baby being weighed at Narú Medical Center" style={{ width: '100%', height: '210px', objectFit: 'cover', borderRadius: '4px' }} />
-                <img src={`${BASE}/images/naru-cooking.jpg`} alt="Cooking class at Narú Medical Center" style={{ width: '100%', height: '210px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '4px', gridColumn: '1 / 3' }} />
+                <img src={`${BASE}/images/naru-measuring.jpg`} alt="Nurse measuring baby at Narú Medical Center" style={{ width: '100%', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '4px' }} />
+                <img src={`${BASE}/images/naru-weighing.jpg`} alt="Baby being weighed at Narú Medical Center" style={{ width: '100%', height: '180px', objectFit: 'cover', borderRadius: '4px' }} />
+                <img src={`${BASE}/images/naru-cooking.jpg`} alt="Cooking class at Narú Medical Center" style={{ width: '100%', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '4px', gridColumn: '1 / 3' }} />
+                <img src={`${BASE}/images/naru-education-class.jpg`} alt="Education class at Narú Medical Center" style={{ width: '100%', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '4px' }} />
+                <img src={`${BASE}/images/naru-exterior-sign.webp`} alt="Narú Medical Center exterior sign" style={{ width: '100%', height: '180px', objectFit: 'cover', objectPosition: 'center top', borderRadius: '4px' }} />
               </div>
               <div>
                 <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(22px, 2.5vw, 34px)', fontWeight: 400, color: '#36302A', marginBottom: '8px', lineHeight: 1.2 }}>Narú Medical Center</h3>
