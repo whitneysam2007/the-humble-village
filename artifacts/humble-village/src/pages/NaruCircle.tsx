@@ -44,7 +44,7 @@ function StockDonationForm() {
         >
           Let's Talk About Your Gift
         </button>
-        <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '13px', color: '#574C3F', marginTop: '12px', lineHeight: 1.6 }}>
+        <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '13px', color: '#574C3F', marginTop: '12px', lineHeight: 1.6, fontStyle: 'italic' }}>
           We would be honored to work with you and your advisors to find the giving option that aligns with your goals.
         </p>
       </div>
