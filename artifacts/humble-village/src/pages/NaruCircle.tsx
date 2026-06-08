@@ -13,19 +13,39 @@ const programs = [
   { name: 'Youth Health Education', cost: '$9,000', desc: 'Nutrition & pregnancy-prevention education for 200 students' },
 ];
 
-function StockTransferModal() {
+function StockDonationForm() {
   const [open, setOpen] = useState(false);
+  const [sent, setSent] = useState(false);
+  const [form, setForm] = useState({ name: '', email: '', message: '' });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const subject = encodeURIComponent('Stock Donation Inquiry');
+    const body = encodeURIComponent(
+      `Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message || 'I am interested in donating stock to The Humble Village.'}`
+    );
+    window.location.href = `mailto:hello@the-humble-village.org?subject=${subject}&body=${body}`;
+    setSent(true);
+  };
+
+  const inputStyle: React.CSSProperties = {
+    width: '100%', padding: '12px 14px', borderRadius: '6px',
+    border: '1px solid rgba(54,48,42,0.25)', background: '#fff',
+    fontFamily: 'Figtree, sans-serif', fontSize: '14px', color: '#36302A',
+    boxSizing: 'border-box', outline: 'none',
+  };
+
   return (
     <>
       <div style={{ textAlign: 'center', marginTop: '48px' }}>
         <button
           onClick={() => setOpen(true)}
-          style={{ display: 'inline-block', background: '#36302A', color: '#F8F3EC', padding: '14px 36px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none', border: 'none', cursor: 'pointer' }}
+          style={{ display: 'inline-block', background: '#36302A', color: '#F8F3EC', padding: '14px 36px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', border: 'none', cursor: 'pointer' }}
         >
-          Stock Transfer Details
+          I'd Like to Donate Stock
         </button>
         <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '13px', color: '#574C3F', marginTop: '12px', lineHeight: 1.6 }}>
-          Account information to share with your financial advisor.
+          We'll reach out with everything you need.
         </p>
       </div>
       {open && (
@@ -43,24 +63,38 @@ function StockTransferModal() {
               aria-label="Close"
             >&times;</button>
             <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '8px' }}>Smarter Giving</p>
-            <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '24px', fontWeight: 400, color: '#36302A', marginBottom: '8px' }}>Stock Transfer Details</h3>
-            <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '14px', color: '#574C3F', lineHeight: 1.7, marginBottom: '32px' }}>
-              Share the information below with your financial advisor or broker to initiate the transfer.
-            </p>
-            {[
-              { label: 'Receiving Brokerage Firm', value: 'LPL Financial' },
-              { label: 'DTC Number', value: '0075' },
-              { label: 'Receiving Account Name', value: 'The Humble Village' },
-              { label: 'Receiving Account Number', value: '5324-2299' },
-            ].map(({ label, value }) => (
-              <div key={label} style={{ borderBottom: '1px solid rgba(54,48,42,0.12)', paddingBottom: '16px', marginBottom: '16px' }}>
-                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '4px' }}>{label}</p>
-                <p style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '18px', color: '#36302A', margin: 0 }}>{value}</p>
-              </div>
-            ))}
-            <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '13px', color: '#574C3F', lineHeight: 1.7, marginTop: '8px', fontStyle: 'italic' }}>
-              Questions? Email us at <a href="mailto:hello@the-humble-village.org" style={{ color: '#36302A' }}>hello@the-humble-village.org</a>
-            </p>
+            <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '24px', fontWeight: 400, color: '#36302A', marginBottom: '8px' }}>Donate Stock</h3>
+            {sent ? (
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '15px', color: '#574C3F', lineHeight: 1.7, marginTop: '24px' }}>
+                Thank you — we'll be in touch shortly with everything you need to complete your gift.
+              </p>
+            ) : (
+              <>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '14px', color: '#574C3F', lineHeight: 1.7, marginBottom: '28px' }}>
+                  We can receive donations of appreciated stock, bonds, or mutual funds. Let us know you're interested and we'll follow up with the transfer details.
+                </p>
+                <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                  <div>
+                    <label style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#574C3F', display: 'block', marginBottom: '6px' }}>Name *</label>
+                    <input required style={inputStyle} value={form.name} onChange={e => setForm(f => ({ ...f, name: e.target.value }))} placeholder="Your full name" />
+                  </div>
+                  <div>
+                    <label style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#574C3F', display: 'block', marginBottom: '6px' }}>Email *</label>
+                    <input required type="email" style={inputStyle} value={form.email} onChange={e => setForm(f => ({ ...f, email: e.target.value }))} placeholder="your@email.com" />
+                  </div>
+                  <div>
+                    <label style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#574C3F', display: 'block', marginBottom: '6px' }}>Message (optional)</label>
+                    <textarea rows={3} style={{ ...inputStyle, resize: 'vertical' }} value={form.message} onChange={e => setForm(f => ({ ...f, message: e.target.value }))} placeholder="Anything you'd like us to know" />
+                  </div>
+                  <button
+                    type="submit"
+                    style={{ background: '#36302A', color: '#F8F3EC', padding: '14px 36px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', border: 'none', cursor: 'pointer', marginTop: '8px' }}
+                  >
+                    Send My Interest
+                  </button>
+                </form>
+              </>
+            )}
           </div>
         </div>
       )}
@@ -424,7 +458,7 @@ export default function NaruCircle() {
             {[
               {
                 title: 'Appreciated Stock',
-                body: 'Donating appreciated securities — stocks, bonds, or mutual funds — lets you avoid capital gains tax entirely while receiving a charitable deduction for the full fair market value. Your broker can facilitate the transfer directly.',
+                body: 'We can receive donations of appreciated stock, bonds, or mutual funds — and your financial advisor can facilitate the transfer directly. Reach out to us first so we can make sure your gift is received and properly acknowledged.',
               },
               {
                 title: 'Give From Your IRA',
@@ -444,7 +478,7 @@ export default function NaruCircle() {
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '15px', color: '#574C3F', textAlign: 'center', marginTop: '48px', lineHeight: 1.7, fontStyle: 'italic' }}>
             We would be honored to work with you and your advisors to find the giving option that aligns with your goals.
           </p>
-          <StockTransferModal />
+          <StockDonationForm />
           <style>{`
             @media (max-width: 768px) {
               .otherways-grid { grid-template-columns: 1fr !important; }
