@@ -1,6 +1,95 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+function GiveSmartForm() {
+  const [open, setOpen] = useState(false);
+  const [sent, setSent] = useState(false);
+  const [form, setForm] = useState({ name: '', email: '', message: '' });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const subject = encodeURIComponent('Asset Giving Inquiry');
+    const body = encodeURIComponent(
+      `Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message || 'I am interested in giving through assets to The Humble Village.'}`
+    );
+    window.location.href = `mailto:hello@the-humble-village.org?subject=${subject}&body=${body}`;
+    setSent(true);
+  };
+
+  const inputStyle: React.CSSProperties = {
+    width: '100%', padding: '12px 14px', borderRadius: '6px',
+    border: '1px solid rgba(54,48,42,0.25)', background: '#fff',
+    fontFamily: 'Figtree, sans-serif', fontSize: '14px', color: '#36302A',
+    boxSizing: 'border-box', outline: 'none',
+  };
+
+  return (
+    <>
+      <div style={{ textAlign: 'center', marginTop: '48px' }}>
+        <button
+          onClick={() => setOpen(true)}
+          style={{ display: 'inline-block', background: '#36302A', color: '#F8F3EC', padding: '14px 36px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', border: 'none', cursor: 'pointer' }}
+        >
+          Let's Talk About Your Gift
+        </button>
+        <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '13px', color: '#574C3F', marginTop: '16px', lineHeight: 1.6, fontStyle: 'italic' }}>
+          We would be honored to work with you and your advisors to find the giving option that aligns with your goals.
+        </p>
+      </div>
+      {open && (
+        <div
+          onClick={() => setOpen(false)}
+          style={{ position: 'fixed', inset: 0, background: 'rgba(54,48,42,0.7)', zIndex: 1000, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '24px' }}
+        >
+          <div
+            onClick={e => e.stopPropagation()}
+            style={{ background: '#F8F3EC', borderRadius: '12px', padding: '48px', maxWidth: '480px', width: '100%', position: 'relative' }}
+          >
+            <button
+              onClick={() => setOpen(false)}
+              style={{ position: 'absolute', top: '16px', right: '20px', background: 'none', border: 'none', fontSize: '22px', cursor: 'pointer', color: '#574C3F', lineHeight: 1 }}
+              aria-label="Close"
+            >&times;</button>
+            <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '8px' }}>Smarter Giving</p>
+            <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '24px', fontWeight: 400, color: '#36302A', marginBottom: '8px' }}>Let's Talk About Your Gift</h3>
+            {sent ? (
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '15px', color: '#574C3F', lineHeight: 1.7, marginTop: '24px' }}>
+                Thank you — we'll be in touch shortly with everything you need to complete your gift.
+              </p>
+            ) : (
+              <>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '14px', color: '#574C3F', lineHeight: 1.7, marginBottom: '28px' }}>
+                  We'd love to help you find the giving option that works best for you — whether that's stock, an IRA distribution, a QCD, a bequest, or another asset. Let us know you're interested and we'll be in touch.
+                </p>
+                <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                  <div>
+                    <label style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#574C3F', display: 'block', marginBottom: '6px' }}>Name *</label>
+                    <input required style={inputStyle} value={form.name} onChange={e => setForm(f => ({ ...f, name: e.target.value }))} placeholder="Your full name" />
+                  </div>
+                  <div>
+                    <label style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#574C3F', display: 'block', marginBottom: '6px' }}>Email *</label>
+                    <input required type="email" style={inputStyle} value={form.email} onChange={e => setForm(f => ({ ...f, email: e.target.value }))} placeholder="your@email.com" />
+                  </div>
+                  <div>
+                    <label style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#574C3F', display: 'block', marginBottom: '6px' }}>Message (optional)</label>
+                    <textarea rows={3} style={{ ...inputStyle, resize: 'vertical' }} value={form.message} onChange={e => setForm(f => ({ ...f, message: e.target.value }))} placeholder="Anything you'd like us to know" />
+                  </div>
+                  <button
+                    type="submit"
+                    style={{ background: '#36302A', color: '#F8F3EC', padding: '14px 36px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', border: 'none', cursor: 'pointer', marginTop: '8px' }}
+                  >
+                    Send My Interest
+                  </button>
+                </form>
+              </>
+            )}
+          </div>
+        </div>
+      )}
+    </>
+  );
+}
+
 const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 export default function Give() {
@@ -142,7 +231,7 @@ export default function Give() {
       </section>
 
       {/* MONTHLY OR ONE-TIME GIFT — left text / right photo */}
-      <section style={{ background: '#F8F3EC', padding: '0 40px 100px' }}>
+      <section style={{ background: '#36302A', padding: '80px 40px 100px' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <p style={{
             fontFamily: 'Figtree, sans-serif',
@@ -150,7 +239,7 @@ export default function Give() {
             fontWeight: 700,
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
-            color: '#574C3F',
+            color: '#C8B59E',
             marginBottom: '16px',
             textAlign: 'center',
           }}>
@@ -160,7 +249,7 @@ export default function Give() {
             fontFamily: 'Libre Baskerville, serif',
             fontSize: 'clamp(26px, 3.5vw, 40px)',
             fontWeight: 400,
-            color: '#36302A',
+            color: '#F8F3EC',
             textAlign: 'center',
             marginBottom: '64px',
           }}>
@@ -170,7 +259,7 @@ export default function Give() {
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px', alignItems: 'center' }} className="give-gift-grid">
             {/* LEFT — description */}
             <div style={{
-              background: '#36302A',
+              background: '#2C2721',
               borderRadius: '8px',
               padding: '48px 40px',
               display: 'flex',
@@ -224,6 +313,48 @@ export default function Give() {
           <style>{`
             @media (max-width: 768px) {
               .give-gift-grid { grid-template-columns: 1fr !important; }
+            }
+          `}</style>
+        </div>
+      </section>
+
+      {/* OTHER WAYS TO GIVE */}
+      <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
+        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '16px', textAlign: 'center' }}>
+            Smarter Giving
+          </p>
+          <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(24px, 3.5vw, 38px)', fontWeight: 400, color: '#36302A', textAlign: 'center', marginBottom: '16px' }}>
+            Other Ways to Give
+          </h2>
+          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', color: '#574C3F', textAlign: 'center', marginBottom: '56px', lineHeight: 1.7 }}>
+            Your assets can do more than you might expect.
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '32px' }} className="give-otherways-grid">
+            {[
+              {
+                title: 'Appreciated Stock',
+                body: 'We can receive donations of appreciated stock, bonds, or mutual funds — and your financial advisor can facilitate the transfer directly. Reach out to us first so we can make sure your gift is received and properly acknowledged.',
+              },
+              {
+                title: 'Give From Your IRA',
+                body: 'If you are age 70½ or older, a Qualified Charitable Distribution (QCD) allows you to transfer funds directly from your IRA. It satisfies your Required Minimum Distribution and may reduce your taxable income — even if you don\'t itemize.',
+              },
+              {
+                title: 'Leave a Legacy',
+                body: 'A bequest through your will, living trust, or naming The Humble Village as a beneficiary of your IRA ensures that future generations of families have the opportunity to thrive. Designate a specific amount, a percentage, or an asset. Your plans remain flexible — and your legacy does not.',
+              },
+            ].map((item, i) => (
+              <div key={i}>
+                <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '20px', fontWeight: 400, color: '#36302A', marginBottom: '16px', lineHeight: 1.2 }}>{item.title}</h3>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '15px', lineHeight: 1.8, color: '#574C3F' }}>{item.body}</p>
+              </div>
+            ))}
+          </div>
+          <GiveSmartForm />
+          <style>{`
+            @media (max-width: 768px) {
+              .give-otherways-grid { grid-template-columns: 1fr !important; }
             }
           `}</style>
         </div>
