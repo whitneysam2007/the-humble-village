@@ -42,10 +42,10 @@ function StockDonationForm() {
           onClick={() => setOpen(true)}
           style={{ display: 'inline-block', background: '#36302A', color: '#F8F3EC', padding: '14px 36px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', border: 'none', cursor: 'pointer' }}
         >
-          I'd Like to Donate Stock
+          Let's Talk About Your Gift
         </button>
         <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '13px', color: '#574C3F', marginTop: '12px', lineHeight: 1.6 }}>
-          We'll reach out with everything you need.
+          Click to connect with The Humble Village team about giving through stocks, IRAs, QCDs, bequests, or other assets.
         </p>
       </div>
       {open && (
@@ -63,7 +63,7 @@ function StockDonationForm() {
               aria-label="Close"
             >&times;</button>
             <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '8px' }}>Smarter Giving</p>
-            <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '24px', fontWeight: 400, color: '#36302A', marginBottom: '8px' }}>Donate Stock</h3>
+            <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '24px', fontWeight: 400, color: '#36302A', marginBottom: '8px' }}>Let's Talk About Your Gift</h3>
             {sent ? (
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '15px', color: '#574C3F', lineHeight: 1.7, marginTop: '24px' }}>
                 Thank you — we'll be in touch shortly with everything you need to complete your gift.
@@ -71,7 +71,7 @@ function StockDonationForm() {
             ) : (
               <>
                 <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '14px', color: '#574C3F', lineHeight: 1.7, marginBottom: '28px' }}>
-                  We can receive donations of appreciated stock, bonds, or mutual funds. Let us know you're interested and we'll follow up with the transfer details.
+                  We'd love to help you find the giving option that works best for you — whether that's stock, an IRA distribution, a QCD, a bequest, or another asset. Let us know you're interested and we'll be in touch.
                 </p>
                 <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                   <div>
