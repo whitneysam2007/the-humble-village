@@ -37,7 +37,7 @@ function StockDonationForm() {
 
   return (
     <>
-      <div style={{ textAlign: 'center', marginTop: '48px' }}>
+      <div style={{ textAlign: 'center', marginTop: '48px', marginBottom: '48px' }}>
         <button
           onClick={() => setOpen(true)}
           style={{ display: 'inline-block', background: '#36302A', color: '#F8F3EC', padding: '14px 36px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', border: 'none', cursor: 'pointer' }}
