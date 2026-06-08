@@ -45,7 +45,7 @@ function StockDonationForm() {
           Let's Talk About Your Gift
         </button>
         <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '13px', color: '#574C3F', marginTop: '12px', lineHeight: 1.6 }}>
-          Click to connect with The Humble Village team about giving through stocks, IRAs, QCDs, bequests, or other assets.
+          We would be honored to work with you and your advisors to find the giving option that aligns with your goals.
         </p>
       </div>
       {open && (
@@ -475,9 +475,6 @@ export default function NaruCircle() {
               </div>
             ))}
           </div>
-          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '15px', color: '#574C3F', textAlign: 'center', marginTop: '48px', lineHeight: 1.7, fontStyle: 'italic' }}>
-            We would be honored to work with you and your advisors to find the giving option that aligns with your goals.
-          </p>
           <StockDonationForm />
           <style>{`
             @media (max-width: 768px) {
