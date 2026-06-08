@@ -13,6 +13,61 @@ const programs = [
   { name: 'Youth Health Education', cost: '$9,000', desc: 'Nutrition & pregnancy-prevention education for 200 students' },
 ];
 
+function StockTransferModal() {
+  const [open, setOpen] = useState(false);
+  return (
+    <>
+      <div style={{ textAlign: 'center', marginTop: '48px' }}>
+        <button
+          onClick={() => setOpen(true)}
+          style={{ display: 'inline-block', background: '#36302A', color: '#F8F3EC', padding: '14px 36px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none', border: 'none', cursor: 'pointer' }}
+        >
+          Stock Transfer Details
+        </button>
+        <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '13px', color: '#574C3F', marginTop: '12px', lineHeight: 1.6 }}>
+          Account information to share with your financial advisor.
+        </p>
+      </div>
+      {open && (
+        <div
+          onClick={() => setOpen(false)}
+          style={{ position: 'fixed', inset: 0, background: 'rgba(54,48,42,0.7)', zIndex: 1000, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '24px' }}
+        >
+          <div
+            onClick={e => e.stopPropagation()}
+            style={{ background: '#F8F3EC', borderRadius: '12px', padding: '48px', maxWidth: '480px', width: '100%', position: 'relative' }}
+          >
+            <button
+              onClick={() => setOpen(false)}
+              style={{ position: 'absolute', top: '16px', right: '20px', background: 'none', border: 'none', fontSize: '22px', cursor: 'pointer', color: '#574C3F', lineHeight: 1 }}
+              aria-label="Close"
+            >&times;</button>
+            <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '8px' }}>Smarter Giving</p>
+            <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '24px', fontWeight: 400, color: '#36302A', marginBottom: '8px' }}>Stock Transfer Details</h3>
+            <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '14px', color: '#574C3F', lineHeight: 1.7, marginBottom: '32px' }}>
+              Share the information below with your financial advisor or broker to initiate the transfer.
+            </p>
+            {[
+              { label: 'Receiving Brokerage Firm', value: 'LPL Financial' },
+              { label: 'DTC Number', value: '0075' },
+              { label: 'Receiving Account Name', value: 'The Humble Village' },
+              { label: 'Receiving Account Number', value: '5324-2299' },
+            ].map(({ label, value }) => (
+              <div key={label} style={{ borderBottom: '1px solid rgba(54,48,42,0.12)', paddingBottom: '16px', marginBottom: '16px' }}>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '4px' }}>{label}</p>
+                <p style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '18px', color: '#36302A', margin: 0 }}>{value}</p>
+              </div>
+            ))}
+            <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '13px', color: '#574C3F', lineHeight: 1.7, marginTop: '8px', fontStyle: 'italic' }}>
+              Questions? Email us at <a href="mailto:hello@the-humble-village.org" style={{ color: '#36302A' }}>hello@the-humble-village.org</a>
+            </p>
+          </div>
+        </div>
+      )}
+    </>
+  );
+}
+
 export default function NaruCircle() {
   const [form, setForm] = useState({ name: '', email: '', program: '', message: '' });
 
@@ -389,18 +444,7 @@ export default function NaruCircle() {
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '15px', color: '#574C3F', textAlign: 'center', marginTop: '48px', lineHeight: 1.7, fontStyle: 'italic' }}>
             We would be honored to work with you and your advisors to find the giving option that aligns with your goals.
           </p>
-          <div style={{ textAlign: 'center', marginTop: '48px' }}>
-            <a
-              href="/documents/thv-giving-instructions.pdf"
-              download
-              style={{ display: 'inline-block', background: '#36302A', color: '#F8F3EC', padding: '14px 36px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none' }}
-            >
-              Download Instructions
-            </a>
-            <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '13px', color: '#574C3F', marginTop: '12px', lineHeight: 1.6 }}>
-              Step-by-step guide to giving via stocks, bonds, mutual funds, QCD, and more.
-            </p>
-          </div>
+          <StockTransferModal />
           <style>{`
             @media (max-width: 768px) {
               .otherways-grid { grid-template-columns: 1fr !important; }
