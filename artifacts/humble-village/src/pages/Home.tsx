@@ -5,6 +5,23 @@ const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 export default function Home() {
   const [email, setEmail] = useState('');
+  const [newsletterSent, setNewsletterSent] = useState(false);
+  const [newsletterSubmitting, setNewsletterSubmitting] = useState(false);
+
+  async function handleNewsletterSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setNewsletterSubmitting(true);
+    const data = new FormData(e.currentTarget);
+    try {
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(data as any).toString(),
+      });
+    } catch {}
+    setNewsletterSent(true);
+    setNewsletterSubmitting(false);
+  }
 
   return (
     <main>
@@ -696,47 +713,62 @@ export default function Home() {
           }}>
             Stories, updates, and ways to make a difference — straight to your inbox.
           </p>
-          <form
-            onSubmit={e => { e.preventDefault(); }}
-            style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}
-          >
-            <input
-              type="email"
-              value={email}
-              onChange={e => setEmail(e.target.value)}
-              placeholder="Your email address"
-              required
-              style={{
-                padding: '14px 20px',
-                borderRadius: '6px',
-                border: 'none',
-                fontFamily: 'Figtree, sans-serif',
-                fontSize: '15px',
-                width: '280px',
-                outline: 'none',
-                background: '#F6F3EC',
-                color: '#36302A',
-              }}
-            />
-            <button
-              type="submit"
-              style={{
-                padding: '14px 32px',
-                borderRadius: '6px',
-                border: 'none',
-                background: '#36302A',
-                color: '#F6F3EC',
-                fontFamily: 'Figtree, sans-serif',
-                fontSize: '13px',
-                fontWeight: 700,
-                letterSpacing: '0.08em',
-                textTransform: 'uppercase',
-                cursor: 'pointer',
-              }}
+          {newsletterSent ? (
+            <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', color: '#F6F3EC', opacity: 0.9, lineHeight: 1.7 }}>
+              Thank you — you're on the list.
+            </p>
+          ) : (
+            <form
+              name="newsletter"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              onSubmit={handleNewsletterSubmit}
+              style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}
             >
-              Subscribe
-            </button>
-          </form>
+              <input type="hidden" name="form-name" value="newsletter" />
+              <input type="hidden" name="bot-field" style={{ display: 'none' }} />
+              <input
+                type="email"
+                name="email"
+                value={email}
+                onChange={e => setEmail(e.target.value)}
+                placeholder="Your email address"
+                required
+                style={{
+                  padding: '14px 20px',
+                  borderRadius: '6px',
+                  border: 'none',
+                  fontFamily: 'Figtree, sans-serif',
+                  fontSize: '15px',
+                  width: '280px',
+                  outline: 'none',
+                  background: '#F6F3EC',
+                  color: '#36302A',
+                }}
+              />
+              <button
+                type="submit"
+                disabled={newsletterSubmitting}
+                style={{
+                  padding: '14px 32px',
+                  borderRadius: '6px',
+                  border: 'none',
+                  background: '#36302A',
+                  color: '#F6F3EC',
+                  fontFamily: 'Figtree, sans-serif',
+                  fontSize: '13px',
+                  fontWeight: 700,
+                  letterSpacing: '0.08em',
+                  textTransform: 'uppercase',
+                  cursor: newsletterSubmitting ? 'wait' : 'pointer',
+                  opacity: newsletterSubmitting ? 0.7 : 1,
+                }}
+              >
+                {newsletterSubmitting ? 'Subscribing...' : 'Subscribe'}
+              </button>
+            </form>
+          )}
         </div>
       </section>
     </main>

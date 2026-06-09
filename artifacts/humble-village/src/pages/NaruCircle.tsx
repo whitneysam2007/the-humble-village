@@ -16,16 +16,22 @@ const programs = [
 function StockDonationForm() {
   const [open, setOpen] = useState(false);
   const [sent, setSent] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
   const [form, setForm] = useState({ name: '', email: '', message: '' });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const subject = encodeURIComponent('Stock Donation Inquiry');
-    const body = encodeURIComponent(
-      `Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message || 'I am interested in donating stock to The Humble Village.'}`
-    );
-    window.location.href = `mailto:hello@the-humble-village.org?subject=${subject}&body=${body}`;
+    setSubmitting(true);
+    const data = new FormData(e.currentTarget);
+    try {
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(data as any).toString(),
+      });
+    } catch {}
     setSent(true);
+    setSubmitting(false);
   };
 
   const inputStyle: React.CSSProperties = {
@@ -73,24 +79,34 @@ function StockDonationForm() {
                 <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '14px', color: '#574C3F', lineHeight: 1.7, marginBottom: '28px' }}>
                   We'd love to help you find the giving option that works best for you — whether that's stock, an IRA distribution, a QCD, a bequest, or another asset. Let us know you're interested and we'll be in touch.
                 </p>
-                <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                <form
+                  name="asset-giving"
+                  method="POST"
+                  data-netlify="true"
+                  netlify-honeypot="bot-field"
+                  onSubmit={handleSubmit}
+                  style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}
+                >
+                  <input type="hidden" name="form-name" value="asset-giving" />
+                  <input type="hidden" name="bot-field" style={{ display: 'none' }} />
                   <div>
                     <label style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#574C3F', display: 'block', marginBottom: '6px' }}>Name *</label>
-                    <input required style={inputStyle} value={form.name} onChange={e => setForm(f => ({ ...f, name: e.target.value }))} placeholder="Your full name" />
+                    <input name="name" required style={inputStyle} value={form.name} onChange={e => setForm(f => ({ ...f, name: e.target.value }))} placeholder="Your full name" />
                   </div>
                   <div>
                     <label style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#574C3F', display: 'block', marginBottom: '6px' }}>Email *</label>
-                    <input required type="email" style={inputStyle} value={form.email} onChange={e => setForm(f => ({ ...f, email: e.target.value }))} placeholder="your@email.com" />
+                    <input name="email" required type="email" style={inputStyle} value={form.email} onChange={e => setForm(f => ({ ...f, email: e.target.value }))} placeholder="your@email.com" />
                   </div>
                   <div>
                     <label style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#574C3F', display: 'block', marginBottom: '6px' }}>Message (optional)</label>
-                    <textarea rows={3} style={{ ...inputStyle, resize: 'vertical' }} value={form.message} onChange={e => setForm(f => ({ ...f, message: e.target.value }))} placeholder="Anything you'd like us to know" />
+                    <textarea name="message" rows={3} style={{ ...inputStyle, resize: 'vertical' }} value={form.message} onChange={e => setForm(f => ({ ...f, message: e.target.value }))} placeholder="Anything you'd like us to know" />
                   </div>
                   <button
                     type="submit"
-                    style={{ background: '#36302A', color: '#F8F3EC', padding: '14px 36px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', border: 'none', cursor: 'pointer', marginTop: '8px' }}
+                    disabled={submitting}
+                    style={{ background: '#36302A', color: '#F8F3EC', padding: '14px 36px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', border: 'none', cursor: submitting ? 'wait' : 'pointer', marginTop: '8px', opacity: submitting ? 0.7 : 1 }}
                   >
-                    Send My Interest
+                    {submitting ? 'Sending...' : 'Send My Interest'}
                   </button>
                 </form>
               </>
@@ -104,14 +120,22 @@ function StockDonationForm() {
 
 export default function NaruCircle() {
   const [form, setForm] = useState({ name: '', email: '', program: '', message: '' });
+  const [naruSent, setNaruSent] = useState(false);
+  const [naruSubmitting, setNaruSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const subject = encodeURIComponent('Narú Circle Inquiry');
-    const body = encodeURIComponent(
-      `Name: ${form.name}\nEmail: ${form.email}\nProgram of Interest: ${form.program || 'General'}\n\nMessage:\n${form.message}`
-    );
-    window.location.href = `mailto:hello@the-humble-village.org?subject=${subject}&body=${body}`;
+    setNaruSubmitting(true);
+    const data = new FormData(e.currentTarget);
+    try {
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(data as any).toString(),
+      });
+    } catch {}
+    setNaruSent(true);
+    setNaruSubmitting(false);
   };
 
   return (
@@ -534,7 +558,22 @@ export default function NaruCircle() {
             We would love to connect with you and find the right path forward together.
           </p>
 
-          <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+          {naruSent ? (
+            <div style={{ textAlign: 'center', padding: '40px 0' }}>
+              <p style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '24px', fontWeight: 400, fontStyle: 'italic', color: '#36302A', marginBottom: '16px' }}>Thank you.</p>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', color: '#574C3F', lineHeight: 1.7 }}>Your message has been received. Someone from The Humble Village team will be in touch with you shortly.</p>
+            </div>
+          ) : (
+          <form
+            name="naru-circle"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            onSubmit={handleSubmit}
+            style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}
+          >
+            <input type="hidden" name="form-name" value="naru-circle" />
+            <input type="hidden" name="bot-field" style={{ display: 'none' }} />
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }} className="form-row">
               <div>
                 <label style={{ fontFamily: 'Figtree, sans-serif', fontSize: '12px', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#36302A', display: 'block', marginBottom: '8px' }}>
@@ -543,8 +582,9 @@ export default function NaruCircle() {
                 <input
                   type="text"
                   required
-                  value={form.name}
-                  onChange={e => setForm({ ...form, name: e.target.value })}
+                name="name"
+                value={form.name}
+              onChange={e => setForm({ ...form, name: e.target.value })}
                   style={{ width: '100%', padding: '14px 16px', borderRadius: '6px', border: '1.5px solid rgba(54,48,42,0.2)', background: '#F6F3EC', fontFamily: 'Figtree, sans-serif', fontSize: '15px', color: '#36302A', outline: 'none' }}
                 />
               </div>
@@ -555,8 +595,9 @@ export default function NaruCircle() {
                 <input
                   type="email"
                   required
-                  value={form.email}
-                  onChange={e => setForm({ ...form, email: e.target.value })}
+                name="email"
+                value={form.email}
+              onChange={e => setForm({ ...form, email: e.target.value })}
                   style={{ width: '100%', padding: '14px 16px', borderRadius: '6px', border: '1.5px solid rgba(54,48,42,0.2)', background: '#F6F3EC', fontFamily: 'Figtree, sans-serif', fontSize: '15px', color: '#36302A', outline: 'none' }}
                 />
               </div>
@@ -567,6 +608,7 @@ export default function NaruCircle() {
                 Area of Interest (optional)
               </label>
               <select
+                name="program"
                 value={form.program}
                 onChange={e => setForm({ ...form, program: e.target.value })}
                 style={{ width: '100%', padding: '14px 16px', borderRadius: '6px', border: '1.5px solid rgba(54,48,42,0.2)', background: '#F6F3EC', fontFamily: 'Figtree, sans-serif', fontSize: '15px', color: '#36302A', outline: 'none', appearance: 'none' }}
@@ -587,8 +629,9 @@ export default function NaruCircle() {
               <textarea
                 required
                 rows={5}
+                name="message"
                 value={form.message}
-                onChange={e => setForm({ ...form, message: e.target.value })}
+              onChange={e => setForm({ ...form, message: e.target.value })}
                 placeholder="Tell us a bit about yourself and what draws you to this work..."
                 style={{ width: '100%', padding: '14px 16px', borderRadius: '6px', border: '1.5px solid rgba(54,48,42,0.2)', background: '#F6F3EC', fontFamily: 'Figtree, sans-serif', fontSize: '15px', color: '#36302A', outline: 'none', resize: 'vertical' }}
               />
@@ -596,6 +639,7 @@ export default function NaruCircle() {
 
             <button
               type="submit"
+              disabled={naruSubmitting}
               style={{
                 padding: '18px 40px',
                 borderRadius: '6px',
@@ -607,12 +651,14 @@ export default function NaruCircle() {
                 fontWeight: 700,
                 letterSpacing: '0.1em',
                 textTransform: 'uppercase',
-                cursor: 'pointer',
+                cursor: naruSubmitting ? 'wait' : 'pointer',
+                opacity: naruSubmitting ? 0.7 : 1,
               }}
             >
-              Send Message
+              {naruSubmitting ? 'Sending...' : 'Send Message'}
             </button>
           </form>
+          )}
         </div>
         <style>{`
           @media (max-width: 600px) {

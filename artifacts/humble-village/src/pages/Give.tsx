@@ -4,16 +4,22 @@ import { Link } from 'react-router-dom';
 function GiveSmartForm() {
   const [open, setOpen] = useState(false);
   const [sent, setSent] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
   const [form, setForm] = useState({ name: '', email: '', message: '' });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const subject = encodeURIComponent('Asset Giving Inquiry');
-    const body = encodeURIComponent(
-      `Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message || 'I am interested in giving through assets to The Humble Village.'}`
-    );
-    window.location.href = `mailto:hello@the-humble-village.org?subject=${subject}&body=${body}`;
+    setSubmitting(true);
+    const data = new FormData(e.currentTarget);
+    try {
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(data as any).toString(),
+      });
+    } catch {}
     setSent(true);
+    setSubmitting(false);
   };
 
   const inputStyle: React.CSSProperties = {
@@ -61,24 +67,34 @@ function GiveSmartForm() {
                 <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '14px', color: '#574C3F', lineHeight: 1.7, marginBottom: '28px' }}>
                   We'd love to help you find the giving option that works best for you — whether that's stock, an IRA distribution, a QCD, a bequest, or another asset. Let us know you're interested and we'll be in touch.
                 </p>
-                <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                <form
+                  name="asset-giving"
+                  method="POST"
+                  data-netlify="true"
+                  netlify-honeypot="bot-field"
+                  onSubmit={handleSubmit}
+                  style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}
+                >
+                  <input type="hidden" name="form-name" value="asset-giving" />
+                  <input type="hidden" name="bot-field" style={{ display: 'none' }} />
                   <div>
                     <label style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#574C3F', display: 'block', marginBottom: '6px' }}>Name *</label>
-                    <input required style={inputStyle} value={form.name} onChange={e => setForm(f => ({ ...f, name: e.target.value }))} placeholder="Your full name" />
+                    <input name="name" required style={inputStyle} value={form.name} onChange={e => setForm(f => ({ ...f, name: e.target.value }))} placeholder="Your full name" />
                   </div>
                   <div>
                     <label style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#574C3F', display: 'block', marginBottom: '6px' }}>Email *</label>
-                    <input required type="email" style={inputStyle} value={form.email} onChange={e => setForm(f => ({ ...f, email: e.target.value }))} placeholder="your@email.com" />
+                    <input name="email" required type="email" style={inputStyle} value={form.email} onChange={e => setForm(f => ({ ...f, email: e.target.value }))} placeholder="your@email.com" />
                   </div>
                   <div>
                     <label style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#574C3F', display: 'block', marginBottom: '6px' }}>Message (optional)</label>
-                    <textarea rows={3} style={{ ...inputStyle, resize: 'vertical' }} value={form.message} onChange={e => setForm(f => ({ ...f, message: e.target.value }))} placeholder="Anything you'd like us to know" />
+                    <textarea name="message" rows={3} style={{ ...inputStyle, resize: 'vertical' }} value={form.message} onChange={e => setForm(f => ({ ...f, message: e.target.value }))} placeholder="Anything you'd like us to know" />
                   </div>
                   <button
                     type="submit"
-                    style={{ background: '#36302A', color: '#F8F3EC', padding: '14px 36px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', border: 'none', cursor: 'pointer', marginTop: '8px' }}
+                    disabled={submitting}
+                    style={{ background: '#36302A', color: '#F8F3EC', padding: '14px 36px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', border: 'none', cursor: submitting ? 'wait' : 'pointer', marginTop: '8px', opacity: submitting ? 0.7 : 1 }}
                   >
-                    Send My Interest
+                    {submitting ? 'Sending...' : 'Send My Interest'}
                   </button>
                 </form>
               </>
