@@ -404,7 +404,11 @@ export default function NaruCircle() {
             </div>
           </div>
           <div style={{ textAlign: 'center', marginTop: '48px' }}>
-            <a href="/naru-circle#join" style={{ display: 'inline-block', background: '#36302A', color: '#F8F3EC', padding: '14px 40px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none' }}>Contact us to learn more</a>
+            <a
+              href="#contact-form"
+              onClick={e => { e.preventDefault(); document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' }); }}
+              style={{ display: 'inline-block', background: '#36302A', color: '#F8F3EC', padding: '14px 40px', borderRadius: '6px', fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none', cursor: 'pointer' }}
+            >Contact us to learn more</a>
           </div>
           <style>{`
             @media (max-width: 900px) {
@@ -546,7 +550,7 @@ export default function NaruCircle() {
       </section>
 
       {/* CONTACT FORM */}
-      <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
+      <section id="contact-form" style={{ background: '#F8F3EC', padding: '100px 40px' }}>
         <div style={{ maxWidth: '640px', margin: '0 auto' }}>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '16px', textAlign: 'center' }}>
             Philanthropic Partnership
