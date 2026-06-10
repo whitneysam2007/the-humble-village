@@ -150,21 +150,27 @@ export default function Stories() {
       {/* ELENA — ANCHOR STORY */}
       <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '64px', alignItems: 'center' }} className="elena-story-grid">
-            <div style={{ display: 'flex', gap: '16px' }}>
-              <div style={{ flex: 1 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1.1fr 1fr', gap: '64px', alignItems: 'start' }} className="elena-story-grid">
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+              {/* Top row: 2 before photos side by side */}
+              <div>
                 <div style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: '#574C3F', marginBottom: '8px', textAlign: 'center' }}>BEFORE</div>
-                <img src={`${BASE}/images/elena-before.jpg`} alt="Jeremia and Gerson — Elena would not leave the corner" style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', borderRadius: '4px' }} />
-                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#36302A', marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>
-                  Twins Jeremia & Gerson with their Aunt and Grandmother. Elena, not pictured.
-                </p>
+                <div style={{ display: 'flex', gap: '12px' }}>
+                  <div style={{ flex: 1 }}>
+                    <img src={`${BASE}/images/elena-before.jpg`} alt="Twins Jeremia and Gerson with Aunt and Grandmother" style={{ width: '100%', aspectRatio: '5/4', objectFit: 'cover', objectPosition: '70% center', borderRadius: '4px' }} />
+                    <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#574C3F', marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>Twins Jeremia (born with albinism) & Gerson, held by their Aunt and Grandmother. Elena, not pictured.</p>
+                  </div>
+                  <div style={{ flex: 1 }}>
+                    <img src={`${BASE}/images/elena-before-2.jpg`} alt="Woman holding newborn Jeremias" style={{ width: '100%', aspectRatio: '5/4', objectFit: 'cover', objectPosition: 'center center', borderRadius: '4px' }} />
+                    <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#574C3F', marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>Jeremias at 6 weeks old. Elena, not pictured.</p>
+                  </div>
+                </div>
               </div>
-              <div style={{ flex: 1 }}>
+              {/* Bottom: 1 after photo full width */}
+              <div>
                 <div style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: '#574C3F', marginBottom: '8px', textAlign: 'center' }}>AFTER</div>
-                <img src={`${BASE}/images/elena-after.jpg`} alt="Elena with her boys today" style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', borderRadius: '4px' }} />
-                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#36302A', marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>
-                  7 years later, Elena with her boys today.
-                </p>
+                <img src={`${BASE}/images/elena-after.jpg`} alt="Elena with her boys today" style={{ width: '100%', aspectRatio: '16/9', objectFit: 'cover', objectPosition: 'center top', borderRadius: '4px' }} />
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#574C3F', marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>7 years later, Elena with her boys today.</p>
               </div>
             </div>
             <div>

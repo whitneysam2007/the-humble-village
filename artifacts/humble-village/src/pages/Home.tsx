@@ -358,8 +358,8 @@ export default function Home() {
                   alt="Jeremia and Gerson — Elena would not leave the corner"
                   style={{ width: '100%', aspectRatio: '4/3', objectFit: 'cover', borderRadius: '4px' }}
                 />
-                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#F8F3EC', opacity: 0.7, marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>
-                  Twins Jeremia & Gerson with their Aunt and Grandmother. Elena, not pictured.
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '12.5px', color: '#F8F3EC', opacity: 0.7, marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>
+                  Twins Jeremia (born with albinism) & Gerson, held by their Aunt and Grandmother. Elena, not pictured.
                 </p>
               </div>
               <div>
