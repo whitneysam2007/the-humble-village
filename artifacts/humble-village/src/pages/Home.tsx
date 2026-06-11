@@ -297,14 +297,25 @@ export default function Home() {
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', color: '#574C3F', opacity: 0.8, marginBottom: '48px', lineHeight: 1.7, textAlign: 'center', fontStyle: 'italic' }}>
             See our mission in action. Join us for the journey.
           </p>
-          <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '8px' }}>
+          {/* Vimeo teaser — 16:9 responsive inline player */}
+          <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '10px' }}>
             <iframe
-              src="https://www.youtube.com/embed/bh0TpBF26uQ"
-              title="The Humble Village Documentary"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              src="https://player.vimeo.com/video/1173109400?h=25551d23b7&autoplay=1&muted=1&loop=1&title=0&byline=0&portrait=0"
+              title="The Humble Village — Teaser"
+              allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen
               style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none' }}
             />
+          </div>
+          <div style={{ textAlign: 'center', marginTop: '36px' }}>
+            <a
+              href="https://www.youtube.com/watch?v=bh0TpBF26uQ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
+              Watch the Full Film
+            </a>
           </div>
         </div>
       </section>

@@ -524,27 +524,25 @@ export default function NaruCircle() {
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', color: '#F6F3EC', opacity: 0.6, marginBottom: '48px', lineHeight: 1.7 }}>
             See the mission you'll be sustaining.
           </p>
-          <div style={{
-            position: 'relative',
-            paddingBottom: '56.25%',
-            height: 0,
-            overflow: 'hidden',
-            borderRadius: '8px',
-          }}>
+          {/* Vimeo teaser — 16:9 responsive inline player */}
+          <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '10px' }}>
             <iframe
-              src="https://www.youtube.com/embed/bh0TpBF26uQ"
-              title="The Humble Village Documentary"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              src="https://player.vimeo.com/video/1173109400?h=25551d23b7&autoplay=1&muted=1&loop=1&title=0&byline=0&portrait=0"
+              title="The Humble Village — Teaser"
+              allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen
-              style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%',
-                border: 'none',
-              }}
+              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none' }}
             />
+          </div>
+          <div style={{ textAlign: 'center', marginTop: '36px' }}>
+            <a
+              href="https://www.youtube.com/watch?v=bh0TpBF26uQ"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: 'inline-block', background: '#F6F3EC', color: '#36302A', padding: '14px 32px', borderRadius: '6.4px', fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', textDecoration: 'none', transition: 'opacity 0.2s ease' }}
+            >
+              Watch the Full Film
+            </a>
           </div>
         </div>
       </section>
