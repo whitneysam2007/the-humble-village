@@ -157,8 +157,8 @@ export default function Stories() {
                 <div style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: '#574C3F', marginBottom: '8px', textAlign: 'center' }}>BEFORE</div>
                 <div style={{ display: 'flex', gap: '12px' }}>
                   <div style={{ flex: 1 }}>
-                    <img src={`${BASE}/images/elena-before.jpg`} alt="Twins Jeremia and Gerson with Aunt and Grandmother" style={{ width: '100%', aspectRatio: '5/4', objectFit: 'cover', objectPosition: '70% center', borderRadius: '4px' }} />
-                    <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#574C3F', marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>Twins Jeremia (born with albinism) & Gerson, held by their Aunt and Grandmother. Elena, not pictured.</p>
+                    <img src={`${BASE}/images/elena-before.jpg`} alt="Twins Jeremias and Gerson with Aunt and Grandmother" style={{ width: '100%', aspectRatio: '5/4', objectFit: 'cover', objectPosition: '70% center', borderRadius: '4px' }} />
+                    <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#574C3F', marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>Twins Jeremias (born with albinism) & Gerson, held by their Aunt and Grandmother. Elena, not pictured.</p>
                   </div>
                   <div style={{ flex: 1 }}>
                     <img src={`${BASE}/images/elena-before-2.jpg`} alt="Woman holding newborn Jeremias" style={{ width: '100%', aspectRatio: '5/4', objectFit: 'cover', objectPosition: 'center center', borderRadius: '4px' }} />
