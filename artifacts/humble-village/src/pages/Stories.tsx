@@ -147,49 +147,251 @@ export default function Stories() {
         </div>
       </section>
 
+      {/* HAPPENING NOW — NEWCOMERS TO THE PROGRAM */}
+      <section style={{ background: '#F8F3EC', padding: '80px 40px 60px' }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+          {/* Section header */}
+          <div style={{ textAlign: 'center', marginBottom: '52px' }}>
+            <p style={{
+              fontFamily: 'Figtree, sans-serif',
+              fontSize: '11px',
+              fontWeight: 700,
+              letterSpacing: '0.22em',
+              textTransform: 'uppercase',
+              color: '#574C3F',
+              marginBottom: '14px',
+            }}>
+              Happening Now
+            </p>
+            <h2 style={{
+              fontFamily: 'Libre Baskerville, serif',
+              fontSize: 'clamp(26px, 3.5vw, 42px)',
+              fontWeight: 400,
+              color: '#36302A',
+              fontStyle: 'italic',
+              lineHeight: 1.2,
+              marginBottom: '20px',
+            }}>
+              Newcomers to the Program
+            </h2>
+            <p style={{
+              fontFamily: 'Figtree, sans-serif',
+              fontSize: '16px',
+              lineHeight: 1.8,
+              color: '#574C3F',
+              maxWidth: '820px',
+              margin: '0 auto',
+            }}>
+              Four adolescent mothers without resources. Four severely malnourished infants. Each child weighs less than a bag of sugar. This is the work being done at the Narú Medical Center— and it is happening right now.
+            </p>
+          </div>
+
+          {/* ELIZA FEATURED STORY — photos left, text right */}
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: '1fr 1.2fr',
+            gap: '52px',
+            alignItems: 'start',
+            marginBottom: '28px',
+          }} className="eliza-featured-grid">
+
+            {/* Left: two photos side by side */}
+            <div style={{ display: 'flex', gap: '14px' }}>
+              <div style={{ flex: 1 }}>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#574C3F', opacity: 0.7, textAlign: 'center', marginBottom: '6px' }}>Mother</p>
+                <img
+                  src={`${BASE}/images/eliza-mother.jpg`}
+                  alt="Eliza's 14-year-old mother holding baby and NAN formula"
+                  style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', objectPosition: 'top', borderRadius: '4px', display: 'block' }}
+                />
+              </div>
+              <div style={{ flex: 1 }}>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#574C3F', opacity: 0.7, textAlign: 'center', marginBottom: '6px' }}>Baby Eliza</p>
+                <img
+                  src={`${BASE}/images/eliza-before.jpg`}
+                  alt="Baby Eliza at 22 days, 3.96 lbs"
+                  style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', objectPosition: 'center top', borderRadius: '4px', display: 'block' }}
+                />
+              </div>
+            </div>
+
+            {/* Right: story text */}
+            <div>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#574C3F', opacity: 0.7, marginBottom: '14px' }}>
+                Adolescent Program · Maternal &amp; Infant Nutrition
+              </p>
+              <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(22px, 2.5vw, 30px)', fontWeight: 400, color: '#36302A', fontStyle: 'italic', marginBottom: '8px', lineHeight: 1.2 }}>
+                Eliza &amp; Her Mother
+              </h3>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 600, color: '#574C3F', marginBottom: '20px' }}>
+                Admitted June 2026 · 22 days old · 3.96 lbs
+              </p>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.85, color: '#574C3F', marginBottom: '16px' }}>
+                Baby Eliza spent her first week of life in the hospital fighting neonatal pneumonia. She arrived at the Narú Medical Center at 22 days old weighing just 3.96 pounds.
+              </p>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.85, color: '#574C3F', marginBottom: '16px' }}>
+                Her mother is 14 years old, single, and was struggling to breastfeed. She walked in carrying her struggling baby and walked out with a support team, a plan, and a can of formula.
+              </p>
+              <p style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '18px', fontStyle: 'italic', color: '#36302A', lineHeight: 1.5 }}>
+                Eliza is now on our Nutrition Program and her mother is on our Maternal Nutrition Program. We are fighting for them both.
+              </p>
+            </div>
+
+          </div>{/* end eliza featured story */}
+
+          {/* DIVIDER */}
+          <div style={{ borderTop: '1px solid rgba(87,76,63,0.15)', marginBottom: '28px' }} />
+
+          {/* THREE REMAINING CARDS */}
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(3, 1fr)',
+            gap: '28px',
+            marginBottom: '52px',
+          }} className="newcomers-grid">
+
+            {/* Card — RNF Yaxcal Cuz (most severe) */}
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#574C3F', opacity: 0.7, textAlign: 'center', marginBottom: '6px' }}>Maternal &amp; Infant Nutrition</p>
+              <div style={{ marginBottom: '16px' }}>
+                <img
+                  src={`${BASE}/images/yaxcalcuz-before.jpg`}
+                  alt="Baby girl, 1.5 months, 4.4 lbs"
+                  style={{ width: '100%', aspectRatio: '4/3', objectFit: 'cover', objectPosition: 'center center', borderRadius: '4px', display: 'block' }}
+                />
+              </div>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '6px' }}>
+                Admitted June 2026 · 1.5 months old
+              </p>
+              <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '20px', fontWeight: 400, color: '#36302A', fontStyle: 'italic', marginBottom: '6px', lineHeight: 1.2 }}>
+                Baby Girl
+              </h3>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 600, color: '#574C3F', marginBottom: '12px' }}>
+                4.4 lbs at 6 weeks — born at 2.42 lbs
+              </p>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '14px', lineHeight: 1.75, color: '#574C3F', flexGrow: 1 }}>
+                At nearly seven weeks old, she should weigh close to ten pounds. She weighs 4.4. Her single, adolescent mother has scarce milk and struggles to breastfeed.
+              </p>
+            </div>
+
+            {/* Card — RNM Chub Choc */}
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#574C3F', opacity: 0.7, textAlign: 'center', marginBottom: '6px' }}>Maternal &amp; Infant Nutrition</p>
+              <div style={{ marginBottom: '16px' }}>
+                <img
+                  src={`${BASE}/images/chubchoc-before.jpg`}
+                  alt="Baby boy, 20 days, 4.18 lbs"
+                  style={{ width: '100%', aspectRatio: '4/3', objectFit: 'cover', objectPosition: 'center center', borderRadius: '4px', display: 'block' }}
+                />
+              </div>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '6px' }}>
+                Admitted June 2026 · 20 days old
+              </p>
+              <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '20px', fontWeight: 400, color: '#36302A', fontStyle: 'italic', marginBottom: '6px', lineHeight: 1.2 }}>
+                Baby Boy
+              </h3>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 600, color: '#574C3F', marginBottom: '12px' }}>
+                4.18 lbs at 20 days
+              </p>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '14px', lineHeight: 1.75, color: '#574C3F', flexGrow: 1 }}>
+                His single mother is deaf, mute, and lives with epilepsy. The hospital sent him home at 4.18 lbs. He and his mother are now on The Narú Nutrition Program, receiving formula and care. We are watching over both of them.
+              </p>
+            </div>
+
+            {/* Card — Liam (proof of progress) */}
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#574C3F', opacity: 0.7, textAlign: 'center', marginBottom: '6px' }}>Adolescent Program</p>
+              <div style={{ marginBottom: '16px' }}>
+                <img
+                  src={`${BASE}/images/liam-before.jpg`}
+                  alt="Liam, 7 days old, 3.52 lbs"
+                  style={{ width: '100%', aspectRatio: '4/3', objectFit: 'cover', objectPosition: 'center center', borderRadius: '4px', display: 'block' }}
+                />
+              </div>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '6px' }}>
+                Admitted June 2026 · 7 days old
+              </p>
+              <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '20px', fontWeight: 400, color: '#36302A', fontStyle: 'italic', marginBottom: '6px', lineHeight: 1.2 }}>
+                Liam
+              </h3>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 600, color: '#574C3F', marginBottom: '12px' }}>
+                3.52 lbs at 7 days → 5.5 lbs in one week
+              </p>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '14px', lineHeight: 1.75, color: '#574C3F', flexGrow: 1 }}>
+                Liam's 15-year-old mother, Norma, had jaundice and was unable to produce enough milk. Within one week of Norma entering the Maternal Nutrition Program and receiving Maternal Nutrition, baby Liam gained over a pound and a half.
+              </p>
+            </div>
+
+          </div>{/* end three-card row */}
+
+          {/* CTA */}
+          <div style={{ textAlign: 'center' }}>
+            <a
+              href="https://www.zeffy.com/en-US/donation-form/the-humble-village"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+              style={{ fontSize: '14px', padding: '16px 44px', letterSpacing: '0.1em' }}
+            >
+              Support the Nutrition Program
+            </a>
+          </div>
+        </div>
+        <style>{`
+          @media (max-width: 900px) {
+            .eliza-featured-grid { grid-template-columns: 1fr !important; }
+            .newcomers-grid { grid-template-columns: repeat(2, 1fr) !important; }
+            .newcomers-grid { grid-template-columns: repeat(2, 1fr) !important; }
+          }
+          @media (max-width: 560px) {
+            .newcomers-grid { grid-template-columns: 1fr !important; }
+          }
+        `}</style>
+      </section>
+
       {/* ELENA — ANCHOR STORY */}
-      <section style={{ background: '#F8F3EC', padding: '100px 40px' }}>
+      <section style={{ background: '#36302A', padding: '100px 40px' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1.1fr 1fr', gap: '64px', alignItems: 'start' }} className="elena-story-grid">
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               {/* Top row: 2 before photos side by side */}
               <div>
-                <div style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: '#574C3F', marginBottom: '8px', textAlign: 'center' }}>BEFORE</div>
+                <div style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: 'rgba(246,243,236,0.6)', marginBottom: '8px', textAlign: 'center' }}>BEFORE</div>
                 <div style={{ display: 'flex', gap: '12px' }}>
                   <div style={{ flex: 1 }}>
                     <img src={`${BASE}/images/elena-before.jpg`} alt="Twins Jeremias and Gerson with Aunt and Grandmother" style={{ width: '100%', aspectRatio: '5/4', objectFit: 'cover', objectPosition: '70% center', borderRadius: '4px' }} />
-                    <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#574C3F', marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>Twins Jeremias (born with albinism) & Gerson, held by their Aunt and Grandmother. Elena, not pictured.</p>
+                    <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: 'rgba(246,243,236,0.7)', marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>Twins Jeremias (born with albinism) & Gerson, held by their Aunt and Grandmother. Elena, not pictured.</p>
                   </div>
                   <div style={{ flex: 1 }}>
                     <img src={`${BASE}/images/elena-before-2.jpg`} alt="Woman holding newborn Jeremias" style={{ width: '100%', aspectRatio: '5/4', objectFit: 'cover', objectPosition: 'center center', borderRadius: '4px' }} />
-                    <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#574C3F', marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>Jeremias at 6 weeks old. Elena, not pictured.</p>
+                    <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: 'rgba(246,243,236,0.7)', marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>Jeremias at 6 weeks old. Elena, not pictured.</p>
                   </div>
                 </div>
               </div>
               {/* Bottom: 1 after photo full width */}
               <div>
-                <div style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: '#574C3F', marginBottom: '8px', textAlign: 'center' }}>AFTER</div>
+                <div style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: 'rgba(246,243,236,0.6)', marginBottom: '8px', textAlign: 'center' }}>AFTER</div>
                 <img src={`${BASE}/images/elena-after.jpg`} alt="Elena with her boys today" style={{ width: '100%', aspectRatio: '16/9', objectFit: 'cover', objectPosition: 'center top', borderRadius: '4px' }} />
-                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: '#574C3F', marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>7 years later, Elena with her boys today.</p>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', color: 'rgba(246,243,236,0.7)', marginTop: '6px', textAlign: 'center', fontStyle: 'italic', lineHeight: 1.4 }}>7 years later, Elena with her boys today.</p>
               </div>
             </div>
             <div>
-              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '16px' }}>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(246,243,236,0.6)', marginBottom: '16px' }}>
                 Nutritional Recuperation
               </p>
-              <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(24px, 3vw, 36px)', fontWeight: 400, color: '#36302A', marginBottom: '28px', fontStyle: 'italic', lineHeight: 1.2 }}>
+              <h2 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(24px, 3vw, 36px)', fontWeight: 400, color: '#F6F3EC', marginBottom: '28px', fontStyle: 'italic', lineHeight: 1.2 }}>
                 From Desperation to Dignity
               </h2>
-              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.85, color: '#574C3F', marginBottom: '18px' }}>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.85, color: 'rgba(246,243,236,0.85)', marginBottom: '18px' }}>
                 When Lauren and her team visited this humble home, they found two severely malnourished babies with only days to live.
               </p>
-              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.85, color: '#574C3F', marginBottom: '18px' }}>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.85, color: 'rgba(246,243,236,0.85)', marginBottom: '18px' }}>
                 Elena, malnourished herself, could not produce milk. She fed her babies corn water — it only made things worse. With expected burials approaching, she emotionally detached from her boys and resigned herself to hiding in the corner of the room, too ashamed to emerge.
               </p>
-              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.85, color: '#574C3F', marginBottom: '28px' }}>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.85, color: 'rgba(246,243,236,0.85)', marginBottom: '28px' }}>
                 The twins were immediately admitted into our nutrition program. Gerson was diagnosed with a tongue tie, a correctable condition, and received life-saving care. Elena entered the self-reliance program at the Narú Training Center, gaining tools, skills, and support to pull herself and her family out of poverty.
               </p>
-              <p style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '20px', fontStyle: 'italic', color: '#36302A', lineHeight: 1.5 }}>
+              <p style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '20px', fontStyle: 'italic', color: '#F6F3EC', lineHeight: 1.5 }}>
                 Healthy boys. A thriving home. And Elena—empowered and independent—is now a leader in her community.
               </p>
             </div>
@@ -206,7 +408,7 @@ export default function Stories() {
       {stories.map((story, i) => (
         <section
           key={i}
-          style={{ background: i % 2 === 0 ? '#36302A' : '#F8F3EC', padding: '80px 40px' }}
+          style={{ background: i % 2 === 0 ? '#F8F3EC' : '#36302A', padding: '80px 40px' }}
         >
           <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
             <div style={{
@@ -264,7 +466,7 @@ export default function Stories() {
                         alt={`${story.name} — before`}
                         style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', objectPosition: 'top', borderRadius: '4px', display: 'block' }}
                       />
-                      <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: '#36302A', marginTop: '6px', textAlign: 'center', textTransform: (story as any).beforeCaption ? 'none' : 'uppercase' }}>{(story as any).beforeCaption || 'Before'}</p>
+                      <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: i % 2 === 0 ? '#574C3F' : 'rgba(246,243,236,0.6)', marginTop: '6px', textAlign: 'center', textTransform: (story as any).beforeCaption ? 'none' : 'uppercase' }}>{(story as any).beforeCaption || 'Before'}</p>
                     </div>
                     <div style={{ flex: 1 }}>
                       <img
@@ -272,7 +474,7 @@ export default function Stories() {
                         alt={`${story.name} — after`}
                         style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', objectPosition: 'top', borderRadius: '4px', display: 'block' }}
                       />
-                      <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: '#36302A', marginTop: '6px', textAlign: 'center', textTransform: (story as any).afterCaption ? 'none' : 'uppercase' }}>{(story as any).afterCaption || 'After'}</p>
+                      <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', color: i % 2 === 0 ? '#574C3F' : 'rgba(246,243,236,0.6)', marginTop: '6px', textAlign: 'center', textTransform: (story as any).afterCaption ? 'none' : 'uppercase' }}>{(story as any).afterCaption || 'After'}</p>
                     </div>
                   </div>
                 ) : (
@@ -290,7 +492,7 @@ export default function Stories() {
                   fontWeight: 700,
                   letterSpacing: '0.2em',
                   textTransform: 'uppercase',
-                  color: i % 2 === 0 ? '#C8B59E' : '#574C3F',
+                  color: i % 2 === 0 ? '#574C3F' : '#C8B59E',
                   marginBottom: '12px',
                 }}>
                   {story.tag}
@@ -299,7 +501,7 @@ export default function Stories() {
                   fontFamily: 'Libre Baskerville, serif',
                   fontSize: 'clamp(22px, 2.5vw, 34px)',
                   fontWeight: 400,
-                  color: i % 2 === 0 ? '#F6F3EC' : '#36302A',
+                  color: i % 2 === 0 ? '#36302A' : '#F6F3EC',
                   marginBottom: '8px',
                   lineHeight: 1.2,
                 }}>
@@ -310,7 +512,7 @@ export default function Stories() {
                   fontFamily: 'Figtree, sans-serif',
                   fontSize: '13px',
                   fontWeight: 600,
-                  color: i % 2 === 0 ? '#C8B59E' : '#574C3F',
+                  color: i % 2 === 0 ? '#574C3F' : '#C8B59E',
                   marginBottom: '28px',
                   letterSpacing: '0.03em',
                 }}>
@@ -322,7 +524,7 @@ export default function Stories() {
                     fontFamily: 'Figtree, sans-serif',
                     fontSize: '16px',
                     lineHeight: 1.85,
-                    color: i % 2 === 0 ? '#F6F3EC' : '#574C3F',
+                    color: i % 2 === 0 ? '#574C3F' : '#F6F3EC',
                     opacity: 0.85,
                     marginBottom: '16px',
                   }}>
@@ -334,7 +536,7 @@ export default function Stories() {
                     fontFamily: 'Libre Baskerville, serif',
                     fontSize: '18px',
                     fontStyle: 'italic',
-                    color: i % 2 === 0 ? '#F8F3EC' : '#36302A',
+                    color: i % 2 === 0 ? '#36302A' : '#F8F3EC',
                     lineHeight: 1.5,
                     marginTop: '12px',
                   }}>
@@ -345,7 +547,7 @@ export default function Stories() {
                   <p style={{
                     fontFamily: 'Figtree, sans-serif',
                     fontSize: '13px',
-                    color: i % 2 === 0 ? '#C8B59E' : '#574C3F',
+                    color: i % 2 === 0 ? '#574C3F' : '#C8B59E',
                     marginTop: '24px',
                     fontStyle: 'italic',
                     borderTop: '1px solid rgba(87,76,63,0.3)',
