@@ -182,7 +182,7 @@ export default function Stories() {
               maxWidth: '820px',
               margin: '0 auto',
             }}>
-              Four adolescent mothers without resources. Four severely malnourished infants. Each child weighs less than a bag of sugar. This is the work being done at the Narú Medical Center— and it is happening right now.
+              Four adolescent mothers without resources. Four severely malnourished infants, each weighing less than a bag of sugar. This is the work being done at the Narú Medical Center — and it is happening right now.
             </p>
           </div>
 
@@ -198,7 +198,7 @@ export default function Stories() {
             {/* Left: two photos side by side */}
             <div style={{ display: 'flex', gap: '14px' }}>
               <div style={{ flex: 1 }}>
-                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#574C3F', opacity: 0.7, textAlign: 'center', marginBottom: '6px' }}>Mother</p>
+                <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#574C3F', opacity: 0.7, textAlign: 'center', marginBottom: '6px' }}>Norma, age 14</p>
                 <img
                   src={`${BASE}/images/eliza-mother.jpg`}
                   alt="Eliza's 14-year-old mother holding baby and NAN formula"
@@ -218,7 +218,7 @@ export default function Stories() {
             {/* Right: story text */}
             <div>
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#574C3F', opacity: 0.7, marginBottom: '14px' }}>
-                Adolescent Program · Maternal &amp; Infant Nutrition
+                Maternal &amp; Infant Nutrition
               </p>
               <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(22px, 2.5vw, 30px)', fontWeight: 400, color: '#36302A', fontStyle: 'italic', marginBottom: '8px', lineHeight: 1.2 }}>
                 Eliza &amp; Her Mother
@@ -230,7 +230,7 @@ export default function Stories() {
                 Baby Eliza spent her first week of life in the hospital fighting neonatal pneumonia. She arrived at the Narú Medical Center at 22 days old weighing just 3.96 pounds.
               </p>
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '16px', lineHeight: 1.85, color: '#574C3F', marginBottom: '16px' }}>
-                Her mother is 14 years old, single, and was struggling to breastfeed. She walked in carrying her struggling baby and walked out with a support team, a plan, and a can of formula.
+                Her mother, Norma, is 14 years old, single, and was struggling to breastfeed. She walked in carrying her struggling baby and walked out with a support team, a plan, and a can of formula.
               </p>
               <p style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '18px', fontStyle: 'italic', color: '#36302A', lineHeight: 1.5 }}>
                 Eliza is now on our Nutrition Program and her mother is on our Maternal Nutrition Program. We are fighting for them both.
@@ -270,7 +270,7 @@ export default function Stories() {
                 4.4 lbs at 6 weeks — born at 2.42 lbs
               </p>
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '14px', lineHeight: 1.75, color: '#574C3F', flexGrow: 1 }}>
-                At nearly seven weeks old, she should weigh close to ten pounds. She weighs 4.4. Her single, adolescent mother has scarce milk and struggles to breastfeed.
+                At nearly seven weeks old, she should weigh close to ten pounds. She weighs 4.4. Her single, adolescent mother has scarce milk and struggles to breastfeed. Both mother and baby are now on the Maternal Nutrition Program.
               </p>
             </div>
 
@@ -280,27 +280,27 @@ export default function Stories() {
               <div style={{ marginBottom: '16px' }}>
                 <img
                   src={`${BASE}/images/chubchoc-before.jpg`}
-                  alt="Baby boy, 20 days, 4.18 lbs"
+                  alt="Baby boy, 10 days, 4.18 lbs"
                   style={{ width: '100%', aspectRatio: '4/3', objectFit: 'cover', objectPosition: 'center center', borderRadius: '4px', display: 'block' }}
                 />
               </div>
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#574C3F', marginBottom: '6px' }}>
-                Admitted June 2026 · 20 days old
+                Admitted June 2026 · 10 days old
               </p>
               <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: '20px', fontWeight: 400, color: '#36302A', fontStyle: 'italic', marginBottom: '6px', lineHeight: 1.2 }}>
                 Baby Boy
               </h3>
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '13px', fontWeight: 600, color: '#574C3F', marginBottom: '12px' }}>
-                4.18 lbs at 20 days
+                4.18 lbs at 10 days
               </p>
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '14px', lineHeight: 1.75, color: '#574C3F', flexGrow: 1 }}>
-                His single mother is deaf, mute, and lives with epilepsy. The hospital sent him home at 4.18 lbs. He and his mother are now on The Narú Nutrition Program, receiving formula and care. We are watching over both of them.
+                His adolescent mother suffers from epileptic seizures. At 10 days old and 4.18 pounds, he was sent home from the hospital. He is now receiving formula on the Narú Nutrition Program. We are following his progress closely.
               </p>
             </div>
 
             {/* Card — Liam (proof of progress) */}
             <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#574C3F', opacity: 0.7, textAlign: 'center', marginBottom: '6px' }}>Adolescent Program</p>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#574C3F', opacity: 0.7, textAlign: 'center', marginBottom: '6px' }}>Maternal &amp; Infant Nutrition</p>
               <div style={{ marginBottom: '16px' }}>
                 <img
                   src={`${BASE}/images/liam-before.jpg`}
@@ -318,7 +318,7 @@ export default function Stories() {
                 3.52 lbs at 7 days → 5.5 lbs in one week
               </p>
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '14px', lineHeight: 1.75, color: '#574C3F', flexGrow: 1 }}>
-                Liam's 15-year-old mother, Norma, had jaundice and was unable to produce enough milk. Within one week of Norma entering the Maternal Nutrition Program and receiving Maternal Nutrition, baby Liam gained over a pound and a half.
+                Liam was born with jaundice and his teenage mother was unable to produce enough milk. Within one week of entering the Maternal Nutrition Program, his mother was able to produce sufficient breastmilk and baby Liam gained over a pound and a half.
               </p>
             </div>
 
@@ -333,7 +333,7 @@ export default function Stories() {
               className="btn-primary"
               style={{ fontSize: '14px', padding: '16px 44px', letterSpacing: '0.1em' }}
             >
-              Support the Nutrition Program
+              Support the Maternal Nutrition Program
             </a>
           </div>
         </div>
