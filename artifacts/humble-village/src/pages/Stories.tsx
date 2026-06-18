@@ -318,7 +318,7 @@ export default function Stories() {
                 3.52 lbs at 7 days → 5.5 lbs in one week
               </p>
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '14px', lineHeight: 1.75, color: '#574C3F', flexGrow: 1 }}>
-                Liam was born with jaundice and his teenage mother was unable to produce enough milk. Within one week of entering the Maternal Nutrition Program, his mother was able to produce sufficient breastmilk and baby Liam gained over a pound and a half.
+                Liam was born with jaundice and his mother was unable to produce enough milk. Within one week of entering the Maternal Nutrition Program, his mother was able to produce sufficient breastmilk and baby Liam gained over a pound and a half.
               </p>
             </div>
 
