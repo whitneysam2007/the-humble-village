@@ -218,7 +218,7 @@ export default function Stories() {
             {/* Right: story text */}
             <div>
               <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#574C3F', opacity: 0.7, marginBottom: '14px' }}>
-                Maternal &amp; Infant Nutrition
+                Nutritional Recuperation
               </p>
               <h3 style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 'clamp(22px, 2.5vw, 30px)', fontWeight: 400, color: '#36302A', fontStyle: 'italic', marginBottom: '8px', lineHeight: 1.2 }}>
                 Eliza &amp; Her Mother
@@ -252,7 +252,7 @@ export default function Stories() {
 
             {/* Card — RNF Yaxcal Cuz (most severe) */}
             <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#574C3F', opacity: 0.7, textAlign: 'center', marginBottom: '6px' }}>Maternal &amp; Infant Nutrition</p>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#574C3F', opacity: 0.7, textAlign: 'center', marginBottom: '6px' }}>Nutritional Recuperation</p>
               <div style={{ marginBottom: '16px' }}>
                 <img
                   src={`${BASE}/images/yaxcalcuz-before.jpg`}
@@ -276,7 +276,7 @@ export default function Stories() {
 
             {/* Card — RNM Chub Choc */}
             <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#574C3F', opacity: 0.7, textAlign: 'center', marginBottom: '6px' }}>Maternal &amp; Infant Nutrition</p>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#574C3F', opacity: 0.7, textAlign: 'center', marginBottom: '6px' }}>Nutritional Recuperation</p>
               <div style={{ marginBottom: '16px' }}>
                 <img
                   src={`${BASE}/images/chubchoc-before.jpg`}
