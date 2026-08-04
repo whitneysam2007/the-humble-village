@@ -126,7 +126,7 @@ export default function Footer() {
         {/* CONTACT INFO */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', textAlign: 'center' }}>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#F8F3EC', opacity: 0.4, marginBottom: '8px' }}>Contact</p>
-          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '13px', color: '#F8F3EC', opacity: 0.6, margin: 0 }}>365 Highland Dr. &middot; Carlsbad, CA 92008</p>
+          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '13px', color: '#F8F3EC', opacity: 0.6, margin: 0 }}>365 Highland Dr. Carlsbad, CA 92008</p>
           <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '13px', color: '#F8F3EC', opacity: 0.6, margin: 0 }}>
             <a href="tel:+18018854070" style={{ color: '#F8F3EC', textDecoration: 'none' }}>801-885-4070</a>
           </p>
