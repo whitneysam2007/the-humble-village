@@ -108,6 +108,22 @@ export default function Contact() {
         </div>
       </div>
 
+      {/* CONTACT INFO BLOCK */}
+      <section style={{ background: '#F8F3EC', padding: '56px 40px 0' }}>
+        <div style={{ maxWidth: '620px', margin: '0 auto', textAlign: 'center', paddingBottom: '48px', borderBottom: '1px solid rgba(54,48,42,0.12)' }}>
+          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#574C3F', opacity: 0.6, marginBottom: '20px' }}>Contact Information</p>
+          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '15px', lineHeight: 2, color: '#574C3F', margin: 0 }}>
+            365 Highland Dr. · Carlsbad, CA 92008
+          </p>
+          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '15px', lineHeight: 2, color: '#574C3F', margin: 0 }}>
+            <a href="tel:+18018854070" style={{ color: '#574C3F', textDecoration: 'none' }}>801-885-4070</a>
+          </p>
+          <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '15px', lineHeight: 2, color: '#574C3F', margin: 0 }}>
+            <a href="mailto:hello@the-humble-village.org" style={{ color: '#574C3F', textDecoration: 'none' }}>hello@the-humble-village.org</a>
+          </p>
+        </div>
+      </section>
+
       {/* FORM SECTION */}
       <section style={{ background: '#F8F3EC', padding: '80px 40px 100px' }}>
         <div style={{ maxWidth: '620px', margin: '0 auto' }}>
