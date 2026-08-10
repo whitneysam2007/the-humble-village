@@ -161,6 +161,9 @@ export default function Contact() {
               }}>
                 Whether you want to volunteer, donate, share an idea with The Humble Village, or simply learn more, please fill out the form below and we will contact you soon.
               </p>
+              <p style={{ fontFamily: 'Figtree, sans-serif', fontSize: '12px', color: '#574C3F', opacity: 0.6, textAlign: 'center', marginTop: '-32px', marginBottom: '8px' }}>
+                All fields are required.
+              </p>
 
               <form
                 name="contact"
@@ -177,22 +180,22 @@ export default function Contact() {
 
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }} className="contact-name-grid">
                   <div>
-                    <label style={labelStyle}>First Name</label>
+                    <label style={labelStyle}>First Name <span style={{ color: '#9B4A2E' }}>*</span></label>
                     <input name="first-name" type="text" required placeholder="First name" style={inputStyle} />
                   </div>
                   <div>
-                    <label style={labelStyle}>Last Name</label>
+                    <label style={labelStyle}>Last Name <span style={{ color: '#9B4A2E' }}>*</span></label>
                     <input name="last-name" type="text" required placeholder="Last name" style={inputStyle} />
                   </div>
                 </div>
 
                 <div>
-                  <label style={labelStyle}>Email Address</label>
+                  <label style={labelStyle}>Email Address <span style={{ color: '#9B4A2E' }}>*</span></label>
                   <input name="email" type="email" required placeholder="your@email.com" style={inputStyle} />
                 </div>
 
                 <div>
-                  <label style={labelStyle}>Topic</label>
+                  <label style={labelStyle}>Topic <span style={{ color: '#9B4A2E' }}>*</span></label>
                   <select name="topic" required style={{ ...inputStyle, cursor: 'pointer' }}>
                     <option value="">Select a topic...</option>
                     <option value="General">General</option>
@@ -204,7 +207,7 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label style={labelStyle}>Message</label>
+                  <label style={labelStyle}>Message <span style={{ color: '#9B4A2E' }}>*</span></label>
                   <textarea
                     name="message"
                     required
