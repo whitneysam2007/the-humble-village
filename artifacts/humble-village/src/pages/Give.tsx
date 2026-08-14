@@ -626,6 +626,28 @@ export default function Give() {
                 </p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: 'auto' }}>
                   <a
+                    href={`${BASE}/documents/village-to-village-sample-itinerary.pdf`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: 'block',
+                      background: 'transparent',
+                      color: '#F8F3EC',
+                      border: '1px solid rgba(248,243,236,0.55)',
+                      padding: '13px 20px',
+                      borderRadius: '6px',
+                      fontFamily: 'Figtree, sans-serif',
+                      fontSize: '12px',
+                      fontWeight: 700,
+                      letterSpacing: '0.1em',
+                      textTransform: 'uppercase',
+                      textDecoration: 'none',
+                      textAlign: 'center',
+                    }}
+                  >
+                    View Sample Itinerary
+                  </a>
+                  <a
                     href="/contact"
                     style={{
                       display: 'block',
