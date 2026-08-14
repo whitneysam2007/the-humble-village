@@ -622,7 +622,7 @@ export default function Give() {
                   flex: 1,
                   margin: 0,
                 }}>
-                  Twice a year, in March and November, we take a small group to Alta Verapaz, Guatemala. Families are welcome. You walk the ridge paths. You meet the mothers. You see the programs firsthand. Cost: $500 donation + ~$500 in-country + flight. There is nothing else quite like it.
+                  Twice each year, in March and November, a small group travels to Alta Verapaz for an eight-day Village-to-Village Expedition. Work alongside the Narú team, visit families, deliver food, support the clinic, and help build Garden Towers that bring fresh food closer to home. Families with children ages 10 and older are welcome. Cost: $500 donation + approximately $600 in-country, plus airfare.
                 </p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: 'auto' }}>
                   <a
