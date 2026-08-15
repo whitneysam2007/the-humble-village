@@ -705,7 +705,7 @@ export default function Stories() {
           {/* Vimeo teaser — 16:9 responsive inline player */}
           <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '10px' }}>
             <iframe
-              src="https://player.vimeo.com/video/1173109400?h=25551d23b7&autoplay=1&muted=1&loop=1&title=0&byline=0&portrait=0"
+              src="https://player.vimeo.com/video/1218557000?h=c078bed242&autoplay=1&muted=1&loop=1&title=0&byline=0&portrait=0"
               title="The Humble Village — Teaser"
               allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen
