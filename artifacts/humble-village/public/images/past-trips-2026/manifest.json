@@ -1,0 +1,917 @@
+[
+  {
+    "index": 1,
+    "source": "Past expedition photos /IMG_0112.jpeg",
+    "source_bytes": 1238467,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-001.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 286704
+  },
+  {
+    "index": 2,
+    "source": "Past expedition photos /IMG_0223.jpeg",
+    "source_bytes": 1143601,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-002.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 310034
+  },
+  {
+    "index": 3,
+    "source": "Past expedition photos /IMG_0246.jpeg",
+    "source_bytes": 1578095,
+    "oriented_size": [
+      2048,
+      1536
+    ],
+    "gallery_file": "past-expedition-003.webp",
+    "gallery_size": [
+      1600,
+      1200
+    ],
+    "gallery_bytes": 492274
+  },
+  {
+    "index": 4,
+    "source": "Past expedition photos /IMG_0286.jpeg",
+    "source_bytes": 1397011,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-004.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 358218
+  },
+  {
+    "index": 5,
+    "source": "Past expedition photos /IMG_0867.jpeg",
+    "source_bytes": 1176972,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-005.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 321610
+  },
+  {
+    "index": 6,
+    "source": "Past expedition photos /IMG_0892.jpeg",
+    "source_bytes": 1236146,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-006.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 301924
+  },
+  {
+    "index": 7,
+    "source": "Past expedition photos /IMG_0926.jpeg",
+    "source_bytes": 1814749,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-007.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 580166
+  },
+  {
+    "index": 8,
+    "source": "Past expedition photos /IMG_0939.jpeg",
+    "source_bytes": 1192300,
+    "oriented_size": [
+      2048,
+      1536
+    ],
+    "gallery_file": "past-expedition-008.webp",
+    "gallery_size": [
+      1600,
+      1200
+    ],
+    "gallery_bytes": 282822
+  },
+  {
+    "index": 9,
+    "source": "Past expedition photos /IMG_1032.jpeg",
+    "source_bytes": 1621908,
+    "oriented_size": [
+      2048,
+      1536
+    ],
+    "gallery_file": "past-expedition-009.webp",
+    "gallery_size": [
+      1600,
+      1200
+    ],
+    "gallery_bytes": 451430
+  },
+  {
+    "index": 10,
+    "source": "Past expedition photos /IMG_1301.jpeg",
+    "source_bytes": 1335898,
+    "oriented_size": [
+      2048,
+      1536
+    ],
+    "gallery_file": "past-expedition-010.webp",
+    "gallery_size": [
+      1600,
+      1200
+    ],
+    "gallery_bytes": 329518
+  },
+  {
+    "index": 11,
+    "source": "Past expedition photos /IMG_1325.jpeg",
+    "source_bytes": 1357419,
+    "oriented_size": [
+      2048,
+      1536
+    ],
+    "gallery_file": "past-expedition-011.webp",
+    "gallery_size": [
+      1600,
+      1200
+    ],
+    "gallery_bytes": 369008
+  },
+  {
+    "index": 12,
+    "source": "Past expedition photos /IMG_1387.jpeg",
+    "source_bytes": 1368606,
+    "oriented_size": [
+      2048,
+      1536
+    ],
+    "gallery_file": "past-expedition-012.webp",
+    "gallery_size": [
+      1600,
+      1200
+    ],
+    "gallery_bytes": 342896
+  },
+  {
+    "index": 13,
+    "source": "Past expedition photos /IMG_1400.jpeg",
+    "source_bytes": 2106656,
+    "oriented_size": [
+      2048,
+      1536
+    ],
+    "gallery_file": "past-expedition-013.webp",
+    "gallery_size": [
+      1600,
+      1200
+    ],
+    "gallery_bytes": 679702
+  },
+  {
+    "index": 14,
+    "source": "Past expedition photos /IMG_1430.jpeg",
+    "source_bytes": 1838878,
+    "oriented_size": [
+      2048,
+      1536
+    ],
+    "gallery_file": "past-expedition-014.webp",
+    "gallery_size": [
+      1600,
+      1200
+    ],
+    "gallery_bytes": 589012
+  },
+  {
+    "index": 15,
+    "source": "Past expedition photos /IMG_1445.jpeg",
+    "source_bytes": 1163596,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-015.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 276702
+  },
+  {
+    "index": 16,
+    "source": "Past expedition photos /IMG_1475.jpeg",
+    "source_bytes": 1631579,
+    "oriented_size": [
+      2048,
+      1536
+    ],
+    "gallery_file": "past-expedition-016.webp",
+    "gallery_size": [
+      1600,
+      1200
+    ],
+    "gallery_bytes": 485540
+  },
+  {
+    "index": 17,
+    "source": "Past expedition photos /IMG_1564.jpeg",
+    "source_bytes": 1284800,
+    "oriented_size": [
+      2048,
+      1536
+    ],
+    "gallery_file": "past-expedition-017.webp",
+    "gallery_size": [
+      1600,
+      1200
+    ],
+    "gallery_bytes": 332788
+  },
+  {
+    "index": 18,
+    "source": "Past expedition photos /IMG_1605.jpeg",
+    "source_bytes": 1420663,
+    "oriented_size": [
+      2048,
+      1536
+    ],
+    "gallery_file": "past-expedition-018.webp",
+    "gallery_size": [
+      1600,
+      1200
+    ],
+    "gallery_bytes": 396204
+  },
+  {
+    "index": 19,
+    "source": "Past expedition photos /IMG_1751.jpeg",
+    "source_bytes": 1959294,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-019.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 656906
+  },
+  {
+    "index": 20,
+    "source": "Past expedition photos /IMG_2028.jpeg",
+    "source_bytes": 1690182,
+    "oriented_size": [
+      2048,
+      1536
+    ],
+    "gallery_file": "past-expedition-020.webp",
+    "gallery_size": [
+      1600,
+      1200
+    ],
+    "gallery_bytes": 478368
+  },
+  {
+    "index": 21,
+    "source": "Past expedition photos /IMG_2107.jpeg",
+    "source_bytes": 1081526,
+    "oriented_size": [
+      2048,
+      1536
+    ],
+    "gallery_file": "past-expedition-021.webp",
+    "gallery_size": [
+      1600,
+      1200
+    ],
+    "gallery_bytes": 212768
+  },
+  {
+    "index": 22,
+    "source": "Past expedition photos /IMG_2864.jpeg",
+    "source_bytes": 2114624,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-022.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 682858
+  },
+  {
+    "index": 23,
+    "source": "Past expedition photos /IMG_3546.jpeg",
+    "source_bytes": 1457272,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-023.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 410838
+  },
+  {
+    "index": 24,
+    "source": "Past expedition photos /IMG_3634.jpeg",
+    "source_bytes": 919278,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-024.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 191284
+  },
+  {
+    "index": 25,
+    "source": "Past expedition photos /IMG_3705.jpeg",
+    "source_bytes": 1318054,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-025.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 336422
+  },
+  {
+    "index": 26,
+    "source": "Past expedition photos /IMG_3714.jpeg",
+    "source_bytes": 800111,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-026.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 144222
+  },
+  {
+    "index": 27,
+    "source": "Past expedition photos /IMG_3812.jpeg",
+    "source_bytes": 2295702,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-027.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 775474
+  },
+  {
+    "index": 28,
+    "source": "Past expedition photos /IMG_3943.jpeg",
+    "source_bytes": 1604921,
+    "oriented_size": [
+      2048,
+      1536
+    ],
+    "gallery_file": "past-expedition-028.webp",
+    "gallery_size": [
+      1600,
+      1200
+    ],
+    "gallery_bytes": 431720
+  },
+  {
+    "index": 29,
+    "source": "Past expedition photos /IMG_3949.jpeg",
+    "source_bytes": 1462626,
+    "oriented_size": [
+      2048,
+      1672
+    ],
+    "gallery_file": "past-expedition-029.webp",
+    "gallery_size": [
+      1600,
+      1306
+    ],
+    "gallery_bytes": 394290
+  },
+  {
+    "index": 30,
+    "source": "Past expedition photos /IMG_3962.jpeg",
+    "source_bytes": 1695426,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-030.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 481954
+  },
+  {
+    "index": 31,
+    "source": "Past expedition photos /IMG_4090.jpeg",
+    "source_bytes": 1016623,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-031.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 230640
+  },
+  {
+    "index": 32,
+    "source": "Past expedition photos /IMG_4110.jpeg",
+    "source_bytes": 805011,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-032.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 152390
+  },
+  {
+    "index": 33,
+    "source": "Past expedition photos /IMG_4164.jpeg",
+    "source_bytes": 1414308,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-033.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 389074
+  },
+  {
+    "index": 34,
+    "source": "Past expedition photos /IMG_4166.jpeg",
+    "source_bytes": 1161823,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-034.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 275654
+  },
+  {
+    "index": 35,
+    "source": "Past expedition photos /IMG_4167.jpeg",
+    "source_bytes": 1097891,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-035.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 248754
+  },
+  {
+    "index": 36,
+    "source": "Past expedition photos /IMG_4173.jpeg",
+    "source_bytes": 1503251,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-036.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 403210
+  },
+  {
+    "index": 37,
+    "source": "Past expedition photos /IMG_4238.jpeg",
+    "source_bytes": 2118022,
+    "oriented_size": [
+      2048,
+      1536
+    ],
+    "gallery_file": "past-expedition-037.webp",
+    "gallery_size": [
+      1600,
+      1200
+    ],
+    "gallery_bytes": 669016
+  },
+  {
+    "index": 38,
+    "source": "Past expedition photos /IMG_4326.jpeg",
+    "source_bytes": 1206561,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-038.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 301442
+  },
+  {
+    "index": 39,
+    "source": "Past expedition photos /IMG_4449.jpeg",
+    "source_bytes": 1208052,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-039.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 320134
+  },
+  {
+    "index": 40,
+    "source": "Past expedition photos /IMG_4496.jpeg",
+    "source_bytes": 1461550,
+    "oriented_size": [
+      2048,
+      1536
+    ],
+    "gallery_file": "past-expedition-040.webp",
+    "gallery_size": [
+      1600,
+      1200
+    ],
+    "gallery_bytes": 425526
+  },
+  {
+    "index": 41,
+    "source": "Past expedition photos /IMG_5461.jpeg",
+    "source_bytes": 1189447,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-041.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 289966
+  },
+  {
+    "index": 42,
+    "source": "Past expedition photos /IMG_7355.jpeg",
+    "source_bytes": 1503880,
+    "oriented_size": [
+      2048,
+      1536
+    ],
+    "gallery_file": "past-expedition-042.webp",
+    "gallery_size": [
+      1600,
+      1200
+    ],
+    "gallery_bytes": 593754
+  },
+  {
+    "index": 43,
+    "source": "Past expedition photos /IMG_7450.jpeg",
+    "source_bytes": 2098963,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-043.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 706940
+  },
+  {
+    "index": 44,
+    "source": "Past expedition photos /IMG_7476.jpeg",
+    "source_bytes": 1921899,
+    "oriented_size": [
+      2730,
+      1536
+    ],
+    "gallery_file": "past-expedition-044.webp",
+    "gallery_size": [
+      1600,
+      900
+    ],
+    "gallery_bytes": 341304
+  },
+  {
+    "index": 45,
+    "source": "Past expedition photos /IMG_7498.jpeg",
+    "source_bytes": 937979,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-045.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 164618
+  },
+  {
+    "index": 46,
+    "source": "Past expedition photos /IMG_7532.jpeg",
+    "source_bytes": 1397927,
+    "oriented_size": [
+      1536,
+      2730
+    ],
+    "gallery_file": "past-expedition-046.webp",
+    "gallery_size": [
+      900,
+      1600
+    ],
+    "gallery_bytes": 199044
+  },
+  {
+    "index": 47,
+    "source": "Past expedition photos /IMG_7556.jpeg",
+    "source_bytes": 1248740,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-047.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 334720
+  },
+  {
+    "index": 48,
+    "source": "Past expedition photos /IMG_7585.jpeg",
+    "source_bytes": 1179794,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-048.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 282398
+  },
+  {
+    "index": 49,
+    "source": "Past expedition photos /IMG_7672.jpeg",
+    "source_bytes": 975343,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-049.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 317818
+  },
+  {
+    "index": 50,
+    "source": "Past expedition photos /IMG_9443.jpeg",
+    "source_bytes": 1594617,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-050.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 408538
+  },
+  {
+    "index": 51,
+    "source": "Past expedition photos /IMG_9540.jpeg",
+    "source_bytes": 1977146,
+    "oriented_size": [
+      2048,
+      1536
+    ],
+    "gallery_file": "past-expedition-051.webp",
+    "gallery_size": [
+      1600,
+      1200
+    ],
+    "gallery_bytes": 569386
+  },
+  {
+    "index": 52,
+    "source": "Past expedition photos /IMG_9587.jpeg",
+    "source_bytes": 1297450,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-052.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 309998
+  },
+  {
+    "index": 53,
+    "source": "Past expedition photos /IMG_9649.jpeg",
+    "source_bytes": 1940319,
+    "oriented_size": [
+      2048,
+      1536
+    ],
+    "gallery_file": "past-expedition-053.webp",
+    "gallery_size": [
+      1600,
+      1200
+    ],
+    "gallery_bytes": 603488
+  },
+  {
+    "index": 54,
+    "source": "Past expedition photos /IMG_9693.jpeg",
+    "source_bytes": 976066,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-054.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 220054
+  },
+  {
+    "index": 55,
+    "source": "Past expedition photos /IMG_9753.jpeg",
+    "source_bytes": 1623971,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-055.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 468762
+  },
+  {
+    "index": 56,
+    "source": "Past expedition photos /IMG_9769.jpeg",
+    "source_bytes": 1209310,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-056.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 341384
+  },
+  {
+    "index": 57,
+    "source": "Past expedition photos /IMG_9816.jpeg",
+    "source_bytes": 911482,
+    "oriented_size": [
+      2048,
+      1536
+    ],
+    "gallery_file": "past-expedition-057.webp",
+    "gallery_size": [
+      1600,
+      1200
+    ],
+    "gallery_bytes": 194300
+  },
+  {
+    "index": 58,
+    "source": "Past expedition photos /IMG_9836.jpeg",
+    "source_bytes": 1088486,
+    "oriented_size": [
+      1536,
+      2730
+    ],
+    "gallery_file": "past-expedition-058.webp",
+    "gallery_size": [
+      900,
+      1600
+    ],
+    "gallery_bytes": 192738
+  },
+  {
+    "index": 59,
+    "source": "Past expedition photos /IMG_9855.jpeg",
+    "source_bytes": 1191640,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-059.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 275874
+  },
+  {
+    "index": 60,
+    "source": "Past expedition photos /IMG_9860.jpeg",
+    "source_bytes": 1050971,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-060.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 252094
+  },
+  {
+    "index": 61,
+    "source": "Past expedition photos /IMG_9949.jpeg",
+    "source_bytes": 1164219,
+    "oriented_size": [
+      1536,
+      2048
+    ],
+    "gallery_file": "past-expedition-061.webp",
+    "gallery_size": [
+      1200,
+      1600
+    ],
+    "gallery_bytes": 282498
+  }
+]

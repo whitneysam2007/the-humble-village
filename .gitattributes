@@ -1,0 +1,2 @@
+# Keep static PDF reports binary so Git/CI never interprets compressed document bytes as text whitespace.
+artifacts/humble-village/public/documents/*.pdf -text -diff
