@@ -152,7 +152,7 @@ More than two decades later, Yvonne leads Narú, the on-the-ground partner organ
       { text: "Annual Sponsorship", href: "/legacy-giving#annual-sponsorships", left: "sponsorship-house" },
       { text: "Sponsor a Project", href: "/legacy-giving#legacy-projects", right: "project-ambulance" },
       { text: "Expedition", detail: ["($500 deposit goes ", "to programs)"], left: "deposit-ticket", leftClass: "impact-deposit-ticket" },
-      { text: "Shop to Donate", href: "/get-involved#giving-machine", right: "shop-tag" },
+      { text: "Shop to Support", href: "/get-involved#giving-machine", right: "shop-tag" },
       { text: "Monthly Donation", href: "/donate", left: "donation-hands" },
       { text: "One-Time Donation", href: "/donate" }
     ]},
@@ -166,12 +166,12 @@ More than two decades later, Yvonne leads Narú, the on-the-ground partner organ
     ]},
     { name: "Get Involved", className: "impact-involved", items: [
       { text: "Narú Medical Exchange", href: "/get-involved#naru-medical-exchange", left: "medical-hands" },
-      { text: "Host a Fundraiser, Concert, or Tournament", right: "fundraiser-ticket" },
+      { text: "Host a Fundraiser Event", right: "fundraiser-ticket" },
       { text: "Gift Your Talents for a Fundraiser", left: "guitar" },
       { text: "Come to Guatemala!", href: "/expeditions", left: "plane", right: "mountains" },
       { text: "Collect Newborn Kits", href: "/get-involved#collect-kits", right: "newborn-kit" },
       { text: "Sew Baby Hats or Blankets", left: "baby-hat", extra: "blanket" },
-      { text: "Make Mayan Bracelets", right: "bracelets" }
+      { text: "Make Traditional Bracelets", right: "bracelets" }
     ]}
   ];
   return n.jsxs("section", {
@@ -180,7 +180,7 @@ More than two decades later, Yvonne leads Narú, the on-the-ground partner organ
       n.jsxs("div", { className: "impact-ways-heading", children: [
         n.jsxs("div", { children: [
           n.jsx("h1", { id: "impact-ways-title", children: "Ways to Make an Impact" }),
-          n.jsx("p", { className: "impact-ways-intro", children: "Every heart and hand matters. Whether you give a little or a lot, your commitment is welcome and received gratefully!" })
+          n.jsx("p", { className: "impact-ways-intro", children: "Every heart and hand matters. Whether you give a little or a lot, your contribution makes a difference." })
         ]})
       ]}),
       n.jsxs("div", { className: "impact-ways-layout", children: [
@@ -228,7 +228,7 @@ More than two decades later, Yvonne leads Narú, the on-the-ground partner organ
 .impact-native-arrow-label{position:absolute;left:50%;top:57%;width:335px;transform:translate(-50%,-50%) rotate(-90deg);text-align:center;font-family:Figtree,sans-serif;font-size:11px;font-weight:700;letter-spacing:.30em;text-transform:uppercase;white-space:nowrap}
 .impact-ways-panels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;align-items:stretch}
 .impact-ways-panel{border:2px solid #C8B59E;border-radius:5px;padding:18px 14px 22px;display:flex;flex-direction:column;min-width:0}
-.impact-donate{background:#C8B59E;border-color:#C8B59E}
+.impact-donate{background:#C8B59E;border-color:#B6A48D}
 .impact-voice{background:#E9DDCC;border-color:#B6A48D}
 .impact-involved{background:#F8F3EC;border-color:#DED1BF}
 .impact-ways-panel h2{font-family:Figtree,sans-serif;font-size:clamp(20px,2vw,27px);font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-align:center;line-height:1.2;margin:0 0 19px;color:#574C3F}
